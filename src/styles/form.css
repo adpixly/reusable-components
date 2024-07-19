@@ -1,0 +1,9 @@
+/* No mostraremos el tooltip de validación */
+input:required:invalid {
+  box-shadow: none;
+}
+
+/* Oculta las burbujas de validación en Firefox */
+input::-moz-ui-invalid {
+  box-shadow: none;
+}

@@ -1,0 +1,22 @@
+
+/* Base icon class */
+.icon_base_class__x5Y6z7A {
+  flex-shrink: 0;
+}
+
+/* Rotation classes */
+.icon_rotate_up_class__b8C9d0E {
+  transform: rotate(180deg);
+}
+
+.icon_rotate_down_class__r3L0f1G {
+  transform: rotate(0deg);
+}
+
+.icon_rotate_left_class__f1G2h3I {
+  transform: rotate(90deg);
+}
+
+.icon_rotate_right_class__j4K5l6M {
+  transform: rotate(-90deg);
+}

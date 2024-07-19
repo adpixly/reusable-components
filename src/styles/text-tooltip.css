@@ -1,0 +1,150 @@
+
+/* Position Calculation Classes */
+.position_right_class__n7O8p9Q {
+  left: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.position_left_class__r0S1t2U {
+  right: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.position_bottom_class__v3W4x5Y {
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.position_top_class__z6A7b8C {
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Size and Padding Classes */
+.size_lg_class__d9E0f1G {
+  min-width: 18rem;
+  padding: 12px;
+}
+
+.size_md_class__h2I3j4K {
+  min-width: 14rem;
+  padding: 12px;
+}
+
+.size_sm_class__l5M6n7O {
+  min-width: 11rem;
+  padding: 8px;
+}
+
+.size_none_class__p8Q9r0S {
+  padding: 8px;
+}
+
+/* Background and Color Classes */
+.background_light_class__t1U2v3W {
+  background-color: white;
+  color: #64748b;
+  border-color: #e2e8f0;
+}
+
+.background_dark_class__x4Y5z6A {
+  background-color: #374151;
+  color: #f1f5f9;
+  border-color: #4b5563;
+}
+
+.background_default_class__b7C8d9E {
+  color: #64748b;
+  background-color: white;
+  border-color: #e2e8f0;
+}
+
+/* Margins for Inner Elements */
+.margin_left_class__f0G1h2I {
+  margin-left: 8px;
+}
+
+.margin_right_class__j3K4l5M {
+  margin-right: 8px;
+}
+
+.margin_top_class__n6O7p8Q {
+  margin-top: 8px;
+}
+
+.margin_bottom_class__r9S0t1U {
+  margin-bottom: 8px;
+}
+
+/* Transition Classes */
+.tooltip_transition_class__b8E3d5I {
+  user-select: none;
+  border-radius: 0.25rem;
+  border-width: 1px;
+  max-width: 100%;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);  /* shadow-lg */
+}
+
+.tooltip_transition_enter_class__v2W3x4Y {
+  transition:
+    opacity 200ms ease-out,
+    transform 200ms ease-out;
+}
+
+.tooltip_transition_enter_from_class__z5A6b7C {
+  opacity: 0;
+  transform: translateY(-8px);
+}
+
+.tooltip_transition_enter_to_class__d8E9f0G {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.tooltip_transition_leave_class__h1I2j3K {
+  transition: opacity 200ms ease-out;
+}
+
+.tooltip_transition_leave_from_class__l4M5n6O {
+  opacity: 1;
+}
+
+.tooltip_transition_leave_to_class__p7Q8r9S {
+  opacity: 0;
+}
+
+/* General Layout and Styling Classes */
+.flex_container_class__t0U1v2W {
+  display: flex;
+  justify-content: flex-end;
+  flex: 1;
+  min-width: 0;
+}
+
+.relative_container_class__x3Y4z5A {
+  position: relative;
+  max-width: 100%;
+}
+
+.inline_button_class__b6C7d8E {
+  display: inline;
+  max-width: 100%;
+}
+
+.tooltip_container_class__f9G0h1I {
+  position: absolute;
+  max-width: 100%;
+  z-index: 10;
+}
+
+.tooltip_text_class__j2K3l4M {
+  text-align: center;
+  font-size: 0.75rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}

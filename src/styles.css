@@ -1,0 +1,17 @@
+/*!
+ * Copyright (c) 2024 Adpixly.com
+ * All rights reserved.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+@import './colors/colors.css';
+@import './styles/copy-animation.css';
+@import './styles/form.css';
+@import './styles/input-select.css';
+@import './styles/input.css';
+@import './styles/button-submit.css';
+@import './styles/loader-circle-animation.css';
+@import './styles/rotation-animation.css';
+@import './styles/text-tooltip.css';

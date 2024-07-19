@@ -1,0 +1,67 @@
+
+/* Icon transition animations */
+.icon_transition_class__a1B2c3D {
+  transition:
+    transform 0.5s,
+    opacity 0.5s;
+  opacity: 1;
+}
+
+.icon_shrink_class__e4F5g6H {
+  transform: scale(1);
+  animation: shrink_keyframe__m0N1o2P 0.5s forwards;
+}
+
+.icon_grow_class__i7J8k9L {
+  transform: scale(0);
+  animation: grow_keyframe__q3R4s5T 0.5s forwards;
+}
+
+@keyframes shrink_keyframe__m0N1o2P {
+  from {
+    transform: scale(1);
+    opacity: 1;
+  }
+  to {
+    transform: scale(0);
+    opacity: 0;
+  }
+}
+
+@keyframes grow_keyframe__q3R4s5T {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Base styles for content containers */
+
+.content_container_class__u6V7w8X {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  text-decoration: none;
+}
+
+.content_container_class__u6V7w8X:hover {
+  text-decoration: underline;
+}
+
+/* Text styling for child spans */
+
+.text_content_class__y9Z0a1B {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Visibility control */
+
+.visibility_hidden_class__c2D3e4F {
+  display: none;
+}

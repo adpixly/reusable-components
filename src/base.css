@@ -1,0 +1,286 @@
+/*! modern-normalize | MIT License | https://github.com/sindresorhus/modern-normalize */
+
+/* Document
+   ========================================================================== */
+
+:where(html) {
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%; /* 2 */
+  -moz-tab-size: 4; /* 3 */
+  tab-size: 4; /* 3 */
+}
+
+/* Sections
+       ========================================================================== */
+
+/**
+     * Add the correct height in Firefox.
+     */
+
+:where(body) {
+  min-height: 100vh;
+}
+
+/**
+     * Prevent adjustments of font size after orientation changes in iOS.
+     */
+
+:where(body) {
+  -webkit-text-size-adjust: none;
+}
+
+/* Grouping content
+       ========================================================================== */
+
+/**
+     * Add the correct display in Firefox.
+     */
+
+:where(hr) {
+  display: block;
+}
+
+/**
+     * Add the correct display in IE 11.
+     */
+
+:where(h1) {
+  display: block;
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Text-level semantics
+       ========================================================================== */
+
+/**
+     * Prevent `blockquote` elements from inheriting `line-height` in IE 11.
+     */
+
+:where(blockquote) {
+  margin: 0;
+}
+
+/**
+     * Add the correct vertical alignment in Chrome, Edge, and Firefox.
+     */
+
+:where(sub, sup) {
+  position: relative;
+  vertical-align: baseline;
+}
+
+:where(sub) {
+  bottom: -0.25em;
+}
+
+:where(sup) {
+  top: -0.5em;
+}
+
+/* Embedded content
+       ========================================================================== */
+
+/**
+     * Remove the border on images inside links in IE 11.
+     */
+
+:where(img) {
+  border-style: none;
+}
+
+/* Forms
+       ========================================================================== */
+
+/**
+     * 1. Change the font styles in all browsers.
+     * 2. Remove the margin in Firefox and Safari.
+     */
+
+:where(button, input, optgroup, select, textarea) {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+     * Show the overflow in IE 11.
+     * 1. Show the overflow in Edge 15-.
+     * 2. Show the overflow in Edge 16-.
+     */
+
+:where(button, input) {
+  overflow: visible;
+}
+
+/**
+     * Remove the inheritance of text transform in Edge, Firefox, and IE.
+     * 1. Remove the inheritance of text transform in Firefox.
+     */
+
+:where(button, select) {
+  text-transform: none; /* 1 */
+}
+
+/**
+     * Remove the inner border and padding in Firefox.
+     */
+
+:where(button, [type='button'], [type='reset'], [type='submit']) {
+  -webkit-appearance: button;
+}
+
+:where(
+    button::-moz-focus-inner,
+    [type='button']::-moz-focus-inner,
+    [type='reset']::-moz-focus-inner,
+    [type='submit']::-moz-focus-inner
+  ) {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+     * Restore the focus styles unset by the previous rule.
+     */
+
+:where(
+    button:-moz-focusring,
+    [type='button']:-moz-focusring,
+    [type='reset']:-moz-focusring,
+    [type='submit']:-moz-focusring
+  ) {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+     * Correct the padding in Firefox.
+     */
+
+:where(fieldset) {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+     * 1. Correct the text wrapping in Edge 18-.
+     * 2. Correct the color inheritance from `fieldset` elements in IE 11.
+     * 3. Remove the padding so developers are not caught out when they zero out
+     *    `fieldset` elements in all browsers.
+     */
+
+:where(legend) {
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  white-space: normal; /* 1 */
+}
+
+/**
+     * Add the correct vertical alignment in Chrome, Edge, and Firefox.
+     */
+
+:where(progress) {
+  vertical-align: baseline;
+}
+
+/**
+     * Remove the inheritance of border color in Firefox.
+     */
+
+:where(textarea) {
+  overflow: auto;
+}
+
+/**
+     * 1. Add the correct display in IE 11.
+     * 2. Add the correct vertical alignment in Chrome, Edge, and Firefox.
+     */
+
+:where([type='checkbox'], [type='radio']) {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 1 */
+}
+
+/**
+     * Correct the cursor style of increment and decrement buttons in Safari.
+     */
+
+:where([type='number']::-webkit-inner-spin-button, [type='number']::-webkit-outer-spin-button) {
+  height: auto;
+}
+
+/**
+     * 1. Correct the odd appearance in Chrome and Safari.
+     * 2. Correct the outline style in Safari.
+     */
+
+:where([type='search']) {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+     * Remove the inner padding in Chrome and Safari on macOS.
+     */
+
+:where([type='search']::-webkit-search-decoration) {
+  -webkit-appearance: none;
+}
+
+/**
+     * 1. Correct the inability to style clickable types in iOS and Safari.
+     * 2. Change font properties to `inherit` in Safari.
+     */
+
+:where(::placeholder) {
+  color: inherit;
+  opacity: 0.54;
+}
+
+:where([type='button'], [type='reset'], [type='submit']) {
+  -webkit-appearance: button;
+}
+
+:where(h1, h2, h3, h4, h5, h6, p, blockquote, figure, figcaption, dl, dd, ol, ul, pre) {
+  margin: 0;
+}
+
+:where(table) {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+:where(button, [role='button']) {
+  cursor: pointer;
+}
+
+:where(h1, h2, h3, h4, h5, h6) {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+:where(a) {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+:where(button, input, optgroup, select, textarea) {
+  padding: 0;
+  line-height: inherit;
+  color: inherit;
+}
+
+:where(code, kbd, samp, pre) {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+}
+
+:where(img, svg, video, canvas, audio, iframe, embed, object) {
+  display: block;
+  vertical-align: middle;
+}
+
+:where(img, video) {
+  max-width: 100%;
+  height: auto;
+}
