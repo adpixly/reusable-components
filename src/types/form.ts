@@ -11,7 +11,7 @@ export interface PrefixSufixErrors {
   sufix: string | null
 }
 
-export interface InputStyles {
+export interface ComponentStyles {
   /** Styles that wont be modified even if there is a message */
   generalStyles?: string
   /** Styles that will be modified if there is a message */
@@ -20,10 +20,22 @@ export interface InputStyles {
   errorStyles?: string
 }
 
+export interface ButtonStyles {
+  /** Styles that wont be modified even if it's on sent */
+  generalStyles?: string
+  /** Styles that will be applied if there is not on sent */
+  nonSentStyles?: string
+  /** Styles that will be applied if it's on sent */
+  sentStyles?: string
+  /** Set a background color, it will be set as the color of the loader */
+  loaderColor?: string
+}
+
 export interface Styles {
-  inputStyles?: InputStyles
-  selectStyles?: InputStyles
-  textAreaStyles?: InputStyles
+  inputStyles?: ComponentStyles
+  selectStyles?: ComponentStyles
+  textAreaStyles?: ComponentStyles
+  buttonStyles?: ButtonStyles
 }
 
 export interface FormProps extends Omit<React.HTMLProps<HTMLFormElement>, 'onSubmit'> {
@@ -109,7 +121,7 @@ export interface TextAreaProps extends React.TextareaHTMLAttributes<HTMLTextArea
   clue?: string
   clueClass?: string
   styles?: Styles
-  nonErrorInputClass?: string
+  nonErrorTextareaClass?: string
 }
 
 interface OptionImage {
@@ -181,8 +193,13 @@ export interface SubmitProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   sent?: boolean
   handleSubmit?: () => Promise<void>
   generalClass?: string
-  classOnSent?: string
+  sentClass?: string
+  nonSentClass?: string
   placeholder?: string
   LoaderIcon?: React.FC
   preserveStyles?: boolean
+  styles?: Styles
+  loaderColor?: string
+  loaderWidth?: string
+  loaderHeight?: string
 }

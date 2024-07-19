@@ -5,7 +5,7 @@ import {
   type SelectProps,
   type UpdateErrorMessage,
   type PrefixSufixErrors,
-  type InputStyles,
+  type ComponentStyles,
   type UpdateInputBorders
 } from '../../types/index'
 
@@ -92,9 +92,9 @@ function Input({
   id,
   name,
   className,
-  inputClass = '',
-  errorInputClass = '',
-  nonErrorInputClass = '',
+  inputClass,
+  errorInputClass,
+  nonErrorInputClass,
   label,
   labelClass = '',
   required = false,
@@ -127,10 +127,10 @@ function Input({
   const [borders, setBorders] = useState<'' | 'prefix' | 'sufix'>('')
   const [inputBorder, setInputBorder] = useState<boolean>(false)
 
-  const pStyles: InputStyles = {
-    generalStyles: styles?.inputStyles?.generalStyles ?? '',
-    nonErrorStyles: styles?.inputStyles?.nonErrorStyles ?? '',
-    errorStyles: styles?.inputStyles?.errorStyles ?? ''
+  const pStyles: ComponentStyles = {
+    generalStyles: inputClass ?? styles?.inputStyles?.generalStyles ?? '',
+    nonErrorStyles: nonErrorInputClass ?? styles?.inputStyles?.nonErrorStyles ?? '',
+    errorStyles: errorInputClass ?? styles?.inputStyles?.errorStyles ?? ''
   }
 
   const baseClasses = {

@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback } from 'react'
-import { type ErrorMessagesType, type TextAreaProps, type InputStyles } from '../../types/index'
+import { type ErrorMessagesType, type TextAreaProps, type ComponentStyles } from '../../types/index'
 
 const defaultPatterns: Record<string, RegExp> = {
   name: /^[a-zA-Z\u00C0-\u024F\u0400-\u04FF]{2,15}$/,
@@ -53,9 +53,9 @@ function Textarea({
   id,
   name,
   className,
-  textareaClass = '',
-  errorTextareaClass = '',
-  nonErrorInputClass = '',
+  textareaClass,
+  errorTextareaClass,
+  nonErrorTextareaClass,
   label,
   labelClass = '',
   required = false,
@@ -81,10 +81,10 @@ function Textarea({
 }: TextAreaProps): JSX.Element {
   const [errorMessage, setErrorMessage] = useState<string | null | undefined>(currentErrorMessage?.[name])
 
-  const pStyles: InputStyles = {
-    generalStyles: styles?.textAreaStyles?.generalStyles ?? '',
-    nonErrorStyles: styles?.textAreaStyles?.nonErrorStyles ?? '',
-    errorStyles: styles?.textAreaStyles?.errorStyles ?? ''
+  const pStyles: ComponentStyles = {
+    generalStyles: textareaClass ?? styles?.textAreaStyles?.generalStyles ?? '',
+    nonErrorStyles: nonErrorTextareaClass ?? styles?.textAreaStyles?.nonErrorStyles ?? '',
+    errorStyles: errorTextareaClass ?? styles?.textAreaStyles?.errorStyles ?? ''
   }
 
   const baseClasses = {

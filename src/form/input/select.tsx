@@ -5,7 +5,7 @@ import {
   type ErrorMessagesType,
   type Option,
   type Settings,
-  type InputStyles
+  type ComponentStyles
 } from '../../types/index'
 import ChevronIconAnimation from '../../animations/chevron-animation'
 import { Transition } from '@headlessui/react'
@@ -65,9 +65,9 @@ function Select({
   id,
   name,
   className,
-  buttonClass = '',
-  errorButtonClass = '',
-  nonErrorButtonClass = '',
+  buttonClass,
+  errorButtonClass,
+  nonErrorButtonClass,
   label,
   labelClass = '',
   required = false,
@@ -113,10 +113,10 @@ function Select({
 
   const prefixSufix: '' | 'prefix' | 'sufix' = asPrefix ? 'prefix' : asSufix ? 'sufix' : ''
 
-  const pStyles: InputStyles = {
-    generalStyles: styles?.selectStyles?.generalStyles ?? '',
-    nonErrorStyles: styles?.selectStyles?.nonErrorStyles ?? '',
-    errorStyles: styles?.selectStyles?.errorStyles ?? ''
+  const pStyles: ComponentStyles = {
+    generalStyles: buttonClass ?? styles?.selectStyles?.generalStyles ?? '',
+    nonErrorStyles: nonErrorButtonClass ?? styles?.selectStyles?.nonErrorStyles ?? '',
+    errorStyles: errorButtonClass ?? styles?.selectStyles?.errorStyles ?? ''
   }
 
   const {
@@ -324,7 +324,7 @@ function Select({
             <Image src={srcImg} alt={altImg} height={imageHeight} width={imageWidth} className={pImageClass} />
           </>
         ) : (
-          value ?? placeholder
+          (value ?? placeholder)
         )}
 
         <ChevronIconAnimation

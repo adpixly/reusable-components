@@ -5,27 +5,33 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(to right, #1e293b, #0f172a);
   padding: 0.625rem 1.25rem;
   border-radius: 0.25rem;
+  background: linear-gradient(to right, #1e293b, #0f172a);
   transition: transform 300ms ease-in-out;
   font-size: 0.875rem;
   border-bottom: 4px solid #334155;
   color: #f1f5f9;
 }
 
-.class_on_sent_class__c7H4m2L {
-  background-color: transparent;
-  pointer-events: none;
-  opacity: 0.75;
+.sent_class__c7H4m2L {
+  cursor: not-allowed;
 }
 
-.class_on_sent_class__c7H4m2L:hover {
+.sent_class__c7H4m2L:hover {
   scale: 1;
+}
+
+.non_sent_class__l0S3g5Q {
+  cursor: pointer;
 }
 
 .loader_class__l8P5n6T {
   position: absolute;
+}
+
+.loader_color_class__i3W9x4P {
+  background-color: #f1f5f9;
 }
 
 @media (min-width: 640px) {
