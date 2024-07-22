@@ -36,7 +36,7 @@ function validateField(
   }
   const pattern = customPattern ?? defaultPatterns[name] ?? defaultPatterns.genericPattern
   if (value !== '' && pattern !== undefined && !pattern.test(value ?? '')) {
-    return errorMessageWrong ?? defaultErrorMessagesWrong[name] ?? 'Choose valid option'
+    return errorMessageWrong ?? defaultErrorMessagesWrong[name] ?? 'Choose a valid option'
   }
   return null
 }
@@ -324,7 +324,7 @@ function Select({
             <Image src={srcImg} alt={altImg} height={imageHeight} width={imageWidth} className={pImageClass} />
           </>
         ) : (
-          (value ?? placeholder)
+          value ?? placeholder
         )}
 
         <ChevronIconAnimation
