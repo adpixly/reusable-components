@@ -6,4 +6,11 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-export { type SubmissionStatus, type FormData, type RequestConfig, type Settings, type Styles } from './types/index'
+export {
+  type SubmissionStatus,
+  type FormData,
+  type RequestConfig,
+  type SelectSettings,
+  type SelectOption,
+  type Styles
+} from './types/index'

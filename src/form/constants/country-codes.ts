@@ -1,6 +1,6 @@
-import { type Option } from '../../types/index'
+import { type SelectOption } from '../../types/index'
 
-const AF: Option = {
+const AF: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtCAMAAAAun0N9AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAA5UExURcQIEhwcHCAgICQkJNgNGNAKFQ8PDxWcGRmtHRelGxMTExUVFRkZGeeEiRcXFxgYGPLAw9xTWuykqHPBIB8AAAHASURBVEjH7ZHbkoMgEERHAzGCN/L/H7tzBTSYrFVb+5RmdLCK0z0kcGvJtfRoCb78n/C9LqkLfC8yA6krfOZu4kPVoP3b/Fv1pnzv3XG9n38vT3lSXrw+5B+Umbrj6fHX+YQwVkyYHvXNG1zQFarrO5X33iYvouNC2Y7yu6I+L+Nc8XFeQ3UEHQD6rl46gsEuzSnnay4/o3Safyd1MCTNczFQyC4hBge+uj9NMJNcdf8qXwze8on5VOeXIWR3yrvkMk974x/jTtBNUzcJNeU9nn5uT+Ud7+t886H5J+H2wtPbtuX70/7IW/7UEudvSX//tDXyD/w6rVj2Qb8dQ/z/s9UZv5ZU8iAhD97h0DNS4GfcOextfhFmWResVQXIJTEAwhPifhxGrEGafRBPbK11weMgN+D4xN/MsLID5ce4xAWr9Bg9sMHsADcpAX8P4yGfXhCLCk80kDyT8qnwbvyh5osRo2oiDvjQ8WwwaG/yJb92sPhBXKQghBBDxCo9BGO9WfD9M0pdHYh/lUFQOxT0kP+iWLHZCQbTOBSd5TeUZ/6Yf8q/CsKdFe4BS/olnpG7uli/wofdktel/Ia+/H/xP48ZQy3KTTBbAAAAAElFTkSuQmCC',
     alt: 'AF'
@@ -8,7 +8,7 @@ const AF: Option = {
   label: { mainText: 'Afghanistan (‫افغانستان‬‎)', secondaryText: '+ 93' },
   value: '+ 93'
 }
-const AL: Option = {
+const AL: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAYUExURewxOOcqMeQkLBcXFyMfH4AjJq4nLVUfIYUI8a8AAAGkSURBVDjL7Y/NbhpBEIRnItm5do8EvjIjIA+w6zyAt/Few4/gGmKSe3DeX6nq8RKQwFJuOaRAsztdX1f3hvBff6/4A8f9/jZwsC8hbOzrLf/ObMGjl4tY/EKt3JvZdgNKIipehsGLREhERka5H2uZ4PCKjvBgHEDfA1gOTvN1vMf1l9nPKPpdxKvC2eK2JLOlRGywjB829lRtJAWNTseP3BCUPY1B9ep7wcMg0QhqzP06a1trzdpnUdZFMcEjwMy6luoILTKK6lZQZQAvnyrRNl0PX2sRQIxa40b08O+6hdL3XOxAlEqvnfsNdCRB1REkRKdNNRnRZppeDzpovIOPCKjfnqpnAIasPaFZndUugdcKHG8Bh+o37f4CyJozd9JRM+gxaT4BWROeOaW07rdzuJ/nu27pXVACUFLCCzZAbcoBbrxtBQB1WqBKKv4ZK+9FXyk5TwKfNQScf8YxuUqpCbQ5EDReZ80jzsK07M9J8LjiiWxbr2o+EVwxgiYrbMT58q0MEYQSgOxhuDo1K0N/FRNq6zXlP8BVpXIO5OvQuwn/DPAbwbWDHQWowjQAAAAASUVORK5CYII=',
     alt: 'AL'
@@ -16,7 +16,7 @@ const AL: Option = {
   label: { mainText: 'Albania (Shqipëri)', secondaryText: '+ 355' },
   value: '+ 355'
 }
-const DZ: Option = {
+const DZ: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtCAMAAAAun0N9AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAA5UExURQR8QuIZP9cSN/Cqt/b29vr6+vLy8gN3PwSBRP7+/mdNP5A4PSFuQOZlffPT2ckeO7ApO+qBld47WtDp91IAAAHtSURBVEjH7ZTZkuMgDEVZ5Y7Z7Pz/xw7aME6cpWZe5qEvhMXmXEmkyubnk25vZX75b/j4L3wUh2nWHj/zsZ+KNMjMKO2+4s9xxUizMcPAUJ+U161Z24oHiR/nPERGQSMm3H5M3uxQqeP8Cb8hr+yBYl8FbWnf93L3VPh8Cbzj+L3JLLRJTK+Z6o+3emQwp0/1TyUYwz/G08L3HzXkhTQwpSBdkl/Jy8S3MiIGueWBY/vES/AjOhefOLrEDwGH9/HFxyyIu6yOdMx7OR9OLmHwYoHjOhXfRedLQTBgGuQwunkSX34ee+TBWhgk+ej6mTebdbYd2+q9363d+1QD41JIOOevap3fjm3Y+753Z/fwrAvePfDBM+45awHjS771wyc+eNflB6N38Kr+frid+NIdXZGo5wQu+OQc/f0Hb++13i2E7+pfMdt1rr9AACj+Bb8YHsaMfMv6KAQJ/CL+Qo2OikNCg6SPEAQZVMeSGTaQtmRHFSz8DmAAvAKQBXYhSeIlN0BX0B9ybNJzCmCUHGXgnipwKeMb5iCMDmqGkpRn4QM2aGt3oIO1sgkcTpr/HP4w4xKc2/r3t/TvryTxEP1FfFRObqhURYJ2SQUuWVZe09badt/rxMC0ChT/kx5yPtHf8HAltfxbHn75/4P/AxCkPDpR/YzeAAAAAElFTkSuQmCC',
     alt: 'DZ'
@@ -24,7 +24,7 @@ const DZ: Option = {
   label: { mainText: 'Algeria (‫الجزائر‬‎)', secondaryText: '+ 213' },
   value: '+ 213'
 }
-const AS: Option = {
+const AS: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtCAMAAAAun0N9AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAByUExURfn5+QIObgUSfM4jMwEMaQYUhP39/fX09AALZQYTgcYfL74bK//EI3JAHAQQd4xLI4wpOvLk4jgUYqkdO48ZQOK1tc43ReSZoNx/h1IWWOrLzB0SbGUXUtZjbaJzVdJNWncYS/vchvjkrv3PVLqZg86tmTHdO8EAAAJaSURBVEjHnZGLmqIwDIVTRMpN+FDRxdlhvL7/K06aNL0AuzNyKlILf5JzhO16ffw9bGAtXAyHDWodX+yPG9JpiS+2BX78fXq2v5ZMf/YAxZsypklfZ51l2Zv8YOHTuctIb/CJM/3nkol+y29D01kW8AnVtquQH36TzE2HfOLFb9MKz5KZaZR+Ce96J3GphE/2x9KZBjf5ZXzN+3tYNvtrFZkGLIFFumfbdniHZd4qMN0BoRnw6G3bjnTyb74JTBsKrLIL9kb1wCWXeWPaLDTtQADdP8fWSst5k4SL4GtVGqFpzSB36tqd0Di+699EQtMEl2yaXuHQYNy1vKhAJ/2boP9wkLk7cJZF7c7IVKAinrdC0zy3Nx3puRNhhbGP+YnpHwrsfIeZaSdtr6UCo8//Y7BzG9MCavcFfL/VN9y9+s7yII8Hnrssz9qSUWtbCOq65qPWtpf3GhX218GSDe25P+6ovX8R+Yl/rbWe1LnVEz1cXUBcNUpJ/iXmL8/Mna56JumBvBGXOFby/xPFg5jPvL99gF/M8sdGUZkotHh3tfT9wfSt0+6U+ys7hVJhFMLxu5Z+3HV4Dtza9idRFBUuE4XTfUbP+ntxFHhhFAGPg8OveKXS4ViRTlLiPm39X56jqIyNKIoFPl0eQKVpilGwoigiPqV3+XWUkkVlTQnrI4gi5kXMxaLf+SyKmFdpQKpgBF+HojDiKIIL4l7LylEuiq9+ef4flOc+is+LHeANnqeYRNG90d+WmEQBuXmUk1Le02+7d/fgOUYhJfoO8lWSKKqVvItiPc9RfAOJjVRqfiRSyQAAAABJRU5ErkJggg==',
     alt: 'AS'
@@ -32,7 +32,7 @@ const AS: Option = {
   label: { mainText: 'American Samoa', secondaryText: '+ 1684' },
   value: '+ 1684'
 }
-const AD: Option = {
+const AD: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtCAMAAAAun0N9AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAzUExURf/MMQoptf/POw0tvtkgR98mTtIaQf/ON+ctVAYkqhAxxRI0yxQ20NY4KeZyL/CWO//tsYLvnwcAAAG5SURBVEjH7ZDbkptADERlGDwLBLz//7WRujU3VrHXqVTykpasGao43cLyI9IU6SOS/HN+D+oNfm8ylHqLB1ZZ3H8vv+kP8XnK2i/4LahLMn1iftt3NAva9txU8rPmL2gO3BfjN2s3gPYtI5NVhffb4CHbRfDIedzARibQ8cyPlCM5vPTn8m1+ygQw/Nfy57Hj/Ap+NBfR11mv92f+KPAw6PXL/M6DG8g806DsjnrCX/MvyX3+eVDnU37mBl/56Tgej/NUl5d8nH+cn5+TreF8QlkvPNNzPtw/FTThQebbXLtecxat8zhN5EXzU6PdIgmwUmXo20r44sbbc6OTWxk/oCht5j+Oh2I27SkDMy3lplPwPluHWwgM5Djw9wv3T74/6YUe4jQ0l4O8fYFaiEndUqeWX8DZLzgBZHFl2qVIcovk++dawv2/zw8w1n8vv20vxeFC3hu/1mFzxfdftxe5J5QfiYfo62Da0CYz5Nv+wFJnoPlfcKsG8kMwo/i7VAbF4yaRxv39kAJV2C7d1h1Ppe4wHqQbULf1+um43ZnK5OIghV67+DXefwj2KS200zN+lKyR/vN/i/8JEKI8RweOQZgAAAAASUVORK5CYII=',
     alt: 'AD'
@@ -40,7 +40,7 @@ const AD: Option = {
   label: { mainText: 'Andorra', secondaryText: '+ 376' },
   value: '+ 376'
 }
-const AO: Option = {
+const AO: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAwUExURRkZGRAQECIiIs8XLdMaMNYcMtkeNNsfNd0gN/fSP9k/M+iKOox6LOFpNrGZMWJYKKLDIM8AAAG2SURBVDjLrY6xSgNBEIZn9wmyb7BcLSLsIigIgd0rVIQUuastvNimMpZ2WlsIo4iNFvYi2NoJvoCWdjYWdlY6s3uXuIm5NP7czM78881wcNKuIxiXx8eHhxxN3QCjv8Uwv8N5QKMhHOzvj0YHIaeK3hAG7dpdDBRlWVVlORhwnkRRRK8HZUGqiiaX9VtV0aML9fQPMdyDol096Od5vw424tt0DOSexECfC3/jJ2K3C76f+zz29G3jfZ6z1bgEJNpEvE6MaWAL8XwasFHeeeu3XncQ9+qOMgPOWue8d84aa9fQ3OKdc86wy7kLxhljDYkIQ8A6nlHtgkN5BWgc5kGrr8bgJVeWFykYGCusmZeLX1YKGLNx4dqBNTxfcAHx7uEyBbJEX4h4+tvQU0D2jvjWCiwhXrUAH890AR/nAss0xafkJ1KA7uObfE8vaFImWTrLvp8/ZQbAjq5FnZQQ5lTL0GotQUNwJHt8BXgaSB4BE8Fhv5GeKSS0SC+YL5ag6ISqMyslKAkhgAO4EmIypbL24gAULSjeUvzRcng60aYBKBUn1CnaiJWIsOILHTUlkbzxQov+AfgBvP5G6ZC1s1IAAAAASUVORK5CYII=',
     alt: 'AO'
@@ -48,7 +48,7 @@ const AO: Option = {
   label: { mainText: 'Angola', secondaryText: '+ 244' },
   value: '+ 244'
 }
-const AI: Option = {
+const AI: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtCAMAAAAun0N9AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAABaUExURQMOitgcNAoXpvv7+wgUnQURlAgVoQQPjgUQkQYSmAkWpPPy9HuBx/bi24GK0FtlvO+8wv+nIsTG5d07UB8rpD1IsuqXoayw3JnK/tTW6uJebpCVz+Z8ifvQjiC6mI8AAAJxSURBVEjH5ZPrmqMgDIZDAU9RsVbrepj7v81NIijaw0yfnX/7YRFC3g+kAPdbo4fuQqq1UkrX3Lx0s64m334r0I1aNLoj71Df1aRdUVyKb/hSV7dbpedLsfHdQDFybWmcDJ56cJwFhUNKvuuxD3yJuCj5quK12JM9oEj6ESc1IQ7CD6NubtwtwxRvBWTVtVomFJ72TclykqRI1hxqPG0Ln1D/MtB2qUb4RinZjuRRzDEfC2pRq6u75+mNgwTdDj46BV5HkvVHcsm3AvVauv4F3vjCTxL1ffQ7npJMhJ5oQ9+Pm87fj8681EobA2VNZUBslgaJx+ZeYVuK3Bs6CLia+Qgrz9PpwSExPxSYvG+RTs9UofBIp3fBtjvltb0xfbvWR57uz0SnF9tZ+IG7E459nJUbrduW94Rr7m/8wCte6LqYUviy4+XcKuwpK885lbPjfV0d1wJyV3Ho8tzzuWwHxRzTQcxV12vF7yicA919HB2HAp/ndKMX2k5uhomY+7pev4TfoiYH2rd59dt509FX0QqieQ7zRwJse990cogcN610xijPw1If+JKSV1nHZyYMGOe6KA9l8VLjgbd2a1uWzE6PVPlmPu7zjwd+zV3LahIFrA1m835NZm8sBeyukGtze1ba7XwXD4B9Kj/37gQu4C79Af+gDNwfkYPsEz7bDXrGezhMb2O3zGb7k3Ed4TaFrq47SCVufUoG2UnBwO4+XikAPad0eKBfiw2y9/zHOvOp/NKUG+G9jx37wqdHZesvC/weP/oGwZnO0o8E6b/p13hp8D/sy9k5xE5vgG04RIJB1IY9Gw6WLxXyP9Q23/+ivzamSMHqypVHAAAAAElFTkSuQmCC',
     alt: 'AI'
@@ -56,7 +56,7 @@ const AI: Option = {
   label: { mainText: 'Anguilla', secondaryText: '+ 1264' },
   value: '+ 1264'
 }
-const AG: Option = {
+const AG: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtCAMAAAAun0N9AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAABdUExURdIZMM0WLB4eHhN5yiIiIheA1NoeNSUlJNYcMs8XLfv7+94hOP/ONv/OOD8mJHJgKbaVMLgkPOeZo/PZ3PTFN960NG8iK9pSYpI9aU1EJY8gLVlamCtwu//POv/POwHQWlsAAAJSSURBVEjHpZENo6ogDIYRDfGQAn6Vpff//8yz8a1mnm4vBGPbM0aSsfxGI2HNF3jDiNBf8FoQIf7/BaNAXjSFPRZlATP0lva5wnxewyyv4ex9uFtJGc5SFqmcH7q3vHhEyoZxmfrJOYxVhoDXQ3geXrBX828wuWU5LC/iZSMiT8oXBfpFmV0t/YtomSU8vGAnOiyLpAWVSz3AqaAwk/BDpLwYaRTmwaLqGgrIeqlV8IX4KNY8aYyfhiSKfN3Lvl56lZY2CQ0PPMPBhHZxSqVSciphr70kpeWE7lBFAwRighgcLBZfIPtrfR2UusKG+KLUAHYvQ8Zo7kQRZI3NmxCe+tqgVydj91OINxwBwxFbBivoIhYYrpG1GiJONQsi0WSPmNHEAg6P3dGHu3DLsySnVCtclUntFFnx+vIX6UNe3P+A39ma52GAnqf4kyUEZ4Sbs8Fxn0/wmXB3lc2HY2BR99PueSpG0gNMeEF+yfN0Mbsd+dNe5wa391vUa87XLE7zg2XmW5Gtg+l8p4tf9DkPf0F+pDt/wxM3CXke4E8T3vJ+2Ajuen6Jz9rnkZhLEhfebRz3g+5dfwmB6Z6zrLHbn71azx0qBLnodnjHYtrW2Ou242/kI7W77j8TX7+g46dEtRrZbdN95ZL2HKb76XGw2lX3lb3ArDhR7kzScxXqVfEF3T5O1qUSI4i5Al0nqkORo0CGHxEqwLxVH/KZC9m/oD2+BJIyTM+M0DCnytoZfEQYPIn7mLsmy1LeK+bhR7ytfFubZG/V/rTvE074rK3ex38BTuVGLdRGxH0AAAAASUVORK5CYII=',
     alt: 'AG'
@@ -64,7 +64,7 @@ const AG: Option = {
   label: { mainText: 'Antigua and Barbuda', secondaryText: '+ 1268' },
   value: '+ 1268'
 }
-const AR: Option = {
+const AR: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAkUExURXmv33604oO35Ya65/39/fj4+PLy8vSzLtt6LOq7lu+nLeSSOHWH9j8AAAFOSURBVDjL7VNBTsMwENz8wMkL2vgDKHyAA+acg71SxaUX+8IDIsEdWnqFqn1Bkfgks3ZSkpSmJ8SFkb2zOzu2EktL19O4oosGLVRVGqx7DR3VspxROQGt9bShlBuK+RxczFPdcUqxZpQXRX6CAsdA2IqOmpSJi07J+4YzUKTyPMNGkBhJJIQMulIERWVEGaFWspFnBD3m6EhPRamFasXv+Ou4ncbNyHC3304azG61ej81mGN5vzl8bmzfUJNzzlpjUtwdmubjzZikCGqy1kaPRN40TfP0nFomIt7QwS5eYXhcS9ppA4NbvMDQrPtSTT4yO7Bvb0DhPSRoDEMAvGcXmNtv8MF5Zg81wBC8dBDFGf9iG9KZwIH9kjh2WKTAD/IOksR7RV1SGAAvuR0IY0PYD/unhjGWo+Gt4jo/3dVwgn+YbpCuLkx39T/dfzTdX+4U/fZFQfMoAAAAAElFTkSuQmCC',
     alt: 'AR'
@@ -72,7 +72,7 @@ const AR: Option = {
   label: { mainText: 'Argentina', secondaryText: '+ 54' },
   value: '+ 54'
 }
-const AM: Option = {
+const AM: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAhUExURfKqLvSwOdwNIuUTKQc5oQo9qe0ZLgxBsA5EtQ9GuBBHuX9Do3QAAAEvSURBVDjL1Y0xboQwEEXHNyA3iMwFkC1Rp4Cewog2ElJqGoTL7TA3WKjSklNmxmMDKWJtEUXaB/5/5vsj4CPNO/xDQSOl7lG8ssdZ6wJ03/uk1JiV3omevkIK0GkeKKiIznN2pfHNQ1pAHsHNu1RKooT0FaSSuEvpUzIc6J5XiQUZK/KwA5X7Qoq/KHzt+0ps+75tYfYbyraun+CcW5Z1vd9dYFnO2bkbuDQ3sM7Ns7XzPE2k14luBpgQS8eSTsfEm+VCggFGZAoHdWIf4zZA27WBLoykI1pH2gBvP7kEvpCigdq0BgdjyGt8/OQ38gaquiJYq8rwWIesfoNwgZu5tljq6iz8wgOFlzTZcxSyJAJAUEUgIRG8cSKwABl1yMDX+cB5EQL8l4iZ4P/C8/ANSBY/XZLL6xwAAAAASUVORK5CYII=',
     alt: 'AM'
@@ -80,7 +80,7 @@ const AM: Option = {
   label: { mainText: 'Armenia (Հայաստան)', secondaryText: '+ 374' },
   value: '+ 374'
 }
-const AW: Option = {
+const AW: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAqUExURUaM3UuT5E2V50mQ4U+X6vnVNtwbP/Tv8cjb8mmk6eyZqIy57OApSuh5jqx/2PQAAAFrSURBVDjLvZC9TsMwFIUt9QVqe2TBlh8gVhbGyMqAxMLCKxgJdUQkalnK0rkVUpG604UFFngCWJjpwsNwf5yAUJtKFfRTbZ977vFNUlF2U4g9BIJzZRkWtw7LQBUTgrXOFcKRqC6hFWjZBF0MhwJkCCfDkcUOLaJ0HCsEGvb4unbQdVQkKGdpgg3zj9WM77cPSCkO2Mnr241dCwfuhvGinm0OvFQP8X1ZP20KzKvPGONgVfEMZa0x5jug7PN9JJaPUik0jVGKl5R9ocyPCWghFpoojekLOPAdBvAOIJVS0ihOGZ6Akr5iipZsMJJiPEHqSTwfy7VwQMI/Oe0MHF3VsjNwMBxJL3XjkvApoAHpJ2Poa+3BxR0crwmaANZi6ptmiqTVFzng4QclKjp9q/JMgMAa0ZTBs/HwEXka0aLT6XOekHeTibNuTv8gsPUddgn09v0V28lET2QZ7a3iooe7wOL3DfZ3Yveb/8oX3a7/NdUGZE4AAAAASUVORK5CYII=',
     alt: 'AW'
@@ -88,7 +88,7 @@ const AW: Option = {
   label: { mainText: 'Aruba', secondaryText: '+ 297' },
   value: '+ 297'
 }
-const AU: Option = {
+const AU: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtCAMAAAAun0N9AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAA/UExURQMOi9kdNYKIzNcaMgoXpQkVofn5+QYSlgUQkQgUnKmt3Fdfue++xN7f8DI8qfLj5snM5t07UOqQm+JkdG11wVReQoQAAAJlSURBVEjH5VbruqMgDAyoXFW08v7PurmAorZdz9mfO9CahMwkWvArvNbRhJ6gjVLKaLb7YNJW7W8AM6qXmeKZHyfzUpuJD/jZpHVNRNv5czDjiqpL/4DfRxSg5LnytcHi+139lT/Mk9nUlkxgflioOLq5H/oB551DcQKtAX7mRQoyH5+b4nZkvebW/FaTbOCFgAJqZP6oFD+Og1g5Nz1aA81YTHoVPl5N4GAezrlTCNNwAZgG3H+DeM4NKHzjd0p1qmOgwSCfbKOf81VzrRrC9zxolv69RGUBGu4VxMeUIrCzdsnb/RPndP+eMPg3KA14ef4h8XMn/vhKZpEfJUppLz34UrYGBUDLGrdcpwq/w90Thrby2wYOPm+/Dnes9I9SGx4d/wzgc0pbh7t3CcwP5G5pmr+Q6IeofDyrVDxlr5mv5TSkKX7m00aofCkesFzhkzGuGMve8mDY6tidzy6s/Pohp/DRihMeQhagHO7WFgGepX+yAZ+bHjhc+Wj39AYak1C4mj0PmmwAnnSJWHwR4emPbNs8GbOISXxrW/LhWMiiRYg66yir+Im5l3Dpv8HhebBX+C/eHWB/iDnO/8SPJj7hOxw0q7fbt/quDmfbUTT2uPhF9hjgdpQye46QS7wJSLDkQCN2hSTb1nWNLgNODH3KO0y7q7mLWsu3s5ndD9Hw6UWyzP63/Fhfmr/gA11FILPDAWiGJB7X85DQgvTAHjTT7RXyPGdX84841K/J4AD3caD+UnL3GDR9LtHFxYJAciSlRPCPia4rb+DqxdWOLgGqX6JH318E4RyX+79GP+JR0n+PP4FDQYr+OF9+AAAAAElFTkSuQmCC',
     alt: 'AU'
@@ -96,7 +96,7 @@ const AU: Option = {
   label: { mainText: 'Australia', secondaryText: '+ 61' },
   value: '+ 61'
 }
-const AT: Option = {
+const AT: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAVUExURe0xQ/E4SvU/UP39/fn5+fT09PHx8YdbDj0AAAEgSURBVDjLzVRBbsJADLR/sM4Lun0BUvyASDF3DglnLuH/T6g93gTRoqgHoJ11Zmc9I24Dfe7jg94QkM4hNaarecWNz41CtYo0XwRJR2qp0hWSffwiUIKLcHESUF7cFJEPc/gp2Bd4M0GTkzOtouRBOLbpbeD753f7Vej3cXhCYOx70370cWiqHLdVD2RmowXUTyhVtQ06kCkiesu19wgeyPYx0DFhE8iRDOUYaLbJfDUfpyAHGHaETjQnfL+qVcyxOtFm3Hkbtl8AlkeBa2BZzuf4XPhAte0FgeX6CNhmYAcX+h/tRnVR2ChyJ1nkmutC8MOrkar4B1hP96x2e4+Zs84FvZbctXZ7Z6PHBfVm9Lq1vbUb/q2r2IB/tpv/qt1fpYTGyqRr6dUAAAAASUVORK5CYII=',
     alt: 'AT'
@@ -104,7 +104,7 @@ const AT: Option = {
   label: { mainText: 'Austria (Österreich)', secondaryText: '+ 43' },
   value: '+ 43'
 }
-const AZ: Option = {
+const AZ: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtCAMAAAAun0N9AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAzUExURRuyayClzxmbxCGn0usWRBueyB6izB67cuEOO+YSQCKp0yOp1CSq1Pj09e+HnfTCzepJa3j8Uc0AAAE3SURBVEjH7ZHbbsMgEEQHsDEQY+f/v7YsZmHj4EQtldqHHDYwexlQZKzrGtYQbuGWWW9riueTezxLmkAwJphQSUmGaqbT45w1zBhQShllUqhvwR6oMWCVssqmOHLW5xrRq4NbDWWva2cU7Biw8w+WrQrzGL/l17NOITta1FmX4A75dWXWfebrltbQYwz7pzH+o9+ndbDtcb/3jf6Ygz8o+YOe9hi3SeRipuQeeeeilN5vMe4yFzPZTcB3+uVIz9/plu2p1+j4KzHGKe8vZuCadhS0CvJ91yZKHMNwDXYmkXX6/1u5lMIJTZE1ypN5yauIPV9Qcs9Vob2T71dfJX9/9wq4Mf7cv4zx8Y/6sfTjTe04APotZYGvE9XHhEdbwgN1uDmAk7WNVjMe9lPeirK5vOij6/hwyRfCyDhXXggXBgAAAABJRU5ErkJggg==',
     alt: 'AZ'
@@ -112,7 +112,7 @@ const AZ: Option = {
   label: { mainText: 'Azerbaijan (Azərbaycan)', secondaryText: '+ 994' },
   value: '+ 994'
 }
-const BS: Option = {
+const BS: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAnUExURSC20x6yzhyuyhQUFPvhV/zkZBwcHCMlJB1OWIJ3OR6ZsRx4itbBUk12x3gAAAGmSURBVDjLhZNNbsIwEIWdG9g+QZIrRDKq2LBw9izCCSLZqrqPQVk1Z4B94Cz0Xn0zNrSI/DzZycjvm5nVE99iRcdxBQj9GhCGWGRCzgDHUapMQhmEMn7TmwQQ+sejYkMq8vgNBQFhUFDGJxIy1pAQXfAhXNWcMIGIfgHwvuMlhVZFoZMKklZKawBd13nvb/TIN7pUl7ooc9F5ByT0JUmXf0JdlEUu4HvnvRvKSeWCzK5zPtxmAO8cDoh+bgL5RLSXw4T2wkUb8j/zAMufVgAXLivA1JJXwL0v2QnXOuNMy3LufKgh2zy1Fy0RLfcb137AbhoialaDCQbthoUZZ9tY2DwEP1vvBLrZYuKTXFxLt6GzE62pqjbJ321UbR/CBDRWJjJn+yaeYHAq6GSngIpMnrC5TwMwub+aWBAnJH3NZPPhb8YVYBDLABZIuQBsRkq3TJGO2U7pTgtioCnTj5BnlG+VgO2/NCYiZT2u2CDdci68ccFCumlBDC2lW8XkIreK3zQB5lqkxEcwhV+ndGPBS6KfX/aR7mr7FvzXbJpbuaRcDOUy8AuSlgssXBbNEAAAAABJRU5ErkJggg==',
     alt: 'BS'
@@ -120,7 +120,7 @@ const BS: Option = {
   label: { mainText: 'Bahamas', secondaryText: '+ 1242' },
   value: '+ 1242'
 }
-const BH: Option = {
+const BH: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAbUExURdEYLtodNOMhOfz8/PT09O6vtt4wReRmdfTl5rp8RYgAAAGBSURBVDjLzZBBbsMgEEXHNwCfIOQKdqTsIRLbbryue4K6Z6BSj93/Z3DiKLip1E0ngAn/8efbMqw1HVt1kCswfjwBhtPbH4GnLZ6G/A9vcW616O9C9o8VtkAgEUI48tfXxW1bhNAbErjazsk4DhED8zQHE1m+7uhAfcA8zTin4oPpHjs4kKDNeaGEY17vPVHsDhIp4jsOk/e4QoGPXhHvNUMaU4px4jmclQgm9wAYb6RDXvx9MZA6xIQZ03CZ+5sa6tNJiokNsF5m/1hokRCBNufFNwG48/44Tr4NUEwwSASc950JHTcYItoBRMyLM71jYd8B6tYM/BQISUEpRzf+pL4FqctcL4qZmJGYjJEXvd+pM3dOCQJWk4irlyBKhSykAXqg92R1ELdxyO/4L5h6bE8gNyBdXnlQCSyi8w7AAcZa6G8Zri1M1hDO2rG2b9Gs3wBZO7BFEygkioZsAqUaAHA7LUrm+LGF1stuSBrkvAtkRoBL+dprkUopmCl9NkN+AwaSurNbEq0yAAAAAElFTkSuQmCC',
     alt: 'BH'
@@ -128,7 +128,7 @@ const BH: Option = {
   label: { mainText: 'Bahrain (‫البحرين‬‎)', secondaryText: '+ 973' },
   value: '+ 973'
 }
-const BD: Option = {
+const BD: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAbUExURRGAYAxtUfI1TA96Ww5zVo1SUtY9TllhVRtyV0k/u4QAAAF/SURBVDjL7ZO9T8MwEMVP8sJYSzcwR2rKaGGXrrF8fMylA/8AzB0AsYP4u3nnpI7ddmBk4KlJLu/97pyPhuhfv5Or6reX/nnfpEaJUUQX2071ZHKTI2eMlsah0M2/57zr9whMblKCnPcetTfrbtJyBKaNvJ564932AHSPaEEbTBTkR5lNybsVcvQqgQlOaey+Z6D/9EVlgp9XyGucAlXeXZ0BNjWwOgXSugaWcMIBCFn+rgZ6GD6EBA2U0B58umkAxAgxJUwTUrqugQ4T0CTwHSVJqEK7RBKBra0DIcQvtYBoJjoC1yCi5W1zF9nTXMYJWOa+eQ4aShaAUQ/Nkxw9DJgBqd/F7mBKKECs3+ZXAaoJ1UWs5AiIwhLjvMaOObvqA2BmVBzLjS6jqMmZGCjqEWJ7+Fe/8uiBkTgQzthai7PL6buAA4/1YHlBMVeoIf2yPmxWzE0xLiiX6sSp4CI9WRBbtlgkZsY20h5MmEZMzBxz3itwpKhRAc8Arf4E8APJkK7Tf+8T/gAAAABJRU5ErkJggg==',
     alt: 'BD'
@@ -136,7 +136,7 @@ const BD: Option = {
   label: { mainText: 'Bangladesh (বাংলাদেশ)', secondaryText: '+ 880' },
   value: '+ 880'
 }
-const BB: Option = {
+const BB: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAeUExURQQsggUviwYyk//HQP/LSwc1mhkZGI1xMFdIJcmgPN//lgMAAAGsSURBVDjL3Y5NTiMxEIXL4gJ2JweIrfQJygrM2pZgiVrkBD1yZ08UDgBqzZ4IOC6vyvnpaEDsefJf1fvqddP6pId80rl5T78DaA/quimAeq3tBXV4desO1/IMoNSZrlsgIdSynQDVrQnwg+wwBUIQF0e4Jzit7DZMAQxAQBak71bKywQscQCcdAEc9R/wtv8BGJ+/ABofGhzLlNJtGXJMOWinAt5LIR1JWJUScXk00IEsybh3vkFCftrn3Ta/b7NHrcFeEwTGsYzjJu62N+UlyrAMSYLeOJyf592AhNsiCZIhG59w3gnhm3l+6wGkss+Nc9p3Hgny0jWPq79xfIllH2WkEgtyTmhBZrzqeXxOJUatdcs/uINm6W6Ipb/eMLuTLJ3fs/in/CubceD0DZB4V6DH9F0Cp2v4A18mWJEzzlgk8EfZvEYA6BjZhsgIZ4RBQuLSR2Y++rYmmKqZWKVnJNiaax1ZgiMI6iv4/PQop7YMGXL4BFksqa9klnFEpkMoHKq+xbc0gaMmwLB1lhSSiyqgokqIr6ZRfAJUw9KlpglHmSn3FfBjwm8BPgE1AemwZcpZpwAAAABJRU5ErkJggg==',
     alt: 'BB'
@@ -144,7 +144,7 @@ const BB: Option = {
   label: { mainText: 'Barbados', secondaryText: '+ 1246' },
   value: '+ 1246'
 }
-const BY: Option = {
+const BY: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtCAMAAAAun0N9AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAzUExUReFAUFi2Zlq6aFu9alCpXVSwYvj399g8S9A5R8o1RPDW2NxeauydpOGWney5vuKBiqXUrG2Ph4MAAAGgSURBVEjHxVbZlsMgCNU0RklSO///tQO4gCbNtOZhrksQuKhgz6lZEC+azBiQuZv9Dn/Feb3B33DexvmRP/Hf9r95/z3nfzfeeG++bJ63ftEhfMunqYakXvTN0PziKJG871QnB6zn9wLjK7kMidBC8tcwr6HjYv1Q2jL/a+D74UzFYX67f+D+GciX7o9R6P6BW/507UzBvin1Kf8Hv7zWEZQPS8bn+ouJhZCFvFSC7oofKrwaWlRrQT3/82A6g++FlD86RBiC1G+UH7mWcQmgWuoftLR/wP2BEYDVFTkQqICKDcD3D3R/sQIohxIVDjL7mielniZ4h5bQaU3I9Ycx3Ob/ff5rfnq6a8n/AH9DPtbv8RGmx4Rd1vh+6BlBXNjG9h7kX/Wdj+xvpxHw/YHubyumrl2h5v/nynGyyVq+ig+5/mc0pwR31LZ8p2HTZGVpW1sBnx/o/NnLFpp1JYZVJlZbWUj+3BCofviMsH5uPjHP56xZ8SO/w7iQdmawwL3Vnellf/Gai5emCtys9Cb9dNfE/x5mWVP+h/nl/+8Y/xelDzpxCe9CGwAAAABJRU5ErkJggg==',
     alt: 'BY'
@@ -152,7 +152,7 @@ const BY: Option = {
   label: { mainText: 'Belarus (Беларусь)', secondaryText: '+ 375' },
   value: '+ 375'
 }
-const BE: Option = {
+const BE: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAeUExURf/POvEuPf/NNREREfc3Rv1AThkZGf/MMB8fHyQkJCPqRdYAAAGaSURBVDjL1Y+xboMwFEURXxAkPgB58R4kWINk7x3ID4BkefbCijIgsnWkf9t7n4mbSkHqUFXqTR4ezvF9kH2kvGcp15S37H8J24FwTzkS5Pa2rvf5tbDGbNs2H65YtzudOaty/vF40UAhJ8dUed9fbZyvFRBAcxaggRT8ai9PDTdcBawqhYbeWo59XnHLyORFQHA7NiyrX2WWmVRGmb431vTWcMWyeA/D8ytUDsoGGNiA5yVzHlmhuUGpeF8pMIMKaSB3jtqAbyDFAWqjgXfY4zwaeJ2S6aUBwYo9XlbIApWbB6eweOdFGSKu+BUpqcE7adjzQnC/L3SmLLuuE6EZXYPfkwACw5RsaJrIx3FQWoWA0aqM9w0bRjeSomcIMPYGckxZnqQBqevxDI77kw4TVrABwxV1E6VB+oPWWFE8lNSA40zMqABOp+CKeqzZgeMcUK/FKgtwvEHRnTJyUBztg0+avEC6Ag3CaxytlhfkCMSWgisiR1oglmD2gtiQ0k6ITg0x3wQlmHMgoCBMkmNBtuhjQU8/afhz4RM3XYDMFPoNigAAAABJRU5ErkJggg==',
     alt: 'BE'
@@ -160,7 +160,7 @@ const BE: Option = {
   label: { mainText: 'Belgium (België)', secondaryText: '+ 32' },
   value: '+ 32'
 }
-const BZ: Option = {
+const BZ: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtCAMAAAAun0N9AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAA/UExURQlIk/T19RKBFePq6dEXLdQXLvv7+wdChwhFjc4WLM3e1325fzSSNlaAsFelWbTVtYelyJrInKC30X+cvjdoorJ/VNEAAAHtSURBVEjH7ZbtksIgDEWBVEAopdT3f9dNwmdrdV39sTM7m9KSYk5uCM6ouHxm4jJNl2m/NpW16fDZdBIrps/sjL9OVxx9frTG/PUz+5j/wxY2BxrcFt6iV91t/bm21KPJ8Ia4817ruHj3tATLA+/iVBwWpVTSMz4XKAms6DE2I8MiJ7A4AlVMoIqasqiFKgiDlN2naY+8THuXhFHlETN47kEXyFp2LNzWimzpvMN95ya6qNlbW4Qdaqj52kzyfo67/nsqQXJMZm3dvs1vts+4e6fUjJL9DHEzuJdgS7ioTnsI25yN5HLLZLl07sE2CInGVd3qOO59qiiPxAW5QedQ9GB42MhDE6cLiNdwT5zwGJ9mX7TxknSnJaJzH3ymL5tlWFcHXuIdxrqYmcJq6ROtnvCmeqaOTUrcrq/6bNh/zLiVkIER+d103AQUUhzfLNL5SxmKzsAI09Z6A1lvHng8jwUn0bmun6UNj/yyHguALL82nK+in60s8CzwBOI8g0zRgUsJpKfTA9SqsRxOJmoyU3CaA2lK6VW2spNghtjqiwK2ZXZutekDfzuQXd8MaHnjBOAXbNzsIeOjSFMS3d1ZGL6FlCrssWbCPDBxA1lzwO0uzH7HUxvx9wcc/v7Yx0FP+Jfs1/n//2+/+v/tC849Os7b7ds4AAAAAElFTkSuQmCC',
     alt: 'BZ'
@@ -168,7 +168,7 @@ const BZ: Option = {
   label: { mainText: 'Belize', secondaryText: '+ 501' },
   value: '+ 501'
 }
-const BJ: Option = {
+const BJ: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAkUExURf3SOv/VRBKMVxSXXhWiZesdOe0gPOkaNu8iPvAkQOgYNPEmQRjNIc0AAAFSSURBVDjL5Y0xboQwEEWHG5gr4BtgbgAHSMPSbgOi3AZZotoKQZcSRJMOaau0KJfLzBiWNXg3qdLkaRgj/vMHkgf8IwL+oSCE8D3f9wQPvYhdgyC8FfDxgTiJcDDFA4TBe9jAeYwkUYQXhAe8aHBhQ7SR0GcrxwWxgYQYMOaQWY6tQKn1m7kNXIANkaKJccCFUsbABrdA1bFSuPEX7gZjUMsTgeCCV4L6nfA1EPM43vfwaQmcj+M8D3fej4LNIshQhc8ESXAuZd+2XTcMfd91Pb4TV2oIqUFKpdojV24IETSkUwjXFCmbplyeoijLtm2aMwQyCHGY4sgZllyS6BakUchwCgFhDBLy/HTa4lNOv8CQLWzI8zQlgTSjLg2UIumRt1UI/kioskzrqkrTLFu3LWiKNVOxrPXFFjK957JveC3cpqmubwid06R1XX/YwpGfhW8zRlv7D//kDQAAAABJRU5ErkJggg==',
     alt: 'BJ'
@@ -176,7 +176,7 @@ const BJ: Option = {
   label: { mainText: 'Benin (Bénin)', secondaryText: '+ 229' },
   value: '+ 229'
 }
-const BM: Option = {
+const BM: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtCAMAAAAun0N9AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAABLUExURdEVLXqPvuNwf+mQmvz8/AUqiPT09NQYMNseNdgbM/PT1u+6wNs3TGi30+3l6b3P4eFYaq240zlXoTCOIpGhydoEBZNGKl1tJphldQR2Nw0AAAJJSURBVEjH7ZTbkqQgDIYRMCGIqD32zLz/k24Conjoand2925/rUISvoRwUJnQ2akVNdY5Z5v03c42amvcWynbOQ3xkZCVf0RmRzve4BvrQ/B2rvI/JutHjurdDb59QAzO2OFR+AZAO6kq3OJ5sjC6McKU+HmwXZBu07p7fNsONiVMvI1ctUynbR1dInTi24mXizpLRJaLzsvBvCNy9VNgSo5kU03SYL3JfGc6gCkZtYwuLxVsiySPspWET4LcaBK5ii1TWeMpei0wdW+bQ+osusHv8tWwu8O7S9caSUElYWrp4/g6XN6DvP5zBFl34TvjYciboum90v7P4AO5hScykC8k3eMfA/DpGf0y/y6QhuHIH7a54psYRwodDHPiJ+mOUW70Sx6TCeVVU0oYo9w74Zs0neA5gPgxDzvlL3YVNQWfCm4AEfnapeVgW7OkxsLz1fCZLzTn57uffz8bzzc6al5OveSXRzjzfJrC55d5Xrc5//I2ni8kV9VFR2sJdX42rIUpnuvS13JkouYg7NERwC85xCLw1PcTh4C8ftmjdImEqI0xI2aR0zrQ8o1ylp/P777/5hIAcbMrwlWKVQquxqTWez6qfd8o8h6rMQrxiBRwF8MA9EkAprarPXKOs0wtAAyCD/y33jnwpnQKMPClxB/x6vMj6RN/xiN+XuC/wyv19XUafuZfR1QS4+BXa5tdx/bKt7dd+99x9ZlLlspfCRdvbd+PyOzZsJg3X23GasRu3Cn2it4RXn1j3eyqwJfwX9Y/DP1ff6ZfJHg/p43jjMwAAAAASUVORK5CYII=',
     alt: 'BM'
@@ -184,7 +184,7 @@ const BM: Option = {
   label: { mainText: 'Bermuda', secondaryText: '+ 1441' },
   value: '+ 1441'
 }
-const BT: Option = {
+const BT: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAASUExURf5TKf/ZTv/XSP9aMf/UQf+ZOmF5E0kAAAFcSURBVDjLhZJRjsMgDEQt+QRBzQGC6D+Sb0DIfyTuf5f12JRG2l2YOrRlnscghba5bpr7Z54Du8yBV1sATebALnPgJQugLYBTHDjCpjV06BOw7tIB84+hoNqwtg+wYRNPDA445AMAxNCNR8xxvGUAvhGjFhbQMUT5AtGkEywaplZ7ApgYekJnL/mVgMZo4aokfwBPtQVwyhzYZQ4kvARfH0Cy/VhsSScJczYJZ01QO6mUKUUJu2FGMXwmimaarU9CJxLY+/NISNFiGjNjW3wEC1FJqSakJ10v7WbqGXYSA2KpqRZVzX489rIv0j4kIKA2yoSMbCGIQkKFhdIbopv0A19RI9yrqre7PjnbL70lEtTUCfXOn71+UmMIvRZwEjQYhJhq10U21DezE/bf3FJrt8iCP+Ajobk5NMJoDPhD/AUy/Svzb5oDJ82BixbAvQCmAxSYD1AgL4B74f8AL3yUcbcLdKkAAAAASUVORK5CYII=',
     alt: 'BT'
@@ -192,7 +192,7 @@ const BT: Option = {
   label: { mainText: 'Bhutan (འབྲུག)', secondaryText: '+ 975' },
   value: '+ 975'
 }
-const BO: Option = {
+const BO: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAbUExURQF/N/zmCP7qFwOIPNgsH90vIuExJOQzJeU0JlgvyMYAAAEWSURBVDjL1YwxksMgDEU1wwUCJwg5ATO5QAroXYBrN8btVuByO++xVxJge3ecFCky42f09SX9MfwcsyzzTP0bcs7zvCx55e/0BVPOKcU4TWWRUnNlP0Ak0hQPmVrgOQP049j3MZI2F8LmOwgh4KZqdWPEQPEDhErfzBj2rlsDT+jAOWwO1QfHps7F+Q6st9Z6760j58mV2bJ7gLd1h+UcCV84jj95gF1x9oB9wL4ZuL3meo6A0jfNVpFobqou8HQFqaTWKNioVC0pSbW+AEq98x4/xU+zUxeQCN1L1/IfJVCvO3TTXeCYjwTurzHnCBhj7oKLH2E2KwBIDBc/QnCnIAUAh+0MAkoYygI/ejQWTHVCtPkU/AJDawgMp0vluwAAAABJRU5ErkJggg==',
     alt: 'BO'
@@ -200,7 +200,7 @@ const BO: Option = {
   label: { mainText: 'Bolivia', secondaryText: '+ 591' },
   value: '+ 591'
 }
-const BA: Option = {
+const BA: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtCAMAAAAun0N9AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAA8UExURQQqlggxpgYun/j4+Ao1rwcvowkzqv/QQQUsm//NOSpLrMfP52pueG2Dw5Gi1HGJzerAQ8irUDxRi5yOZNKmKsAAAAHISURBVEjHpZIJosIgDERDF4Rav13uf9ffCQFC7WYdFBLII6RAzae6x7F0LG3wTX+Xf3fdG+N4k3/W9ZMrGO7xf3X9d17Bef6mmX+qf9FwkbfoLRq6JnrNdMTb2CzZwAUvaZnYr8BmZuEVpvZdnN1L1AjZXU1H+Q94/ooYty7Rn/MWt8jGiHD+xcZuwZtsG2tYeEVs4xkKpzeyJseDj1ycT/lNr1LnbQBYE3mTbBntq+teYUs7F6f3YYj5IDKf4tSiwZcngKtjt3itKUD89wH/ijez95I3FXDEt6ZlLQbbph0lt0+nwFri2w2BNHhF2GDy6QSygw7d5Fm4RTZ6r/W4yuMVBWv0pfb4aju/64YjvuKWO/FbvKLgVP2az6EUTFY8AHwJkXEu+BiLdaouaVjzUdd4N/3GV9V8mXeFh1fEs+Me71ZNO67CLS6jq1QFOoKwFqA0auEVhbl8iTqG3LGQX8xUgV4/4/GKJB0NN/glIIX0l3jSCEnHkzRv8USCkNhqF9kr/qSCGCcQ95BT9toPRrjEdVw8QeHkicXCV8wVrCFX7FTawccthrmR+VX6U+EVBWvK+b9Qzk/9HR71R3u8wRcafuR77fwD4lI20E9y1ucAAAAASUVORK5CYII=',
     alt: 'BA'
@@ -208,7 +208,7 @@ const BA: Option = {
   label: { mainText: 'Bosnia and Herzegovina (Босна и Херцеговина)', secondaryText: '+ 387' },
   value: '+ 387'
 }
-const BW: Option = {
+const BW: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAeUExURXyv3oO144m66BkZGREREf7+/vPz8yAgICUlJfHx8XPfwFsAAADUSURBVDjLzZMxDsIwDEXNDWKfgHCCSqnUFSk5AAtXqJQNKQMrIyNTJW6LXScSBZF2QNAnx/k/+euHXZ0t/CCAiERoy0a0fBeNaIDYyC9vi5bRD8tPbMgA1lkQMDPAhgHDa7QqweRhmTGTe1NmLRzrHL4QuNa5wLnOaT7QJcaNdKz1FFJqQP+S61yOTWnAu3ZUrfNOptCqaSAEHwQf2iBT8Gr2EOosCNyFYYhRjuq+LyrGmwY+syDwh3bTxNm3dvN+bje9tFs25VZK0wnX2G6t9Nra/QBbXu+gS34JSgAAAABJRU5ErkJggg==',
     alt: 'BW'
@@ -216,7 +216,7 @@ const BW: Option = {
   label: { mainText: 'Botswana', secondaryText: '+ 267' },
   value: '+ 267'
 }
-const BR: Option = {
+const BR: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtCAMAAAAun0N9AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAABXUExURQKgO/3SFgIqewUvhAOkPQSrQQGdOQOnPwSqQAGeOv///yKqOG23LNW/IuzPGLrGID+vMylGdGduVZa/JbaiNIicw09sp83V5u7v7LW/yf3aQP7pjYWPkoWqQkAAAAH6SURBVEjHxZWJkoIwDIbTghwWgYJ47vs/5/ZIr1AUx9nZfzpCab4/AUOBw3eCF2vNoVHjDd/YOCcaH3vQcy1AJvbYI8dA853+mB+78Q1f22Pd1GqQRTEwxgbhpjRGz4HMtVxM1zOtvqtT1p1bPpW7XtcmudUg6i3BxvWmY7G65jN+PLFUp/ETfrbMJGUh5WS95mYvb5OfpsLJOmRLgK3k5yLWeauEFT/2GdwZ9GOOL+tSDTMVMz6uggof6Cx8LPKlkb2GHcPYz0USfsIV1U1lxEAZFDrmcVS6LpdMAaabAhPxPjljzyPKeHAzJr/adxk+alfG7vfrzVkc77oMXshofRCUT9tV6oSX5YoOt0U5yLShU16k3Woq5pwHj6XgaYh4mZ9rXDuouhdzK7efV/nJ/UtuZDxU6RddxC1//6A9QB0gev6TT49SDs/V8zcc5P7/UyDRpVgeIbnLqbOW5gePvoSJU4X+8wzWYJ3sjfj+X/Gh/wF5RMukBnDvH8Hd+4dFh6xEamHOGOD7vwERuf0n3DvuP7BTZdj/eNj/YLdaEOv9dw/WqoETsv+DX8jEZn2S70+rpePXXLux1oL//kVAi/GOcRz1MNfw+xvHxzns+QtVlfr+txXlYwGuVio4REYO8YTE6DmQuVab8cydWz6Vu55Tbg2q7/Tf/C9odDwmIfCheQAAAABJRU5ErkJggg==',
     alt: 'BR'
@@ -224,7 +224,7 @@ const BR: Option = {
   label: { mainText: 'Brazil (Brasil)', secondaryText: '+ 55' },
   value: '+ 55'
 }
-const IO: Option = {
+const IO: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtCAMAAAAun0N9AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAABOUExURQIpiYGVx2qCu+jr9AQskdgcNPf3+AElgv///wYwmZWmz0Fepxk8kr/I4SRIoKi119fd7Fdxs/Tt7sTO5emLl++6wN07UPLT1+JebrPA4EMU35MAAAJhSURBVEjHpVSJloMgDAxy6FrrgQf2/390QwIK2tp2N/YtOMwEiJmFaZmrR/uDISqtdSV+KOrKrlUSsh6GWp4RqGY9GTnk+kFWk16rh4zUG2e91UcECuOWxVV1om8flVsw64gC0XUiUEOKHAHcy3py30a9MHbS263eBOB2vV31as2D9HVv5sW/Fgdme0rnEfDjaPyGxusN1k37s+NasSnaYvS3Hs8I0NsDE+jZeL3TenGm9mgQBCrHEQFBMRo3sX7GUXYEEqHvA/P5BEwSXp9E8rHvvO39hIB+HUawgKgKny0FIQRd67nIyCN1GNug9XN1rVdM4idKUKy216v7myHQMELb0ZyzMcL1ryXVnevvzJ0/CjY509O25wwbAn5doAfi959993S00YXttlfUU/vp1YXzY/dO9t6w/r1/VSGxY7F7x5r0nSQ39G1yyPOxNwQ6OrGVhRKkF+wGJ2972VQSBwS8V53pcDthUW/xmwn6l2AL9UGAv20/+OmmV7ces86HBG171HoEVmfrRuV61XR2xpK0CpjZxLZFJtAvICMkLjHGWlukJhm9oLlCILeklJdufeJfOhVAk3vzCXI4SOCAH/BCsAnuEVEHBJ5wIC6EAUu6Qzty5qSUi1Av5lkEJ/4NSVs6LHyDwCcmu/Lv32S7f+lIJT75IT9FIB1ikUq+5I6U8IoDeY6SfvwnGZkQF7eBFjGwJWjklQThlxzhvBGBcm/JmDpBwjYpwvtEBHJLlOXRJG8Q+Mqtr/z79bYbAvFK5emSHyFJhWm9KcuvECj/F17PLZWinyNZS4eFb5D/+vcXAqBR2DiL3tQAAAAASUVORK5CYII=',
     alt: 'IO'
@@ -232,7 +232,7 @@ const IO: Option = {
   label: { mainText: 'British Indian Ocean Territory', secondaryText: '+ 246' },
   value: '+ 246'
 }
-const VG: Option = {
+const VG: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtCAMAAAAun0N9AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAACBUExURQEmg9gbMwQskvb19gIpiwUulgMrjgAkgAEnhgYwmgB+N/v7+wBoLwBzMoCVyP/IEoahJu/t7/HCGfrMKe+6wVt1ts7W5XaLwPLW2rDC0wVOYOqWoNwuRFpiZuJebmxrVt5DV9rP3BtAnzRVp+Z6h5io0rylKmGpgDpLau++dlSacxrz8zYAAAK/SURBVEjHxZOLlqMgDIZBxGrRtni/6+n97Ps/4CYIim2n0z27e+bXhhDyhcgwpGlTUR0D0E5QSsUO3eB4EbLX/lsRkbZnJrM1n0nRtL3IPuALUbZjKS4Wf6xEOdIzy4MP+CBjcmwbkZ8MXzB2pvNXfcvzk2Q97SWrFH/J4YtwWgTBRzz0mwu1oeJF2VOK7XAecJP1lT/xQVCJhtJU8WVLp+OAzCnXZCuPG1/XITulXJTNxKdNyuRFBTPONcNXsmNETGJoVP+WskeMP4nQr8V2/Fv9b97hDrxveGYJGVvZwjr1dlG9xKfzv0iG54582pSsmv4oGWY5qgdu41BA9YUi8OM7Bvedah5uD6sCtahzUNu15hXgTzmD29OXun+4vfCvc3TWAuaQHGbrLHwm4ca2Kcsviq9w2sv89MQnSbK9KWvzldpQysLZKb5Q7YylNAU8ZbYR7nwTN9w/snh5pmPKKui3mPjpONpSZoDioypE2wjISlRgwccFtUZG2shcpWoe4qccqqbozoqiKE5iKSRY8HVdzyN9KXdcpRQSeImQc4SvGlPprPhDfGBMgkXeiMBJaTeTqAxdV01y75GXz3wByaZAURSZmfAsOz70v49zloNd8e4irOSq3Y0/j16o9q9YpfYPPU/nEQ2ieac6CoG8sRvyYTjHifuBPNevwxA7/4VfEYb1n/GYF+L+obbkNe/PZh2El0ADs2qrLiyaZ4a1q6P4dh2x+E3XzbxK8HWiP8mdfkuBLkm6pYEapzqXTPkL6S6kGXx/SJJ4MAXqIU6SQVPEN+ycvATmBRLvk/3+ej0cDtfrHvyY+Nb+K7kPDSnd472t+G7WnvnXVclwnenrQN5krsLEeOCQezcMQ3cnNkWsdZ9MI8r4epyjynvIfdbzkhX5kvoRbcyw2bzy7fnr+N+JrD2inj8g/93+P8P/BsY+WOwSYOzMAAAAAElFTkSuQmCC',
     alt: 'VG'
@@ -240,7 +240,7 @@ const VG: Option = {
   label: { mainText: 'British Virgin Islands', secondaryText: '+ 1284' },
   value: '+ 1284'
 }
-const BN: Option = {
+const BN: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtCAMAAAAun0N9AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAABIUExURfffOREREfj4+PPz8/z8/CEhIBgYGPfgPfjiTfjiSfjiT/jhQ0RAJnBpNvTw1Pvxq8WzNPrrgs3Ks5iSbJqMKvjlZbOujOTOOuk+8v0AAAIdSURBVEjHpZMBYoMgDEUjikCpdt267f43XSAJBLBdt0aKmPI/4Ylwei3gOub8yWOr94f6ZblccZ5Er/Onx3nUL4u5fEr6rwFmybGjharh3vThL9Szw7Jf/7486lOwA6LAVPDUhTuSJg+zaRwSiuBDEBe+AhlKnp/wGebZiEVFUeZ7HlQn1ISSzvoUpq0CUYSybuBGmprON9arKgqKoMNXk2YM54+9czAVBc3hrrXjJFhrt6+5RLePyyk8CE96a8/bu9TQs8go7gfpk8VHtWjfB6OIgXsa4C1dsK62WuxSw9w6zBlFJLXHexQX1K/KQlCY8ZUiCjaIsjo20iuLguLoVHhxiFx+gGnqDBSK8k4ViiKlClA/VYu1Q6GKUKcixkglpPrP03RsMZwK/aEXB4hvm20s7IDCjGdzv4aYA1L3tq1tEQco+u9joX1kvXPuxvtYpwcoxg+E9Dm+i0XvoFHIC5F9VH10A4rDU9GiAJS5pGWPHsV6dCrUB0L7T8253FUUo8XWo1gMre+iFJHHPYrjU5EdgOSOmzy5308FWYDIWKk28hQKaNYupeQfwO3+6WYU4CSiGsQyGlG0p0KtH5VH9YMBRa0CUYD7PQCGD6SU8Yw+OQwoeCfP6dM2ehQ2O0D6iy5uMh+gJoBqgIKi1AB1vjIRbfXg8YACKJx0ooPyR+sHHYo0RapWOqfnj+OKAv4bjAJeiIQCXovbi3r4AeI7QrLNSxU4AAAAAElFTkSuQmCC',
     alt: 'BN'
@@ -248,7 +248,7 @@ const BN: Option = {
   label: { mainText: 'Brunei', secondaryText: '+ 673' },
   value: '+ 673'
 }
-const BG: Option = {
+const BG: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAYUExURd0qFf39/QGZcff39wOfdfPz8wSjeAWme3eP0pIAAADkSURBVDjL7YwxbsMwDEV5hAa6QCDwADEI7YEgeA4gaO8gWGsn5fr9pJ04DWqjS7O0DyD1ST6bDvu80QsEccMwiBO5dX1vJXIivFiLTnPHybIT5w4Q5OFmWwuDbXBTYZcfCNkokkMouZScgzz0cKGiwABqBJ3Wni9k322z/OF3hes+HxD6ta2LthR6n4VppU29P+d3mnqbNmizsM1owljriJq7Vqop1fv2TOkZGPU+jN8IX4HAKSZmZLYYNS0bDGfy0bPHzAga2fsYI8foAfsj4RDZBnX0plI0DcOR/D4vEf75S3wCXObnBmEuj90AAAAASUVORK5CYII=',
     alt: 'BG'
@@ -256,7 +256,7 @@ const BG: Option = {
   label: { mainText: 'Bulgaria (България)', secondaryText: '+ 359' },
   value: '+ 359'
 }
-const BF: Option = {
+const BF: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAhUExURQCiSgCoTfc9P/lFR/Q2OACuUPIvMfzNF/d0JpfDLUe3P9sLPeAAAAFtSURBVDjLzY0xbsJAEEXHN7CL7RHrA0TOBaKV5aRki1UEVQprxQGIDKkjOAGKlC5FxDUz83eNMTZWuuQj/fnz53mh+2nd0X8AdEwFXF84WgbmQUXRWnRIz0h2kZ5rrXEt2krEQIfL+WxR8sKkfgHk4zJlmDOSZAw7Wzhgy2P7QGVemrJkz9k5Ggk5Ik/DwKhMGwbA09U+AB4HQO2rGsL0h/dKxFslVcWATP5hVtVhDzLevX8h73HnLKqbTZgefV0DuNC62faLHrBugra3AH8IwP4mUOO+6f+Fu9SS77tes+gDjoHXKWDFwNsUsGx2g7+w1jrloj8336fGIToFpaSsVco6uD0drfv4UplC67hNCYcsVp9WZaujvMZPol1QxpMDmyT+WFZUStqUwspXFZPCJ60EGFEH3QDGXkjbkFwBaVR2DkknXgkfpGlCsiaJvCATWe6UEJt4qInXhDLZCb1IvseK3MXYtntf4+0f6QcWFxb5eqBfewAAAABJRU5ErkJggg==',
     alt: 'BF'
@@ -264,7 +264,7 @@ const BF: Option = {
   label: { mainText: 'Burkina Faso', secondaryText: '+ 226' },
   value: '+ 226'
 }
-const BI: Option = {
+const BI: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtCAMAAAAun0N9AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAzUExURc8YLjXITvLY291MXTDDSff39/Tz8+IiOS6+Rvv7++iWoN/x4mjQebPlvOhtfPGutqPgrZIp+9cAAAIlSURBVEjHnZIJYsQgCEVxI8as9z9tQVxjph2L6YiGx/+awrqueC7/iROJhZXj+gd+RVL4eQtRvPKzFq6MFX7GQhZnft/WWQtFfN12UOouS/2NhVOX+lsp4tWUhdCIK+E7C+ZX2lTxI5KgrOotBCqDVA5dOogTC0oaqKO3AAWs6UPc8iB9nul5WGhcpLwVt0KTfxsbxPxhYTFBo0MdzCCeCWvBqtqBLLjVOSpxYTEXL1Z+LrME3uVcxMsDVhrIX7LAZRpTygvUsa9rxCPA+jFU+lU7uljIPy6mLtvgHPeKxjnxNdSRAEaCOU3I7Wgc6lne8Kq1IKHp4rSgNHBPZ33nWwtJUfh0olH8A29tbtD4d0d84z/z9Mp7KdjKCdYyb6XMd7wvoz5bZXMD5n2GfSr3oi+5rz2wYjWkxleWJ5CNYkIKSB+D1oG/RE62hKaiyHjibU5t3Wb/BsBE3ZRsTX+fKQu+jfTe0/27E+CMvCR49CUp4GWPv/+oT9/fjwHj1s6nz8dGLBdB/39f8CLOHbhJbODiNfJitACDOMZSFE50XVls+6+8OkSWhsbciCdduj0swEM8R4DlyjBeC4RsAXsLDW+PbBs13TndOt0c0uXJQufrwNYCvJ08wFuEYq6xUPi7vBXxpUVlYTTmq71tz3cn/xyjBajirop/DLaQ4i78l+KvFmA8+R/RW4Ap8dECzIkPFmBW/GEBpsV7C8JfMB+h8NPijYUfZJQ8p0YByxAAAAAASUVORK5CYII=',
     alt: 'BI'
@@ -272,7 +272,7 @@ const BI: Option = {
   label: { mainText: 'Burundi (Uburundi)', secondaryText: '+ 257' },
   value: '+ 257'
 }
-const KH: Option = {
+const KH: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAkUExURQo1pAw5rA48s+ANL+kWOOURM+waPPX19e+EletWbfC8xPve4u+Pi5EAAAGYSURBVDjLvZTBSsNAFEVf/mAmX2D8gkII2l0Wk2h3hcxgcdVFKIJbYVLXSutaRLsW6Q+ILvw5351kmmBtQNTeZN7cee9ksrt02K8D+j0gwzCK5LfCRJCzURTycjX0ku6zBtgtBwghAxmg1Et4i41YQUAiCIQQFBB2nInqDvaACzm5hjPebjr/qlm/pltA6Uo5y2s3pXyWsy9ziFtcHZczU5ZKpaS4zwbrqzBhAMIYV6jyooTgcjdpgPaj99fWbwGXb0rZK5V/dH6XktYZpLRSi2q0stXq1N7UHdSUYJTWJtN6UZ1YFgMa4o5SY8IIUz4vqjMAE3trMqONyTJjxmS8tHm6myxZo+VDBkKjlxJqjzo3GLP2v3jpAolJEjaFSYbWA3M+8Ys2A0lRJAnq+Qa45nnBRBIXAyqKmF+sR1sdATi29t59E3MdEM/iGlm3wDOaMQi+AQYa2haY+2aMG3r1F8B+AkTuDBDJAeKGPjmkD5KfBkg3Pdhu8oMTpA4Q5AdCQ7i0ELDNJlxGiCZAEC2Ox1OHyz7igz4B2jwBs17Jx38AAAAASUVORK5CYII=',
     alt: 'KH'
@@ -280,7 +280,7 @@ const KH: Option = {
   label: { mainText: 'Cambodia (កម្ពុជា)', secondaryText: '+ 855' },
   value: '+ 855'
 }
-const CM: Option = {
+const CM: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAeUExURdMTKN4XLQB/Yf7XLf7THv/bPAKGZwSObe+LKuFCK1Q0uvwAAAGESURBVDjL7Y+/SwQxEIVnOq9LCkG7Y4vUJ9mApZAUZ3cQrr9Nka1tYnsigqUHCv65vsn+4E48xN63yy7s++abLD3OedBztnM29A/8CSjngX5IKeUIiBGd28Zt3FB57Ie7PzE450A5B0MpMp9L6Y4MbsqKelTl+wpMxwko/ZROobqWnqONY7AiZ0hyLn2nldKXmpm1c1au6OyGct8LAQQG1h8HMVgYah9XgyEL1jEr9fJUDRaIlcAgfkEyVuB4N5oVi74KYMhzOv4MmAnrg7ZzjoGd5md8ck+kfgY6Ulf4dIuTnDEwExR7dRZA8+z9nk9XmJyywSUAU1iHO7zQ+NZ6PGAYCWN2TIvw9n5Pitp2IlaE1tQNaUd8sSd6JazwQISoBpOSkewULYhowQSDxHoPQ+1SSk1aosUB5QE3HC2AO2pSg1uoJUbHhFDbCoi+SZLlUOInyEsffGgBoBVJ05glHRl8lYQWK5rR0FRgWCPj1RAEmHJiGCMG8xMgw16I3wz/wAR8AVlzP262Yua9AAAAAElFTkSuQmCC',
     alt: 'CM'
@@ -288,7 +288,7 @@ const CM: Option = {
   label: { mainText: 'Cameroon (Cameroun)', secondaryText: '+ 237' },
   value: '+ 237'
 }
-const CA: Option = {
+const CA: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAkUExURf39/f8PD/Py8v8ZGf8FBf8hIf8pKfj4+P8vL/uJif1gYPq8vM2CApsAAAIqSURBVDjL1ZA/b9QwGMa9tAG6nGUvHc+qFLGdsTJ0a6R8gBNRbmE5CSU6OqU+IXN0QQgCYusfqTp1o4iqYmOgEp+O57UTSI4KMbDw2I59z/t7H1vH3ndifd3r3FfsnwALryHQNE0LVFXVeA2AbXQ0DWpztmhVDYGGyrDnlBA0BMhZ+IQ/ANXfAbOymkHlJhDMGYCixAkr6mt7VlVklnNWkgosaqwxI/pulUWB1nI2ZQUJRBFad1DHtkUtIIppuIIg+HUdvYhdVDv3vGjVJpBcXbvIfbtFnRJ+B6LIRQ9uP19/R32QkGP4K9D/8rD5cFgjC0Dix4QlSV4kJAfdB/jM0RvyPEclTybM5InJc2Ny+NExgCdELuERYqaMyjglxu04awE8su7YLZPQSAmd3OrL2cVbY96dXd4gAUqw+oB9muxfmfwmMY8DYDYAd9Udr+8GVpo2jbHfB7QRRuAj3EpwSGAAEFp7e8RworLAFSfYqM4v3FJTEmoTJrjWmJpbu+JBu9YeeVILJGjhxbWL1UkATuP4CC2+MmJcc5qCK2sfrtdyd73GHzYmBzYHwFtExbFT6s1rFeM0pqcQ44EgZRXmp4+WNO7cHhDjjlidnyqKuAuAj4Tzr9aqYUIq6SC5Qj2OcQ9pLKXkKZdyxLB70RWh6B+ZcnRKSkCAlBmm6mtPZplM0yw9YBlECZtAqwPmiyn4X1W8dg+Gbw0JGf0cJqTk4fMTyDaAzv0/gB8wXU1Tj2nJ4wAAAABJRU5ErkJggg==',
     alt: 'CA'
@@ -296,7 +296,7 @@ const CA: Option = {
   label: { mainText: 'Canada', secondaryText: '+ 1' },
   value: '+ 1'
 }
-const CV: Option = {
+const CV: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtCAMAAAAun0N9AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAA2UExURQc9lPfQNvX19PLy8gtIq/39/c0jLglDoQdAmwpFpvT08z5iid29P219caGdXPjuyfbcceR+Md9GZ/kAAAF/SURBVEjH1ZXpsoMgDIWTbkBZ1Pd/2RoETKLVqvfP/aya7WBnHDnwuAb8d71zDzqmn8uUuOatx+qtC1VUlSLnqai3JrhrXNYbZ5wz9chQhaDcrRylnkMwHLbIJvMMmOM4tsQZPQeMvXSANXSnMN81pvXLlJWzsBi34gGt3q7G8iLYa1zXQ1mlnFDWhNqFuazS/JsaIzafuRaTt5BSLL1ZJ+N2QmsRMSAGiDheYx2oWBmLXoGEo97TDT0f/LqS1ufn0v8IcIIYa+SPi0MSqQ9hZ5GnoEfseN4h9s8tpP6GSz3eftfTuOzrBRf6F2dAHF47FYnUv0LQA8OmXOsPA29J16m8VwUF3AX0/t73d8vp/fE8MxZabanvt/IFyn/pq4lzSt+SP+Tfafx6RJZ2/VtaasLofPQuX3xKJ/zTBJzwv/incr0x9Fj1wldXjPSLf/lEW1jyv/jX5CXNKph3cF/SvtJ6IMxnzcEO+cdhO1G7kd3bXdewai//tsnPsYW/4gPuXT4A6dLKQQAAAABJRU5ErkJggg==',
     alt: 'CV'
@@ -304,7 +304,7 @@ const CV: Option = {
   label: { mainText: 'Cape Verde (Kabu Verdi)', secondaryText: '+ 238' },
   value: '+ 238'
 }
-const KY: Option = {
+const KY: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtCAMAAAAun0N9AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAABUUExURQEnhvz8/BBWq3+TxwQtk9gcNPX19QAlgQMqjAYwms8ULO/l6fC/xR1FnRFdt2B5uORqeRFctfrQUc7V5t07UBJeueqWoJ+u1EhiorG+3Ne6W6OWalq9bR0AAAJSSURBVEjH5ZPtlqMgDIahAsIixRnaqp37v89NIELo9/zbc/bFSknyJBFRXE6T3IIDDVJrLQf868Ii/Uz/X0rISc/Grz0fvbzoWcYP+Cin08nLhfFhAxtkTe4D3q3Gn/RFprDzgzGzrk/1lncHD/GzN1vml5SLe/NB84V3IclcMPOwbzq34z7mndtgu/SU+Ulr2I6y84p+vVSblRNDVpL+QvxlMmbJxogBOUrhRRNZygTvr8jAKP0bWRWVYqFUWDmWRQn9XGagslQ//Fy/rz+BcJVdb3mKg2v9LlprB+ptfUU06kr8tdmgvmFChiuqqj+9qr3s/+IN7jvy0wVOUnkpDH/O420wcOQ08XB6zOLUjV7wIRk4PXBiS//l0wk3vOzF+Og9nl6TlsxvuJw9JbDlZp/zG3Y8ez/AU+Q9z+2cvF8zV2739S0NUYpvQVniy3aALVLpfDv3Qlv2Cfj2TYq4Jh7sa4KskMBaW+KsPRadj2e4jsc9rxWwb4PDwMqDPSzQwuSpClq+etkiZYVJK5WJeGR8LJ4IryO18tb0oseH+nuTyOCZ2VcuxmCbDH6gjN8lWIwA2SdKvLpMD/lXOqC+YOB1OPyaDwcu1/GC0oguXbPiUB2vbPOIrhPRrIKWxbyw51+4ox/M0XuCr7gPrLMSt6N3ava1JlifxJbwm9HS7FugyGrr3K5HGVsSfAmhQr8XfBhO/MMa6zTyOf8tozoYRPY8WhS3ZqDaRs7QTBJ0o0Tj7hJjs5GfE+PY1ecZxlszSyXass/GdG/pTQ/8v9L/zv8FGP1GAFF/pfwAAAAASUVORK5CYII=',
     alt: 'KY'
@@ -312,7 +312,7 @@ const KY: Option = {
   label: { mainText: 'Cayman Islands', secondaryText: '+ 1345' },
   value: '+ 1345'
 }
-const CF: Option = {
+const CF: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtCAMAAAAun0N9AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAA8UExURf/QOtMYOwY4jNgbPgU1hDGgNPT09P/OM/z8/DWpN90eQS+ZMQc7k+AgROMiRXZ8ZOQjRjVVe7aiTuQjR7q5eQYAAAGZSURBVEjH1ZXZmoMgDIXD4thWEXXe/12HbOCWmc/2ak4iBHL+0LvCaOh7nqd5KjmTLBtYjcKibvDrrjHtZfJ+HDkXWEYsvMflyMut9kcvAZ605LzCmvPisY2aUpoSs6VIdEsdbmshvM89KvuqxBwK53hDytOADe6TioeYfPQlSgofveeLtJe4OMnDB4iR9rjmmNcoKhcHXm45qyl60NMin+qCvxJYjY/51yu9UkneTf5hiEgSDkmWzeQZq7/hPr+XyX89ODjbfuKbTS0YzGOStHx8HfhtUwpK2IKbKSdee1rIpvxJhQn8UVo2m2dSJ9zmQwgvDlyCyT8NCaczLJvJM1tn3OYRI/H2Bh/47b/e77onBi1SY+jzotaoPqoADyy6rWo/nfmuU7BasYTOUNjLsn3ODyVQgwZfnHk1NGcJGNDP6rjkYwhuG8PeVwWDoQJxclg2myfWyQxn8pacE5wXuCsGnZP1Pt/ed2+9X/Xm+8Ft9cH7v/E9lL/9snLRyxF14PutD1oqqLAOPPHN2CbUxy508f6V/jv/A0LPRYGXYhPaAAAAAElFTkSuQmCC',
     alt: 'CF'
@@ -320,7 +320,7 @@ const CF: Option = {
   label: { mainText: 'Central African Republic (République centrafricaine)', secondaryText: '+ 236' },
   value: '+ 236'
 }
-const TD: Option = {
+const TD: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAYUExURQQrav/PQf/MNQYzedobQNIYO8wVOMcTNouzHC8AAAE7SURBVDjL7Y8xdsMgEEQxnEDcAE4gRxdwYfUqtNRugNaVuH5mF6GnvIS4ibuMBCr+Zxap6ch1OHI/clP/wluFdb7zi60jVD5jLR3hyO21MDY+frnDvNK8Ihgx7jk3EDArhAZjJrM3OOcsqB0cM+G0NxjOVZhzgxuImrGgARUyozZYC4uOLKqdN+OHMMc7yEpSsyglAmt6cF4Ub88NU6XYLzy+OmdBGTUaGaS9Bf12h3oB1i7O80/IiEAUgQM9mKh6Ec2IH+cDhT18Se7nj7bes4MXhKJsDwAjDWrUjJl7D5hCjK1BpqABiCm0mKQhpvTg0/vSwrnFJ0lMMbIgwX9oOe45KVReG1q0r3HSEGrLT8Ix4r3C1tIRClBOW865IzDaSobVayglS7ZnR8i51Dy7DQUj8PwivGz4M+ETOtAIRUdjFREAAAAASUVORK5CYII=',
     alt: 'TD'
@@ -328,7 +328,7 @@ const TD: Option = {
   label: { mainText: 'Chad (Tchad)', secondaryText: '+ 235' },
   value: '+ 235'
 }
-const CL: Option = {
+const CL: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAwUExURdgtIN8yJfj4+P39/eQ2KfLy8uc4KwpGvgM7qwZAtek6LOo7Llh/zOk7LZeu3Nbf7/1miD4AAAHjSURBVDjLzUw9i9tAEB39gxXoBxwr1CaHVKQLJzCujWFJE4ILocJlrhD6AYZVk8IQtAvGpLpCIEh95voUJuktXKe/LnBFZkZf59hJF7gnzZs3b94OZANuowu4hpcQyLM8y35mWZnfhlEURj5X1MooxECe2eyNLcvyoy+lL0PfD7Gwy1D6/jVYa/Pt27K0+VrKkG3JO+JQXkFZbvY/Xu/31q7xAsFvyWdxhRc2j/juqbRreQEUMFspX+X27wFrH+e/LAXm6ATMsmMKFLZU6p0xdj0PEJKZOmMGxpjNh+17a8zngK1+1aoZFMZ8+qa/66JY8UulVKDmXMQz0FpbbQpt9ErxNsBDqLApxRdwhTC6WKk/gQ/4gi6I9HlA9QH9fwO7+/u6Ph6b5uGB6ng8HOq6achtmt3uK1RVVdeHQzXgdPoCy7u7FLHEvlxW1Smn6QLSf2MByXSapgnzKVpvAdMkmUymzGMf9Q1MBiSjnA7D88BFdIF44g0dVRyTiMm4AS+OXddD34091FQ4svLQExC7MWFkjyUyDwJcki5Xzx14wMAZPPyG0KXACSggzt1BOQKEcIVwHAeekes43SAEOIK7QyR63SpuAGOUn0EXJ00f/ZhCCG7CYQaAbs9Tm+iW7Pa7l4HfWIJuB/ZNbWsAAAAASUVORK5CYII=',
     alt: 'CL'
@@ -336,7 +336,7 @@ const CL: Option = {
   label: { mainText: 'Chile', secondaryText: '+ 56' },
   value: '+ 56'
 }
-const CN: Option = {
+const CN: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAVUExURegvFu40GuIrEv7VK/u2Ku9RHfWDIkliEvwAAAF1SURBVDjL5Y7BbsIwEEQ3Ful5owJny1I/oHXIGYS5g0R7Lorg/z+hM2uTgKrQHnrrotjrnTezSPO4VP4WOP8EpPfHwCK20wC987iaBi5MOG6mgWQ7TpPAIh5KMwEsI826uHTfALV7HrEebez0XkeC6jGlbWxT2mnTx6a6LSTw2kZWq6r95aDaVOhwwqsi7JcGnICazOLYbrHHEfpKykivnxrAmOoJwGcWmAmXQMHBBGbMAKwpnmulyDH9wMwgzzHFVwHax71IVUKsI1NJ31V9xzCcDOKMyXKt7V7qFmwdOxNzduasNvhmzNKPwTTaUU5+V/X6sT6LbxOKE8/jJa6s48bSODscn168iwlvjzYThDwVzoi4HYY29c4ob8mOFv6ctd4SIIZCB/oDpDCqeFEr3jAYnVUo+0LGij9QykGw+IAuT7AClmCtnc6FcobAEf5kMB+mNgimh4JjnWSJNTRj67jCnEOCv+Fsi4z9fZXJFZis/wJ8AXJ3deR1AI3VAAAAAElFTkSuQmCC',
     alt: 'CN'
@@ -344,7 +344,7 @@ const CN: Option = {
   label: { mainText: 'China (中国)', secondaryText: '+ 86' },
   value: '+ 86'
 }
-const CX: Option = {
+const CX: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtCAMAAAAun0N9AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAABaUExURQAtrAIwtS+QSf7HUDadUjOWTQMzugEusTiiVTqlVwQ1v//KV6S15XiqUcC4VFSjUq286OnBV////xFDo6CzUtbe8xheiyuHTiV6bdS+VS9UvmB8zllkkrKZbv6WDRcAAAKVSURBVEjHpZKJlqMgEEVBIdoS5RiJ0Sz//5tTGwh2MtM9PpT9VhUFav46JNV1y0G+mw/y3WSO8XiG9gu+tsU2aj9m+R7nUbgmfDfLTKn9mOaGge3SKPIQQvtvEePd6tPMxksIPzAyuNG/4SGNPzPQOxfe8fEMBr9Y8nFcHd0YV0q+m43h7VFihukwhN5Df3DOy9yO76aFd0e1WdP60Tk3eBOc62Uu8acihBS/Mck/VG2o0QLwQSbVCVEs3fV8vuJgssbs/Sd5iN252o0yVqek8+VyPpGtxfxFfU3qEy/+hQfRGWjrAJke+pJvwQAEUA993xf+MX6k8dcQgl8da4Wcm+xQQy0aCr6TnzVTslkjGkALlkoQfC3Pv9Oa8OBW4mIMa/JuC17n+DM57w1cN/BiwrJ7eAaWeS2FLUQjL6EDbIIr58ittR5PDzmVCaUz9xHHHpweEgxOLOZxtATDjTAsxqxVJy2cJvEtQIteaIen28JeGOo1eJo0XKH/SGo+Bb4CHIzwRDxupmyBf9uHnn3mUloMRCuRf/EVWcPZ2gjzjdcYs0SQ+k++JO/5tdoPUrnPQvzKguEwfs9PY3ym9TjNvLui73P8pYH4zocJBjcgK7GwFasa3dDuZisgqGDq+Rrr8fVsaHURvqoyI5XixYYhre+POxmjn8zwPFTzTeCtscA3ESY9Lo/mk6YlklxVxOvEosD/do50FFlUc8VcxTDF/xup6VaVes9/tKrU8onXj/v9gaSSEvubPWrmW8lTwep6uVwT0WQGds2Uh6B4FhfwFcZ+0Ual8ZzzsqQU+pdtSr6IxSijII14ihvFzwuNwvOrYl9TDpNlRWm8Zf4zYtfZ9ZMwjRCF+m9xGtUBzYf8cxrVMS1/AGzQRYS+/XInAAAAAElFTkSuQmCC',
     alt: 'CX'
@@ -352,7 +352,7 @@ const CX: Option = {
   label: { mainText: 'Christmas Island', secondaryText: '+ 61' },
   value: '+ 61'
 }
-const CC: Option = {
+const CC: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAeUExURRyBEiCOFCGVFR6HE/7gO7XFLtnSND2XGWOlIH2wJF400boAAAHdSURBVDjL1ZHNbhNBEIRb2hfwzChY3Lwr8Xeb0RzIA/QuyRGx+A7afYAAAuVICArXgKXwuFR1x7EThdxT9vx01ddtey3dw1rJowFeTcPvh4AXo2r/6XYwr7dA23bPFfoYYxdRcMc29i3LdiUxtpv+7OV43HXBLNfYdyAigbab3rTtl8H8SARBnNdtDKgXglP7s7BR1kSCX6JrIaEN+AbfVMmjsEbfuVaChkn1mQ7BZBl2vrkWgnKjutFjDjTbOFwiL/iIEA74M99a8HOav3tiig4s+aBOaHzV4e+vm/jJ+w8OhKfTcMlzqXoZdjrAWAdCSd6iR+FeAHGCwrl9kxTmtXn+EZYknzDqSSkFZ+9eCWkhBePhpoRtGgKLOva0QJbiExiyQ4dkwbwml2raApUI1jTYLATMCpMsbCm11FpLGfUzD9TIlhewS5ZKmZPqub4rRDmiHh6xDRM4zaia8Bwcxz0dXtREoO7p9aR/PL/htkDx2v6LHVLvTqgV/+aPW8ZdAGruA5pcc/bV1OxMtguABiLhvTCbbB4P+MKYjY0IBmQnvckicwG6k/dkFNoaL7AJdy7BfnV6fYc4nKdVthrJ0yAmtglf2WyOcXrsWTWyU967wt9O+K+uTqWRR6N/w+e2d4PBSt0AAAAASUVORK5CYII=',
     alt: 'CC'
@@ -360,7 +360,7 @@ const CC: Option = {
   label: { mainText: 'Cocos (Keeling) Islands', secondaryText: '+ 61' },
   value: '+ 61'
 }
-const CO: Option = {
+const CO: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAhUExURf7WJf/ZMP7TGtETKNcZLgE7mNwdMgRDpgNAoAZFqgZHrdghMPIAAAEYSURBVDjL1Yw9bsMwDEYZnUC5geETBJAOUECG5iwGNHYQPHdrs2UxqjGb4a1zT1mSsmTFSNTFHfr0w4/Us+FYR8K/EA4rMnNM+QAQi6TnVQUZP8AEgB0ZHICRy1onBMtorsPi8Y9pEq0QoimhgUChnIsS+lY0IFpU2eedQ2qhJQPhPkbKXMmAu8k2t0l4zh7Cd50vmOvc4DLP03RB4oByeqT8Bu9bprv8QCj5RCHU+AjXuhBYcGNwzoUxhqXi5nSFvh8dnrF3FHLFzemMQpU9hKHO6w6CtYP31lrv/WApeSL3L9AhNl9LyLmLQoUomNRi0FtBaa2MpgtvOoqPWoYnMHHII16sqo5EzPiHhIlFqwKjTqDq/C78AGfWTTc2Ct9HAAAAAElFTkSuQmCC',
     alt: 'CO'
@@ -368,7 +368,7 @@ const CO: Option = {
   label: { mainText: 'Colombia', secondaryText: '+ 57' },
   value: '+ 57'
 }
-const KM: Option = {
+const KM: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtCAMAAAAun0N9AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAABaUExURfz8/PT09D55xESAzdAXLf/LRkOTPP/HO0aaP//JQUF8ydUZMNocM0yfQkaD0UeE0qrOplifX0iF1JjElOrv6aW1QYG5fEmF1MrfyHloOa06M9no2EKBtEOGlh9FeiUAAAIXSURBVEjHpZGLooIgDIaxvBMFama393/Ns38M1M7J9PRDMsa+bZA6Z19JGVN9yZvzl7w5VxkNfDJvRXv0ZTNftJkvDRNB2cReVuZ5buF/CvxfCYpPMAWo0uO0FEVRYeADUxa/r/yhj4i+qlBAJce5iIr0fD9z8or6mEhSThKsleLykoTvsJGPuL/G+R+8TMiYVm1ToI3r27Ynw9238R7viUqs4xbstvpggHSOEtnElqZPaJvI9GPch5/4mR/Ic0fxknwl7pBAKsxRavzxZJ7fjHGuz3cInJommmSTFbxBQ7acyfRdskZKyiemfEkgd1jBD9TYwFA+y2AT6kHa6GZ22HbMk4n2Aed8/1wyXQ8fBR6PYQWiXNJITuNzAkVhaMsKZDvLJEZ51Svq5+VA/CAl/eRk+e2g9YFS0IcV7MNkqDzPWzyKEc6jtLnedJSP/Uvo3/AFmGL5q6d6jRTC0UDnGGy7lnPctF7LkyxewMCi/xR5UpJO59I8vKHDqfLtIsHd4S1Q/yq0lhnJdDTEqeTOjv6Ezjrfe7peKr6Z6du+34pHPuqapt/wz6ZpTs3p1DSXS3OB6fdQsLFCFHB54WvEHU9HmuO6pBnv9setmvLP/XG/VkcqhfAJ/xjP5onC/tUPRf5ZL5V7e6hi7zULkfSJ6ztf8Av/qLcpZmH+uat3S9G7X9YuLIrxZdULLuIf74/rj4mU232lH0kfTtGKnsxAAAAAAElFTkSuQmCC',
     alt: 'KM'
@@ -376,7 +376,7 @@ const KM: Option = {
   label: { mainText: 'Comoros (‫جزر القمر‬‎)', secondaryText: '+ 269' },
   value: '+ 269'
 }
-const CD: Option = {
+const CD: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtCAMAAAAun0N9AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAA5UExURQOB/9/INOlwHeJGIdoXJv3SFt8bKROJ/wqE/9MTIvi3GJ+1cvGSG7++UimP5j2Vz36qklyfstBxNha51A4AAAHBSURBVEjHpdWLkoMgDAXQYAXDUkX+/2cXEsCA2IdNpz6mHG6EmQrLrfJOp5oM/KCfxtzxW8k2rQ/f6CdpMwuvvtez8EGHT/WjaOmdXr/W0sefXup9oC35bVWx4o/ptG5S4UjPVVtL+duqSxFH+vCBvkLPkRvGkZPHMkDr/cjEetyVyD7SqYCD8gR7DcfahdSF26wpn4by2jpOFROw/utWzdYJID9iHBanUAumqj2MtEy3U/RpvNfKo1c6yGULo2xZk9ZAHJ1LyYtzOT0eR7qsetHR02D0mXluB7HXpntuO/2lAYrzM1oQR9oMslnvCwjV6alfc9vquNuIUFV+bgxro81Ftt43rP6oVpfORfqjaqqm/8Wv585H2m0lT+b7QeeycaHh7MfZYtlO2dKz1p9k49m3erBnF5q9d2fd7PelTn5z77KfrH2/3nQ/0vasV58sIB8hX8c78Tq4zl59HE+knLkXAJAvk9OONdnSQ74AaPVlNg8+5oB8B5d/LofOkdDA3AK0rc9D3RRCkz+/yA5Fi+S+zFW2CvBJ9fvNf4uNxjf+tX6XL8O/1gC/6eg7vQPc8UUj3PG3NfnyMrmho/9Jwz/7cD3c0bsGNQAAAABJRU5ErkJggg==',
     alt: 'CD'
@@ -384,7 +384,7 @@ const CD: Option = {
   label: { mainText: 'Congo (DRC) (Jamhuri ya Kisoemokrasia ya Kongo)', secondaryText: '+ 243' },
   value: '+ 243'
 }
-const CG: Option = {
+const CG: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAnUExURf3hUd8lH+QqJPzfTAi+WQWvUeswKQi3VQOkSvBrM67RU2S/UPanPyi65nQAAAIDSURBVDjLdZO/auswFIcFfoHKTxBr0CwIFAwZC4Z2vAibdike/AKN8ZDZ1KTL7ZI5jxC4T3CXPFd/5xxLqhv3l0QxPp8+HfmPeljLWVG2iFNr9UcqZxkBf9VvArfdgrh/Vb8JZIXTKjALkLJbA0TgCDkB2CPVPqTCIQmyWQBgqOgkjRUfVU88n/dwImA/DPhWwxD+L3GLEJCBzqMCCR89cT0IGFjmosIeSHALHFQA3CkAPX8ofeiA9sgCAHVd9wN+te8xHuQuUAfXCPSIUHXNAl5h1wUAMz1BOOhf0m28BsB7Imj0vk5bmAUEcBXT8Rl4C5lLAjHE/OO7LB1YewvULm2h7VrOAniL9V3bQUCOjfKN96PHOL67+BxcMd8aCOxGNag1DeoskPquM9ZCYloYRgkIF66Bu9JkY1prjQAwjNOfuYMMHaBqEYxYgqpkOMcV7g2tb5C23aipmcYJw3PcwhYVTG4ZgmEcpwbQWe4zCTDfhMDAaY7yqJIgVb8Bk3TAb5tZA46xw6UgAufY4lIQgIUgTynMnUodsKA0uihMXmBAci2GozwHZPjUVCWLZlIA7oBf2JIKmn664JGX+IhPIgS6ICKfwZyBS2yxRElzjaoFFiHgI13ET/HnUg1LyMvCr6ss8D0ARDBv4SYALvEilnoN+NHBLZC2sNOrQCYCEP9XgS8oMU9Un0oRYAAAAABJRU5ErkJggg==',
     alt: 'CG'
@@ -392,7 +392,7 @@ const CG: Option = {
   label: { mainText: 'Congo (Republic) (Congo-Brazzaville)', secondaryText: '+ 242' },
   value: '+ 242'
 }
-const CK: Option = {
+const CK: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtCAMAAAAun0N9AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAA2UExURQMOi36EyYuR0O7j6AcUnPj4+dgcNAUQkAkWowYSll9mve++xL7B4iArpjhBrt07UOqQm+JkdKou0agAAAI8SURBVEjH7VRZsuMgDJQNQoC35P6XHS1sdpIXv5qav2lVJSDUagHC8DgWXLfImDGEgLMM4zaje+IUvwJwCQ90+czPDh/hifkGP6M7Die0Sfmsua24HJx1jTf4URJI8D4V/QlZvO3qKz/uDp/h6XA1vorz9MbmjS/1qqDy+dyClhNv82OUBGFR/hKCHcdN/qRY0T0Kn/9xVme+w8cBWv+AHP0XuofwGXqEfrDTxOwL37fInqFn8t/0Lco3urdJbB7/8/5LvC9MP+M8JNT69aRnp+du58+dZJeSBzEjcc6arPjA0nLL9fuXzvcXbHvVZ+xb8zN/1+7hjrX6pXu59y/0uhlBRtw6PzvuWHku9n5XmT6d20/8HfkwK/iBtVVYpWKOn3x5v1rOYQlS15zaltI29VqgiG8+Fb4dB/s0KEkOS5NsYtNUDA79/Mi48pPfZQ+LDAv9bGNdwOc2S5z3TT95/QItznSu9DT6gF+6OlLiDxG//pwU/AXENZVQvjYN0TD9FY8CpuZLWXqmReW8pQJumxLjy6p6VD91ENtbNLVXD6S/w7/jU+rboctC3S0xn6qRUapZXPVnboY69nzKNOhX/0sBRDWZ9H/NStL/NR66GClhwFCpvL9KJ3l/NRZeKIM1J9G2y4ivTab71mKBuu5FviXsabhtLlFAn7mvTtU/LQH9BnDD8zsADJnA/mHMCj+paGwjlHFfaXadDxwwnoCG8bs5jEvXOZ3GNHjojcFl1NPSWeS9/Cf3f/wWfwBN5UC48jPNTAAAAABJRU5ErkJggg==',
     alt: 'CK'
@@ -400,7 +400,7 @@ const CK: Option = {
   label: { mainText: 'Cook Islands', secondaryText: '+ 682' },
   value: '+ 682'
 }
-const CR: Option = {
+const CR: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAbUExURdMYL+AcNAQvgP7+/vLy8gQxhgUziwU1jgY1j5qGDksAAAChSURBVDjL7ZQxDsMgDADtH8APqkrZK/UDHfqAConOWeL8IM3YLd+uwS4hjWRlReohbGwfjMDyKszzUlXSeQMRjeM0UWFb9UA2PUSbxyo847DJOyHGLseg+SucV4LGUPVOtfBDl0xL0BeuNpc2BG/j2hAc4xGRg0cnVd5aAc8wWRxQSAdwucnzfEKQjqw0KndASAajBrTH3ebWhvD/o479UR/BORULDpwq7wAAAABJRU5ErkJggg==',
     alt: 'CR'
@@ -408,7 +408,7 @@ const CR: Option = {
   label: { mainText: 'Costa Rica', secondaryText: '+ 506' },
   value: '+ 506'
 }
-const CI: Option = {
+const CI: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAnUExURRmzbxzBePiPPRelZveJM/7+/veEK/X19feBJfLy8vz8/Pr6+vj4+AxK0JUAAAGfSURBVDjLzY4xboMwGIWNfAF6hchdmgWJGyCLDOmahRlRcgIUKTNyThBxABa4AWTPkByq7znBdVQRVR2qfsL/wPv+Z4uF43XjeHGE4m+Ftm2ZZnPC26bNujbbwJsRuq5tu7bLsm5WmPilsEQyjD3nnDAMPZRx7H0hUciSRaLUcuyRWXxBKZUghbPsh4H7IJziEA1cpqTXowNJIHCCAIJGaDs8AVH4Yo8QCoa9xDZcrieegNu2QbBBJ1rrJFkzOlEZ2W9jvIEROpTW74ixj3ER9g0Cgw0T75frnRP+O4P9ilfYhrvBakoc+qvh6sB/FojgieD4mZBaYe/whZRonqlhX519IedyjpmuKnLeQ/nekIPVmVRnWCICUkRSQsjz1J7io3JIrtLgFUVaIC3y3BP8BuaMC78h+kIUzPEVfoN0oMHxUR2BFWIpsRzLW4MTbLijFsVRTCl+FJodQN40yKWMqXlCua0QkWMTE2tEopwotogszY7XWym+CXWNr942zUMDKijUZWlolOZwnIy7cGswxpSGlIdmTiC1Mc8F85+FT5Es0Dg9MA8mAAAAAElFTkSuQmCC',
     alt: 'CI'
@@ -416,7 +416,7 @@ const CI: Option = {
   label: { mainText: 'Côte d’Ivoire', secondaryText: '+ 225' },
   value: '+ 225'
 }
-const HR: Option = {
+const HR: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtCAMAAAAun0N9AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAA8UExURRogmf4PHR4lqfb29vr6+v8ZJv8dKhwjov7+/v4UIvPz84sWWIpSfIpRe9QaN8QyT1tgvsfI4/9WYP7GypxQYU0AAAGnSURBVEjH1ZPbkoQgDESDigyOc3P//183F4hBydRuzctuY3VC6IMvCvNngj/JxzhH9FJ50pkxH4tmXtzEPSc7XSZWksr/SPNpUvlMT27PeKY1H1HOQ2bRhlwaqbFXa5yDWCDrWE87akkzh/yZfP7ePqHOg+lzgBCCjAJ3UlGP9XG/3tV1bjPYQQjmoFRa67per1f1Mq+hXFYwfKv1djvwXbn8jXl1l7942mY0/MLJNzfl8l+z4eevN/xU+4meqXRbw297pM3ChEV0KWuqI4TVNXPIwkV35kiClr/sB03WvN/cLwV/V/IYe+8vLUyOBLPeFYwTLTKu2iODlUn2MidxbhIQSi2rihmsu8v95hbZA9exeHsR/l/s0ZyPJkUtyMVdVT6PboTf78nyi8svKgqhcSUMG/JFrlj0TDPEcytnjQKRwi/4n+sr2rrA4igwY70rGBy9GvjlxVz+2fDPX/PD86X8y8Xf8KyEqzQOT4lkn6FO0PZ2GLqZBCnVcS1lktrJaSc9pM/0MQ+pv6SU7niy7zwcmsibPW9bpbZLp9mJOl3RH3Zj/1vfLDw2lWfZ7owAAAAASUVORK5CYII=',
     alt: 'HR'
@@ -424,7 +424,7 @@ const HR: Option = {
   label: { mainText: 'Croatia (Hrvatska)', secondaryText: '+ 385' },
   value: '+ 385'
 }
-const CU: Option = {
+const CU: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAwUExURQYvkAo2nAgzlvj4+NokPdMeNv39/fPz80AufeRwgNxFWfPV2YooXOypsrUkSeeOmZa0VQEAAAGISURBVDjLhZTBSsNAEIZDn8D6BG2eQFhoDuJtFmox7WUHYsEiBDx4Uchh0Yutr9BDKF7r0VOxgqe2z+ADOZvsJtbsbr5DJ2W+zED4mWDf9XISjBctAgzbBDiEFf3wiH4/7JEwfg3dkLCGoV8gdoEHJYzntk4n6BkBht4JazKWdw5uywkw2rYIEA9SzaB6SlM2ODMC5EyTspqU1cJow2zUAsSZjDJCRlJm1fNjLUAuNVEmlVWghXWx5Es20cJPucQpjO7ph4PY2/IgOMDkATj1wZKuk4DD5ertfLWiGQIS64TiC3xzIWjKoZkHznnM2AXtoD5eNQWkxib6VO8L5DvLBCGmUj4jVSGSTjMPNOH6ZfIk6HWcHSerCFQgEON3/EBUC2yJQhqOxfsYWwOjOmSQN93aBdUvWNoThYbYkSjTn7oSZYQ8cyRK929knaLjROkFtjT9FXLpFxLPhVH92aJFOHT9QuK9MLTA3KjTf9UIu7BT/tGlqlpITDJMqWrJbO66PfpGeS8c8QsaHj69S7MUWgAAAABJRU5ErkJggg==',
     alt: 'CU'
@@ -432,7 +432,7 @@ const CU: Option = {
   label: { mainText: 'Cuba', secondaryText: '+ 53' },
   value: '+ 53'
 }
-const CW: Option = {
+const CW: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAhUExURQRBowI4kAAygQM8mf7GPP3HRPX2916DvzRirs7Y6JSs0hV7gYIAAAEzSURBVDjL3Yw9SwNBEIZHFuJHlc02lkl+wRzTaJdCewvtrRauEwJuKxyI6ayipRI4xF/pO3ObFObukiKNvszOOx/PDtFfUdoFfPevj1NMD33AyTKWTx07h3B0Gl9dlxRwg3jPUMuamUgcL17exbkzRsJbG2vhmGCVXLDIc+WExQgz0cAJQRZVvbKFyQw8BqQcXkrLtzS3HVt2GaXGZRFjLCvZ0gbgOsYP6QHkMpbSChRZgxhdKCSoLItoNyR0Vj2u6nlQohDgsCJoyxQ8Koy+wvmnDUODmYLHBciDOioQKHWKjG9eESbUiOBVQSNYawTaIeWxt4MZbXCdeQVatWY6AX9IYDJqojEo997SHhfu+nVzAOCqU9eaZrTpbu39rmc9FzIw7deYJtORRratGO++8C+AH9cyvn12jY3gAAAAAElFTkSuQmCC',
     alt: 'CW'
@@ -440,7 +440,7 @@ const CW: Option = {
   label: { mainText: 'Curaçao', secondaryText: '+ 599' },
   value: '+ 599'
 }
-const CY: Option = {
+const CY: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAtUExURfj4+Pz8/PT09P7+/vHx8d58JXF7XPPj1MLGuuaYVOy5jISNcvHQs5adh0pXMLTazZkAAAIDSURBVDjLvY8xaxVBEMdnl4Ca6pYtbJdhIa+wyPG+gCwLUcRyEcV6DYgQRQmvfYSHYCNiCq3ShCBYyiNgZcBCy3yAFH4AP4Mzs7v3DJ6vEv93Ozs785v/7cF0vbbhnwP2D6A31q46Vg69RMuHbbDTvu+ntpeztT2LdmM4t6YDyvilMIjz/b6XnIExzd7U5C/ALH1ZC8zSAzMOPOdw/UNKr1u/A2WM6uq7md593P9+mMhAdZ2RB4xSjHLoXqSi+095qqMOO3BCCwDUcQWOFDsq7lKVJKHrbjQD4HmWIYB3EH1LA8DiQdmhQptp0JEUS6MGUFuHK+AeVxWUm0GFZ+k3oDXKJ+QKwx/IJ8rMZX0drrhzAmO61oC3oEeBK81gr1Vc3TU4eW9L//0eGzjHfa5D8dOgNdI1H6LWpeScLpPgkOS4vHGczhw3HHKkvQDyAcI0+hPqO9QrOQRAcaDHf37GPT7e+cS1IpDI85Ncy7ix3KUBRjW64kCZ3slPgpYb3c2PpMJ2DOjC4CKfyj5Z5jn3Lzmw460sxNVl3sVBDWD5V5lGyejxPIwCGBd5fnG+yAc44uC9Rx9f4s8fkwNPBsUjBAe+SE4R8eIcY0AvBEVPQIwheB8Cz8Syc4Fy7jigvCFlxaqS3wRKvVSH1SS5gxiYjuITy6oOceUwFFdZOwuwTv8D+AUfPfLGZjzHqQAAAABJRU5ErkJggg==',
     alt: 'CY'
@@ -448,7 +448,7 @@ const CY: Option = {
   label: { mainText: 'Cyprus (Κύπρος)', secondaryText: '+ 357' },
   value: '+ 357'
 }
-const CZ: Option = {
+const CZ: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAwUExURf39/fj5+eEdIvPz89wZHhNNjuYiJ9gWGxVSlhNJhV46Y54pQGqRvNLd6DpupqK50vcG8rEAAAHASURBVDjLhY3PitswEIflN7DxCwQhck7QCxQh8BMI1rtQyh58DsVUT2DQKT754M1tKc29FHpe8gJd+kKd38jxJkWJP+vPaObzjHgTC+z/LAihXxLC25KwMCQEGpIzeGZYHAkkMhbCqbggz7Msz4ssxlHYvxcZQVmUKB+LiHMWQl/cYhKuh6SE/XtZbAvavJj4PAs0ZAtKXCWBsyBlFsKJslGKJtBluZmFz3/Lrdb8JwW0YvQhhB5VXWoNDUtrujai68ID0510AurQTdCQpNDx34RzfVJA3dGiSe6U7OCoiMN1LjFkI9xU5KNPCZTHiseP5j++CHfF45Kw1OGpuS/U3xJCXbthwEHrtUkIA5fw1U/NM9GsAS680AEt0GP8KpF6lmvJm+OVGOszr0gQdK1RX0vqtEKHgTlwkUozCFdiGMd6HIfx8adMwSMwZfgubwncYeQBUkljjIoB7yiAVhljqSoVAUthW/VpEo7GcFbZucinmYSDVTaiODq/jI3Cy68pSQ3OVYWynTocjb0FCwdbzYnqut6y0Hrrq9ZXkfaSCsKRbk5Xlffx5phe3u/EePAftP4S9NuJl9/+Hjtx9PeFf9rmiWP5SznvAAAAAElFTkSuQmCC',
     alt: 'CZ'
@@ -456,7 +456,7 @@ const CZ: Option = {
   label: { mainText: 'Czech Republic (Česká republika)', secondaryText: '+ 420' },
   value: '+ 420'
 }
-const DK: Option = {
+const DK: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAPUExUReQXP+0iSvj4+P39/fPz8/zdrLoAAADeSURBVDjL7Y7REYQgDESTDkIHSmjgsAGGof+aLgmKyHn6cffpwqCEl92A27SIXm4UwQMMQFyYrx34LiLG+FsE+xhn/ARolfOReXZIDnVR3dQ5eNEsVSewnOiM7ByYq4MiugzC0WFLdthm8Lui/9QEfZlPgWv9DwitkmUHq8gnCxBUcg+5Sgm/EsJOkM1gc9A+bVBUzyAR1uZrLZ/M0FRKzt21CVeBmiccBQeHcuYABAgkqA6XyP73frIQ2+JQSoLvInnPSfoPAzYDrDOkWkA7qQZ0Q3YRdJJxN8MDXANvzLhwzpN8GhYAAAAASUVORK5CYII=',
     alt: 'DK'
@@ -464,7 +464,7 @@ const DK: Option = {
   label: { mainText: 'Denmark (Danmark)', secondaryText: '+ 45' },
   value: '+ 45'
 }
-const DJ: Option = {
+const DJ: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtCAMAAAAun0N9AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAABOUExURRW0Lvn5+fz8/HO67hm/MxvFNn7C9BOvLBe6MXe98PX19XvA8m+364LF9fHy82y06d0aH83n5uNBReh5fKPgraXT9PPW12nPeTvDUPG1toeH8mIAAAIpSURBVEjHpZAJgoMgDEWDtoqoVKt2uf9FJxuLdrPTl5SEkA+xMPY/AYVf+qonZ6q+YqQW87jXGHMoimKpVuhpzNdnG0hfjA/l3bC+8H3VVuhtSzGw2bd5naCK6PEb2mdU7Uv0KOiL8U3vG6Iev6FtWnL8NY3kj5HQnPdJj9/QvKSNMd4i5PpibJtvWenxG0K9DJ5vJStlKXkBE7SG3Cyl0JQrmqzSlCLlO4BVbOLjRvkBkGdVT5nv3yu6VQaGKYxJydKV0cRjLLM9Ll0H+ipyj9eMfMQErS5dF/eSQ3jYuMHFGXzf7STp78PdpMsWOT6hbTitikk/DZPJGLsTd24gaV6FNP4w+JDTz1enHZD+ciZQz/ESLnHLHr2jp0gsnC/O0fvs8/EjYLh/UvnkXIHbcMfnC4A6nSkmlRsjBV72vK/tQR/Br7oe9+gFEuOPhTy+G2/HfXrsdXf64y7n4c47Yj4eyGQRdB8j/fT9afK4+il8gL8m2eGoJopDiHyJ6i9uFcfbIWt8B7gnzJ9UD3qfqXF2i4ZYNXUpJqgKXsTeaYKzW1ZZG+Q23mKtlrVqLbgolDnm0KbNaw7rMr7vvD7N5q/2O2R+r3Ka/Uu9ask9zm7hqb0oo3mB5Ffckmtgt/km3cVtjEiR8SaFtQKy1pjEPgvhfT/bh4689yUqv8I/CbPXG0tBIsgCkiXj2aHOkIMUJNY1ZB0ppdnrOhO8IZ3HdsDZ6x+Auf6JPz4mUOsOk376AAAAAElFTkSuQmCC',
     alt: 'DJ'
@@ -472,7 +472,7 @@ const DJ: Option = {
   label: { mainText: 'Djibouti', secondaryText: '+ 253' },
   value: '+ 253'
 }
-const DM: Option = {
+const DM: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtCAMAAAAun0N9AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAABIUExURQx1RxkZGdwpPtQkOg+FUfzRP/j4+AttQg18Sw6ATiIiIvzURiViQINCPrQxPPT09BERETAqKA4ODvLy8ktcQ+Zzae+/xPHQ1KGuUe8AAAHsSURBVEjHxZXtdoMgDIYz0gm2gF0Lp/d/p0tAvlRsdT/2yimIeRKgtS9c+rrdbtfrdRiGnRh4x//8kX9Xf+wr8zsx/86rvgrfj/mIV5/xUDpY8+vIEAjUohSEO56Pk5mfH0MTmaJAQSYgR/JE4VPqNMjpKmqttv5xfXuBAr1/7QXJ5ootjLQRQVYIoxdhKyA3SJ8O0SDhTlIidPlp7BPMt7LQRU5YLTXxmm60pTRZdVh7U6SR8MBzL2kFejuww5tQ14YDMFrzGXT4703xunXESXwOYjtwm/e0bsN4/AzyB/hcNJ6hQGM6C4CvLWGkUdAOuaPNG9yM7PHWcApkHsVx3vJXEOtzGtfnh1bTMFHzln8CJJ06af0iJo5hKkpz0+CZoJ8v0vkjipDGh+fMplgeA4/mqyR6Ie3YYZTAkOZVlSmhHf8wVNJgLXPIf2jXtHCqa9ycSB3zr7h4Pb9MiK59PIbW9685QeA11Xfj5Zj/0BZMWD9/AUaf8i96jSxa+v876V/0etzv9+c0qfGUf83887nnX7DMBh2+crdoUolf+FKZynxtNSo7VsupbEvZqmpeQRMD791rWf+Ef33Ey+5F/OPxYF5CbVi10SVPWvkTDTNf5useKs+CykqypRS+aznQ8Z9NHj73r736jX4B1ktB+u25M/0AAAAASUVORK5CYII=',
     alt: 'DM'
@@ -480,7 +480,7 @@ const DM: Option = {
   label: { mainText: 'Dominica', secondaryText: '+ 1767' },
   value: '+ 1767'
 }
-const DO: Option = {
+const DO: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAwUExURfj4+Ac6dQU1bNcaMd0cNAMxZNMYL/39/fPz888XLc0WLO/T0kOFRZuykRJuHHSJgzWtGzEAAAHMSURBVDjLxZMxS8NAGIa/LRlUTBbXJhC6FlKKoxAHxxLI5FIIBLPdljVjBgWn4jk5Wv9CcRfU6u5v6OhUEN/vLolJDAEn3+t3V+57cpchD1nNHGXIaTMn9C9AMEX8cu4DpkHA7UDVhGzLsS3LwcA/BficwNeZkOvaDsp1MNxxDfg1gG23Ipw+wG1mnBlGlszqxEkXMDKRJSoxRjKLFxoI6xNEZiTNLMjzvDD0yoyEQVnVSzUQoQ8gCnnMDcMQS45MpVwu0/SaIh1NzIUgkhwQKa81oDMnEkI20wXwDkLe3q50ek8gemjmjv6Yj/X6fai/v10/boeAy+fP3csQcLCLzr96O7le9vQJJnHlpto2OSAQs3yHvCKo/HFb7xSbt80Tnil5Lv1sxdDV5jXv3N62ANflre/8sA2cFThuEDDNwhwGCrPoAMoftgieBbji1wks2lSL5gfHeVF0T4Ac01qTY/QLm2M5DktpK8BvA3CRVcMEKUd9ANvIwvJySHEyg0ZlNFDFRo2ILYuVajDxogW4FfCTHyD8DSwrwGPZXPgWsYzUEE2mNwyEoWoCwzTXoqUQDSUVUMvIPpbAStWqBVQqKdEkZqbue4CWaD3AN/oTbTgdsoaSAAAAAElFTkSuQmCC',
     alt: 'DO'
@@ -488,7 +488,7 @@ const DO: Option = {
   label: { mainText: 'Dominican Republic (República Dominicana)', secondaryText: '+ 1' },
   value: '+ 1'
 }
-const EC: Option = {
+const EC: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtCAMAAAAun0N9AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAABCUExURf7UGtUXLAI+nQRCpNETKNobMAA7lv7WJP/YK//aMwZFqd0eMwZHrt4fNIprIebCJ724VvHKI7qWImuCe1u31TRpnGJn7lcAAAHBSURBVEjHvZTZkqwgEETTFdTpAbf//9UpCgVKwRszRtxDSS1kYveLGN6B/+rXsqaApl3zRimW5wrhm3TAAa0TndBfbhMvcqec4ZU6jgLDpc8eQf+G+3VQoVQcEvXY8vtVWOd2DuImJWkBVqShdSzPqbqpzgSlfK1kcZQ6nSaHQQRVZF4WQ8ksy1wWoWj+dhhlOBevgL8CoYUfLc5DXhfuriU5O9RcAMeBj7Dm2c0N/wSSUHtavTrJQLAj3uUxi0k68YqgkzcIHTCnA0H6GjlOOytPZ5HuiIOBnu3Iv4OvGQaFeZvdFwJ/wX2d7GY5l/kqsZLva9/2kfJaVGEswP512zbOJdVY9I/OZ8lvn/2Nz83YUPjsGJvdfWStdfZhP2bpua/R5GCRDZ9q2xTJ+2v37MG/P/jrHI3b+t2w2+x1GdydTexW+v9r6f6sv+cIXc/x9P6+Z5Gn9vo+9v1lcgVC+y/qmxb9O/D5fKbPFKCG+2tOz87agalMN3UU0yPoHuAbnsEh/Cuo3F7JiFSZUsxQEZ1/QkS6TClm6K6zKjPo8mMC1TvQtlVLufWrreLi/ijSs7PmTP6U6njE4Am073jr/wEbTkCR5mIHCwAAAABJRU5ErkJggg==',
     alt: 'EC'
@@ -496,7 +496,7 @@ const EC: Option = {
   label: { mainText: 'Ecuador', secondaryText: '+ 593' },
   value: '+ 593'
 }
-const EG: Option = {
+const EG: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAnUExURRERERsbG+AbMdITKNkXLP39/fLy8iMjI/j4+MepR97Hh82xWfHiwYu7bqgAAAFHSURBVDjLzY07boQwEIaHG0BFG0V7gEjsARBwgDRIVpRiK8tKlVRpaWyhHGDFo95I3uQCedQUkENlPAYtURLTECkfeMb+/THAuZsz+A9C5iaGJEmyzZd3WtkGe7w8YVFI3cSwjewTTZuU9qmJ0ii6gGiEJFp0Ye+3M+EX1hByN5frCMzuWa7fc324fjnMhALKspSSMart60PbXL1VzCaGAqSU5JjaaP2s9bGiK0bQhBFWNkP7MbQ9CnIK5wJO6NvjU9NXs6gAQV2VQin8RY3gL4QQGJVYUOCIEGTUDa+rm3rPzUFgylHgWJUylfO243g77O03mCixwwlmhqLVcaEfOe/ItukOuJs1hHs3tysI4aIQOPEhCO5OhHQIZxhhccKC4BOBZysyddxhB/AmfN8jG7fjV9QBq0mMCf74kmPPJ3z4xg/Rn/AJ3r2AW5bWVNkAAAAASUVORK5CYII=',
     alt: 'EG'
@@ -504,7 +504,7 @@ const EG: Option = {
   label: { mainText: 'Egypt (‫مصر‬‎)', secondaryText: '+ 20' },
   value: '+ 20'
 }
-const SV: Option = {
+const SV: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAwUExURRVMsPz8/BdPthhSu/T09BlUvxpWwhtXwzVsMhtXxKK6oePl01eGVPnLNIGif/nad4unq04AAAFCSURBVDjL7ZOxSsRAEECHfMEtbHWHsCQ/IAn2N7CVd8LBkdQ2l9pO8gdLcoVduNJOtLpeCzs/QgvhivsG5cCZTfYSFVcEK/GxMzs7+3a6hfp8T1HUdb8qitXqAnI/p5B2ZNli4XZXzyBLvcy6CUfp3JXzNqyQ+Dn8XgiZKEqSOI6iLlxPQcRYK4z7wQ7RTvgaBSoMVFvvI7DJ9kmgwgYEANDsCjipAKgPPexN47nGryD8DH4oSDGi8AjT9YG4RY+wvTzBq+cPghQoeTgKOTL3d+uHytaCB6EcgESUUmpOODTV7tWUAlFzaIoBUELkk9Ty2JS7F1NqfsGL0hi0RKqa89Asnx5JIPgFvyWhPdLSE8NUdja/IlrBWVsWNrpHXyCmdL/UHoFHbLzC5PpGe4VPjKHu/VT60++qIs/P/n/3X/rdb/P+I/ei3zGpAAAAAElFTkSuQmCC',
     alt: 'SV'
@@ -512,7 +512,7 @@ const SV: Option = {
   label: { mainText: 'El Salvador', secondaryText: '+ 503' },
   value: '+ 503'
 }
-const GQ: Option = {
+const GQ: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtCAMAAAAun0N9AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAABUUExURes1NP7+/kuqHvb29uUqKRuB2USdGk+wIOcvL0ejHOImJfr6+iCH4Bd70vLy8u/w7xWZQLTbwTJ+sS+P1qLK7Mvg8jmlWK0/VWxekUSjODaYgH3ElJ1mdxUAAAHbSURBVEjHpY6NuoMgCIZZP5uZWaettrPd/30eAUWtzp6tPgkReCF4Xg4JzPMgb+aD/JsBBdk6znkzF5/psk4Rf/0t9or4AwOYdwMaVtEUzhpR8i42co3ncUDKFf6k70WWw8Cbsdkl4fMBZ//F91kKWT7yZjxHNewI9KEUmqQv5c0zrWVdWxmelPI44Ftl/I4BUJv03E5fChIY3bcDFvsN/kF7aslObYgpXMX4gtphNcEUGTNxgdW/eonTPM6hB5gIo3f3JJ1lPw9zL9gpm8CCmmWi9wOQn4dhmMv2jYB+Os7A13Uqy9ZRzv0MPxLLTREf2Z/pyl1OyId4eZO2eNzPbS3tT5E2d1u8meJ4z/+vDX4qbenMOkPekjhHSRvqKKi7mo1PXd+sDYi1r+FlpTckZSLyAQ/fLe/KuxdzSt6fHt7er/h1hpPQdQne3XovrDmXaSsHSDnraM4Dvhat9et34MCLSXtw6EQjHOJHpQCNDhr4WyxeCiB0Rjyk0OhTyR1iSCO0uP1fQe7ymufVTjE/3jGu+KDz8q9KaiGrQo75e4VSVRV6vVRIRpNO9hDxj6WSGCKuq3DrBaC56K+s7Pi71g6hj4wmaO+05pDHSoOUAXFu21b1tqrhoQ/pD1dxTqHYoUniAAAAAElFTkSuQmCC',
     alt: 'GQ'
@@ -520,7 +520,7 @@ const GQ: Option = {
   label: { mainText: 'Equatorial Guinea (Guinea Ecuatorial)', secondaryText: '+ 240' },
   value: '+ 240'
 }
-const ER: Option = {
+const ER: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtCAMAAAAun0N9AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAA/UExURe8eSk6U5f/FPCSzOCW7O0qQ4UiN3ewXQyfCPvInUFKZ6fNJRvymP/d4Qp1Yld8rUMg4Yl2SQIxuRLZQSXZ0vNNxGwIAAAI0SURBVEjHpZSJtqsgDEVDK1IErR3+/1tfRkDUrreuB8qQsANELazv4XFBEGP8vIZLPIe4xqPer2t8jM8/hGh51Pq+PwYs1FhvY523deh5TsW9QkMXYFf3vDyQgd1F7ZgnZjjkORVDJ6Ue25gn/HGIA53zks0D5P7fvGYTibZsJj2f5ny75TynGIEqSAgjtz0WgLoQK8IqjcAeTMWdkPITlirEpqRbqxTVTg2HsAgqGrY84znxLThAxanHbDagSllexzRAmhFMuQQAWwHwed87gYiclDhamW+ZLDQ1p+C0CD6vjpctgC+fChd1bt4mgmRztz9eeQbu8OmRSQ12vFY1RLVl3h73z7OMkl6gHGATRrNZDXhc8qfCUz7hVEGyueFBzj/Pc2v5oeeyOX/cnD+WB3CidZmm3f3T9v6BDrqrgWA3TcTTLGCVdAc7f4CS/32E5/KdRFAiluev+8s8aGlqhWV/dYds503MZzlP9ct4/bqpkZrpp+8/jlMCfv9jCNXP8LKBlbdFSb57Sp18f4bR/iGsyzjtxG5T9/2rh1u5tNNS5BTWMLKv/P/ECsPydQpiQ9VZWzfXI8w58/9fNWHGbLWBHIbbnu+Fl3a/BFfgn/yTLq3yx7A/5Qn2tACL15FNvPPF4Q/59Tv6Ktf2FkHG7oDHS/t+ZR+quuAY7uX8iWB7aT+OGGD0JYoOxzIeq51K5RkW62hLR+vb8ehrMR4z1siPvfyZVz+s3ufPAlW/+KCB/6J/aYs+FwAPQc4AAAAASUVORK5CYII=',
     alt: 'ER'
@@ -528,7 +528,7 @@ const ER: Option = {
   label: { mainText: 'Eritrea', secondaryText: '+ 291' },
   value: '+ 291'
 }
-const EE: Option = {
+const EE: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAeUExURfz8/PT09BEREVKd5Vmk7RkZGUuV3iAgICQkJCYmJq3rrjoAAAEVSURBVDjL1YyxasQwDIblN7DfoASyHyR4Pmgf4DCYrIWA51tCbuzWZOuYvG1/yfElBxdfh6OlH7b0S/olestzpL83HKjKc6S6rqvXeo/q4YUfGGyeA7VtCMGGNlgrKtbWLt13khJdrpIJU15AaMWQ4xmGeZoGMI7jNM/DhIQ/Sxd5+qIhzwf1ec7UXy7959rYVqxh6Jvd9YYvdFsa4CUK6JzJ+8YnRHVrDU7k79E9MmwvOIal27KMnTtRWRZ4gEXhOJSxIc0XQpChE5FSuVCwIcszDP8CreTR+hE0iSaFSmmtAEf+BolLZGUMaWxIpbUx6BnkqHRUMBiZs9Q8jheuLgNDhA9KTjXvcEqGW9RV7RjMrxq+AYEyNRq9P9ddAAAAAElFTkSuQmCC',
     alt: 'EE'
@@ -536,7 +536,7 @@ const EE: Option = {
   label: { mainText: 'Estonia (Eesti)', secondaryText: '+ 372' },
   value: '+ 372'
 }
-const ET: Option = {
+const ET: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtCAMAAAAun0N9AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAABdUExURfzdOReLNxuZPeYqNuMmMhmSOhyeQPvfSNsbJ98hLegtOBhOsR6iQh6lQx+nRCCpRRxXwRpSuR9axjRipF1uk720XNvERSRevIeUfKCgYr0zUNXHWekuOuvMOxp4cY9RrrkAAAHDSURBVEjHpZCJkqsgEEWvyzgumXkgIK75/898jaABI1OxPFD2Yh8wwb974Pce+LkHHvdAYXkUD9rvuV8f+wYU93B+mtI2FCkVRRjXrDh/h/Qet/2ve5CffjianuXkJx/6yVmOJPlKYjyFbrV4usqf23O8tzZEuyGiM55/vFu3L9gzNobvc5QzpYsqMhfxJ82IlulFtxRYq6dLvmRWk5BsPamVV/zJyAYFZRPWThf83kkagHZ5f8EXjAvVdd2CHgtFJRiTl3zGhALUwAcT1jrib2s9yqWcYLxHJ7jo0JuS6+06T6Fir8zeUrEadICU0ulcAP7MOufhTrKJtMoA+v8xbP5+y65843Xnfgxhr2wWYACW7WN873h9yMSbhjfS/X7JqeATLiDJaIahMVCgQl7R0RlRNOYrbGy6Sz5UE6Jig/M813NNe55tOlvGQB+3vje7gjpCNsrdlmNsqkYWJR+l+eVCjlTUrllndHT9GvrDz3LCPaIzyN8x40bMvBUDB/NjsjO/Ok5V8QPsK1Q+uVnm4XeC+tiDKV87OCl0bCM/tML7r4OqDBZRRlf4cu3AJKV97KH8u6q2J22Ub1TlBVDe467/HypRU5qHA06FAAAAAElFTkSuQmCC',
     alt: 'ET'
@@ -544,7 +544,7 @@ const ET: Option = {
   label: { mainText: 'Ethiopia', secondaryText: '+ 251' },
   value: '+ 251'
 }
-const FK: Option = {
+const FK: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtCAMAAAAun0N9AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAABdUExURQAlgNgcNPDw8xmC0wMrjwYxm/v7+wEnhQIpigUulo7B53uQw/PGzNXg7oGWyt07UCVKold2uLbK5RVqMOmCj6u52uFgcmKp35Srw+ydqT+T02uDvxZ3i0lnsmOZdGAp7BsAAAKaSURBVEjH7ZVte6sgDIYhgwgqrbhZXbvu///MJQEV2nUv51zn23liBQN3AhE39XrscRws6YBaazxY0YJwWvtfSWGvXxCuNR8BX/UJ4w/4C/ZHWsJS8MNIPooa7A94ewU46lcMw8p3iC9629W3vB0AT/oEOAo/BU5OjxfrvU1G8rZoC1PkGEJKKDzVTctyfCYFEGW48isZmKhcuhe+11rKsUIrmUDvb/zqIKKKvWSeWpjEGbcNlIQvVk/5sZCsv1D8dAGVlH4sPPhv9U/5jmeYr3l6YSg/uNs/xETzLz4ojOpYE6z1B25HcXYJTxEwtLsCkieZ4uGFj5zuQXg+PZNNKxfjm8f2aVeLMsxjyhg6fnR66MQKnz+dwZgNpq5hfh5pzjgzzy4ZUubCJ5aOXFiEn/jxhDAI5/NE5ue8+Zn5NbaaUkKqdSd8J8s5AlwzncIQD2tZ9/y0/vVbNSbzRspBvospJLwYbDxL8bcPkbsrb8wVKGqPXc2PAKENAG3FU92WtMudN5Z31aOv+HPgd9CGc8WnUpNcBFZMTxfabajzvz0nvVU853PpinxmqMdmbLwM3MqwMxhm4t+Xd+LnUPCOZFwWd2S+MzdtQGyf6Y86Ls8tryxlcU6l8e05xzJFQNE0tgRz6eg+TltC5SqlCCZ3c8sW4Wlu6ejJHaLb89/nuumLLOwfQAt28yv3Q014pjeI9PbOOLnf854ODsAsd1/wjXPpulezj1CX/s1wcjqAg6t4ntS4zyzHyDYE4cOQwoo1ilG+mianaz5RmuzpC4DRVn61s/Xk0rboXeiqtUr+Itqj7A8GJP+vVYX6A775e16VPblqu3OIpet2whpHifLY1j7ybX5VPataTeFrKl8xd19cntbUQOX8r1of019F0PP5PbkAAAAASUVORK5CYII=',
     alt: 'FK'
@@ -552,7 +552,7 @@ const FK: Option = {
   label: { mainText: 'Falkland Islands (Islas Malvinas)', secondaryText: '+ 500' },
   value: '+ 500'
 }
-const FO: Option = {
+const FO: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAhUExURfz8/PX19RJvx/Pz8+81R/Hx8RZ20fE7TO0yQ+wvQewtP6s5sX4AAAEySURBVDjL7Y5BaoQwFIZfbhDJBWbeaDp2pUj2XQjtshCyFykzFyj0CjM3aHuEnrLvPRNREUuh0C76q/H5/1/+CJB0Or+cOtjQP/BnAG3Pz32n9dxUAGoQNdxIgxaBooFMLTcvWtu87XeciRsZTrXOpKF/am2nYgPFikEVGxjD/B736RME4X2ASXSEtbjUjoDk5i3iKoDbQLutux8AvvyH7wAPq0CWhMcL7rOl9ASghjWgjpNZb6igNqZp6jodYQzP2bhNAxksIw2HhifawpgM1NBECWDEpQ3RpAZexcXjlRpYY0pPBc3YUF4iEGPO58DrDBhUgQvBe+e8x/KKBb1T5CSpwNPkGMHyHQ+e7UFekkcIwQUfyMfbNyz8RJIwMPCBG4owlaNrBMLQEJaaAR+/BHwCWwnYQHCPFSkAAAAASUVORK5CYII=',
     alt: 'FO'
@@ -560,7 +560,7 @@ const FO: Option = {
   label: { mainText: 'Faroe Islands (Føroyar)', secondaryText: '+ 298' },
   value: '+ 298'
 }
-const FJ: Option = {
+const FJ: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtCAMAAAAun0N9AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAABaUExURWzD6vTz9Pz8/AUqiHHH7nTK8dgbNHfO9G7F7GnA6N8WPOocQvCzvKPZ8sjd7oCTxNktRrDVwnyOvemEkfXU2eFgcbO+2jVToJalzN9EWHmLuiqRXGJ6tZ9pjwvDkQ4AAAJgSURBVEjHzZTrlqowDIXTQKE4FFEQ0WHe/zVPLhUCjjP4Y9Y6W1yENN9Oqa1QtzUOGeuIRVHgUeJsRHfBpvxVgHXbobuu+clh114w7uAn7Ntbj6PhrwP2t4Jcyx18dnXuVtTYXB/83bmu4Lcqd/FscCkuDgfhx4beiB+nbCefZQ1KQ+Fp3QqZTrafzwasGWK+bwtdDua9XCz/CEyGLziKaMU65Wu6u1GSUWu9wnKTy2YAjWT+RtH7FZ3CJfYeitdyjV8p+aRYo594bGwnY2PCd/r7jQl/wRkxYxWX+o+15nnAmTU6Xnfh667HQZJng3/Hi0APG+33oleeN4IeSL+Pvza8e2jHCs+7t8Nmy+sPSqQGKZsTP/H2p93bjMIPehr4ROc0zhd/EU+nxHPgc/lQ/0EaOnfPzsLfZTo3NqAKEd08nj4/T3j4OGgw54GODu13fuG78rocbY+T9EiViT9YnvMgfxRTZnk60eRaY0w1bKLTZl4CTdMA0LqN+pe38HIgbzWm7rnwLOFZcx7QUZvAirpn6IHcIxW5Bc8Pay281rNCZIXHq8VY7uGJE5htQnp4UsjbFd4ufMgtxA7ss/JkNfJyhMq9Sb1CgLDoURvy8KQt/xBou7Bh8nTlaTSUekAPekDLuR7CPukLpAO+tN/NB294b3iwXiBiU46tOVRx5iPY+iduNankA2ogfAwLs5DwSsuIF758Of67vtqvd8qfVMEfqpLP+/OpvnERp8VuTpnhNFpJNNebeJVj2drkWoGpt7K5jd+qZguuGr4QbOKfq59qwbrsZasX1e/x1X/H/wMalkWT1PIH3QAAAABJRU5ErkJggg==',
     alt: 'FJ'
@@ -568,7 +568,7 @@ const FJ: Option = {
   label: { mainText: 'Fiji', secondaryText: '+ 679' },
   value: '+ 679'
 }
-const FI: Option = {
+const FI: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAPUExURfz8/ARAl/X19fLy8gI5ixvTF2YAAAD9SURBVDjL7Y7RbcMwDEQJTRAVHICIFjCkBaxG+8/UO1KuG7dQ+1kUPRgMxXs8RuRQhm6y0D/wW4A0AXuaWoIDidlMMLSUcAbX/KNvFoDF6GDCBZtmQpoJsBPBCPFrnvDy/h/o8HgsLnT7IaALQKmce+94dr2KCZ1zpKCovzJZFnQzQXMfz+t8c28XZCsPODWl52NnwtCYsXrXz7rLGPBHVB38pnw4drkfgt9f71fZCTBiDUDfAF8lbFILtEyo/K0lgAqVUHVtEg0GBB6ltYoN2lGNJ5orToBs5LnV0G8CKyI9oTGBhStEHTgTHnA4rsQ8GUD5CNR20aeEPwq8AZIVm7KOWg19AAAAAElFTkSuQmCC',
     alt: 'FI'
@@ -576,7 +576,7 @@ const FI: Option = {
   label: { mainText: 'Finland (Suomi)', secondaryText: '+ 358' },
   value: '+ 358'
 }
-const FR: Option = {
+const FR: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAnUExURf39/QYmnQosqg4ytvI7SfRCUPn5+fE0Q/X19fAvPfPz8+8rOvHx8X/NEAsAAAG1SURBVDjL7Y6xboMwFEU9scNURV3AUpWxSqXMGYxYM9CdCTFmQEL5AWRl6oYsfqCyOnRF/EHER/U+27gQpe0P9MTvZbjH17AXzzPzvHqO7F+4FfYFoiKg9Zq6PD+ynYv5bs+KMsCURZDneUoICHxneeH7whIEQeqElBrmnD8FHhenIj3MAodQekQuDHl+YJy73DfgSygiqIEnPNklcJI7DUIcGFIyEjQULi7KOc4h0G2kPFk1iEUDQAFqfhEsRqj+EmC0VZllohaYuj4thG3ZyqotaQsyarJWDZJuS9rZzLqhNVSgwfWsru0TURLF5mwrQyulrJusqRtaJ+ZzNEj6SdPQUAP+TiyOfYPJW1rNDDVEsWOLy9Iyx41piOPIWFuXtvK7wQnW2TjhXV+WQogMg/OASOuLe6Izc0ZDFJIDY6MvgBr02dJ0HT4yhAGi8IEKtMYLF2TOwRMwiDDcIAQkIVHnrsO8sXAm2miPUp2yxkIIF0JHuaJZCdM0fegrBg1KWWUpPGp9vVpFeVbCdEUFMdlw6G8Fz0CMfd8Pn/cFNfZW+UkYh6HvxxHnJ4FAPPwqGP4WvgAEZNGJcKJg7QAAAABJRU5ErkJggg==',
     alt: 'FR'
@@ -584,7 +584,7 @@ const FR: Option = {
   label: { mainText: 'France', secondaryText: '+ 33' },
   value: '+ 33'
 }
-const GF: Option = {
+const GF: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAtUExURf3eO/3dNiyiRP7gQiqdQiiXPiSPOt0hKGWrPqS8PtjSP/GYNVh5OeVZLZhRMsOTa78AAAH6SURBVDjLhY6xbhQxEIZ9ckOCItkVECkSOi39Sm5yR4NWNjQUV6xdUVyzfgO0QjkQiqJ7gIhQUkQgXUlHkRrRXAFVniDKa/CP7d3sBnT+bY/t+T/PmJ1Pd+opm59mADXLAeoyB6jTHDDLAWqDU0XXYuwW0+pFANS5rqqi0LoKezpT7IA5ZfS00kjp3tUIsYVSx0gjQz5UhFhRTBWoCdnR12GPxx6Yn+n/qgfULAeoS210jWG0wYEWfDMA1FmN5GssgjQxoIbAjDKvKG9rW2Ov69ouBoDaIPnrZx1kTdyHFZT6ZO3tjbEmPqaCZlRBzZ/Z9q0lmTChIVAqfvymXSXH4iNDoIT98OrqS/thu93aOy1YSRZeYz5vo1YjAK85T9hRBJoRwDgvS84pMnZN/o1tIGcbGgv49J6RFKcmK+dsHPDdIjiMB46xCYB3oYC1NB1aIF9yisQcADjZkO1d03jn3JIFDwpdDtqTtmUXzvuGCGjZtShDqUfvxVEr9l+6IA9oefeavvDjO2NYDxpPcq7xqUKnP0T9ZuyCOgToHiAIwNpfe/rGv0BsxMRkz0fRH8TQI9FBfk3EkvhQPHm4CoGbXPv+D9ECIdKSEnHPJUB2itZEdtima9EpQkL0Lz7fqzCSQKlDtwMIepwDqMlu4HCdAeSTHCC/5QD58S9L0xdt2gozdQAAAABJRU5ErkJggg==',
     alt: 'GF'
@@ -592,7 +592,7 @@ const GF: Option = {
   label: { mainText: 'French Guiana (Guyane française)', secondaryText: '+ 594' },
   value: '+ 594'
 }
-const PF: Option = {
+const PF: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtCAMAAAAun0N9AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAA2UExURdkhNPX19cwaLAxJps8cLvLx8d4lN9MeMf39/fn5+f6dM4im0/zPnv62ZNPc6Uh0uOSDjeNwbmNHcjUAAAHASURBVEjHzVbbloMgDAwsEbFo9f9/dsM9ocp21z7sYM0QMlF79Aww3QPc1UPokUYLvD9ASXQ8DYCUTiiRYzrj03nt72H/NgohFpDDGHBS95Zw1NPQydhwjiFSk9b4nCKbthyYBE2D4WV6BdCmjigqs5JIXBvJ42oA6HuA+R7+td6v9KWsfqx3lbt6isB1WegLW5YVx3qXEFmZzg4XAn0gIWAtaOWJAOOuakNco95G/eo4ZtYJXLdUeni6ee/pLfaeHsGzJVHd6Rvo8vaYd9jnw/Y3wHCpp7u2Zqd/aDekXy71yjnllIALOe/9ofV0TFofxGOODuXyetZA1bRfAe6W3nC7oxILLhfGNpCI6BAv8fzieBZF6pNr2PVfsD04Nvl8DZd6JV6zy6qox3Agyrix29/wpCZyQMQy7+JW/oJnkGPRVG3kgGmttmFzfIQOzwcKKMEBB1CqnJXUNQz1b+C2/sJFs50PEWuyKVc7n3pvTqYPcu1j9t1beDoyl6s8zZ1cMFZXHVrKmW93hg6nlj/aDnzC/40R/m4rP43G1H2ASf5vzc+wFzz6f9swdLxsCXIuc5kb+79hrO0ZhP/f3D98A5yyNefYTMn8AAAAAElFTkSuQmCC',
     alt: 'PF'
@@ -600,7 +600,7 @@ const PF: Option = {
   label: { mainText: 'French Polynesia (Polynésie française)', secondaryText: '+ 689' },
   value: '+ 689'
 }
-const GA: Option = {
+const GA: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAeUExURQKjY/7WJT15yUWA0kyI2v/ZMP7TGwWqaAevbAiybqCqtp0AAAEYSURBVDjLvYq9coMwEISvUxsVqPaYF/AgPYBn4AFC4T5qqNXh0p1DlxLeNns6fkw8Vig8fNKtdk9LQ5of+rfQ9WDoB7xdNwxr7fsbfafZULje7217hU7TjogPBLss25gE8Tdq0wQpqLVgjxNjIAoYpQJg5ZEsO3gkRYyiIKMmB6Lw3ypOBEW7cEnzuUchA/WFb1azxDAuEFDQdcajawxW+mGB1Qex1ZpHdHERFNJsKPgRbbT3BjJfDzUoGKHhb+8b46NrxPsvakbM/PgpslkKL3hHoUpz3qNQVg5HtHJzGm95JmdL6yxraW0pr4uGrzuRtchCaZ+JhRQbCgXIX3OgPD8WAox4/oCP+UTHFfljKDCHP4Un3lD4BXZsfUbChS9yAAAAAElFTkSuQmCC',
     alt: 'GA'
@@ -608,7 +608,7 @@ const GA: Option = {
   label: { mainText: 'Gabon', secondaryText: '+ 241' },
   value: '+ 241'
 }
-const GM: Option = {
+const GM: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAhUExURUaMMT5+Kw4elN0fNNcaLxMjodMVKv7+/vPz888SJ/Hx8ZZmh8UAAAEHSURBVDjL5YwxasQwEEXHN5BuEATuA9YBFiRUL4H0LoTBXbpcYXHlyuAu5ZJTZv6MbLxFRIrFTZ6lmf9nvkVdnVc6IeB9CN6jBt9BdeiqeXahEH2MHpW7KFTRgacXgo2KLvegdAnUKIG0+RQzfzEnHNieBpBzykOCGKSz5wFsT7p4IGdt2JQXHhkPuqdxWccjbIcyWZiZlnVZDxztyHemtc5Mn3U+nhB4r3M9I+Cca517c07Fjk7cldpW9m2rYqfIF3J1nhH4Bvf7NOGqvt02NU1fGvidPwT+BYaMNbYxBkXP1konI9imMdsMqAZkG8sYK73Be7DiMeGA/AUvK6vJTeGFOmcEfgDHKFomk7STfwAAAABJRU5ErkJggg==',
     alt: 'GM'
@@ -616,7 +616,7 @@ const GM: Option = {
   label: { mainText: 'Gambia', secondaryText: '+ 220' },
   value: '+ 220'
 }
-const GE: Option = {
+const GE: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAkUExURfz8/P4bKfb29vHx8fT09P4QHf8lMvuJkP0zP/m9wPjl5vtbZGUPYRsAAAG6SURBVDjLxZOxTiMxEIZNJEJ7Lry1Y/EAJ40jWrJeRO1iH8CNlRIJUCQqJEheAeme4qS7vN/9M/ZuskiQq+DXrj3+/HmcFKvUcea7dd6pTzJf53X+VMB+PtHhgys2d7VD3uUJGbJ9HoThikqG7H+/Fyopufj1+PQ2EUZSct4jE2Ek/ymcvOLkjzz8zQY5EMuFVTO8m7sZZ55yypiFWMuV4tVMKvhnWedGKgZymCcocBysBfaTVHIcI6sz62qpzlJKmn3LBAyPc7bYDlk0WifLFQ45fqxqdNKSlPAPeNRNYYmHH0qD8JN0wxBvU3SUOAFBHzgzmcWRoQofJJ0S9LcIUWvzTrhs20t5u65tF9oY3TrHxEmsajssWHB4VzHqKIKrx64V9ruatl1FdOBK1twVwhhQdDCmbELncRA2DzKt0MBMyCBsX2W6MabvJ2QQ9n+rgDsmpAi3/BWEACH2ph9J13kIAbnh76h26A1wV0kIEIj8kpejGTrvpcCOv1Y+BJKGHtWyjxGc6KpcSvRTYRU87f94j2oZcdBzQCgQX0G8QdsXePUuokI8jR2INvdCjwQhoQiHHAk1XyH8A2H86Hdtm8mdAAAAAElFTkSuQmCC',
     alt: 'GE'
@@ -624,7 +624,7 @@ const GE: Option = {
   label: { mainText: 'Georgia (საქართველო)', secondaryText: '+ 995' },
   value: '+ 995'
 }
-const DE: Option = {
+const DE: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAYUExURf/SEeMFBewQEBERERkZGSAgICQkJCYmJnY1YXcAAADESURBVDjL7Yw9DsIwDIV9BJwTEE5QKTlApTh7hpSZpc3KlF4fmzQtAwQGhITgy4+fX14Mc84Tk9LM5JySnPnqSj3D1OYEQ5sAw3EYx8247USHJxN8AO89xUqRfiMGIKJIFU4sffV6oDYvBGyBtSuQdKvXg3FONmOtscbxliWueB1wceXBSJFkeWOXv3Rg2rwjcGiz/46AbqJ2oJRCrSqLXB3kCYjco8C3Lro6yBNQi5ZxWHNqucXjwD30qh4E8LOBP7/EBUvKtnRnc7zvAAAAAElFTkSuQmCC',
     alt: 'DE'
@@ -632,7 +632,7 @@ const DE: Option = {
   label: { mainText: 'Germany (Deutschland)', secondaryText: '+ 49' },
   value: '+ 49'
 }
-const GH: Option = {
+const GH: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAwUExURf3SO/3VRxCFUtAXLQ58TAx0R9cZMN4cMwtuQ+MdNeYfNx0cGu3GPxloPquQMWZYJCLqOvEAAAF9SURBVDjLzYyxbsIwEIYve1XgBVBV9QEqRWKuqmTvEEsZkSw5K1Miti6RGNmQM3WFVwgCMTdSX4HODG1nlt75TAK0OB37xWf/d/5iWLh5Aa11USwW87m2FEWTtZ6CdkPCjMmy8Xg2ozokuppCdsA4NtXDbNQIv4NCkqVIlhCcuDiPQKVKJfhhizFNMGFnZpjVEDDzhM7UnImyAU8juEBBqgEia5TplJ0MwR/4Ehdt9ElJm28ncnAPPiP9Y5quFi7xB6Hnpnsu9NuE102LsHtvEfZfLqGqqnJZVZsTwavp9t5KYr3pUWeBQ6CRtyNha4YeSwD4BHRx0VvQx/sVPWr+M1fgAS9s8NiZB8wI8JJPjnzsy/KzGf/kqlyVS3BwvYbOyiV0tgAfLuHK1jG3bm7+gfAAgRsU7vALHvGjnZZpuYzQ9kKIBEGE0B7iMi1XEDyBCAWBGh1RJGgQCS4hUDgiFOK8bYQYKz8VciNMiDyfxHkex5y548kzC5dpF74B5HKFNqWMz2kAAAAASUVORK5CYII=',
     alt: 'GH'
@@ -640,7 +640,7 @@ const GH: Option = {
   label: { mainText: 'Ghana (Gaana)', secondaryText: '+ 233' },
   value: '+ 233'
 }
-const GI: Option = {
+const GI: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtCAMAAAAun0N9AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAzUExURf7+/tgQG+jLPt+/Md8UH+MWIecYI/Pz8/r6+tsSHScXGH8WG8MUHeWBh/CAh+7mv+JtLCJVvScAAAHkSURBVEjH3VTZcsMgDBQx4nCa4/+/thI6AF+daWb60IUYIe1qnaYjgH+Pcl0oRQI+JN5s2Oe6xu4tM9TGU+JxTxq5CyxRlDCRpiVttaOzTAWaKb3x/Omtxya970Aqk5vb7WkDueGZBM9yDrioJcNf6LM/n/bOdNzXu+g1mZnRdnZ91ps9EyI2TcK0rismbDFnJ68mgN4vawEbJCB/jzkYvRofcpdrgF/r+sVUNFDBk/72csKolCyZkiuZRNOXnC1JpFz6av6a01qObBUzBQaqebJMK4OqBS2MSMZNR4Ec/OCccTsfPGP23XaPrlY++28Ra6Rdq50GuqjQUcb3t0flr1pFSb8f62i1ZNcZDvwr/6nVk/5/gkQtuScf6cWfEe7WKUz+V/pHUNSA7+W2vDE4Hj/rH539vgneFw3gXB4W1S/hvMHB93fcDBecK/2Lvenz+qWeGvwkz0BjhSYE7XQEkqfGsPqWC8MFdWPnL8uyKXsboYEoDNzdPHjR75/wyNs0YLreYwT54xnSoD/DlV7825DAKEPDl6VcH08WRJ8wdvjMWRqi13CgGuBi2kz6E4z6as866rfZCRXqNKCiTpsx6/d4EEOd2d5ql4iHRaifASoPmr7Gg7cMouoHPfxs+vAZPtV/A4A+PJep5YPXAAAAAElFTkSuQmCC',
     alt: 'GI'
@@ -648,7 +648,7 @@ const GI: Option = {
   label: { mainText: 'Gibraltar', secondaryText: '+ 350' },
   value: '+ 350'
 }
-const GR: Option = {
+const GR: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAPUExURRdjshpqvfv7+/X19fHx8V8x6goAAAEnSURBVDjL3VDbkcNACIMO2A5uTAMe2AIys+6/ppNY2+c8Jj/3lcheWCMhSKQVlmVpL2HyiYLlAT+fIXgoPP/MVwJrWqc1vRc4BAqQ4cFNIAhfosBsaCVjAF3gEFT8jQCnpEi26VDmvov0XGImEytggNVq7hGHW3rmOgUt3MU4GZugHMmI6fgfuLUKHEirYFRwoAfD6WAeSQfViIRBZJTLAoHiMUEZPmZCbzTieGlXIW+atYOI5R2cDkoPiMFii9lQUYAKTBAjktAzcjeRcoCzJ2u8i+zExUHgkEdtJ/QcU6USHH1n/5PDS+R7rDKy53gsH4UOQU4FzvmOgbR/rdLHRimwDZQ76WTqFTGi57aBY2VMZV1HXftNJrtdcP0YN/kObO9x+7/gF9hmlT8gdsd4AAAAAElFTkSuQmCC',
     alt: 'GR'
@@ -656,7 +656,7 @@ const GR: Option = {
   label: { mainText: 'Greece (Ελλάδα)', secondaryText: '+ 30' },
   value: '+ 30'
 }
-const GL: Option = {
+const GL: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAeUExURfv6+tAZOvT09P7+/tccPd4eQOQlR+6oteZrgfPf4j+ETIIAAAHeSURBVDjLzZJBa9tAEIUHidKrBTrkKPYQRzdD/oAXdnv2Qau2V1Mp7q0YGsg1JIFeDW3af9v3Zlaqa0wg0EOfpNHse9+OsFm5flkr+RdAuaL4vl6typJrVIqJiGAJSamBvdXXBAW2FvYlb0r3TByWpLXaMwcyN0eavVJeoUaaAkVkqtll11CFBtqJK7gurJptC+cYsxetCElgg8bN89O4u2sc9yqqQ3ArjKk/R+qbMwRQwQ6kOIeXezua9vAdb24iDQATnbvNwI2z3E3iBGg5jH0/DOM47G0D5zqdZsCPwYi+/+z+VgYeB4rI7izQIkxEUt8fzgHLNODqEae0PwdcpUxA9xhI7zADh9Zdpix8aduSQHxoW7xtwgxA29NP0NwcHeM3KabUpRiN30jE4uMR8B1xRyjG2HXdRhKI90dn52vkFpuAZy0djA881naey8eOjj4BFZ8IXXh3NOETDARwI+taAo0vzaRlDLy0cAQAamvnA7rUNfdbk4GL+Xc/IJsVZyDc5/wqnGgCLuyvbx/+RHUGvA+1D/5GgVtvohVqaiHova/ranf36/kJjW6kY8haKp8JCK6vVDXsqkKwEDS8OFah/BFPC8ECE8ib8iCbwHVVAdB4Ck5UK/Ci/gvgN1Yb4VaJzp97AAAAAElFTkSuQmCC',
     alt: 'GL'
@@ -664,7 +664,7 @@ const GL: Option = {
   label: { mainText: 'Greenland (Kalaallit Nunaat)', secondaryText: '+ 299' },
   value: '+ 299'
 }
-const GD: Option = {
+const GD: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtCAMAAAAun0N9AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAABIUExURdATJtwbLwKCYv/XMP/ZNwWTcNYXKuIgNP7SHAOKaSyYYFWjVd7NNXyuSPq7Kdo+KqK7Qu+KKOhcK+3OJsLEOOEuLZg6PUxjVGplC00AAAI2SURBVEjH7ZLZlqowEEUrxIRMBCKi//+nt4YEsKVbXe1b3xPJWLtOQYT+d4L//Cf4mE7vKcXGK2y9MdNb+GRMzyT7K+TNGyWkaIgnEhSnMaTpdXNT/YmnkXdMeKWEFCQYYQSBhuqPGlqU/g4fWqjiyoEGpdqmCRdEtT5JT12b8HAJa2TPJEgZZtOwRW+/mmTYxbEv+au9P5egj7Uz5/q/4fEqZwHKeemXc+H5aY73QT/wJkxI5BFLXPB+xoyrKZgnfKwRnhcpL/RlCnVL5n+M53bM4/5JJzTxpkaNtL9oyqJGs6KSxPuVtzR47wO9ZcITOb/xcdGFxxuDrJaBti35W2y4HvgzDZwb21WdUVlnGtTV837zpk6MwVIC8h+c005f2AEfUPzZNH9IC3V7FflbdAa2t7gTnXPDnFqAxdOiKWfBQLsDayKi2d8K7yfnfJhaHCBkM+KZJuAfxL4WbPOnNwjb8RWpxZEWnF0PeaqfhlYe4l07vmHusyu2uDOe3w54W/1pQK7rqPO+q20EKPjAWPDx92fULAtk8O1UCuh8nDOeAQnHPEd/l+KBF38+RNG3dHkE0ZhxNe1CeHrHd/WI4S7OdG/OFbx4OxbHqzluITR+5dcM4eKOdQk1ip9HXjTM4ic/VpvOwy5OYOC28V/N9VEJjUccJMlq7p5pLUGMJUHlQ3LPlWoJIPcrb/Ci+b4EW/8f3OE6Jveq8CrRH9YE5D+5dzQRvxP9Y97SHGvlH9Cn8vxF/QMNhDrqIYxiVQAAAABJRU5ErkJggg==',
     alt: 'GD'
@@ -672,7 +672,7 @@ const GD: Option = {
   label: { mainText: 'Grenada', secondaryText: '+ 1473' },
   value: '+ 1473'
 }
-const GP: Option = {
+const GP: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtCAMAAAAun0N9AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAABmUExURfT09Pj4+Pb29vX19fv7+/Hx8f7+/vz9/fPz8/////n5+R2HSCpXjv/fO//gRSOSUNrk6bS7sTC38rDB1ZycnIuLi22Msv7odM3V03Nzc0dunYykwvz32v3xs4vHqFiqeku94njL5JO66MoAAAJnSURBVEjH5ZTrkqMgEIVbBAU0iosaTTKTmfd/ye0GUSTmUrU/90CF7uZ8jYPWgFKqUAVO9ZFSLyQ57ZOo9kkMxbFiX5yn9Wc8qSxKnI9xLMA6ifZSf6j7HA8ut3rYg3LvTfd9jqyxV3Pgg/Kt8GRzvdR1bYvHzfd8oSzB9cWq1zx3I8Sr1JXoq3H03oMD+JqsOy7++eOlJ6RHot3+4ltj2GpuJWFw+/r2DYzGhx8LUybnBC/wA+lz0zSnDvEfevoLmJY/0SFPuG9gJN07v+94zTXOhddbTivp1nj+9PtLx4/qu22pzg+84Ot6qbvxdSKdvzR+NYiXU4u8h7hOBoRGkYg/35SwI97dVRHe6ieCg9oN8cKM9Nprq7r2Bc+PeH1G3H9zpsS/va1enJ/5NdOZk6Y8Z4Lo0XJxr6rqiA/+mCfW1bka6WyVda2jsUfoHZ9DMWSP0iVee22yu0edApcKWJaxjOH0OcWa3rot71Ukxrwn9QL5mc7wx4niUrqPptrx2sHEOC54gYVs2+G2roXZ4e3iCObVC8sDrV1QeHu2iHLya+/YOixdgD1KWat452TYGx3xvFCazX3fz/P0ns9zljOc2+o098MwD1Ook+J45fNNuz5mEgYH/aR8vELcAAVUodowDN3cd0M/D/kTkZd4vy5c0Dwg2vcDXkPw5HDEb8rjXl030QuYcMS+2PNauZQSgKaMqpLSuJDktO/k/4cGnVN2jWXERILTXlI+8s4njwXNDm/kM58UTlJInH4NivP4HBExIHCCcLUlXnuFPNWeCZLb6s9d83SIiEnbS/GR1kYg/k3/O/8X0rJJvp9+En8AAAAASUVORK5CYII=',
     alt: 'GP'
@@ -680,7 +680,7 @@ const GP: Option = {
   label: { mainText: 'Guadeloupe', secondaryText: '+ 590' },
   value: '+ 590'
 }
-const GU: Option = {
+const GU: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtCAMAAAAun0N9AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAB7UExURQAvfAIyg8QnPgU7lAM0h90wSQQ4jgQ5kQM2iwEwgHK37NYvRtAsQ8kqQcMnPS4yeBmI5PvrQB2L6GQvZn07bYNTFzuTlC6WdOOXQZyIsksxbnmk1Visxo8sVLxAWyiH1UB7uvz9/6tuk6/MeLVfgXeWkVVyTcDe9y6T6PjyB5MAAAI5SURBVEjHxZFtm6ogEIbB1XyBkQq1sjR3a9vz/3/hmQEsKbo6uR/OnQLC3PNYseR3sP/vi159zEH1Ln+ejg2MLxL3mH6kBlx40P79ngVdyk/nQvlCiGvsuz66TCRidj66t/wgqlev8oVY+KSLFC+z1Mk50ZPnu5qwf6NKdsUuqZ6ev/BJL4qdqGb5qRakUwP9ws+yRbbA6zYjrfgqLF+ipX1irJn4UmQPUB305B5o6CHOQqBL+b7p6MSe1A0Ne9GFfZMvAycLZd/+sDnYb6BCvkRfChE6qgTKzYZosIWogr6UTJr8OIvxcts4x/JMuc2m3jS0OENsSrJJbYz5xo8N5sAdxkqa/+5wqe0X2ElljkyhLUVcvt2ckrXS/HrNxeXvZRs/MvHv0NL88813vTd+IfVbvsn/KQr0i3/L596JksN6/Vmsm/q4XiKDVL7KfZ+bmxvogUOF/uefoW7WRAW0zZ3JXb3xQfIr9oSuCo7o/ywv9YDxR6i4hy1Dl4GU/JFcQUXvvTzWdfN92oIau0+rKB8AeIgOBtNgqOvVCrpgjQTA/LDPy/5I+StElHmwBMjH/DznWJD7s4LtYbk8oU5v7xqMNZ6f3xh9QsP2ZHWdh+D51edWHU2HjrakR9qm+jE0PeZ7MGpA+jNe+UyXomxzNssni7Wdeq5bPwIMyv0PDcwN4/P4mVSRH+H9HmN/htkRi/CeSxSB6THfN/lqpq6sX3bzGqiO/BKHkgacaGGXL9c0E6z8Hb/1/wJFDVHMo6vEyAAAAABJRU5ErkJggg==',
     alt: 'GU'
@@ -688,7 +688,7 @@ const GU: Option = {
   label: { mainText: 'Guam', secondaryText: '+ 1671' },
   value: '+ 1671'
 }
-const GT: Option = {
+const GT: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAqUExURWCs4Vqm3VSh2E+d1UuZ0fb29v7+/vv7+/Ly8mOLQd7FdOLk0IWka6/Cnm/b5O0AAAIaSURBVDjLzY4/i9tAEMVXTa7VCoJbaYVJSiMp4PJAW9wXGLyQpD1/AktVSnEiVwcicumDUpv8gSsNMalTHPkyeTOrk2XfQZoUedKOV/N+88ZKjXpyOUo9qv8DqNZ/S6jW6/VlVVXTdiglQDmrvYD4rncDlgpDHZz56QpMMEqAUBTcJwDBF7f5KH/XOLOqvleoEak1z6lAa/j8zEa/Bi8uLMV3uGhMAU7gUa2UJGm+HyVo7vNhYNAIrOpD8xjY1CtWvToBkgGAv6n5OUlIBmK2gl9LyBRI4Eeip5h1/SdCUDIqVhF8nSQC3H552/dXt1vS3ErYQIIxPJ4YPaf97nvfb/e7TWQM5yYmipUxBiyqmVP3HsDX7h1x00Q4vALyIc9o/wErrrsd8QifyCcYgZFwd/Oy//yq++UTpA2ANzGUzOlb94M2+25L0pG9Q4Lx/+FNd0Ovu49Eg/sAoLuOeAMdmifA9U9yv+kEyFKT4ZaauaOWHLkGAJqplFjhN0vTNM/S5wQLalqHRpqJYpX5O8oSVts6ZrJ88PNY5Tm+cq5L57DAMQY/F6ULJTf5ftE0TYsXiAykPLlQuA30EguIIU7IBwEYBQCma51rD80joPE+Cn8WA1BAeYlXVoialnsgyrI8V+VAFOWFuI4Lm5b9YqFQS1vaIrcX7ShbeFl7rqy1BQi8U8DLr4AHApoA0jokCGyLhwl2Ahwn/FPgD48bToTHkLUoAAAAAElFTkSuQmCC',
     alt: 'GT'
@@ -696,7 +696,7 @@ const GT: Option = {
   label: { mainText: 'Guatemala', secondaryText: '+ 502' },
   value: '+ 502'
 }
-const GG: Option = {
+const GG: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAhUExURf39/ewmPfX19fPz8/j4+PvgRPHx8fIvRfrePfBVP/iyQRRmKaIAAAGXSURBVDjL1ZGxTsMwEIY9RGKth8qECeoXCLbkOVSWOnewWpioLGXPhGBjqBTYGBC8QAfekruz3dgFZYa/iv2f7/NvN2Es19kDiE3ofwDvzn1MAk/ubjrh0d2eAm15B7fJgapCohpFAMy0CAPuJ4cYjiGhxX7cSGeQpZGANlUVcszCbKsWH2tXAo+wVLXQBsdgsAjTuIIEARYDLHTBYQL4qBvuNn300MWR4VRhPh666t2aU0VNS3fIBQnrvlhpGc/VY0KhGeuD6riQgJoL0gwTBDzzryOAZX0QKUHwHhAxdyfCA6FHCT0mxPX9fgRCQjTzYZsQcPBwUQLn8Q7bcMn6cJqQ/sXwXNaz8j2MwPgeFrmuEChWLn8DlstlBqhgpFTqZ4KUDVNSaq1UlqACTMCiYVCgENP6GgGpNCK0UUMCNnTECFCwrpGXwDUsGsJCAvSlTiJgVACCJJ06AaQE03XeG+M9AfXwkgBDnYZ5cCYgxuwuhlfeBXnq3LOuM+BBnfHd7nMY3nwUdRDItMPvc6wM/CYB1J8AvgG4EQOrqXP9NwAAAABJRU5ErkJggg==',
     alt: 'GG'
@@ -704,7 +704,7 @@ const GG: Option = {
   label: { mainText: 'Guernsey', secondaryText: '+ 44' },
   value: '+ 44'
 }
-const GN: Option = {
+const GN: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAeUExURdEZL/7VQ9ohN//YTRekUP3SOuMoPhmtVRu1WRy7XNolVbAAAAGOSURBVDjL5Y4xjsMgEEUJkg+ALHqHSPQoF0hhidqFD7BEcu3Ckl2mA7otndvunyHxblZJDrD7xdD8xxvEsOV83HLd8in+AnB5DqxpXa8557S+Mqxr5j6/MKScgaBPrwDKmnKCIdxjD99AZoJuAgZr7WCHcK7r2rnjsXbFwLkISwTeG3twR8enrh8Aa03AZcMHmlt+AoFrE4I5KDwuk2JaSshggsEJZFDOORr0RRAvwiAF2itFBBapFOPMWcbyB0Ah7PG0VhQ3LwstifFmKGEDS9Qc44IBN94AcuypZoVbyD7P2DM+GrjFoFt44i/AFUbNW54YngLNG6ChGCOb5o0BrZEwdFqpbgP87CcAUgq0ErNDr7XqkHlCqJ9oBWpJe/YdiCJBQ7WfAKCTPLLCexL0WsPgPY0fBXZIGil3mktiWu9bRqYT/4FGNFWPjqf3UwtiAnQSqNEStUPTa1xas4EvfFIg1IuK/Bp7ut63CF9kQMepdH8PLSDEE1AEBEDOO7q+3VKAm4HeFssboP+nwBfkj4VyfV1aZwAAAABJRU5ErkJggg==',
     alt: 'GN'
@@ -712,7 +712,7 @@ const GN: Option = {
   label: { mainText: 'Guinea (Guinée)', secondaryText: '+ 224' },
   value: '+ 224'
 }
-const GW: Option = {
+const GW: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAtUExURf3TPf/XS+MnPtEZL9kgNhenURahThisVBmxVhm0WBcWFj0bHx8cHb4fMoUeKhcTX9oAAAG2SURBVDjL5Y4xctswFETBG9BX4KDL2A3RZdQAaONxQ6p1Q9RpOGCZjlKXkroC5aRyJU1uoLiRqiSlqkwOkV2A8lgmlRzAOx//g9r3FxLZC12NlYq3CKQj/xxIkjSBRIqKSsQZkAYfSuONiJCZzoajw7bANjpT+C0yLelrLbNMDHYi4juCP9jgaUhKfHIHPj3Bf4IEK6UeJKYUVq8PkpoGrNT25ig5JwH68t0j9rW9lGDtr+/W4jKdQP15CmMa0Lfb7W633R4vPMH9HcSMVdctl91qCXUd76vVZwLXm75fHwiMFQD7/qF/5MRG1y0W3F8O908B+NH3XzgXY0Xg93rz9Z/A5ni7tuYV0AyAMebDN2N+KqtU27ZN04Z+mkgwdqaUyQ8gvPet98/dN95/FDCxqxCkVDCak92yAOQmp0nQj8UERZ9QPgkgIIet2Ora1/Ucip26EyZX4RW2+bwoivpU4dwhARGMgYqCSF3HCgNAziciUowVgSj1P4AJZVE9V4X2CiiroOiTduU5UJWQA1aG41zl7s8AR4FwUVXlKgL72VC5GwvA/rQ/uwDkMYPgJAAvZKDtp4C/GVJphLY9jl4AAAAASUVORK5CYII=',
     alt: 'GW'
@@ -720,7 +720,7 @@ const GW: Option = {
   label: { mainText: 'Guinea-Bissau (Guiné Bissau)', secondaryText: '+ 245' },
   value: '+ 245'
 }
-const GY: Option = {
+const GY: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtCAMAAAAun0N9AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAACTUExURQfCXQChSt0ZLQKrUP7UIdkXK//WKAa9WgGmTQCjS9MVKAW4V/z8/BUUFCEgH+EbL/j4+PT09OUdMvzgaQCgSdPx4Sq1ai7GdM7m2fv68vjqrHrNoDggHfzvtfTz7EtDILIZKH7Vp6WLINKwIlkZH+3GInVkHXQYIYHcqoLgrVRXVpsYJZiYlokcJ+MdMce/n3C3kMFv7ukAAAJmSURBVEjHpZOJetowEITlE/AFOCShiWsIhNACEX3/p6t2VytLsqEFZoUlH//M+kMWh/dX8Yiq5vz8+wGLqqoObXG/RaMMmlNR3Gsh9xW0sCzutKjrNbRQQQv3WNRK32CwOv8wFqPRSOgfHARPqkR3B+8CLzNsYfP0ky1+vfZoS8K4Ea8cqIVt2llgFwZwhm1Va4PsExy+0jR1u/iHiJe1lKaFQYu8j+IlIWWNJU0Lu9S3yEdDhQcxlXKqCjU9di34XejnczPwPNc8Dem2wBazYjaDLljkQCsxdSTlETf0Jk0tixk4aIuR6+DxysFvgS1Azx9dF8N8qH5H2k1p6lkUAxYCmTCccsHI8Jta7dKeRa8LEYaaIg8YSmvdQgxgDCMesIiAJyAkkl3CZF+V9FcCGsfs4FuI8JLWTaksNh3JPo7FZR5bKMvVNmaOZ7sLn09gQIGOqoOy2tIboHhWqzfNJ4kmElDYVbYvdT4FI6xXT2+cT4GGxTWe8/vbwngFtwQvP15EkjDsrKxw10HB8/lMlYKjKDK8q2OjaC/cwIomOL/AZ58YvhuAQQQDDXxmCgaGV73wHkzKu3zEVWUU/rUbhN8tONL5hPHcC78CA4+ReACHtRd+HUZe04h/A91s/hdmngQ7pgu34XEUjang4KwtHndMs+3B8CjLWpIM34W7MGORhinXnAovfAC+KmGH3wozT9/KuYMnk/FkrAbNIF77s+LxWylPbTtvNXyDBG3Xw5KTg+A2vsTwedsqOJggHIBJ4M4g+xo/Jygc4MViEVyU7WNLlNUJYcA9qYuD1+374vDnZfGA/gLixnaEmcOAlgAAAABJRU5ErkJggg==',
     alt: 'GY'
@@ -728,7 +728,7 @@ const GY: Option = {
   label: { mainText: 'Guyana', secondaryText: '+ 592' },
   value: '+ 592'
 }
-const HT: Option = {
+const HT: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtCAMAAAAun0N9AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAABRUExURdgWOwchowkkqeIkSAsnrt8gRNsbP9QRNhAsuQ0ps/39/fj4+NS6dhE2hzltGLDAs3GTXCFqMWZbVYaWyo5bMefZtTBNZFVwqn+aYXmabMKDIT2XhKIAAAHDSURBVEjH3Y6JcusgDEVlAjReBM7e9v8/9CEQGGxlkjSd6cy7shUt98iB/XuC/4/vn2WDsYd+q33/nMgHj+m9UOZiD/17SrwuWfdac5trzTuu2cU96EW9Tv71pOr6dQ26sbysyCu95Jd5RaFS1m3QnFdaF8fiJD5bclqJzaqyNQL1nmT+NA4bne7wXReelFQOAR9G1QkBXce0SneiBkmdJOgqbMX7Q5JveVUjIF4dRorxM+Kfsbn/fUHBHZDLNAd8ni50axhlfidpJP8wTeHAHDJ14yg67/JBU1ZqX+NvvuL97QXeRB7xdGH8ckKMvNl6wZB2ZlFwmcjjjfkbRj5uFusuvpBnu0QmEX88IvpAe6SS+OoD5QoYSZH/PiMe3AHx/N3wjQJvU2VLRbzH65H+AdLXj1f0ha99xMfe8pgrP7sr1rq62dOq9YWANLS8s8nk3Jdv9eWcMdmb7eGFQi8y1rl5pcDb7KvvgJV0dludRafIA5QdFAuI7mDNUQpIdZlyUzz5KM0KAQ3NIwAoS7BV4iVbRNkH+0fb39DHM5YQ9ZN+cw1VVQdPIVkrcPPwvXK1XAfOLKh+YWmXv7KZ19RP9df8P1rDQFd81CETAAAAAElFTkSuQmCC',
     alt: 'HT'
@@ -736,7 +736,7 @@ const HT: Option = {
   label: { mainText: 'Haiti', secondaryText: '+ 509' },
   value: '+ 509'
 }
-const HN: Option = {
+const HN: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAeUExURQF20wN62QV+3v39/QaA4vf39/Hy8geC5AeD5rPV8D5BoTsAAAE4SURBVDjL7ZOxasMwEIZPbyB5y1aJkLlgVMgWjMFkC4g7yNZFgmwdAl479gkMedveyXJjQ2sydGs/y3e//vt9m+FjnXfo13mD7nptC13X93Lr2Jv0Ado52ya35u4cwDm33TbNVMc+aeeewK2zDFTOSrOLgJlhTSWtmlkajLW24pGRYs3YK6l8rATW0aBHWBolmGJopfILoBRoUMBw0WLkR6SWK+gyUkX/PvU6z48H9sOt/kbPAu0x9zDTOYCIAb3HF7fjiiF474sWThB4HBD92WykDjf0OGqsfc0Bzwv4BB5xlpd/xWRHOAEuILdbGveAfIXj8qJLgDCinHN7JKI8iqyR8oBOEIlSjCklt2MrCcSavTx5hWykmC5mI40S26ynaA7IIF2GWypQ0exSCfzMA4H/v/sv/d2fSUIqCfCFS08AAAAASUVORK5CYII=',
     alt: 'HN'
@@ -744,7 +744,7 @@ const HN: Option = {
   label: { mainText: 'Honduras', secondaryText: '+ 504' },
   value: '+ 504'
 }
-const HK: Option = {
+const HK: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAhUExUReErEe81G+YvFeszGPj39/Xh3+pNN++PgfGxqPTJw+5sWiiYnbIAAAHFSURBVDjL5ZAxbxNBEIVHW7iOuT9wmpViksq7q8TC9TvjS8uBUttYSFQoiSKlNYegBRlBn1CQX8nM7OHEJ/APgCft7Nx738ydTcP9OqB/Ayh2noteXhxQCKkISYoq9JQEkETyMLRYzn1RpGRd0JExyZXUMzOlH1imoXUyJ3VMEumIFrkmQEjWmRWCAfpop0ivIRsKe0u2OmCrtsbtjtEH8Hk/cApUqQ9EkXRxukxpCpxtM58B7720whzVH5eHwGW4efmtENfrZBxTtBXR+xPgVWrO4h0erynJ5zjGZ6iqJ1fvj4F5g9vsxVgSs/ccmXmCa1xM1kfArMUX9qzyssFLb1uaCi948fRtA9RrcVVsGzIdV8BzHZo09YLjdoOtN+p0I5/JvGB5eWdxt4GN8scfzhc8qi75kRTY0T23833A9Du3WP8VGH1FzRvM/gw49vKVc86/xUlmhZzcrjSNcIXZIW7mGpVS1CR7kAnH7qRaYe3xs9JIN4hNVOp8Pq38hew2qDuHSCrZrZgbNFV14WiFuQSkqVNAdggvBNGbT9dSB83MmWkfQBmmTBhNd+/MU8OIrn/QgH6PlZ2Td4hXUl+uS8nRf65f+L6qhL+cU/IAAAAASUVORK5CYII=',
     alt: 'HK'
@@ -752,7 +752,7 @@ const HK: Option = {
   label: { mainText: 'Hong Kong (香港)', secondaryText: '+ 852' },
   value: '+ 852'
 }
-const HU: Option = {
+const HU: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAeUExURf39/Uh2Ut06T1CCW/f399czSFeMYvPz89IuQ88rQP4llicAAAEbSURBVDjLzYy9asMwFEbvkAeI0AuUgnYbgWYNAq3GYPBYKHTOINDaJSBvHZu3zXcl2SUNVTKEtufK90/Houc2T/QfhEmpaRpHzqpUdFs/DTROWUEe1yulNk3hhTbDDWEe6HhJmvNJc2WgxMzpWOu8GnXzTmv3Ayyc0lKnZUmfOCkvliqc2nzcFv4A+33hLGK3c2u2O1B6FGfJlgaz48x7uKWHZfGCXSd0/C8v+C6/B6HNHUL0wAXvoo84IWAsOQTn/YFCjDiRc6lfM3OguO3z0scLAgtNHiG8tXn5DUFrgwDG6Fd9RUeG7w3QuDdXdKTb3CH0WvYZVF1rzfx1JEUvM7zmKrbM356QRZ9D5iijrI3oSLSQYt8WxCOEMwW3fCckU6ngAAAAAElFTkSuQmCC',
     alt: 'HU'
@@ -760,7 +760,7 @@ const HU: Option = {
   label: { mainText: 'Hungary (Magyarország)', secondaryText: '+ 36' },
   value: '+ 36'
 }
-const IS: Option = {
+const IS: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAYUExURQc+m/j4+AtHqw1KsuIxNdwuMtgsMNYrL4dUuQ8AAADvSURBVDjL3dDtDYIwEAbgphNYFfjbnAuQsoA/YANkA3QDXd/7aBuKhEaiifE1VK73cEVVE2KOrTk089TqP8AphAF+uyS1ircMHItGGD1m0wl74H3gJjgG4EDCgAoWAEQA8Ajy4QiewJy7WOEEmE7gHvipZJZAkt8AJgbBa3YfAO16zhPQ9/066Dq80naP4I2XLC7bQAyBSRljOaAF6FmsRaKV1QgFKMsf2tC0YptWEnJEEPSolqbyhSkGmoClXL4pNd2bkl+SsU2JMFOO8ivS7bD4CaGpU+fBuPg/TMCQA7cMqK5fn1DdcyB7xGMTeAILTZKaWFf7rQAAAABJRU5ErkJggg==',
     alt: 'IS'
@@ -768,7 +768,7 @@ const IS: Option = {
   label: { mainText: 'Iceland (Ísland)', secondaryText: '+ 354' },
   value: '+ 354'
 }
-const IN: Option = {
+const IN: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtCAMAAAAun0N9AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAzUExURf+bNxOLBhmcCv+hRBWRB/39/ReXCfj4+fPz8/+ePv+jSNbW6Bgak3p7v6ys1SEjlz0+pGRugX0AAAFnSURBVEjHzZLZgoMgDEVjpQKy2P//2kkIYBjF2vIwc4JkvdDawjoGjOrndZ3XubLmnDxRer06lG62I7K+Huowj4F6K1J7U2Z3vbWY0dal9MXcXOrQzHGtnZ5PzrO1DHYMGGrjANhqILIc2049+TfYdz1745B/z3OMa72LIbqv9Tp4Iugb+l8zlJqXx9tj8C/TvwI0QwrcZBx8dET0gXtypgDc0PsxJXQ+OCZ412ie2WiB7hHp+rAF+gCxO9XX463ObX7DHV9hV280G7uSobX3m9ZqUPRSqVO/+f77hFDTAsNo00CpeP/tCCs5h6O2sv/+XTSYC/L/72rkUm/S/998r38PPMb4c/3CfnksuNgTJT6ryRiWA3WmU5Pdx4n+I7JeoR1R3Ch2qlcJ6pegxuTrGbXYzoBo7BOqFTS1pclBjQFqwn1Kq5AyNlESz6TqQn3Opc9ZzqeUi0fVQMHUQZ2Gh4mu/iaj+h9YMzpA6O1AEgAAAABJRU5ErkJggg==',
     alt: 'IN'
@@ -776,7 +776,7 @@ const IN: Option = {
   label: { mainText: 'India (भारत)', secondaryText: '+ 91' },
   value: '+ 91'
 }
-const ID: Option = {
+const ID: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAASUExURd0dMtMVKv39/fj4+PT09PLy8jL9BNUAAAD9SURBVDjL7U5bjgMhDAs3IDeoygUq4AAjEf73A+5/lcYJU/UhjearWq3WDMZxHBiif5xDCC/Ve5coUuSALxoFRXTNAQaZ6ZtWezFmcUNkDGjeBtiaxriBIz1cxsluB5/AY/gDZrY3PRvjnkBHb2C2JkIPhFXhx/gZ4bnwqdfAJ/5K4HqMy68IpGNoIOeUcvEFYfXu5QvlUryXVgJl2r1yIzVSgV0Wp0VWJQsc4UygtVqxpSkKtHIBK9qNxCxBpK6UiGtF3Ug9qYKWWEec2lqb3iCGlZAKMmVSAyK9y+h9DNE9hhZQ0mXOMTaaOAwqZp9dz65K6674QeAI3wjcAYCrrsJUK2JUAAAAAElFTkSuQmCC',
     alt: 'ID'
@@ -784,7 +784,7 @@ const ID: Option = {
   label: { mainText: 'Indonesia', secondaryText: '+ 62' },
   value: '+ 62'
 }
-const IR: Option = {
+const IR: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAqUExURdoNGfz8/DW1Ui+oSvT09N0WIe6Nkut5gJXQo4TJlJbRo+BCS/HBw/G8v10P3zsAAAEWSURBVDjL1Y2xTsMwEIb/oc6GFEveYKjIC0TxAhuWTBYWLy4zC7xA+g7lUdgYsvXluP/SRKKoVocKwZfz3e+7/xzcllnjXxi6Mi2ahtU3J2jhOy80/gRrzONuNjUUHStbLXyZcwz3H6UQw92uFHzhvRQtbJn69w2DtS/HBmeDs8xy+it7Uy13K6qGC06IzMFdj9thH21QYpRTI8QQHW9OyuOA1ZYyckk+9wBJQaXM49OI1V5uXNC1IAZFeix9harSF7hEZsPMJzB+axwb+rSJRcMPLmHIz2+lSMib11KkM14ocylDytnkg9DMm1GRYJCQDKFIyTBJMVkFYMxhOhWVnGPqYCZNklm3xEWhrWVGwR8tawl/gy9otgdg5P49YQAAAABJRU5ErkJggg==',
     alt: 'IR'
@@ -792,7 +792,7 @@ const IR: Option = {
   label: { mainText: 'Iran (‫ایران‬‎)', secondaryText: '+ 98' },
   value: '+ 98'
 }
-const IQ: Option = {
+const IQ: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAnUExURfz8/BEREfT09M8XLdwcNNYaMBkZGSAgICQkJA96QDGMW2ytir/azAM6gfUAAAFRSURBVDjLvY0hb8MwEEZPxgUNCbaMBypZ4wM1r1SHN8ShQengWAerMA+Wbagaq7Qft+9iO6m0LA2o+uyev7t72Wg9zQs9QDBry9dYixbJri2ecKy1G7KFwS2MMUVRICHiCcewUPSYIdo+XQujzBC2zLPmwujQ96wojuMm2P1E6w3pDnRapzhkvV1RGo6y1VH4nxnCg/np6uIcw1/8mevlGENEkBRdhXDk6CEcu54Eb6QUQiipFt/St/TEVcCUUiklYSFIRl1a5dtY4eAjPpKUYBfZx1W8+IxXEAJC+Y8vXoXaCv4H/EuCUh60qbZpeiV8YnVK9TQijHMP4X2at9vCfpqa9q/7w2EYXHec6xt/oaqpqirXJEKsBpqanHONS8CIfZrtyE0zQ8gDyGXAcdfPdpSVJV+Q51melbh8eMqzJeEpwyLjh82wwxSfLCmb5g7CL9d/Zm1yG5PjAAAAAElFTkSuQmCC',
     alt: 'IQ'
@@ -800,7 +800,7 @@ const IQ: Option = {
   label: { mainText: 'Iraq (‫العراق‬‎)', secondaryText: '+ 964' },
   value: '+ 964'
 }
-const IE: Option = {
+const IE: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAhUExURf99Bf+CEAOiSwStUQa3VvPz8/j4+Pv7+/X19f7+/vHx8Vso+vkAAAF3SURBVDjL1Y9BasMwEEWlG9hXkDCULiU3yV6G0AMIQg9g5wQxOoCDb2ByAG98yv4Z2cKBqN22Lxkt8p/+KKJJfD4SZaIQf00I028NYZqmRwjhtXDuI1AyQrwd4PzcAGUvuKapMTjOod/YC7Vzrqkt5ty/FFzNQMsIFAHr6mNGSBz7rrthwF6wtbXO1njFsev7rr3RPDWwgRUWDW2L722/QqwNVHJARvdBAUqJr8SKxKHjkLRSltEoWHDUAgFRNFq6y8pzQ5ugpChRUWQEBKRQzWtBxBgjWDBWk3BPSApJgYDQkKH11nAfr/gdSIEnCM0GGsxpJK6kiCIiaMVqaH26EmxJLhd8mMTacMdBCwqK5SZolLyNCWznV9Cp1vtaVWt68UNK6ZGKPsjNByLvh5FXUEf8LxQZNio/EKStGxhllOICXQ0o8BfSxA7EWjEV0gtyWM+CUUnY2Avxus4LKlEty/LlZ0xGePd+nqOSEZYZFcSSExL/TfgGw6xR+sUX6KMAAAAASUVORK5CYII=',
     alt: 'IE'
@@ -808,7 +808,7 @@ const IE: Option = {
   label: { mainText: 'Ireland', secondaryText: '+ 353' },
   value: '+ 353'
 }
-const IM: Option = {
+const IM: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtCAMAAAAun0N9AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAA2UExURdQiNvz8/Pf29vjXTeEpPswdMd0nPOQrQdAfNNklOfbm4/LExuNbauBCT+2jrOeBjPnnn+h4P2BI8vgAAAJkSURBVEjH1ZLbtuMgCIaJNTZ4TN//ZYeDqMnudNbavZpfExH4kBzg+Z3gv+f9sD3b/t/MyKI7yMb7pzdc7cUntmr4xc0XrHvv1xrm493dN/zgp56lzagvLZ2pjN2r+FWWuPK+brEMeNsej0eyENn+nSYf6Hy3xcw0wZvwW+5B5tUbs18YkDsPLpDd5nKpm8qdbksaDc9XKeqNVZODBEBX27ftrjzildkmD6g+viAMeb4l41ylZkjJgk/qTdmeKgI92C7MJ51Bys8Q4myARK3F5SBv/FX0ngJeeqk9Ege/6sYj8yblXZFNns9y55FPxN7bq4xY1U9QJZiUn5mdx2Aj4DpoEn8+TsLoFRR5pR3XsEyYHE+c4cDvn38hAhv1QruGligLG4C6ovltT7hzzPOypXjS+8uWNrOVRwMHjYRvzsn5ZEgjrlzSRIDvVSLjjp7fOWskvsn7Cx8Ep3lGWRz179I7HrQILKXIqE6VEXKVElSk4TWPzb63Cjr44bnpVDSUa+IWwi1NQGpAr7VY4rZdVS9KtBQc9sgFALyM7pLPloZDQ7CwMCfAmqeXfvaEAxm0abimb2wQivQvBeDKziK4VPuhIryr8FuV9FWB44AmBRqEVxDPj5ThOzidZ/f1NcszZHqXGupuS1yOmjEbckP5a4i/+hf7UJyl9y6rx79xeuFxrGeD5oJ5Nf2YZyyiDtKtttUfPXwSNVA+Jnzm9+Ta8Wt+P5qLYPabMDmB73ufusyxRzp+/zFWA8yQE6yYGTHiDZ2n6QA9tWuU183e8traSJq97qCBY03ohS6uta1VsH+nb/k/9Ow9mU8R5pQAAAAASUVORK5CYII=',
     alt: 'IM'
@@ -816,7 +816,7 @@ const IM: Option = {
   label: { mainText: 'Isle of Man', secondaryText: '+ 44' },
   value: '+ 44'
 }
-const IL: Option = {
+const IL: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAkUExURfLz8/j4+P39/Qg9xAtBywxE0QU5vH6a3h9PykVt0sfS7aW45ip9VEYAAAFaSURBVDjL7ZQxTwJBEIVnjQVS7Wyjxoalk4rEBAk0FCS0NvYmJtaQK85YkVgoHScWlBL8AcD9Qd/MgYjGXex9uZuZnfft5LKXLF2HdUVRoBtWJw5chFXfH7iVt6FJY0ObjTrdhXUTB6phVb4DtRhweBABJi9hoNZshYHz4egH4Jz3vupk5ar5Kl85KdAR+Qqh9l6hWpqmz+n9U5o+SMeBYW+pML3Uj5tjH7LDmsWxhEIkRLIsZcxTkw8KG0EAdvognGTJjN18MFWfxWcBpNI5Z5c95ONemz/lCmCj1w4CdbMvrV0gzwxak+UOYKxl89sEazHBMBgVvgHwaa9trVmLSSYgY4YxpXEyszzvT41sMcVOEBAhW5ssSmMinENfJ6ClQSCraXuSaICwsFXwAFF5+y9ItpIpkiLrTPkiX6j1m46GIwqq3GyFAZqMI8D7WwQo05/1f0ftd0d9AIXiBmT8X5+DAAAAAElFTkSuQmCC',
     alt: 'IL'
@@ -824,7 +824,7 @@ const IL: Option = {
   label: { mainText: 'Israel (‫ישראל‬‎)', secondaryText: '+ 972' },
   value: '+ 972'
 }
-const IT: Option = {
+const IT: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAnUExURfz8/PT09BekUxSXTBmxWtk2RNUzQd44R9ExP84vPeM7SuE6SeQ9TNiQMCYAAAG8SURBVDjLrY4xTsMwFIbtG8Q3aBpfgOQCKOoBujheWRxl7BJlyMIUuRtjujG3C1uldGEGDsX/7DgUaKhAfMp7y//l92OriVs28TbxzC4LLy97z+NlIcSzwv6a8DoMPwvD4XACw3CYEU4TT38Vjse2PdHeXBZc2DRtOyc0BLU0GyalzFeYPP8qONBAMdZKfhNaJ0jpfs+lXISYj0I9ChTSXkQRZ/Qxpuu60TDqesPyfJmHhjGPIoRwaq3RgFguJe0FDwZT2nXUtVqzMcXGE4jxPxq0Ugqj9ZohIWDEVCAgcUaRVr4BGSrIijmL/J2cCpRbJAQWkeAELDVxLsSCC0GOEDMCDhDUEs0J3L8ARRlVKGMw3xo4LVEUZUGGMXdeSP0NiPyhBg0FGgoICYABYk6GoygBrQICfkeaLJPY3xjB8mlpTIkn0oRiahAB7gsM9h3LkjRxpDcudK+UjsoJFDmSm+kEMaaVb4CRfTQ4uqrqbGWx71mSUZ5hzgTbdVXZlV0HweUpOecN1lNZCIFPDagAtrO4gQoQZ9knIXDW8Htha20/J+z6frt183BZ6HeBGYGivu9325+Eqw3/JrwDCOxr6+4xpG4AAAAASUVORK5CYII=',
     alt: 'IT'
@@ -832,7 +832,7 @@ const IT: Option = {
   label: { mainText: 'Italy (Italia)', secondaryText: '+ 39' },
   value: '+ 39'
 }
-const JM: Option = {
+const JM: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtCAMAAAAun0N9AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAzUExURRwcHBu1S+rIOlG2RBy7ThWeQBekQxYWFv/VP//SNprCQNjHOywqHlNJIWpbJaKILbeZMLtRcK0AAAHsSURBVEjHnZILgoMgDESjFhSU6v1P24TwSRBt7aAYXSZvoAvLsozT6x9NI3phIfk/7D462b8s0z9w4X8YwWdb8T85hQwnf1iXpxEKfFkDwLbLCAOOV76HNF4vUQv4vqEdThFw2ZDs56eCoxnvTUUYBlrNys9SaPiWGmCEUURIBvWMs4CPgY1x3tQprNPQ17RqeOKnJjJC167hIL18DLcRNJxNtQNX7+sIAv6Gvqjr0Y8g4IeO3QojOBHBxovg7h5eUxxlcYpAcMcfjw2+i07BscUjPe3c/QJvIjiMsOLs9M5/jeAymOrf4LOIgCbHG7nb+SyqmadZ/C+4OCJ8VqOY1efcA6/gSNwgQO09Q10j7U3xHl3OTvxmwSxKSO/y2g7yRX68cf8tpokdm+QC4UsKz3aH55//LgT6Pb0gPJvx9y8dMEJdpqlKtPMIdqO31vo2wtxBVmW4I7glxQisEuHSH+EsgtvBpgisUwTowJ2A2y8RlD80cCERIVz4Ye/DTxF26Plv4ChzEaH4b+HcohcBOnBjLI0GT5/OEeAMN9mS2ojrHIGmsMqdm2QyxU51ea8R1sB+CeeFrFJkN3+Z6lZ39Cu4Sai8Nu/BqJ4yAtQTmYyWvahVhOL35ol84z/BvylHgLLzp/LF/xguInwACsA82mixeFoAAAAASUVORK5CYII=',
     alt: 'JM'
@@ -840,7 +840,7 @@ const JM: Option = {
   label: { mainText: 'Jamaica', secondaryText: '+ 1' },
   value: '+ 1'
 }
-const JP: Option = {
+const JP: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAhUExURf39/fn5+fX19fLx8tARPcQMNt52jtU5XfPo6+Ontu6uvbcO/ckAAAGqSURBVDjL7Y49SwQxEIaTxsIqE8F6MwERq3UjcpZKcoj1RrFUFNFOObG/Q8FW8AcI/lBnkuxeOBQEW99Nssm8z3wI8a/fSY0HnTs3s6e7Jl0lB6VUQoFUSpKEkvueNW2TRW9yCBgEsO6zTgBgDC8BJa8K4C9ESgCgOgJGrQ2+n/IzEVC3+BwB/wEydaH5lhU2lr4/pnxZKpQLwGYFTEtMQTXDXgX43SFatfisgY8VwADoq8oPF9nWYwWjYdb3fWDT972/TyEilDBaG2Q2hEBIDD0ThxQlR0Mj+AKIxoSsPhIUCGDEGCV0EjDQZ5OpI8xx3QiThBofYyhfjOGBPESilCArffqanViYS3YNHY3AQuB75AYx641Hp8EMDYlJGp9jpTmyXSoUbVX+aUrhXQHbYQkcj9EK4CEGvY3BVmBnraWbrXqc2mJ3VMHSyTat6wG4RErqSNhxhVSCAwfFP082plgjOv455zpn8SU3mFOM8jjRtcI6O8i515t4drtwnFKatMINyoXyjezyqIDvlQGbVtq17I8VutUKP8r+doa/AxO3yIsfi0m1XPsFexHR8wi/OxIAAAAASUVORK5CYII=',
     alt: 'JP'
@@ -848,7 +848,7 @@ const JP: Option = {
   label: { mainText: 'Japan (日本)', secondaryText: '+ 81' },
   value: '+ 81'
 }
-const JE: Option = {
+const JE: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtCAMAAAAun0N9AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAzUExURf7+/ulAVOxudfCGk/T09Pr6+vHw8OolPOEfN/f39/O9xPbP1PCqs/rcQPrkYvzskfrhT2CvZ2YAAAJNSURBVEjHnZNZYsMgDEQxiwyYpL3/aYs2EDj+SIVDQNboDaR153ke1f0n6tG17sTw8Wt19KRk/fcWCD71Hy3Az/v39fv+gdub4lU29B8svF8c7yc46q+5DuWZn+SDJw+TefVsWC0kfZy+CCOT+jDwQOm0WOAUPdMk7lm9wBPlkytr0vEw+tFzQ2HTtJsqSQJ/lRfetCYsp3KKGvfYfYm+3z7qucrCo0jd6LFZ6MlD+P4T3CmfV32KfrNQZUdWDdzH6d2lEQ4t5BMfuYVA62Dg+cx68sE3AV6qxELo9UHhmfIe0rM+pUYWmFtw2wROrja40RcabCHLKbqFIvDMeISXm76YHDKHV7SAcG6XyYvCROPKSFHgjixwi2Nc6YCzQOtdGd516tFYnvXOcdWw+8LBx5U9qI/cQs6izh5UyQVa7Tbh2DW9xgG/Y1b9FnXw81kfqx71nS9qnNuX+stPLZ//+kYvcOlAYSzEPqY+jqEBXlT493qMRv0nYLV+oabro6z1uzERVSHGGHTXLUQD4z4OUxzcE+Hi+bio8DpGh25hZUVHShoUAscI0rqIhSwW4kSSfm4YnidcS8VCJguUUqCb4ljaLAtgX0SYFo5m3lj9Ct9jtfBBXx/go725hXrTW3iNVg/04KduFoD0tLrD5wxzFyyEsl3fY4MDa8CwOQurBdTffKkMxDoAfUA6WFTPOlhMSZ3MUVU6cFqOCm6BqxpAqZ/CWnBjnasV2i5xb2iYzsJHdTQPbN1WC6pvT2YfTqH/Z87Avws/9Q3+Ew2lf1Z/QM4lG5B8AAAAAElFTkSuQmCC',
     alt: 'JE'
@@ -856,7 +856,7 @@ const JE: Option = {
   label: { mainText: 'Jersey', secondaryText: '+ 44' },
   value: '+ 44'
 }
-const JO: Option = {
+const JO: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtCAMAAAAun0N9AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAABIUExURd0eNRWTTyMjIw8PDxOKSvj4+BGCRdQaMP39/fPx8heaUxQUFA98QR8fHxgYGBwcHCclJeRse+2xuackMHcvLt47T1piQTJ5RQXEvP8AAAGzSURBVEjHpZINg8IgCIbZndOxVpdu6/7/Pz0EnO6jruarMWE8CBWM9yoBuPtXhYA0VfIw3q9nxTzNUMfTDD/nlHgYr3U8zXA7oUjOaYaTfJ7hdqEVzdta8TSDhm9qlkp8vu3jsCkwXT4TbDVevj/RjnfuWr6/8F6rjMFebqq5n3jwbfeu4FAz1vEA4XPea/fqxRla3i/ULh3D3M7yT3a8aIaW1OmS3fGxVEoPGDr6CKpthG2yqCtWqw07QPKQHb3f0e+AmSkfq/slm1PRK+y0kG//U7zGOecD8YjB880adFKU81AMFmc22m7MRfROQWkgUMWW60ZS4ByIlieWdB8g+OTExxw4idISzGfM5+imVt0sH/WBe8edlMougLarZZy078IawuNafH+JyXfh5oBvquQXecQa/tG/rx0P429fw09NX8M/mr5Zq29yqF/cFF3z429O3BY51oqfzLM0c3jc8A/T8JKdDD+abSzFoejdmPwmGZPTTfk+lYHc+ynB0rullWTF2MUW4fRKFmjvlpwsI8YstgjrQbZlfrKnFfmHtcPThOF1FKj3YRjs8Ez2dRSmoUp/mr1P9DMpnZIAAAAASUVORK5CYII=',
     alt: 'JO'
@@ -864,7 +864,7 @@ const JO: Option = {
   label: { mainText: 'Jordan (‫الأردن‬‎)', secondaryText: '+ 962' },
   value: '+ 962'
 }
-const KZ: Option = {
+const KZ: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAnUExURR6zzCO40Si+1yzC3C7F3/7IOf7LRd7HVYnCkGO/qkW+v6TDfMXGZubaNUkAAAKwSURBVDjLtZGxTxRBFMbfFgaBZmYThAMLdjbCAQ2Z2QASC5O7hKiNkMzuAVaamz3EQo7cxWAFCXBgBQmc0kGiEW1QAuGu00T/Lt+b3YvQQKNfdjbfvPd7375kIX+9HsI/AKbi64HcmMkHuVyAyuXtm5RHb2ujEEzFSgUWSY7Kte55JEdBBfnqskJhXT3GM6lyZBNhAr7Ni9b90akKGikc2IoFkgTSxIK6X1KXhcB4nHrMfxL7g4v0lZYkAmNG+SQ10VQPzOn5KzV5oaSUysc3JsjxWErfxzNs1sZNycRi46Wt4BwlSCGqZeXTRDWubx992aybZboJSbn9IKQ0zwViwj+Pd4dqW6JuvgtfUB/L/eBTgkTMF/s/s8aYt+L3LrYkQUJiwmAsyI/UPnwdriJgVkaO378TNlRgghgw1g0ZU/5krI6qZsHWfOGnCaR9s1tNgDJakQoB2oFsNs4mfbM4WBJXgHDG+tpACpjs2iXAE6JS9lBDzf0wLBZNGJqDhtcS7RAJT7jic2VuIySiWAy39ZsjqrkEePc0kdminlnHXqiRWA11SbguR4gB74445y7HhHWNKuLBhEPu4jz3GLicV5YoI9Pcs10d6oMGp3kXhQku19M2o3ZHJwp7VrHN6eFpAt17or4UKHQX7AQRrR1Qe3qnkgBLaJOaR5/o0tZnsPExARCc5an+JnTi3+y1ESt9+DcvAbQDWcfZ+0FbzPNfO45zBdDTjsMYZ2fRTqa2xev6G+Kc4QjWAS0mMEqoRPWtw+PNul6yA06SwHAHZtWrV9t0QUd8fY4xQqzA6dIANqyn6dzVJ2fPoOOC2XxggGJtESCHlw6Azgja5gGdg0N2jBCovAZmcXZ7FtoLtkjZ0JJ+ylLXfgLQAEh7jo1OElJ1pOeKcIfrdUvfANyY8N/1B+heFBv1AyV9AAAAAElFTkSuQmCC',
     alt: 'KZ'
@@ -872,7 +872,7 @@ const KZ: Option = {
   label: { mainText: 'Kazakhstan (Казахстан)', secondaryText: '+ 7' },
   value: '+ 7'
 }
-const KE: Option = {
+const KE: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtCAMAAAAun0N9AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAABgUExURQBrAAB6AP7+/sQBAQB0ACMjIx0dHb0AABAQEBcXF9oHB9QFBfLy8s4EBAGAAckDA/Hv79cODjgUFO/V1XgUCZUKBsYnJ+WoqAF9AVcREWt2alN5ScK2ttp3d0FFGjZ2HRRE9YsAAAHXSURBVEjHxZSBcsIgDIYjVjBCq4ewtZ6693/LhVArrYbddHf74SCU/wMbqLB5T/CnvOb6K16X2nD9jUC/J0CtUSPVNMIpXvS3UnhzDJjnC+mHfm6YxYBVXU/XugFwKxbE+Kk+I6ZQ8sB2KbxH0RzV0UTcyoLKXDDGKWdMeI33xhilFLW+witRHxP/IZtk/kygOahD6s4v8KcEpvyRTjK/E2Q3kUA6P2rjxko2kY+a0m8u6kJt0FHkaWWbC2s3jndBDylzx5TFQYfJdS8ssHftitgO2k+814N9FK8BVpBnPr8/xU8cLe/f2jbXXMbYtl7rKf9a+7Ydny+80Aqibzadv0vnT7FkE3lknu+/wWf8PvN7QeX+xEs2kffMHx2/P3qRXwvyyPl3nH/0kk3kByzOH4cKb6ayToMcmYDF/cOwXi88N94Iisj33/H9xyjZRN4wk98/ougCJyl//y5//6JL5A/5/8fl/x9HAdUn/OFRyUdNyhw5UhZ5/FTQiboyn/a/yqYK34Xx94eKB3pRXR85f7GRPT2sRPWrJtD5hWZVUYUnrvs6fa2qgqaqvuvqhh/4HwX3HrjMVy3GsNgsj2FUAxmfRrOguTkKTeP5xLhGMds8QPNn/6pvxaJYKBtnLaMAAAAASUVORK5CYII=',
     alt: 'KE'
@@ -880,7 +880,7 @@ const KE: Option = {
   label: { mainText: 'Kenya', secondaryText: '+ 254' },
   value: '+ 254'
 }
-const KI: Option = {
+const KI: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtCAMAAAAun0N9AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAABpUExURQNDiM8dL//////YUNQgMgVKkwZPnd8nOeQqPdojNlaFt/b3+qvC2y5sreRYPM7c6tw8NyVfnOp5QfrCStvm8HaawYqrz3uizPGRRfWtSP3TQsfW5t9sePC7wPnl4u+2u/7yxf3gi+mgpxOByzUAAAI3SURBVEjH1VOLkqMgEBwFH2hCCOQBVrKb3P9/5M2AIK5Jyuxu1dU1lAM93SMoQPszwL/2Nz40X2ipZZsSUmptrbNyqUO/R9tkQFUjHTPOWo0jwxiOtSLRTEeAiWvHFifSuoE5PQxWKmLa+KY200LzFNKageCk9AUeIvML37JtSBkKGCebWSbqyS+E94nR7qeBw67sYLQMYyHEpBWRgygXeT5MVQiNSpkmqWIE8RzS+mDlC80rv2bklEy/9PPUQqcWVmyZwbFh1mdUVGVawYF7Nj54CNoqHDqGVsuYQ05ZzSeJSHLwz4RxohgumtPB03T4OMegomWmB/4QaDUSz6ziSmlHR9g8Fj7xa/KnGfn1M39RcGrU/cDPFXM8jqk7XH42TzoOFDLgq7XG825pIp3BmydpaBXdYu21vBgDAoo0HCGZ/2RFoRwLcAoVuIWByek9Y4RiASqAQmVYhFGJ/Qpa/+Xzo//4vPCpwJ2Y2z0VcKQpc010weXalwH9mL5cy4ixxP1WLjSjC8oc/fVPKhdL3G7lCw35d+dtvT3vMs16BigExPRbDNQ5tt2x277FzP3vA0LJ8+IlKxmot6eD39LhlDb5BgOH7JNieh8TKxn///vNaTP/7asZwNDVVVXVXUq/w4API7rNrt9tumoFE11Q/Qy/4MddHfpDvsjI1AtmoYHZJ/H15gxUSwamDwnf+23z+3vcV/vj7G6uZgADICqAmPZMRX3GPNJUEBDjHu/mHnJMzHPN/4y/gx5NDTtVOiMAAAAASUVORK5CYII=',
     alt: 'KI'
@@ -888,7 +888,7 @@ const KI: Option = {
   label: { mainText: 'Kiribati', secondaryText: '+ 686' },
   value: '+ 686'
 }
-const XK: Option = {
+const XK: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAnUExURSVPpixauCdTqy5dvSlWstivYuG3abDA4dvi7/j4+Hl/jLGbdUlnpTZ60moAAAHxSURBVDjL1Y0xaxwxEIUHla5O7EJCcCHEVrELiyviciUUEtxri7PbVZGkMRjurjQJ3E843B6xi6QzuEuTkOR35c1o12wCNqRL3mpHM/M+zdD8cR3RfwG4UfPKzREq/hGl4dwRaV1pSFrHy/dVtVk57VyBKj2jqogh9+LqXOv1FhV7Dh2ZIALhNAPVestp8TUmyAVtVlo/XV66MRlWz8YJmh/e6wnv0n8J8OR7YUUtiQdQa1/XKDkiZ4nppd1SjdJrPXj7n78OEHoej2YEzPvNqjyvb/I7riFs4Rkzilyvtx43Ts75C4/28dXVRR2jbwntGNfbKMQzAJnJ2gPgTosJ+DYrH1k/Gfgu6evlB/gMjMK7/Y6BMyliI90JAP1gP/cfJ60pcPJJBuT89ncgRJwGA0/yAHQLLAhlR0shBhyEEDuoz/hPQyEgQ03gjPnmpks9Tp/eMA4Daglm4Bz3y9QlVn8mnhCY0FjklhvPYWJC6m6tdMoKa4O1TOHcpaIdm1ZaABi0RYeFWOCFPIJ4wiDg9iCl0+u0G1thAgSJeyl9O1jYiSYTZEe6VYe7RwC6s1apPwBjuaOU4eS6VBwNLogUXuBHCwTt8UWm4CxDVEpFHA2NJmNkxIZHBJ/kEkhkZEIhlCqWmCgM//SA1CR7EPrX9AtZxO5KsLsT6wAAAABJRU5ErkJggg==',
     alt: 'XK'
@@ -896,7 +896,7 @@ const XK: Option = {
   label: { mainText: 'Kosovo', secondaryText: '+ 383' },
   value: '+ 383'
 }
-const KW: Option = {
+const KW: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAwUExURfz8/BWVT/T09M0XLRQUFBKJSRsaG9EbMRB/QtQeNNYgNiEiIdciOHcWIhpWNdYiOIL9PW8AAAHcSURBVDjLhY6xatxAEIaXfYK4UC/0BAcqRNp4URMOcoVgS3Ne1CwJARVC3aUQqEwndI3dWhhSGIRh4R7gmhRXuHHjIuCHuCIzs7dnG7TSp9vRr5lPc2IvF5N8YubXnLCbE8y/OcG8zAm7bLXKAncyYLUKbA6+oWAeoZW5EwAoBXRoA3zGqfER7NgNxtSZByfsZHZyaplJvEMDOtIJ5rWu60bWCFXMUjb1xgm6AeqGkOcs5YYNhDE/mlE2TBu4hkHrR4+Qa50PeMyrZwPMiPyKjZIPea5hjdY+gf4DLO8Gh3eDdsbchvyKs5BxaOGdAuP8vbAOOYs4j0IEQxSFTlAkcGjDjwo/pZDBUKk8TVO1dkO8R+DgnpApfD1FZR29YR0MDN9VKW2IRgBBKZEKBdKXcUEJmIIhlEeAMShg+DYIQQrgFwStSJ/7vv97PO73/T2kff/neOz7WwZfaHnox7g9bRBiub3ZTgnp547Ybu/uuu4t/3bCob3pzpN3OOF721Vd21ZV96Geha9JV1VlC5QlhqqyuSx/WuEJMzVgDPPSRlCtcFl6IWGZJNPCU1wUiaUoC8y2FkUcL0C4hpDERWILgAOqRVGCsKQHmNAwoTG+DxWuBUsP8RQLdkimhf8Zm8i+GpVPegAAAABJRU5ErkJggg==',
     alt: 'KW'
@@ -904,7 +904,7 @@ const KW: Option = {
   label: { mainText: 'Kuwait (‫الكويت‬‎)', secondaryText: '+ 965' },
   value: '+ 965'
 }
-const KG: Option = {
+const KG: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAYUExURekbN/EoQ+4iPf/vQfzKQPaQP/NqPvBHPqtN/e4AAAHNSURBVDjL3VJNcxoxDFU80Fyxhw1XW1PCuZUXroVNplfIFrgym016bZN28vf7ZC8MIRN6bh94JUtPT/4iex4D+vcIo268S7haWbs5RyhmdlSeEMKxfhHtsDzu4qAQnA2As8XWDmVVRztZW+cQxdd60hwmiIxkNZRSoq1nLgfxHRAyWSDYKrbbny/fWplr0CUW1pCdwC7UsVFqK3dqNOqCJ2bnOCQ8zwMDtnoCP+g/MBS0FqPYfP/N3FY3DRcvj2uHOodiVYDhwFcic/4lIvEpVDJNWqmFdmed3kszEcVXdZk1zpwVEq4jf0wE2CmnmteE8IDKhGbcHKJHhMmWq0xYwH1LKKpPB0KQW3dKuBb5zDmfnOmB4Nl44I0C4qyJvYIxr9aQ04gT+Qz2/OD3u+g3BoxOwbBJXU7OITEAIljvdeD4LvJJwt2ZDl5bwBiDbSx8vguDu9BcWv5hEWPcpifc5s6PcZtaRygnMvuPMc8LUpjqB+Y+NYCCEpWNDdVxByq1ssxRylBr0k/f5GCEN/kliebmSVuzRJey7OmrNvczVaC9QgdD/TvqybKOZNaUFY565JVSP1KvTF5XdKJC/RldlnQGH5ZEG/oLDP2H+AOAK4gvyPUEfgAAAABJRU5ErkJggg==',
     alt: 'KG'
@@ -912,7 +912,7 @@ const KG: Option = {
   label: { mainText: 'Kyrgyzstan (Кыргызстан)', secondaryText: '+ 996' },
   value: '+ 996'
 }
-const LA: Option = {
+const LA: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAwUExURdkgNgMsbeAlPAUzegY3hM8XLtMbMfv7+/X19eTn7SRMiFl2pK680cPM2c3W5dnd46eoSFsAAAFySURBVDjLtZS/SsRAEMaHLVJfSCcIyz1BwuYBhFhZiI2pr0leIamuschaWF1xQWwEW4VDQYvrrtBXUiycP5e7TYLRw/Njd3bmmx9bfjAelobdAUX2uo6Vhq6U4kJVa6C9Au0cNrYV+j/0NWF5IpjIgc0EeUcTKh43XHtAl4c0y/IsT/M8y9JUbtOl6J3B+bB+ARwP62jvwHJ+8zQEPBRFMb1rAyZJ4jhOqCYncwSK65gNcUPgzsSsU9oX04RxcUMwsTF8Uc8MFI8y4d/GIODoVYCVY7WBuqrKsrKzbwFb2qqy5UUbCILIrE9tyxKhGfZkkEIIuOG9ebOslRjkBCFEUYDyIzz+iwALMbiOgBa8xvmQ91c8iOeHgPuIEB91UFtb2w8ZRCPwXd1f4ge33CJEX3QAf/n+uWgZXaCnfQB/DxAl78ZwAoRcvc4B3eSAajLDdZUTJOwrx/xZnmRIEyQUGfRAkyjbfPA6AZLvECDZ/wbIF+uWL/NstcjXAAAAAElFTkSuQmCC',
     alt: 'LA'
@@ -920,7 +920,7 @@ const LA: Option = {
   label: { mainText: 'Laos (ລາວ)', secondaryText: '+ 856' },
   value: '+ 856'
 }
-const LV: Option = {
+const LV: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAASUExURbQ9R6o4QqE0Pf39/fj4+PPz86S20pkAAAD/SURBVDjL3ZNBjsMwCEXxDTAniH2CkaYHqJRk30W4/1XmAw5SpdbtoppFf2z8gd/uHtFXiJkL2Yk3RGMGR6WWisO1FD5f9pnVwmTVQy5LeIOZhStRzdVDMdW5EGhVcFGGxK3PWhMmkQ7TRQQFX5dmbW1ipi3U0WLYm5VYWhxRtwthbb9ztSz54h/m+kTgd66f14F1XbeLnVCa4a+0zfVGQPf9OLYNVeOiaPr9Rqq6q+tQTZP+SjrX7XXga9CbioIxNtyCNT/jYZBl3nhLvkpS5ptnZJX30bvnznizLuljakMnfKOJa2QFjk6XJwLRABCjhSQYkwAwIDxRBKL/gd4f2oyUpGeyCJ4AAAAASUVORK5CYII=',
     alt: 'LV'
@@ -928,7 +928,7 @@ const LV: Option = {
   label: { mainText: 'Latvia (Latvija)', secondaryText: '+ 371' },
   value: '+ 371'
 }
-const LB: Option = {
+const LB: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAbUExURfz8/OwkMfT09O4rN/AxPRyyXb7mz4nVqkzDgJVKsfsAAAFqSURBVDjLvZSxTgMxEEQtF9Dm5B+wXByUsewPiGT/giFlOqiRQqiR4LuZGUNIDnKKRMTcne3dHa/d3DN1Xivzd0MqUE56c9HXRyRqKUuTE1SSHH2VUtancWnSvM4wDDHF6FyMmPujyCkf48I4N+CNw4B5oHoEB+LoFmbo6sU4TLU3nNIZhv/X6Ofr1+1+tm7fWnudMzy21tabySZrjcer4WHb2m7jjUXe8DZaqAQfpisc8a4tXhnv2SFYH5i0fkQdDuSVodBZawwh2JsX3mEXmAlMsQVXCui6pSH4HqIpmhut5Qhh5AntDiuF3GhMONBWhvbEpr1t8AcGPz7jjHXA1OsajzoEGY40NWx5wIxh/LrjyQ4/dAlDreXX/76cDxBYc6k5cyARaub2nKtIsTKoiCGkhkwZiOgoyQJI6bxI5IfokWjco+QSAHEuAQNU+nwiCUGgIAeAgAmMOh00iS8EBqYpQL4hEi8HkA+eLMb39A8uFgAAAABJRU5ErkJggg==',
     alt: 'LB'
@@ -936,7 +936,7 @@ const LB: Option = {
   label: { mainText: 'Lebanon (‫لبنان‬‎)', secondaryText: '+ 961' },
   value: '+ 961'
 }
-const LS: Option = {
+const LS: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtCAMAAAAun0N9AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAzUExURfT09AkurgsxtRQUFBuuVgcrpwUoofz8/BWaShmlUCIiIre3t5WVlefn525ubkBAQCcnJ9FemQwAAAFFSURBVEjHxU/rmoUgCMQ8leCl8/5Pu15Kwb623fzRQDoMjBpMY4C3/WqaVIm05D3h4L9omYM6MDVSHczJ+w0TqDEM+2cJNauY55rrnEOqWDQbLyvjamb9/f/FA//COczLkpS4nHChz7wPfYtnp3PpoLCMYdi/juHGb50d8Qeib3jut+S8I/vY78hvntydH45cG8l7vJ/S/XxAsBxQpMQq3/ew0RY6DY7RUu/VeoqkeSLyrM/m2I3swIasBa11aH2xrXK+Pp+dY6OdtOXeFeB01RX8VyfEP3iGoAvCQ7+l4rc3z7zIuFjnnPX7kGz98Q3+rvkZw+t+/GDcUGSJj6hk1IRUYvpYlkBRyagJWFEkFEKndM0IwDGM+w2WbHGSpCpmIS47r2KXyPtSQgNZScBjRSNPMKyP7Ms1GMOHrnA5AWYMb/t/AFiwNpAwtdkCAAAAAElFTkSuQmCC',
     alt: 'LS'
@@ -944,7 +944,7 @@ const LS: Option = {
   label: { mainText: 'Lesotho', secondaryText: '+ 266' },
   value: '+ 266'
 }
-const LR: Option = {
+const LR: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAwUExURfj4+PPz8wQsbPz8/As9it8iSMsXPNUdQsITNr8RNAk4gQYxddLa5X6Ut7XB0z1gloYJkIgAAAFbSURBVDjL1Y8xS8QwFIBfdpEWXF2yFrHQXyDclEFc3J2c3Vwd7daxt3d6UYSODR7OUhRXD8HBSZ0cRdD3kuvZa9O7QUH8muYl7319SWG0yH6HPfgXgnJ8ujBKOsSAWKAqigdUNCN6BEUPYo2MUr4OzEXy7hZDwnly7xXiRjiD68EOGnfr+grW6voJsTrucAQaq+IRIAZYV1qjRyAugZlWRF8wujLmg+q3xpDbFyo2toSAqdGkeDowEyGCF4raDAg7YR1u2BX04Gx5t2lotIV4QTCvb3L7Zi7EvQ7mWRo5oTtGniOiSJZGRhzKqIz6QkkFKXkiRZZ9QXJFsmONww4H4Cq2yPiFFn8ihMsJIAgFBZrotYMQdhnyHHAHIWxyBjtuw18GME+6Pi42dT7i+9Ow1Uc0I1h9ydPlnPyCMB4iz9N0PM5ISNN8lqNMTo/dpzaRZ8MdHNnq3/yx8AUvWsa9gclYNAAAAABJRU5ErkJggg==',
     alt: 'LR'
@@ -952,7 +952,7 @@ const LR: Option = {
   label: { mainText: 'Liberia', secondaryText: '+ 231' },
   value: '+ 231'
 }
-const LY: Option = {
+const LY: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtCAMAAAAun0N9AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAA5UExURREREewTKDCvUiAgIO8XLRkZGfMcMTK1Vi6pTyyiTOoPJecMIiQkJCYmJvj4+IqKisLCwurq6k9PT/pbQUsAAAFlSURBVEjH3ZDbkoMgDIYjQuWgqH3/h10CBBDE7g4XndkvmMOfBKaF1xjw9X3emsMFnxWx1rwBD3g55VS9crfyBPAxhvcnPuGJXIoefoiHQUhSO+BVXpx6kKf9Fl3FDqAnjcd92XSQohqZpkJMOWiaNv5o8vmOiLnNwbjCGO+xYeI9SaSO1rmKGh4wfo5cg74tswpmDNi2bd3WhCsSqGNNcStmqYZ1DJjHCPurPy37Yc93pxd2Ht8/rN23T++Lnond2gNnMO8NgeiCz7/dLeeOF3R42BentTP6M9731/38vnh4H5o7qHa/f/cFJGt3g7uQavz/5yiIm8EkCEg3ibKxH+fxbgaz/QOWMb6/z2LGSkNXxKXRwhpbgBG+UWUhLk07A2yMsC/vWvKhyvsSYZJgmLNKbCrGqIbYuQ5f6ypnpQxyDFDy9xYC5d6Djyq48gta3FAqq7QQPKgL5eZFluoeUGOM7v8AdIc/KHcXFyUAAAAASUVORK5CYII=',
     alt: 'LY'
@@ -960,7 +960,7 @@ const LY: Option = {
   label: { mainText: 'Libya (‫ليبيا‬‎)', secondaryText: '+ 218' },
   value: '+ 218'
 }
-const LI: Option = {
+const LI: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAASUExURQUxhAg4keIkO9ofNtQbMc8XLU3qe+oAAAD6SURBVDjL7Y1RbgMhDETNDbw3iLIXiPAeIBLw3w+4/1U6Y7NRqkg0n1HVAZux/WRkW0vlHwggJd10S/SbG53Ze0mEZVJNohtu0kQphCTK8LFHjE4fjl/gRnDPk3cnwhVIKoLaGefQigmb4pw6ITP4+ZzIpKLQk2FHHuOfRl8nf1/XtS4fAeTlfL/Ins12s2z77pGNDVienLHBMhyncRzKMUW+icUGKsdzlt4AsNYbQCnloKxQFi/zYWzfpNZaKiFzstQDANPhcecGEKfgjidfy13qWu8ArfWpBtXOmk/0vmSM0Ubro7WBhIq2RxcHAItX9eH08A0r/Q58AwRkrCrJyYJYAAAAAElFTkSuQmCC',
     alt: 'LI'
@@ -968,7 +968,7 @@ const LI: Option = {
   label: { mainText: 'Liechtenstein', secondaryText: '+ 423' },
   value: '+ 423'
 }
-const LT: Option = {
+const LT: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAbUExURf7BRP28N9MyOwxuSMsuNw12TcMrMw99UhCCVVXXS3EAAAEaSURBVDjL5YyxasUwDEWVP4j/oBR/wAPjPQSjOWBM1jcYz1lCMnZLP7uS7Lih7yVdSin0YEv3StcG+A+0oFrVtBXScnYUQO6NUnXZVscFFNMoeiy9OpL8kAJ5WLby8Ej54ZxfCbxf8/Y1sD4Elues67Zxn2DZsuLhssldDn46+2GnBMZxLANWu2E9QRDGUJnDUQ9Au7nMWc05nRvVAcI1A3giBEvaCyStZW/FDiDdeGOMLxhr2XvL3MAwNPHWFHwp0kvgnJ8IvF7z8icCTuu+1zrXXX3qDrTrHd9cXVYktBZDP2T6w61QpgN3TQeRKspxLGtB2WMHiBhjooNy+cSIxcR4B0x1l1KOICnMigKpQoOisKp0DDzl+8AHJgoxopyy+xoAAAAASUVORK5CYII=',
     alt: 'LT'
@@ -976,7 +976,7 @@ const LT: Option = {
   label: { mainText: 'Lithuania (Lietuva)', secondaryText: '+ 370' },
   value: '+ 370'
 }
-const LU: Option = {
+const LU: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAeUExURfz8/O0zRfA/UPT09Bym4CGs5SSv6Say7Ci07im07lZu4IUAAAEOSURBVDjL1YwxcsIwFET/jC4Q5QSYE2hGF6CQewrhmga7pcK+AaRLyXGz+4VsQTxOk2HgyVqt9q8l62VW8haFCqw/AY90yY6shDNLyyNdsiMfYjmGYHFgVapR8IIFOrfJgWoUixeWeY3Ce+CMEScU/bico3AGl7Z3HKNrXHLAew8r3niPHArHGIrNBCu9wG5KWL51bs6J16l2Jpy+ok6K2Hj/UHwozPGUwrWf+LqWN02+BToMl8v5nLNhmHzfH0WPruv6eY7Sdt3p1M7CyV5+x21b/LCXRs/mrtOUhd0y27HQjNmhTLZ/vxAiqOus3CFkF+NG6hr3EGuEIVLwx44ePdw3EngWxHurhSX+ofADlZIMIONTENUAAAAASUVORK5CYII=',
     alt: 'LU'
@@ -984,7 +984,7 @@ const LU: Option = {
   label: { mainText: 'Luxembourg', secondaryText: '+ 352' },
   value: '+ 352'
 }
-const MO: Option = {
+const MO: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtCAMAAAAun0N9AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAzUExURQSPcMjh3JrNwjSfhwebegKBZPf39waVdQF8YAOHaSebZ9nJI1ewnHqySPzRF/HPG4m8f2PzrUsAAAG+SURBVEjH5VPZcsMgDBSXsRyc/P/fFpAQwgG30zx1umI4pN0VTmzwnwH+vT6ugpa+n7JA18qo8JHU8XydzUl4muGhi1Qb8X89X9qOaXLDGEFnonIilP6q4PWh7iHGONEdj8eh8pejYo56wfl8nuujwkL/bf+u70FmIKYQndmMUz3euQBR8aHgOA+u+K3As67noXFJ0BauPJ4P3tuqt1ysebKSldxkEh6dNwLxm14sVF/oF6j3p0NifYL2XFfqPSzrLfwOn+oN680tC98CfErJ6f7R1QyXBy4NmnjPfY30b4kIjdnmJkIaNdy2QrsBypS1qLQ02YXcVibqZ8CrYynzg9uUX30sz97eQ+EJQB+Q74LobP7RddJs1g2k/sxV8WaTvwPnfO3vncufhba/trtg9QO6CXemRzOVG/yhPqSpPs31QYJGjoBvUcYkjdA0pCIfRDkP+9Au2HNQfCtQzeI1AvVKrUCupS6aB4wvoYXuj8opQFgh9X/BpCVrrQ/B2fzlGWPdDedOv+97XcKdfi+EMfomhHmhB+QuXNlrQ9pQMHo9qCydQRKDWgj9pO16HrgUBso+9JnUpQD7Z/jr+i+M3D32mf86IAAAAABJRU5ErkJggg==',
     alt: 'MO'
@@ -992,7 +992,7 @@ const MO: Option = {
   label: { mainText: 'Macau (澳門)', secondaryText: '+ 853' },
   value: '+ 853'
 }
-const MK: Option = {
+const MK: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAnUExUReAVINgPGtMLFuUZJP/nNv/pTP/oQfzTQOMzJPe1O+dXKfKbM+15L+cqtU0AAAL1SURBVDjLbVTPTxNBGJ1mTQRPu3tBhEN3Lyhy2KQHETnUZLIE8DqLFS4mu9MgHvwBpK2XQiOIJ5UUSbwUBNHogYolMfGEwkH/Kd/3TVuq6Uvbed/73rz5sZuKAwXMVDKMG8QNzaxzoyZGq0Q2jXgTNNc0sL4diMy4OleJz517wWEwWUesjoHdM4aGWZkMzM28UbC77SyaxYaxJRQ/WV+K1FMmp5BKmaYhs9FOribRZmutXKVtYD+f9DQyUc9NZgBDQMMoFilQ44PW72kvVAcZKxMEwrJEEFi3aMuWZa1FUSUIAhxsNmMFBIGBLLjQTbCLOi8wp4orpJmCPoKIhQvNoezVC2jgkrZJFJTAHnxx8MNA9JRfoGyoORY5A8RixzqrhHE1U27Fd8BqqJph++ro/ybjUlGIT0vFmugtie6oCLrSXNkqd23bQvTQQ1GFf/Xij4+BsAH89KokiXBcKu0UJnz5/kjIMJx497uCBFvsJzrSkaqhJ3pe/nkbhjIrQiljKSWChL0VJUmi9aGNqYuSEGYF92PyZFPLmvFYcE/GrQSOgMExfX3flm1kRQd3WgndDNhDKrUVMuqp9h6MAacoO4S9WGPleMexHcfGKdhAU9Gjkzv9vLdJJwUHiXwPTgcuc26hU7LZYPxO2dlAf3LFXqE61WEwuFJ0nM+Lz3ac/tL/CQYNtWPIvqp3M+CNMsQdVDMrnQbX8cAGlap7Lp4hykbLSwYPgCddTWYd1x2Q01CvReqVawCD6/rAQaRew9knJ2hGNcljP9SxhUuCNxCpPNUXpMSv15dEs67v+ZRA072ry4kuoPb3pNxFMNXbPlnSgoezRM+skvWXlCc0rkWJPkHDS3NCP57xAwT5/jcpv5IyDGWBNseGYXoPdkn38TCeMMH/gC61DGcoHrLs4VncZjZCb86JMWw0OWXBMMXMP4Y4v0oGWk4vGHUEhjuGXocaT8HgHcfAm6YKw7Sh/lYca11Pi3WM4bxrxCF6AZuGIY3XM1/+CxIARQ7Zpbz2AAAAAElFTkSuQmCC',
     alt: 'MK'
@@ -1000,7 +1000,7 @@ const MK: Option = {
   label: { mainText: 'North Macedonia (FYROM) (Македонија)', secondaryText: '+ 389' },
   value: '+ 389'
 }
-const MG: Option = {
+const MG: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAVUExURfpHQxCBP/39/fj4+BONRhGHQvPz8/YVPaQAAAERSURBVDjL7Y4xjsMgEEV9hFDQr8IFIoiot2D6IMEBVqzn/kfYP4MdxYpxUqbYJw+x+T//z3S+8zXt8m/o+JcJ3i0MDFDOSMExTNAMHANDcM4HecJlsGSACLy/DHdwQRkYRHLaMaxYAg4SumO0A3bsLUc7vFyyc007fL9raGNDFOBobWBoGoAzHibIXBOlglkoGEq3KTaOEQWNfykRlTsEUkEFR4aMhLmUiivSEStRpdvE2sFgFq12ocqJQUVjBaa5KlAhr29IQAW3noArWoT1lAqWBuy6JGyRBF4TDgz8nsE+kfOj4SeDamW6mLO1GwMuq8nWGNGyeU6ABPC3/isec3o04DurZjXHyNfWsMNHGP4ArGXq1mbKYCQAAAAASUVORK5CYII=',
     alt: 'MG'
@@ -1008,7 +1008,7 @@ const MG: Option = {
   label: { mainText: 'Madagascar (Madagasikara)', secondaryText: '+ 261' },
   value: '+ 261'
 }
-const MW: Option = {
+const MW: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAkUExURd8dNdcaMUGtQ0W0R88XLT2mPxgYGCUjIx4eHhAQEDqgPJUaKUGW3OwAAAFvSURBVDjL3Y+xasMwEIbPU1YbvHUpMtqL+wIR6AGCwUsnT4q9tUvrMZOdMZOK6ZIli6cMhdC3693JduzSmEAhQz+i0393nwWBt3me4e/Ctq635XagrstynDfgMg7LQaRP+qYXLrIBk+dVVeWIqfL151KfDKWKMMZkQBVHpqL9EZATNQw6GZgRL8C8jkYTYe32sJgItiksnqaxtnsAn7DDdAcc8FcUzbEXvlDHibW2yKAZeO/3sDgPdyPhAwKPAP/ugtCtA28i/AM8gOAM/kG+PYrdyAeXcce3x5LHiaM/fuE3fgpKUQ1dprIEHTJaK0xKYeIaKl5oH0Lc4NYtcKpp1elaKXoB93QmuAF+isI8VwiP8zzcQhAiEnHcHyFEHNEVxzQQ4h4EDQXXWHSOq5GIogiFeQYhmdyy6yQKaZKkMqUfJ8k1SVPupVwBZykThDXqKUlnrSCd5wqhJQ6H9omOy31HZw8U2jPjTOyhnWf/DSLPjisLzjA5AAAAAElFTkSuQmCC',
     alt: 'MW'
@@ -1016,7 +1016,7 @@ const MW: Option = {
   label: { mainText: 'Malawi', secondaryText: '+ 265' },
   value: '+ 265'
 }
-const MY: Option = {
+const MY: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtCAMAAAAun0N9AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAABFUExURfb29skWOvPz894hSAg2fcQUN84ZPQQtbvz8/As8idUcQsASNf/PP78RNDdSb/DGQ2tzYpSMWdm3SL8RNbKgU8SrTvHx8WZF2SoAAAFpSURBVEjHzZTpVoQwDIUjVsIAXWF8/0c1adIBUeooP+ptDm1CvnRhgdsTej0X/CPexeR9iu4LP5xr4919Jvk1xvAX3nmmw7frr/Imt4wnRyMJOBqabNRq+zeSxov3bkNCMLdHq/KZcLx3RliO6qyr9FmUN2pT037M85MiT6/ZN3NPwfuQ7howtf1LRiJ+LekmH0bezrM8A/HBm3X+VO+XfMjT89PUwHguQMNN158dFwIfxxxDcBKq8XSbTM4PxaHLnNIs1dj7YX6eMz8/FIdc78hQC+AAMMAgBrpvHcv6EeX9UccEYl0o1ZBTodQAKONcB0X6/vLQPC4igwpIl0dahVRy9ftB3INaprr/ot33iwdRXj/2ZDWeKuj/44hjn3mq8FWATwgqas3319Scb63u6HbdMXaOUu7LNTXnu2tqzr9dU3P+/Zqa89M1wWLtZCcyaxe7kEnPmpYtztrfKwK7ac9zv48X/pj7Ac6lT+Fizn+jAAAAAElFTkSuQmCC',
     alt: 'MY'
@@ -1024,7 +1024,7 @@ const MY: Option = {
   label: { mainText: 'Malaysia', secondaryText: '+ 60' },
   value: '+ 60'
 }
-const MV: Option = {
+const MV: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAqUExURe8hR9MYOtkZPQ+DPxGNROQdQROWSRSdTfj5+Ovw7UmqcYrGo7zdyXVYQ2EQoPcAAAHYSURBVDjL7Y+xTt0wFIa9RJ0qET/BjcFjJ0eqVJXJVmbLwpcHIHIkxJxM3V1gROheGDtARbeiigfoUN6q/7ETSEXabp363zg55/zf+W/C2H/9XQWzrIBeD0v6UBQgGBj7ahEYsG+RYG3xOwBCgPX28Hl493h2M9WWRCn2sBtH/Zd4NkzN4AsCfOGL9dCFEPq+O47xpgs9degR7vEl3vo1uX3outt4ShwqKHiPDEqw69CnneNN/JarJNgeALQeJyfxPMxE1q8A/cMy0GQ9xMs2KaR2BhiMcH7E76GhnwHTzhIO2ta0TWM28d60JtWNacwT4A5Mnsd43+bKwDdeemmZc84DSKKEUUCQIB0A3CcA72BmwmpOeAIe4sUcwKpfMQntGaMx0LcfT6mqc1vDEUiQwu3VJKXfx3Nd1yAULm2EkBIJwskM1PXbzear1vB04hGAl4QvdpWioVKft1cKTr60EE6smEDQrtZa0fDddvsJMCCShEeASwlZJ9vro+xiQ4yAmAHq7vH6aKqR/RKYazFhEajeLPr7cABUnPOqqgQnfnrmmpeC7zCYQKjl6YiyKktelqnmADh1pGo8uNNymvJyxdKE5510qkxhQoMdlh4vxMcwAv6sfwH8BHFdIebA/johAAAAAElFTkSuQmCC',
     alt: 'MV'
@@ -1032,7 +1032,7 @@ const MV: Option = {
   label: { mainText: 'Maldives', secondaryText: '+ 960' },
   value: '+ 960'
 }
-const ML: Option = {
+const ML: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAeUExURf/VRP3SOiW4Q9AYLtccMyi/RirESdwfNizJTOEiOaz00poAAAGQSURBVDjL7Y8xjoMwFETNDcwRguQ+Ej5AJFuiTZCgpsGiTIFk0W0VpdwOcdud+Q4saJVqmy12wD/FvP9M1HPLh9qybPlUfxeY52VaeFbg8RweO2Be0E3TPE93FR7IMAwHwyQlc1cDSzAhdDtDquNqCELtADRxjpwwBPSB2QNS49AQhIDmYIgSGsKa4WBYswPCr4F2D4yxSiHQM6ENndYZW0w0Y4w41UW1bYsytH3fKfSalI4j4nEIcL8B1ncaNfe18tUaMbDt+/aaZSr12o8eqfBzUU2DdRlXrXPUOtOZ9yO2wYx3xQsaGVdsZyS0ZieKZEDJXFlBAshvEeCVGyqdoPcAA8kbIEfFJ/sGrACmbgzmTW7IqfDWSbw/q9qwN3UNA9alzy0Ivs7BUKd9MZDQuRjktQAK7he1KcwJ67wDcc6WzjIXBbmkMSfpqMilk6/ANzDGJMOa0rnSlaUt7VlBX5iiAHFaBTpHY0uPa2BATwO+Ym/gvoxkSDlcgdbywMDwTxwACYhSAPPTsOVl+Ae+AMTzVI2CoGtMAAAAAElFTkSuQmCC',
     alt: 'ML'
@@ -1040,7 +1040,7 @@ const ML: Option = {
   label: { mainText: 'Mali', secondaryText: '+ 223' },
   value: '+ 223'
 }
-const MT: Option = {
+const MT: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAqUExURdEbM9ceN/j4+P7+/vT09NwhOvHw8MzMzaagm9HOzLu3s6Kcmn91b3txaj9e4iwAAAHVSURBVDjLvZDBbtNAFEXf/MHMYj7AbwxStxMViV0ysrzGC+8RWJFYI+Eg2MewLFLb9Jf6C3wM972xMandSN1wY08s3zPnTUKbJ7luz/KO/g/w5nS6vQhcDcOPi8DbYz8CMS6BwJ8ejv3P08dNQDZhxXAYjv0wfA6qWBo43vffHvvDrxgDxxBenfUeBgDff/eHmxDiRkZ43zStb1ssTdvMhhsYkHjt0OQbwYgY7/UMABDmovU+S3B5Z6dfcfcBAoai0J1N4518dARf4X9gDswwxKJ1SCMTxGUJVvknGYmyFA6vAXinkRHx9enrFzkgDDEUuWlg8GpgTclTCq0b5yaDzB4jI2LhzjIZZuQywC8F7DOAsePlHFHJiTnJWupXYa11uXTGGDWkhKrEylh3RgoQGSSqqmoqqyqltHOknc2MlRESwcRT7oxGKQWqnJRXGAh79c4QpSwoFcGUrcVcFJDgLESjoZQOp0hpK51sJ0tCkm6rRgPurZEGFOlRJsOcLd4ZuaQkswKYiSCrzJqB8gFypqJD/gHmdLV23RPDnLrbV109Uvu6e79iwGv1CFYvR2AbIqtKFoZ9Dpj8sASwF7cw8rQEpMN7LeVx3VDnKWJ67gx/82LgD+bcFYIH5S+4AAAAAElFTkSuQmCC',
     alt: 'MT'
@@ -1048,7 +1048,7 @@ const MT: Option = {
   label: { mainText: 'Malta', secondaryText: '+ 356' },
   value: '+ 356'
 }
-const MH: Option = {
+const MH: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtCAMAAAAun0N9AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAABFUExURQJBmfv7++SAKSlgqwNFoPb29+yHMAE+kwZMrAVJp9DZ5n2dycuBRUNWf6FvTkR1uLy+x2iQxqrA3eTp77qTd7WmoXRjZnfcihwAAAJUSURBVEjHpZOJtqsgDEVBBsWxWuv/f+pLSMKg3q6+9kCFQnZOpFR1P2lWv9DT6H/hD++/54MZ/S/85D3zIbWuGGkSqpa3utkLH6icLkA3Mpdkgbd5Xehp9MIHEQav4aQu3CgeXOKlOgzeAnumtRC6czOjL/kysbv1qzU1/pbvlmC0Ccv7FHb2/p4Pm1n0Yrb35qO/58F1fQ56eK5/HFrUcaL3HniLZS3bapzW2pl1W+Ka5R0qG7o1p9r3h9aK4mwwvXMamuuNcCkDTeLBNbGjRqCB5yCzDAhDjmExBW2pWTq4hnvDNPlDya4WvAyx2GMCOLgm4UA7zbylAPQnoT95WkqAj4NtCX8JHeunUHz/qN5Yy0ktZ1GzZxaezeupdcFTsMHzR8HLGOYkz4RUROFT0Ym3nbVrP7ihX+NcUNRMhSPsT3TmQXD/HNw/W2saGxLQe6/dn3ww1jj4hAo/qHCsHeirVBX9PJm3cyMSb1eXIDyNm8zp65RouC5wtRiOT5z0g1GWGg2rlS84zplGgDG65hG2jKVmUqbi4IhmkkYXnTlY5RFFvDoyTRKc4MQlqqokHdzrmf8VES/eWbFoKh/UdKE13W10zrLpkZOh5qt3hu05+iw+uL2/gT/QcaU/h/ngSvo/YD64/VHB7XtD3G+pRfP0g5Nzq9J2EalkLitycImOzm2xS2Z50pbu2I9M1zBuonJsrljJOtQ+0g8OMIdn5ehytU2p24mvi8CSQZVBVTLF3lFzpEv4xFy9i7BpfPW188dC/tj772Di98e3MPLT8j0M+gf0jD/eLvp5+QAAAABJRU5ErkJggg==',
     alt: 'MH'
@@ -1056,7 +1056,7 @@ const MH: Option = {
   label: { mainText: 'Marshall Islands', secondaryText: '+ 692' },
   value: '+ 692'
 }
-const MQ: Option = {
+const MQ: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAqUExURfj4+ChLmSRGkTNasf39/S5TpjBXq/Ly89vg622GvcTN4ZCjzK672FFusOvNKjkAAAJUSURBVDjLrZPPaxNBFMffYWFDT81AEJFCdqB4ECEQWREV9pBL6SU97ApVIbDZAZHA3qbaHKSEbtPWS0VLSy4i2EBzKUVpAh4UJCG9+AMsrfi/+N5MNtktKAr9Bvb7fnzemyzsQDGpGyVUqlKAiwKGx9/TwJ3OYQpoN96kgbNofgT4Sncbh75v21UCbMyLxe05m1QAmxriZhOfvq82qOhW5hWZXwBhCyH8LxsvBEZqA6ZCPJrq2tSqgErF42cZzHwN0EjxCN6i2QSQai1J5WrJMEq68rO/ShYDfdkkqxolRwNnculHDHiiNpChfC9EUMW+QfVWJPVIBYIg8O6v1Xd2Vz3PqzgGlNDddtTdqWPglcF13UA8jDp7nzEqG4bhUMU7eTpcdgOsAOKo2+39wHODsgMOoLterbf+jkC1QSmgRxkAHDepCTBKDYC/Ag4S54BzcgD+ofRH/Q97ETIhNMcemiRtOoeQOviLCWJDUwd6MtRNMCcrNWPqoTGTTWoaO2G6kgBy2ewlU5qgIl1YUEAuLhAAoUwMTDb0jhdUGkqpgQedg9QRg8ZrtQG/TQ0sRvMpYKZxoI8w4yO258YAQ7/X1P9BxkfMZL6OAMaylmVVNl4yFL2FpIBdnuoqJ0DlexkFqA04YPEj+KgBjJnFcy2qs6sEWIxheNpfoU4eLE6OVw/dUgDnOLQYLn3DQZYHzhi/TldvCwm9gXNOV+85rZ4GzPi1teVfuysY6A1IDKIPp5vUyiuAz0ad/qcxQDqpD58kAH6lvc9SwGxvfSsJjDQBYl0A8BtFdDW3egcYwgAAAABJRU5ErkJggg==',
     alt: 'MQ'
@@ -1064,7 +1064,7 @@ const MQ: Option = {
   label: { mainText: 'Martinique', secondaryText: '+ 596' },
   value: '+ 596'
 }
-const MR: Option = {
+const MR: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAYUExURQpnOA5+RQxzPw+HSv3FND6HP36bPMezOHfhqk8AAAGKSURBVDjL3U3LbsIwEFz5C7Aj4GqvBFyx+AWTnKFQzonS3otA/H5n1w6PivIBDGQfM7NjWr3Gkt7DUKHGf/W4pAisrNSqqqwUVG06IOGK+IBCjshGa+WLNt9bdJlQhBtRlHh8ViU7rVRSm0xIKIiZ321UjDab7gwZVd8+Eo+Gar8/nfcfLwx9AtqnhqB1Ar0eFid9RCHDBgfYXUqbPGKRjoSyjjcBlBjQXRuk2hC8JKh33DlMfZ06uMOPk00TQmBhwuwo7eKm0idH3LE87cmxk5HDGsbQBW6ZeYEYWdl5YnWgNo6l62Hf6Q1+I2KBKH3nuCAkl0lmJITC7moe5kPDw52n4YoXqSvT7LS+sneGWWrKG306PjOAr9VxSGn712DyG6n53n+eUlor47PBCNgDfEoFW2WURII2NvjPi37GrGdGDF4kQ0LRQfXaG73xoGAwlAeNm19S8+X1vDxOaJSDxEiA6KBgEUoIn105ykgk5WAdSKPgM/qnm05ZL/DFoZm6ZvHmuMdz9r3xCziLnkV+cfuIAAAAAElFTkSuQmCC',
     alt: 'MR'
@@ -1072,7 +1072,7 @@ const MR: Option = {
   label: { mainText: 'Mauritania (‫موريتانيا‬‎)', secondaryText: '+ 222' },
   value: '+ 222'
 }
-const MU: Option = {
+const MU: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAbUExURf/WOBwlcSApfe8xRPM1SBu2YOstQBmtWhenVptOG74AAADPSURBVDjL7YoxDsIwDEV9BJoTtJygUqLMlcIBulRZkSxlZonaka0cG9tJQUg0INGhA8/9P07z4FSmg98Ft6C1Mc5xnptzHWhDI//oSMkbYXQHsrDxnhZ0mRYQrUZL0ZaRk4tCWBaQHzAE2TDIPWCgUJ0hJFiSBXOzQ/UQ1vhCOJapdyE0ZWpQVeldHaBqqhUUfyRQNzTq9eRihYUiWwh/9sNQpt9AiHLGIfohpo3wNLL6HkbBj2PkGlNFGiFesrDKIsyUSTKn65SFK9zKfBbuSZIN7C0xL/kAAAAASUVORK5CYII=',
     alt: 'MU'
@@ -1080,7 +1080,7 @@ const MU: Option = {
   label: { mainText: 'Mauritius (Moris)', secondaryText: '+ 230' },
   value: '+ 230'
 }
-const YT: Option = {
+const YT: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtCAMAAAAun0N9AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAABCUExURf7+/t46JxYmndHQ0Pj4+PHx8cvLy/X19fz8/PPz8+fn5tzc3PDSP+mNNMHBwcxtYnR9wU9asqCm09imoKGhocfK5UcNBaEAAAI3SURBVEjH5VTtcuMgDKRFQpZI4yRt3/9VTx+AsePp9Hp/bu6W2AZpV4tInJT+aSzfoCgm3rJTT5llyy1TZpmI/bONbdpsupvN0rKMRL/H7Bm9yBCO+J/hL9MDCn/BZsEDP/QQF9ZcKtgMnqQRyTlXHAFwf+hpyQaJ9O11xi04nQHQHZKX8TXmksu1ZHC87mEhtS9XI2FoDAlca0M0kz+uGb3kQR/95etHVpKEIPbf5ACimawnkIf/3Zq43bs/aE7zph9IfSOLpYuai5d3/Q0+H5/gJ2Ehy3iTBK1l0P6HP9SiqBjV3B9Aqd1fORiU5re0/gNYpTjcPs7vwcyPcX7QCeHRz69VakkFbud/j+5Dj4Mhs76BRjaffH/kx9fBJ/po32Hklz12BhXO/Nnq59waeNb79p3DOz3Zh3wHuYhVkTM9iSn1R1abwB8pHtBuFs5d/3Z5G3c/4Ex9r2GoV6IN+vKK80QXqrlcLuOuEbG6JMLO9RJEiWAMzlJVil0/+5PtH7VIlcwm9It2/pI9iMajQ/+2O48Tmcfkv6HWKFPoTE/k+xq0QOIxZdsgq3212LqTry4sTL09FxCz6e3p0G9O9JSxdfMeNdb3LM7GyBfe9OpvoBj6el31/6NFtKqsL6vE1KD/H1d9QYcfu/+8ZMStnC1XW05r5Nmw+0+KDRTSr5H4t7Fz+oH+4I8O1saQ4znO4rCe412TsEV4X2N+HsGTJkUgojgKTauzsWkS/gjcK/xQP/C/638BBHQ9d5euIGsAAAAASUVORK5CYII=',
     alt: 'YT'
@@ -1088,7 +1088,7 @@ const YT: Option = {
   label: { mainText: 'Mayotte', secondaryText: '+ 262' },
   value: '+ 262'
 }
-const MX: Option = {
+const MX: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtCAMAAAAun0N9AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAA8UExURfT09A53U88YLvr6+tQcMhGGXQ9+WP7+/uAlPNogNgxxTgtrSvDv7saTY42SWN/Vw8PGqZ+jc9a1lK+yi76Bd2UAAAH/SURBVEjH7ZHZcusgEERHoJArQIvt///XzMpiI1VU9zU9iEEun+7Bhq+Rvkf6NxL88We8/x/eq0PTb/Def3vPm3Yy+C0fkG9z6YU8xnwIX7SawiXZEs7xdDzLZ6KvglZh/tKjC5Xl2xSyNN1K3Jhol8yPQDAHa74fQBw40DYzg6C5aiIqdOsisRa/lPl7sYcfSYdeuv7Bh5aH5/qEwnfxerzmn+u6PisvsUtzuMyHvJJyM/+HIEyDUmJnfkcnzR/wUwi82gqUfeTC0/mUn5B4M5nw24/tUXg6Ez8P89lgUh/pOO+2bVnvn/EMHgQwj7nPN1K6B3hs2w78+8O+YT54RKiahgumkTDtQAj4/yerAz+ZGaoO7HLCg6ehXxkxeNFVAIAT526I+SwfdZCB9oM+EFY5MbuYn2+wSfzB7xIv0klmmj82pQ1Y+2unixy7vBpS6Znmj5oZ9aENVF53D/z7DQSSadkk3AX11cLyB3wrGZ/5T415zo46g6nj/O/zm/lH+W6uD21uyF/M75RyUrhu8M4pLl1mgJiirnJK73zm5SxTunOan0pZi/j1nKGW5M+CWOcGQjU0nTVVcu3snMU2HRIpplQ6PcbqJiP0qAoMjpVOKWdjc3VxI0HqBtCX9u5kws8V/6bc/IDF5Q5vJAdnGeAWr4w2Pt3ML/e2lyH/A+tlQNOd3VzqAAAAAElFTkSuQmCC',
     alt: 'MX'
@@ -1096,7 +1096,7 @@ const MX: Option = {
   label: { mainText: 'Mexico (México)', secondaryText: '+ 52' },
   value: '+ 52'
 }
-const FM: Option = {
+const FM: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAbUExURYbA6IC744zF7Xq235HK8ZXN9Pb397TX79Hl8xM3XpcAAAIDSURBVDjLzZHBbtswEERXOrRXEjw0R5Zg0xxNqB/gCnLORiEZ/YGyOSatYV8NN5X72Z1Z2nGcGO61I5Oa2X1cGaAMlzWXfwP9MKOGHka3Gd9YA1I/l9msZ7nvuw625+r64qi5dAcNbHWDYqRLdSqzTlOvcdZ93eM9awCnxwlFq+VpfgWMj+eAlupi163/5Lv1snhubTuVGEMbkSOhVYaWbKAGImJCpA+BVNt+GHP+FiIaUXMbvISgI1pCMS5yZg48oQUAmnQCLIAfJMjrZE5o4wEKYfw9bp8CReC5duHjNlwC2hDal0ANhZr/FRuXD3XkplUvHhaP9zcwwnoNH2qPkve1CCIoqevFF54Rz4GLea0govYoGTdMdB7eFxQTEKn1On9f33tliteydlmTBW9hXmvxdu/1CwfVuIXtGX/Um5zP+idh7vTgF8+8GJFKjJHVdrxXV0nxNJUuVFHfybuNdk1ldtVbeINOxREwXNYSLJ6H6DBZbGVpcNbAoshojdU2dmFpL/avLGexUypGtIXEClq3n60iqJWJYk+1ejjNLwC9hYcLwA0u4e79KyDZ5GyCrMEtbJictU5lxKWkTol0lUenxuGFkwSahv1UuOucq1SERpPSRJK+sTk8zWoz/nRI5YejE0E3FQSEe2w+/dLkXDlmpDnI7TfnSi5DJkfgvP4L4C8RNveVWIztaQAAAABJRU5ErkJggg==',
     alt: 'FM'
@@ -1104,7 +1104,7 @@ const FM: Option = {
   label: { mainText: 'Micronesia', secondaryText: '+ 691' },
   value: '+ 691'
 }
-const MD: Option = {
+const MD: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAnUExURf/YTOUZQNkWO//TNgpMsM4SNgxRuQ5Vwf/VQRBZyK9/Wd6wSsSVUwt4qjAAAAG/SURBVDjL1Y89btwwFIRVqox4giUBn4ANi3QiBJUGAfUuBCplKgnqBLAhnPTEXsH2AQw7Bwh8Ks971P7EWcUwkMYDrpr5+A232B/zvThGVod8KY59eg/4D4ab9wwfAdRHDInL/TxPG4Y5pWma533amkAJJk1py5DSPPEZtwycmQzLkuvyzzfQ/RkMDCWyUJTkCCEOBgao+klQ6YSoZCWqSv4F3OIXAVRSKiGk3J0B30pUT49skIcNAOM0ZKCNIF5+x7hETHAU3jAQQfFtudzeIXioUxigDTIMAwg67RIZiDE6lAqQwhv8OPL90bfxBCi+jofuitxSGKDDhjUAcHf0fvD+DOhQCTo8kfvhHHDqZKByxH3fvzGcAM6wAs9PG4CnNxj+FyFcBvrWhB/o72M0ANwFIETz9e4hkOEKxBVlV/S+6XPqaIz59WiMDp1y6EkDAwg22Dqg0zroELpcOzI0DQyNJYMGwdFkcN06gbrhlTrQbZZ0VCpCrgu7vqC39dqHoNG4jih3XTS2sdbSRq05Ab+u4wF8MUGdt72FQZvMaLoNCBQmjlkNKwADfWmi54U3ALeYyIb+kiHnHxOfCXgFWIOXPjDVxEgAAAAASUVORK5CYII=',
     alt: 'MD'
@@ -1112,7 +1112,7 @@ const MD: Option = {
   label: { mainText: 'Moldova (Republica Moldova)', secondaryText: '+ 373' },
   value: '+ 373'
 }
-const MC: Option = {
+const MC: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAVUExURdIYLtwcM+YgOP39/fj4+PT09PLy8qTTCSQAAAEmSURBVDjL1U1JkgMhDDM/AF4w5AWpSh6QqqbvfcCc59L8/wkjGcgyh66cpiaiLcuyoOV0jC/5iEA6xXRijY8ndUKLXmKMKbE6zwrD8xJohBRiQDPRKQbz8YsAcG90F2QCLww1Wgx3xBk4xDsB54M3SXY4E64HPBCcE6ydc5y84wjXdjIsKIFtmUeBBWksxBmQEFyh2QnXeJHHwGccHe7lF0Z4qqf+Abgc4/wvAssTrpeHHDjL1YZsZzHCzMSScRa8kAlYfT8LlHnxJtzSeEVPoFvgCO8ESllXlpaiOVOXvGZoazdRs5QRhNAxqGlc0XUTa2o7W6jawPe42PCCGnoC3bgMCy9A1Kp7rbuiAWTKqg1qk9baPtFqa3VHwWqcav1m4Ah/EfgBN+bzTroU15EAAAAASUVORK5CYII=',
     alt: 'MC'
@@ -1120,7 +1120,7 @@ const MC: Option = {
   label: { mainText: 'Monaco', secondaryText: '+ 377' },
   value: '+ 377'
 }
-const MN: Option = {
+const MN: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAkUExURdoyPeE1QAxXndIvOg9fqhJntswtN8grNsQqNPnPN+eMOtlWOSBjiNoAAAHPSURBVDjL3Y8xjpxAEEULMeRMsBdAHACpV0jeEMENIF9Nr5p05IDucLUJ5CONxWzuC/iC/lVA06wsO/cHaqr+f10MdPZ66rx2M6X/A4ii6HyOcKUh4M2UUgxRCkXJDuwmEW4W5mADeTMlwhIWhRt2U3KhU0rarumaBrUhb3qhTRC2HfK2281QSbuKN2z/LdQJu5umZoT+qKSuW+TMHPyYCtQiplMreQ2CzUJMlIIHlPhUI2eiriVfEooXoT1x1NaMyVzIubUpVBw/cyZIHW+SRWptAWxicz1JaJVSXANAIYcHsyAJf4GJww1KySlwxAteHjwcNiyIkg0CqB3IGVAH4NssQL4IyFdg21DJBSQEtNbz4zHftH7LvUqvglDmz8/5VpZ4RVVhAYpkSuN+JQ3g9nO+a3OpKhzOkFcwNT8GgDGGX3EvNYCFyHMj0qYsAZRmhu7GXDKEiFEkE2jfAKDyhPE6AEueQV8BfAUDeSbCCmP6fgN6088/8BWDvWRe/TAMfT/Y3r6Shbizw/cdwDzAxH0F0NtFIcAmcmuvZL0OwKa/AeMCOGlGKAAwOescft5pdG6aRkAuBBbTOXelaZp4gj52YDPH6Z0mryOw6t/Ab0LfT9HsJvktAAAAAElFTkSuQmCC',
     alt: 'MN'
@@ -1128,7 +1128,7 @@ const MN: Option = {
   label: { mainText: 'Mongolia (Монгол)', secondaryText: '+ 976' },
   value: '+ 976'
 }
-const ME: Option = {
+const ME: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAnUExURccLGN4XJc8QHdgUIeS9UtSuR9+3TtqyStZALNpqONqTQjdpiZGSZxwIL9MAAAJ+SURBVDjLrY9PTxNBGMYne1JuzZrYcNrMXqC33UmketK4WWpPhGRcqReEzUzBSyXpDqgHLIKFmympHAnIn2/goWfDAT+Uzzu7Ja2ExgNPZt+Zed7f+0yWRZP1nN0DUP9SulMHBNTu7pfKBLyYAJT+B4jHgfI4EFNCENhzQPuPqP7dhcigDQnpO+oJtxTAKePHargSbWu8zNKXAnKFKDcDERxGUc8Nqs1SQGYpSJeZWiVYuO70KxGI8vkl6nTdhYEhoZCwKnL9nBfVI7DVIzEXnYo8N7YJ9lKOI/dr2hPiMN15FNdykxJUkTCXqt5cuiaexvNg5sUtYC9OT4MsPeqrD+JcqZ0RIBQhjn0VN8VjFUfaraZIgxcOE0Lh+34/VnVRVUo1xTPUngjJtoDv4xj2yfVRVnFEgu/DDAuAgyDgNE84t6x1AeiVEOLhHtyTWZQ1TkAntKKEFaDAnyilNw/04Nd6NwMQkulzbRNA8LCitcrU+8FAqUzrdXqB8zBbZmaDQyGfMVpr83YweA1Qb5Lpc65bLLMA9E1nRl//vr4yJjOdwjQtpjdoHpo1IK7NpyskbRUez1rMrPBhhNHmj/6MhJsASjDDJzi/MNkVLXPJxwCPOzh6+PaRYfRWJ3e44xUJDncgz+MVQ2pQxzrcsQBaEHe6+0lyZtoX7a3udmHZhJZX6EKaxqxZqhgpTxwr5lkAu+ehnEm5ONX+yGWSHNsJ5qHL2i00Gfpst93wdqXcruBjDO4wgc6MnK7nyEQusJkOy4cYxmnZLlX2QEr5ht0of2KBjQjA8eg9adEa0UO5xMYGFmiNqrs9dk1uAf+IEhYn9B0CGt7dwBQBk3UPwF/gYkLPPKJ8SwAAAABJRU5ErkJggg==',
     alt: 'ME'
@@ -1136,7 +1136,7 @@ const ME: Option = {
   label: { mainText: 'Montenegro (Crna Gora)', secondaryText: '+ 382' },
   value: '+ 382'
 }
-const MS: Option = {
+const MS: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtCAMAAAAun0N9AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAABgUExURQEnhfj3+AgynAOtygUulQUwmdgcNAIpigAlgAMrkAa10n+Ux6U9CR4eHu/k6BMTE+++xORqed07UFdytqi22MnR5eqWoDNUp2uCvC0uZoU4IwZ4twSdwgOMuQJtqlMySGD8Nk8AAAJlSURBVEjH1ZTpuuIgDIZDy1LsiK1d9Wz3f5eTEFY9o85z/sx8pW0IeUOKIKznQcwNqRdaa9F7u5mFG6P9SCAGPQo31fzkxIruSalGPeF34c5nh5hK/DaL4Yz4guOYIOW4tUmgJkygV7Fske+FGLX/KvVcoNTmMH50Yvb8vPjJndhxppf4pll4Qs/jumlfjnpJQA9c7VXrwfOD1rwcL/K91yLcGnh8i9k7JymlkgqbrFT6QBTy9RfaC6K4SifoP0v0Mex2+ux8zj/Wj/lH3z8VgW/tIap9K3i/0rPz687r78TSp/WXlh9vh1I5AdB4T1su//4rbl1pLWGWm5Rtxbc+J42BtdtCuwd3LNcfjo61kSXLMnc8HtmwLIn87pzfvUvY/9Qd3bJ5kG95z4fpJcxU8ejcLsP58+Wcndtsqe/nx/pdOKvWBt765UDfXvEtwSy0M09n301omcjjitA31Anatk082pnHdeulNTbPj2roH2hw9PUm8IeCP7TJD3jSOcrgH5GgUmjE7GgvaPoOXq3X8XRkI/lh5yDqT32/E26oyWlveAoaN4ydTqfAx8rA3IgBatw13H+v+PeY2ICxKcZUmLGph/2Piv9I/nL+lMLWPro/K/4zRUGKtuaRVMXL5Afzoq6/sq7m7/mu4LuCB5+DG78gJM1u77ok/GIqniEw8aqNEIG6JDzHkEx8xEwQ8kHsscyF1uB6gawwnDIEp7lJYWLk1/ULylrvMkHlhJuA15z/vLq7bldd2eR21y9jU5LOK4wW73tflMe7qt/VgnB31TtV0xUF5gIKKz6zs/tmhp/of+d/A/xORnoDPcGQAAAAAElFTkSuQmCC',
     alt: 'MS'
@@ -1144,7 +1144,7 @@ const MS: Option = {
   label: { mainText: 'Montserrat', secondaryText: '+ 1664' },
   value: '+ 1664'
 }
-const MA: Option = {
+const MA: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAYUExURdk2PuA5QskuNtEyOsMrMw1gNU1RN5VBORzsibUAAAGkSURBVDjL3ZE7b9tAEIRXOSBu6X8g8Ii4PfAgpzUuBNLHWLINZDO14UDO38/M7lEUAVtligzvtTPfLfWQ2+tq5P8Amut5IzuTNI1vu7NoSSO+rdaNY/UCzpWgx7U5JLFcvLaHFIV2sju92L7kS7bzFHP+uVTL3Croo1zVjU7vuMmG6bOO1fGGnCFISqHqoJogSS4SnkswT06qL6gySvKJzaGQckr3vyBVHbl7gxCyNctE86cZqU5c9JgDXQyRnDO4jPGV0ROxiZcSg5CEIN8ABB/gz7fvWH8z4x2+Iq8Ks07sc0xW2roBGOYDoAttgTyPb2/69DEQdcTzGPtLoHdluNG+B17Bc/WTxMjSZrw3YOyzX8mY3iFWHv/EEb8DeXq4Evfo0BJpWZ50ineqr21vHqO94Ni2zNsY57H0+Yse+2gGMHRADCS21PzK9fTDCuQQOlThxt2znbpn3nWkXwEmdRsuvA1wVnkP6GCXTacKdFBbOs+LH7tVDnRdgQZuS7EClpzHUE+VKMNeBpcF3EgtFvQgxKtXiifsMzjePSwdPtK/AP4CJZzUEzZEbRAAAAAASUVORK5CYII=',
     alt: 'MA'
@@ -1152,7 +1152,7 @@ const MA: Option = {
   label: { mainText: 'Morocco (‫المغرب‬‎)', secondaryText: '+ 212' },
   value: '+ 212'
 }
-const MZ: Option = {
+const MZ: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtCAMAAAAun0N9AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAABXUExURf3hNg+CeNoaPQ97cRCJfugeQ//lQ/7jPREREeAcQA50axkZGf/+/vHx8SAgICQkJNEbPCglJfi+POE7QelnSfCRO5cbMmMaKGFZYZpEWPzbefTU2u+mswSw9pgAAAHCSURBVEjHpZSLcqsgEEBXrALNjRJB00z7/9959wEoJk19HCgLGw4LmWng8XEKaFx9zm+ar0NmxQP5zaM6wAeP7DfuszqI+PiGnKlXMS3q1bQu/OZRR6pVTItlvsqfZx/fUB9g9vENJ/3m8bmbwsc3vKV+npV+Y79O1UfCv10UvqXBf+/zLYvS5ISfnX40Qz5gujH9rcc+x5Qj0jr6NOh56uKuvwEy2As6JB0z924bkAQ76pFPisdNPX/eY+v6Zy/lgQVCa7A2nYC429vCl1zf+oHQWnP06UB1v3TcpK9aDFKTZEH0eIcJxWj/hvg2gOYWbMG03Nq98fHb/0v/rb7irSMQI65wrdL7zaqVUIbqkzOgDDCIiF0pdzMsmfgn85KLAbaVB/zi/ABelorubmbhkmPZjAHFjOMyWOXuZhtAu5XyomHk8q4z2305waqZyZhdfon9uW7n2fff1zN+uF4P+C7pY7sPQJWaBD+0u32uLUcE3e73XS4/tjo36XNc5wiagbh89/gT0HIveJGKgMh4d9BHAEe6c6M+6pON/3ka4k8QT/J8uX6Vp/p4d5BFYjlPG3nQT3m6+4vNm6G7nyGcsuE/FdBQ9vZemsoAAAAASUVORK5CYII=',
     alt: 'MZ'
@@ -1160,7 +1160,7 @@ const MZ: Option = {
   label: { mainText: 'Mozambique (Moçambique)', secondaryText: '+ 258' },
   value: '+ 258'
 }
-const MM: Option = {
+const MM: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtCAMAAAAun0N9AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAA8UExURfA6TD20PknHSv/LMP/OOv/MNUG7Qu00R//PP+suQUXCRvr6+fb29sTpxOnr3ZbYl2XEZvKvtvFfbv/dd4fJwsgAAAGmSURBVEjH1Y/rYqsgEIQXw0UFwSTv/64F9iJGpT31z+kHssMygwrjPeDP57UeNWrd6D56RJ8eoYSEVn8DWUHfAwxWo02eVchjPhR7jNayh9Jp7iAPdU2Fguyrfe6BaeHu1nibPtA/Hv340/yDZ32It7/6ADLBgzE4DKoyM9FHPtktUkH2B0rXe68fPaB7+s75dz8/9Fhyfuk6+vmQ86GfnwceZdlUPpuTLySytr7qLUBZSJMa0kLEmo+8TZtvpjdhfg/+9pFlOHrP8pkUKBPqLCKkUyfMlkcli6LXmHMheBlxlbNdBSvgHTPK/A94AT7LwC+wImqFXatBpS0d0uGYE2AvUHYJzJJ3F4Cq3rMRJR8PHhGgClYRIpRaw8bantm2QJOwtNRpE766LD59hqlaBeqKmkyqXhMvXZf58vmxfPca+QdO81c8Q3ge5c+J8SX6FeO/xl/P1+Xuv8I5qAMLq4+KDrdtaC8HjkujmgrshF2/XvQb4ES5X940sZy27oQLjuOU/uQAa4YKKjGVJk3XCNJuAolw2W7h5K7KOQqYbuBu5qf7+S+CeD9eFEf00gAAAABJRU5ErkJggg==',
     alt: 'MM'
@@ -1168,7 +1168,7 @@ const MM: Option = {
   label: { mainText: 'Myanmar (Burma) (မြန်မာ)', secondaryText: '+ 95' },
   value: '+ 95'
 }
-const NA: Option = {
+const NA: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtCAMAAAAun0N9AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAB4UExURdsdQBeeTQtFlvX19fv6+xWaSuEhRNcbPd4fQhSWSApDkgg/ixmjUAY7g9UZPA5JmdQYO/Hi5d87WfHAyeuYp9Hh36SbV67IzORYcud2iv/QOhSQRb6qT//PNkmrcDpjnHeBaG+9jmSFsZDKp4OcvxKMQ968RP/RPpTmLXgAAALnSURBVEjHlZKLeqowEIQXEAIEUBQBK7Xam+//ht1LEiKS055BkyD77yzzCds/Ky7L92RD6jIn2MasbWyKzL0vehbHpX47Mn0YM4+XgniV8h6UuvxkOjll2ZL/XdqZ77P/5stSbwem2zFbCEp8jhXxFderOZfzzqPr59xm3mjqy37iU1w+SK/mtuTj/j7d+/JJWuvPxOSWM5Gv8Nep/36537/76Roy3wubZ14bvDX+/QvLTqDNVrvccpTAee6fAWvx0hPzk+Y77oCT1y63VZaEPJX2r6Jeyz2pfhvM6LZ4qSzfA1fT+yNN76/NQLXLjdwCHU4JaPGr+9fpta+1Ve1yy0PK9ofNBqS6rqe+7qfaNKhLlxsE8Y7mA2t4xR5XQ5vcki4Lmudjyw6OR2txrym3BC8a3bqD3fCiZd9tqOZ4m3n54hQuN6olEf14PrF58lFFgLbuIhpzm83hqQftlBuWHC9RVYFNjFh8Ac4taUfwlMPDXUf9k+QWIU68gLy/t/yoyyCgHEYpGSqiibcs50bPDnsICnNLKLdLJLjz59x4sNNiXl+nlrwpt6qqnL+YHxPSP80PTB8vqcMdP7A35tZgoVp99Y76b5Jb6uGGf2/ZvOPJFX3Uch9bpofKp4V/G+zoSgiQNsp1g4zNafS0qhb8J8/VnoyZUnMbZe5PMt9HhObRI+9yU765aaFYmJuYF4xHvFAfXIAftaMKCJTkhv83og0uLSLLdyClsGTxh1FGHyrERaaDrCCjB9TsbW5FEa0KMLewbG6pM3/iw+ZebkE8gl0TSk5Gb2/FGek0wr+dLLzbCwL0zuV2LlJGIrs8CFTTKDNCM5/d/43pJ0VuFmiEI6nG9rC5Feu47988y+V2/hVPYbfbNbsGP7Kju83t/EV0kXKPQk5zP/Mr7GZf6uFyi8i8KAzIsue0cO0K8veU29y+zoUvptb0yNvczgs8LJ83uQ2XP9M+39jcvhCnBudCdlpcQ/9Mtz/1kF5Y60VRvAAAAABJRU5ErkJggg==',
     alt: 'NA'
@@ -1176,7 +1176,7 @@ const NA: Option = {
   label: { mainText: 'Namibia (Namibië)', secondaryText: '+ 264' },
   value: '+ 264'
 }
-const NR: Option = {
+const NR: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAnUExURQAxgAZDpQVAnwI4jgE0h/3HQAQ9mfb2911+srrH2yNQmM7X5qi41LX6KH0AAAFjSURBVDjL1Y+xSgNBEIan2MLyvCe422LrwC5BtFnYbUxlYy8R9hWCVgEF0UpQSMAyooWljY+g+FLOv7sXz5hsIyJ+uczO/PPdXULbZSr6e6Ghuk/b1itUFEMpUb92ray5r0hGaplpW7lskTbUWy+ttI40JMtsFlSqDY3LNKSU4lN1hJAGVM7lEYUQOO3gLJ35G1hQWRlzjZlChxZnfEJnr6MTwg+EwzIH/0PQZQZFYdgTzvjT4/jbE152nkuveNCzx5vhYq1gtNN673U2mb8b9A6xc85obZgBOWO8G02YU15w5JzHUjuP0ZLh2ZgLFs69Z9dHBScuZ4kHP7rEE06uPK8wswSFDT8gdLudAFxeJyzFI72iC/tkIf1Iv1EQ+/ibb8bGwXrhccW9JQsW/u7p1t0LIcjCQMqtFcISMks037qmJBOvWMpwSAKbKU1xE5HgipNL7vIcSQ5uS9nnpt8Ws9/gA10eMbTZ29pkAAAAAElFTkSuQmCC',
     alt: 'NR'
@@ -1184,7 +1184,7 @@ const NR: Option = {
   label: { mainText: 'Nauru', secondaryText: '+ 674' },
   value: '+ 674'
 }
-const NP: Option = {
+const NP: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtCAMAAAAun0N9AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAABmUExURUdwTHaSxFd6ugA5lRdOqCxcqwtCm63A3uLo9FR8veYYQOIXPwI9nOoZQt8WPQRBpgM/ofTz8/38/Ok/YBk6lq8iWOdObOUuUe+isu2Qol0xffFyi/jR2GYrco8jX/evvUwueiszh+0lWJQAAAAKdFJOUwCDpP/r0fFNGKvd2LdkAAABtUlEQVRIx6WUi5qCIBBGa9k2A0QUL5ia9f4vuTNAajdB+vMzI87M0elrl2EO+2QXmczm9/gdn2WnJJZP06qMVjB8ys6xCpaPV7jzsQoTH6mQyYmPUpBz/yiFRx4UpJRbFGB7+pCqhKVwhZlX5nAKMlRh5seuG7crGJ5CazUWxaiU+bBBAXkKr64w6ZCnlAYrWH9o2yLe4iXFGiJQwfbvem37676jGFgLU4A9uL0vXHpzN7gUpsCBB6BxBfqGuv7UPgXuUeCc2/1dn+dOfo44c48Cl3wJsKHkr1lRcP3vGV5YaU4/Xp6Z87vumL/jGs8MzSy/3/T/ATzQeJgi6H/azlN7QJErLBySTbxlGzSA07CtAPY3qTVlugaHy/rAnkLuvMrbNld4dSErz/t9/6ZWdQ6Bt4bBz5YHj4ET01/nLhofQ3ULLuB41lq8NR+ouMF60BwJIU+8YAJyhS9CxkA4efHHGmwgQXM0vFg+P+yODhcw8M8RNtn9dn722t4EFvDOEfqbhqLWQuhaLFOVUGEf1F+IZjotCty8BSb+fbDA6QveO0cfL4b1AiQon8dAAgskX/IfBP4BTCg8gSgOj4oAAAAASUVORK5CYII=',
     alt: 'NP'
@@ -1192,7 +1192,7 @@ const NP: Option = {
   label: { mainText: 'Nepal (नेपाल)', secondaryText: '+ 977' },
   value: '+ 977'
 }
-const NL: Option = {
+const NL: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAbUExURfX19cInNvz8/LMhLyVKjShPlSpSnCtUnyxWofMlA/YAAAD6SURBVDjL3Yw9csIwEIV39gRhdAGPT8COLkAh9RQWNY3tlsroBs6xsz+K4wSiuGIgn3efnp4ewK7OG/yPAnnnHJH7ASne7UGUl0XGkxmy09Ee9EmsPJJVvLcfePkHv+AWpa9wXbjLQwptneYpCo3Qom6LqNZ8qxaQQ66J2n66BjQFQB5kz6aRi0USSiAX1LuCpS59eTT5HYRXYb6+87fG7iW9AEvOpZFV8jwv5XyBUc5pGsfrDdM0DGcY6mwo9H1/Sn3B3FrPkFJiXzCnekrqj5DqbCh0Roo8N3TdEVhi0OFlb4eayPEBQuAkyMjG8J0ohQpd+KMQNhQ+AE37/3h5vFjbAAAAAElFTkSuQmCC',
     alt: 'NL'
@@ -1200,7 +1200,7 @@ const NL: Option = {
   label: { mainText: 'Netherlands (Nederland)', secondaryText: '+ 31' },
   value: '+ 31'
 }
-const NC: Option = {
+const NC: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtCAMAAAAun0N9AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAABdUExURQRDuOtHP+9ORvJUTAZHvwhKxSSfTQE+sCipUyakUPvmQvRYUfrlOiObSyKYSSGWSPZdVCGVRyMjHoZ8LBERENnRRtJ6M/SMRPi+QbG8NlRPI1S2TTRgmSGUR5ajcgMrC3kAAAH3SURBVEjHpZKLlqsgDEVT7Vif+KpLa9v5/8+cJARBCq7e6zHKIWQHdAk/5wSn+etXF0qM4/GC6zmd52FrA7uGENsP3DXABvDx2Jmdria8pKSutmZX7WPBNv+nm42byegEm9tn0bZuczczkgI5O9vlneUNtTaQdPI66674ev1OUzlNv6+DGjigS6ODDlH+pdFpXEccog2gC2sWehgG4ss5UgeVVlfpORqeanxFfJ3Yd7ZOalhAE2fOJVW3MMO71/pFlmrHGQ9VWnlKzfbluMrpnQN4gjQgeXsUHsDYOVSZBvl0MdBo918O+ERuY+qSLgzm2ZelQZLUcZCQUrnpQSNvSBidn5thJKI0cRwkIdVaZT3S9691B0umtk2YXzRRM19ruwQr4ZIkHHbEYZYD1MN9MHbeqtwLLhccKGRk1xlI78/q9lUCEe8L8wsj+P/e8f9lv2jaLwzxtKJ3v5P0CZJwYYS/8Bd4MP/gt4/UQR7Rk6gV8ZXMM1YW5fMn7fsY+RnFD3jqQJ9uOqCP+TwvUPg84gujPOpyO7NLIijOSfOZ3OIzL2XTXqbIIPNVcHwryM4JmowuUeOEjM2+XnKmBHmc/Ls2BhqlGtVg7EcjmX+sKb3WgPLUqO+FtdAq1aoWQ4++3LwK1ELf9+/+jdE7at/tG6Nt3VQf0h9ONVOPUrdvGgAAAABJRU5ErkJggg==',
     alt: 'NC'
@@ -1208,7 +1208,7 @@ const NC: Option = {
   label: { mainText: 'New Caledonia (Nouvelle-Calédonie)', secondaryText: '+ 687' },
   value: '+ 687'
 }
-const NZ: Option = {
+const NZ: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtCAMAAAAun0N9AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAABCUExURQMOi9YaMtohOIGHzAcTmggVn/n5+QQQkAYSlQoXpPLv8YQXV97U4u+9w19nvuBRY+mLl6+z3a4YQDQ+rlkTZqIXRF0+hQMAAAI+SURBVEjH7VTtluMgCEWDX9SYZLrz/q+6oMZoMp3mbP/u1aOAXEBqCque7RYEk9Va2ynLYbO07PJvADvr1VIa+YnsqhebbvCTjXqJQmv852bnhaPGcIPPuSg7P3f+RLTqdqu3/PCMHGAh2jJ/i3wjUVO4yQ8h2pww87lvOpcT7vO526tWs1VK5eSxdt7UUab5yQRTRrRxrXzeacvGFEx1zbv5ejy+jGm2bAfbQfg9ktkRZHko9SisEi/nVwN0r9ipECuh8Fu0AhjIeggh/B57/T1O+dU5/zvcvP8BPPFzpzeiufU/2tL+KVVvlIlZxjECGhBtsnFRuvKVWvnpGkTciTtjl/EYCIj8fvn1LJGET/yA1EpbkMO3MMyX74eTU5xI+JuoC8UnonkxUH4IrPk3yglpMoU/5XK4mufrtPIQqgi0qmWmjb0rHzkQf/4zpVt8/vYpJvTodz76JCXMIgpKtT06C3ClU2lV46MPfCuuypyzFfi2SP3cKS+a50YyctU+K3Go1rdRlrJBaiaf5M1UGU1KgXeGVOuzrZ7tEB063Tse9eRwOcTeuB+Ar6E7N7z499oIGLRXXq8B/jN8zndtlO65Os92fzIWM7ih/Q2HV/GTsxq37QJwA/oUfbhy1m/VCVwNVeI690u8PabvPMG9plzDXQHuM3zMhy4SlB36qHAsf4DnJT80QpXdEQVaNFm/lfquJ1DSZSmvAtfJV92B/BE0ZUTPO/L2OkPyN80N0hF2yD8myvf/Of9//CP+AtfjP4xkWBABAAAAAElFTkSuQmCC',
     alt: 'NZ'
@@ -1216,7 +1216,7 @@ const NZ: Option = {
   label: { mainText: 'New Zealand', secondaryText: '+ 64' },
   value: '+ 64'
 }
-const NI: Option = {
+const NI: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAnUExURRFsxxRwzBZz0P39/Rh10/f39/Ly8hl31Rp41tzOlOjhwrDj8O/s3vZZR2gAAAE0SURBVDjL7ZOxasMwEIZPb+D6CVrjBygULZ1K6AMEzAnaePAiQdsM2ZqxW/IEARtvgYBL10yaXYj7Uj3JNlHsIOjQqf2tO//367MGg2C9Wi2Xa0ft3Kdv8OrXAu79ujsHTCZxfASiseL46C/PAa4sEIah6W1dGUXdHEUBXPj1YyAYAywIGBUAcxxj0HkjBjazvXdu+vu68et6APCm9gNVnm99wENRN/kAwIQeztH2qubJYct5m9ALp5C0hmZEUeAMHzfEokk4UVM6Ieknflui3qel4WnPnJoQ4Ig+1nss3OgUmJczrdPyFBAo0SwUAtPiRevnDTlJi0KBGUghlKKlJLnqS+vDzjip2p6B2SGCivRUfDa5dcoGUhpAOQn9yV3rOjmA1fz94zQYAiNl8H+7/9Lt/gbecy2eVmiEHwAAAABJRU5ErkJggg==',
     alt: 'NI'
@@ -1224,7 +1224,7 @@ const NI: Option = {
   label: { mainText: 'Nicaragua', secondaryText: '+ 505' },
   value: '+ 505'
 }
-const NE: Option = {
+const NE: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAhUExUReRXIexgKv39/SG1OCa/PSrIQvj39/Ly8vC2oOycffXj2+Upx30AAAFNSURBVDjL3ZKxbsIwEIYvW8Vk3qDK4KETkv0ASE52hrBTD3bVKV1iiSegTKhDed3+d8YQQM1UVVV/5/47nz8fIgrNp6XoHwCVopOqilTJuRaXrMApxX2VMz9zAU+38ohLvjTH5ZjKP0F/R/W0Hm+Ap91+EtAHpT7vAZ0Pde2f8fIqX9e+XAAQQvA+aHZdYwDNP7RGA50A35Cc5giv8nJngXlEjdaGBOQxQfsX+V8P4TzB+wwUFWCkb4A4AiIrDOzDVoBZHIpi7CnxSUp5e2DgyFWK4kNPMaWEbRK98ccgVTz5htKVMOJ41ehvgO37Pk0Cd+ppPa3VbwAd1HbduoU6yQh55GRFbdNhwaVggyThRtMtCVvpndVeJQGmxIB1TeOwbCOGlLe8cUsyxjlnLMxZm8OYXFlr3ILgRgKLHbAVR8AXmIBcdKmKBJjSDwBfbnsiGK93+t4AAAAASUVORK5CYII=',
     alt: 'NE'
@@ -1232,7 +1232,7 @@ const NE: Option = {
   label: { mainText: 'Niger (Nijar)', secondaryText: '+ 227' },
   value: '+ 227'
 }
-const NG: Option = {
+const NG: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAVUExURRKKVRSRWxeYX/39/fj4+PPz8/Hx8QtazJ4AAAFXSURBVDjL7Y7BccMgEEWXg3IGhtyNUoLpAOhAqAOp/xLy/2KhOGPllEtm8i1k2H08rcwjH/eRs3iTf+AayBdAPvJk8D0xRhoSn5znUb0JOrPHL56GdI84zjNaADz63kXnfci5pHtJKZcYPYt48RMEQbmQ0CyJmLZndqyAI4pFwyO9hHgr6ucXPAyFhpKLe3zAOxj6/ehcKMOgdw6D68EMpROwsNAHpeFAAlqHYRQJkO5AOQH3DLjfBOorwDqDJ1QEBF56Zt2JGGv1AMNCAQ1Lv4y+gcHwzxpjwqKhwTKOS0S3hp7Q6tJqBdNQ6GYLg94G7t61VwtWHwqIIEZpmCa2sRAcTXejj41CZmKrqcboEKiJorqxMkGAH8MqxuN1PI+9paE2pXCh3+IQp6GNiE73LTAsAxB1dM4c+FfDy0zbvqO5r1fAW9tWpG37egHszIbsPwGavwZ8Avvmv2+6yjjwAAAAAElFTkSuQmCC',
     alt: 'NG'
@@ -1240,7 +1240,7 @@ const NG: Option = {
   label: { mainText: 'Nigeria', secondaryText: '+ 234' },
   value: '+ 234'
 }
-const NU: Option = {
+const NU: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtCAMAAAAun0N9AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAABdUExURfzTQdgcNAk9hQIvbvzQN/zVTPj4+PzSPfzUR/zROn+Yu+/p6Prij++5wN07UOt7O26IrcLN3fLQ1KKzy+qXoeJebkRom+Z8ifLMRYWHXJ0gQ58jSXclUPvZYHkrW1VKV5wAAAI4SURBVEjH1ZTrmqMgDIaDaLBGPLa2087s/V/mhCBKtQf67J/dT56SRN4AAQvHxmKfOVWolMJK7GxEOmFdvBWgVWek6Z7vCI8qje9waJoBx5jvOeayFgl8NiE16oj9VGFbtMxXiGfldvWTxGcT4UmdCHtkH8cebePcLivSeLdemRDbskWum5LlZIm8lmoflbKy/0EpLodUMYmvRFyxo8Xbnxta7nGUIJe/fH9+qzp3cpGPdVm6DOXuWWOgRC206pZ9Xb6ym9gix8eac91p5g0Y9a0vcNHfYgf+ft4ljbOlLfObVl01z6+vYj+c/5Hi/U9a62mz/7e8VHoktGeL1+8r13/A3h9KAl4Cz6krd9/VIOdv3e0ZXVSXaTxfP749fGOxzfn+Wffp9Fky3xHfWPe5jJgfchydeyLKHA/S1n5rszm6FZ+JOt6Fm7+T5TREk4YSYB6+pSFEgM5KPn+tO9l/58vRDNT58SDyoO+DLXLfPrmTW3k9EWe1WAdyGQxxPu+cBqqk2p6nTmzeVWOphP2z5vMG0s+cu0Y+Aqpnh5AIttqvA+olamonM8eLui7geYIHrjHsm8h7phL+OZnQAKItgHk6+m7bgq590KN4HFvw5ZX/gTAK5vj6frWD4RNAoDfaRWETgx0Q5dql2wteeCn6nHjCH0LHj2/eesevnEiwuYW4eZAljAfPmEN4EjUzwu/ehHwJgg37qeDFu/wDnv+68wi4c17yeTxfLgpo7Mf5g+16yP9O/zv/C3QQQyFJuDjiAAAAAElFTkSuQmCC',
     alt: 'NU'
@@ -1248,7 +1248,7 @@ const NU: Option = {
   label: { mainText: 'Niue', secondaryText: '+ 683' },
   value: '+ 683'
 }
-const NF: Option = {
+const NF: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAhUExURSCSRB6KQBuCPBl7OPLz8v39/fn5+cvi0pbJpjqbWHe6jMol7oAAAAHqSURBVDjL1ZCxbxMxGMU/SwxNp7OFhGDK2QOCqTrzD5BaLmLqkhNi4irbkE4dqrBSFDHDVEYWkPgved/nC2mTKDM863yf3vv5OReiteZ3dU67+o+A3z8PA2/o+2HgLR1vA02j8GAr8PsFTXI/z/mcvYaUIkJc99z3OV9NaDnH9A4mHyQsrRqtsZce+kT0pQAcYMJTupGqRkGc9x/oqOAGAFW1QZYurEQPsPdlGM+jYcyVxrmcXtFRQN4PHMLEr+BBHi64xGcd8zDoUQBG4UeWsgAwqVeobYAb8hX/M8v9DXLF+6/U3JYDQP6h6dcO0GptsPgjP35T6vZaALgw24ba1hjOGThr+MMeMYDM8IMGvHQLpRIvpfUJpoFjs2nApksqCwEeYxrkDBIGZGptKindMLDCdGHZtsZOyVYZk6CXfG3EcGEMm7ad1gbAFvb1DY+rZYzSgGfTACAGI7Z9CIALMJrNFTbGM05hP01ptj52pyHE1wJa+zzGfUAMi3F6FvY3hNmeEYCztsOC+xlTh8mu/ja4KTmYTHQhBsi94D3MXFUHgInOAUiceAZimHUsxw38ds47JycrEMLpuuGEvPNC+/uAWOg9IbycB7Xd4GF23qOh4xi6D0iKbEq+yo3AqFMvsTSstQv4fwX4A1vnAdWeMB2lAAAAAElFTkSuQmCC',
     alt: 'NF'
@@ -1256,7 +1256,7 @@ const NF: Option = {
   label: { mainText: 'Norfolk Island', secondaryText: '+ 672' },
   value: '+ 672'
 }
-const KP: Option = {
+const KP: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAqUExURQxUpQ9ZrO0kM/ArOfIxP/Q3RRFdsvLx8f7+/hNftRNgtvJye/ba3PWxttSr2pYAAAGISURBVDjL7ZQxS8NAFMdfvkGzZC650SXknTiIULjLZAtFLzjYwS6Bbg6FE1Rwa6C6FuLk2q4iDuqkYkE3kQz1w3gvaau0NThk9JfLu/f+75c1MBoOE8Pl5XBIb5LMJqqj0RVEUdTpJMlgEE3pdL77KDqA7HIcJ1rNAdiO027b5ixDmwrYxVTAsm3Lsq3f9hUwVLKzEgtKIC7mrAQhLKZZgqBm7KfpRKkgUEpKqvQq1QQZSCIIxr29+DmQZkGbwHSU14AiqVS4F1804p7KUpl9FZBUAzllHPe34/hJLjAXzLIrj+L+siCEkFyIxk2oeBg+5JOp0jSScw845yg4r79SuvmWT9xIpkEhPKDLPBu9a0S81WI6I5KKWAPMqes+4r4+xwW8mbCljxE39emywBDNMbsuXnOy0M+TvHjgE8zFl/fWyW766PqMuVnETOqzKmSXCVt3Wh/f77DcIClrq+D6LuGvp1rrD+YyM7A8pOLBfF77PJm4P2BZrYJbTBmCLuawBOH/H/U3vgC4AHq51cc2DAAAAABJRU5ErkJggg==',
     alt: 'KP'
@@ -1264,7 +1264,7 @@ const KP: Option = {
   label: { mainText: 'North Korea (조선 민주주의 인민 공화국)', secondaryText: '+ 850' },
   value: '+ 850'
 }
-const MP: Option = {
+const MP: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtCAMAAAAun0N9AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAA2UExURR2J1KfN6I6Nj5SSlBR6wvT19fz8/BqEzhF2vRd/yNrj6kCSzKSjpXm03VGh2XOTq87Nz66vswsM1ZUAAAI6SURBVEjH7VLJdsMgDIQYmc1g+/9/tloxcZL20EMvHTAIpJkRL3HuH3+M+CH+7u66jjR5RLmyGGfvrbXer7TUSOjGpZvOcRR1D6sA/Cxh4rYPjgRa0v06w1fLDofZfXA5xq+pMUHaaMbVihinyDaFY3PftUJ68c/Fb4l6pPpSp+teRCC+VLv4ivam2PMT4juJO+pMb7NA/czPNLNVFrnctxPObZd0Gapay/XOYiZT0NmIon3bjvXYUIDS1Fa/SlXKqe3wz2jvM8fbtpW14Cp5TszmNJycddKCfXa+rMhET1xrlsagDKJU5+yYYwLEWgFYKFRqf4WD+FyNf6RqPNNxeUAyXbpEVGof6AFVCjxAz3kyz9x/fkID8Nn5QgAAEgCKvSN+m0uj9n/nY1H0xGS6DB8t9Yx3fK+7CDCa9v8zvys/1yJsekGd33/jhyxT9lwBfyU+7UW8oeySwjMJcZI/XFzOxlSVYi77ofxj51wfyuYW2N8Ount6AB13MLB/oETINnRzQuQpIvgAbBPDk3un5aQj39+8QnAhXAqyeO4zBGy/nMuJCgdlCtkbsgXuCuVWjKiy4F93WZbtgCKqYh8uK/W/ITUWqHAughOJRG+vte/44uXbthi25mHu/gd+SlReBn15lE9046ebQCP+gwYtS6HmU9BpFBpOd93skKo/HgQWeBy+XvRRxf5JoAmLca2PC3uw+5CsSuCm41MipYn/mlat5EYcpCSk4bKbexrpMPKq4tLv8M//Hb4Ag3Y/1cvEDmsAAAAASUVORK5CYII=',
     alt: 'MP'
@@ -1272,7 +1272,7 @@ const MP: Option = {
   label: { mainText: 'Northern Mariana Islands', secondaryText: '+ 1670' },
   value: '+ 1670'
 }
-const NO: Option = {
+const NO: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAVUExURfA+Q/j4+O81OwYydu4wNu4yOO0vNdWmoZEAAAEnSURBVDjL7Y+xbsMwDEQFfUHSNpkJAe5cID+QQfIcGCbnDpb+/xPKI2WjTYGkQ1B06BmW7qingx3Cqv3zab8LN/QP/H0g6kOBogPx6pQIBMW4NcSvQkO0BqLeQIh2LdhcnQ16A5EjKr+p800KfNfuAcDptt4eAPzCX6SuAcBTuhZtQLoH/KzhcLdhgEtT8l0dhWGVN0wqDbZPkzW47cCgLoHAjpWCJsbD3qCJgeMSppeADOLVAKSJu0ABMO8NR/cDb9AKMEtvuJIDM5feMJfy6VTTJeQswrXWAuAllzLPIqIvq8v5HEouXIVltoZRZ5lxQydqZzTk1rShWYPUmgVZpIkeaYMuI9JiDU2c1k3qYsC4LKO9/g3wrTVdq1WcQ4NW4LildX//AIP0spXA0iTsAAAAAElFTkSuQmCC',
     alt: 'NO'
@@ -1280,7 +1280,7 @@ const NO: Option = {
   label: { mainText: 'Norway (Norge)', secondaryText: '+ 47' },
   value: '+ 47'
 }
-const OM: Option = {
+const OM: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAtUExUReQjLd4eKP39/espM/f39w+BEvPy8hCEExGKFRKNFRGIFBGJFOxOV+9+hPXGyN2ZF2UAAAGeSURBVDjLrY4/awJBEMVnWbCy2CtC/jUh+AEWT6wkiFksJU2wtTiuCiGNCFeljNikNF06ITYpxSttRQKXMqTJF8nM3J2euIuE+Fxndvf95u2Bv1b10qILOBCw2AckVGotU6lUWsaYvGJvAs//UEbVVOjakLuuDKwW1ysEaqbotQzvGSjfd+58BnbVBI3Wp0l8qR2A1P63MZ1E+7XAtE2ACwvLmHYbn5CNZT1sLH1ZN0EQtnGFCPE/DEJ8Qkq9ulpoLUshelvCYw80Wl/lBF8qhRb1QEoJH/pDS3ABmAGIgSsBCQrBBIfQB9ApVhB9PPc0AZzzxaQsjbeaMoqWe8h9PJwUgNhDKBAClOCSLxZ3HM8sSuK7DUq/9agn0jFYz9IlfoGgEaU87sB7mkmroITsPSFyIz3yiBIKo2kvPE95XlYypReAjVx85PTFomcgXxCsHAAHCcrbAcbj4ZAScp08WfToBkaj2WwbOJ/Pp9M4LtY4fi8AZ28WvdqBySSKLEAUkUHKoSh6KADHA4v+BBx1u4NBv7+pO8CtRTf/B34BGO4y0YNj2joAAAAASUVORK5CYII=',
     alt: 'OM'
@@ -1288,7 +1288,7 @@ const OM: Option = {
   label: { mainText: 'Oman (‫عُمان‬‎)', secondaryText: '+ 968' },
   value: '+ 968'
 }
-const PK: Option = {
+const PK: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAkUExURQVFIP39/QdPJfj4+AldLAhWKfLz8gthL7HGuUB5WHWbhdLd1yyYfG0AAAJJSURBVDjL1ZDPaxNBFMcfCwXxNuzJ9rIMjmB7WgZGai9BZlj1FIcdNfVUA4M0FysrUXKRhFbrUY0BPRkJiDc9FPGv8723m1+1Z8Evm+y+9z7zecmCmKd/YZ7CvwSqqupXTfoFXVVRFK0lgJUtmtiKrmIdsNZW+LE4soRwtQZUTBR2EdTYdcMFaUF+Hnj5dh0QecphoHT2bndW4pOzJTdaQDO05Dk2sdv5sRnoofhgS4wjAzsEAqUN7qOYBXdn7F6MnStLWqHTNNd0BYzrHGyFMoRfk9EYK+y0Idc4xGgyhoG4EkJZft3TeD4459rAQwoZyi/iMd0faTMOnDbQLKUdVD44EFO6D7R5Mm4AXKAXhn2Rzogbab13ujQsVzwUgg7e7o1u3pJzIKcpfgUf1H0hnocgJ3JnVwWlFr+B47G8hwYfvAqdG1h571cBqo+EeOe9UjIMpaL4FUBKqY7SdKporp55LynZEqDBNSF+4oBnbFAZGN2ly7BhJ013JZ7FbUr2GwMT9Qq5r/VWrUb6uAa6JKBQeR3/7rABtoeNoSaM4S6+ws0GOJnWQDSmG4ng7nt8Z6/56XPPz1dgkIoykZm8hD/GnHp59Vs8TGSSsSFGQ4RkYoT7Yu/NWYyvEiLwb5KgG2PMMpkkyQC3xahj7LUldRoDUghQY2NEMOYY5oZIR0w0CWQJJHD5jI7EQ0AemdrASerA9gkWv9vARQbAQ4KAgg3Y+PR9AuhCI35BjCsGajIEtI1vS4ANdXseRteBDFa4ujhn+Dv/A/AHcC5FNcTKN1YAAAAASUVORK5CYII=',
     alt: 'PK'
@@ -1296,7 +1296,7 @@ const PK: Option = {
   label: { mainText: 'Pakistan (‫پاکستان‬‎)', secondaryText: '+ 92' },
   value: '+ 92'
 }
-const PW: Option = {
+const PW: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAeUExURVGx2P/fO1e33ly85GLD62DB6GTG7rXPhenbU5DGq7abpDgAAAG4SURBVDjL3ZOxbtswEIavfAOlg52NIIc2myuCSLJ5oDwbkIikmwcic+KgD9ApGdsCRvO4uf9IS1RrJHt+m+Tx/u/uLAGmu7e1o3eBlNLdJqXNJE7nPXB2RxylFDaBtRGQbwEr39eEKCTcBJKbIMKEHYVKKfynNYW3taYhhK4bhnLvylEyXbelgcVBjNN53LG2FLOGgbe/z8unQ76WdBwB6KGBfsRaNfAifrM8zIEeij7GGzZ/8qdZxCgZyW7Jg/MM5QEyxHtkJLsi73rnet9/H/3mvPfsYTm/IudZDN3KBNmWqJHlHTpIUCYI0jy6HtUo3JIraip9dqNWR+C6Bs5PAJc1sDgBXNXAsgZs66y17RxoR62IfcfBtxpokHMoZcBweWvtvx2MQd+21SSxab/OADEt561GB/btl9lTGNPCNehgjehi9h7YR18WdyiqgbNi2xp4qIC9GTUBnyrAnAIu6p9QA9ooLWuasVeQziL28nd80IWWUl5KOgBGB/pdgD8oRA94mhBIqCgPuSdYKNF8EunjLI7xz/olviJUSZ4QkmRJBFbJTkosoZVYVJCyZ3/MqBJMTenj6BUs6ecUo7+BqgAAAABJRU5ErkJggg==',
     alt: 'PW'
@@ -1304,7 +1304,7 @@ const PW: Option = {
   label: { mainText: 'Palau', secondaryText: '+ 680' },
   value: '+ 680'
 }
-const PS: Option = {
+const PS: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtCAMAAAAun0N9AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAABCUExURdgfMhAQEBuARB4eHhgYGN8iNRyGR/z8/PT09B+OTBl7QdAcLyUlJSIiIp0wMk1qQORvezoaHmQcI95DU/LU1+ynrkSdJgMAAAGpSURBVEjHpZKBtoIgDIYXCoEkeq3e/1XvYEyGWaH9I9gm39jOCcLtJ4H2f7exxONtTIq56G+/yZh4rZfxvCKvw23sxm5X+GH3G+cTjzOkFG3jatX1/TzxOEN3Tszr0PXf1PUdrjq38jhDvPDGegFW+cJrWPrjEjzO8COPM1xQPRotOjm3l695gCV/6RkRqMhTClfNpxkuR7TlAWiGMzzkAsshHgjMTtrma7MgMZCPXEHfHwf5AsdiWO7ZykMCNB1QWplt6/s8QOVA4wyQtTZQ/DQDd2FXt/Rl0QQGtY+arcU7aWOjjXRN/CfNNle4WmbZy8c3XAD8bmkD1yf8abcSVbLiPU8/X8jo3h+2QUStFchiNNsmgaQ8V/I7vb99f8faeqf3X2Df2ju/7/Pm8zG5dgFDvCAcwSMvhFFw7hxPo0/uMC9awN4NJk0zbqr+g0HUmPRLh3PsS8m85CdK5gpOXKe6rkpTAKJ3c0IrHxRG6jQ/KaVMMtpYsSTHez7k3tVWqdB3AfV+Wuk/M6ghSg1KRZdPVoxRwzYXY8Deczy8Sm3yXKPkIAw/6R9yCkQrTVVihQAAAABJRU5ErkJggg==',
     alt: 'PS'
@@ -1312,7 +1312,7 @@ const PS: Option = {
   label: { mainText: 'Palestine (‫فلسطين‬‎)', secondaryText: '+ 970' },
   value: '+ 970'
 }
-const PA: Option = {
+const PA: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtCAMAAAAun0N9AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAA2UExURfj4+OMjR9kcP9UZPBFkqQtXlt4fQ/Ly8v39/Q5dn9IXOSNur16Tv+qerJW41q/I3uRof+XP2E+y7NAAAAHJSURBVEjH5ZXJdsMgDEXFYMtO8PT/P1tAA+A6xqfdtQ8ihM67DF4QmG5leoI/xp/mZhwNt1HzOjv5t62dq18hyXg48SGceJZpQ1HLo/d4yX9U4Y91XYP3IQ5HxdsOXxYIM8kH0G9pEx9DluQ85hyyjfrmM74Rm2uW/UJYWYvG0cIkLdrXxK8yTyV7IVkpB/YRkm4wBKXjaHsC8mUe4tnjHQCokHQNuTKAuifYAsKEYYOyYvQ4l4w8UihVB2oFwLwlD7S/Sz6SraLTmp51gvooElxPSuopoNo+8a9v3VWxcddfjvJoeb0cN8llmgT3evX0a97fCrpS6/un/LvAnGpveGwyPO//4fwoHeq8rPDo/pnCsj2WUofHys0TLJfBJ+dHOW3si+4r9dl/bLEjlrPHiAZpKmWEb0huMkcxY46LWfRCSEWCUq+XkDxZEMkatY871ksmXhfw/Pzyb6bzCwu7MekRjf95O0Jpcy1/ntTOZaRneJHT0PlvhbWO/H4fhAIPPZ6+HNnzu1luhLr/8Gj/xdnd2qWpQWSHOYerptdMfTcHHvHrNTzB4p9PSbu/Rqh4YZvAyYA9QbYNxJQwc+0Br9yVHvLDv+W/AP+pOCW/sIvcAAAAAElFTkSuQmCC',
     alt: 'PA'
@@ -1320,7 +1320,7 @@ const PA: Option = {
   label: { mainText: 'Panama (Panamá)', secondaryText: '+ 507' },
   value: '+ 507'
 }
-const PG: Option = {
+const PG: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtCAMAAAAun0N9AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAzUExURRAQEOzs7Kmpqa8eL9YcMiAfH/7SQeUmPRcXF98iOX0cKEwbIfakP+52PVhYWOZLO7a2tj6hWWkAAAH6SURBVEjHpZOJloMgDEVjCRRc//9vB7IRrO301IeDCrnJI3VgLs87griEe3yM800+LniPjzHc5OOvbVT+Owvb8Z7/wsKR1g98a2MpdD31as99rCk9i48pxfN6Bgs54UdKq3un3ZGvFgTSGKu2bltKaRtTnuvXBKE4OSPVO/Pj5plvbTQHPnRLqs1vvfJ8hoGtOlLX0Zev+NrGcpK4F61u55I/W9jSqM3zucbndtVpejwmWhjb2PjVW3B8Qwlvf49pekTOVduIeo0dWNeNFlF4KV5HJl5e+AyUgKKP0btsAEcTHTP7lwStjWgmlC+8iL5+zjKzzM6ClqFOK/ce+1IdYHB0Q1PGUEMkEgt/wOhx1Pq+vJyC1mYsNrBaOOyZpuq/ad/jvjMgXbSXJbRYZASP7ocXgAL3aZp2M8C8GoozWjSi3SQj1a8fzjTZAaD5z131a0T1UPy9PYr/oX6GDJB9hnAubBrP/1YzXqko/7+W8IK6+mpbb3xltwnx2gJYOAP93S3w5nLNWxVwPsByuZ7GcF0fqjpxOXgfXs8grBXjNLwK9iQ/KcC5jQiSnAPpy4Fzba1B13xdn6f25UqgKfcj0qRtDMZ3ET/Wc6/qMigcxL+p+YdP4uB59D/meMMMojaGV/9fi9sYfuZB2wi/K9zkqY13+PYPAfc0/wFfBDo776edXwAAAABJRU5ErkJggg==',
     alt: 'PG'
@@ -1328,7 +1328,7 @@ const PG: Option = {
   label: { mainText: 'Papua New Guinea', secondaryText: '+ 675' },
   value: '+ 675'
 }
-const PY: Option = {
+const PY: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAwUExURQ9ItwtDr9YxK9w2MOE8Nvn5+Qg/qf7+/vX19fHx8TmBU9Ph2I62nKrHtOrYfliVbt3EhM8AAAG6SURBVDjL1ZCxbtswEIbPbyAtmgP6BQxJD2CAfoAshFSkQ7RwzmK4HQJ4IUAhDZpRQofOjW1kKpAEWQukfoOizVggk5+h/5FU7aipuxQF+tH38+6/nxpMk/2M6R8E5CTPpWSd4MhO5MR5ckx5JrM8h0o0MveSZTlMiBwRBpn1kd6DjCnbz8gH0m4OzRDHXemIRDoUYphC3a+7sjAcUOoQvb0QvhH4gmMoenTGAYn9/I3AbD8nvcDrhy/9QDGdFQUL36/Wl5f3sLmHAgSwnbpSs+Lt8vruyijlvQKvDkkxU3g4av1RqdtPHGaLCYHA0RLychGe8KNe4HShNt+PVrvWIRljrLXQsrTnH8zm8cXKOtgxZk62LEtlrGHnfGE3j2crl/cpi4CnZOdsifvNIlh4VG4DnvW1rW/vd5051bap69ZRt++XN3dXrmvbBto0c+JN07R8AP7Jz63lGXt2Lqh9wrtvX58a/cAvXNB/wSDyxAPg72gXgoMTYwPhnoUrdkUUMwNeD9iIo1A8wo584PfsBpLnAwmodFIFfnbaT8eknakTrVGJu7dS6Yh0RxUWlYvxhNLH28Dz/DnwA50FkuHuP8kmAAAAAElFTkSuQmCC',
     alt: 'PY'
@@ -1336,7 +1336,7 @@ const PY: Option = {
   label: { mainText: 'Paraguay', secondaryText: '+ 595' },
   value: '+ 595'
 }
-const PE: Option = {
+const PE: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAASUExURdwaLuQgNf39/fj4+PPz8/Hx8dUMvOUAAAEaSURBVDjL7Y7BbYUwEER3BbnboQPcAXYHmA5w/61kZjfwiRSD/jFSBtkCz9tnJJ75nM+8DoP8A+8Dy5m+IWEt6cGQ5o5hWpac5pywd4CUU7I+9w3fuQIhRI0hRlUYshmWzDO2UWkI7LFN+WIIDPogqooXwciUnYAlqEYehygSorMqE6rDwANMIuItM+UzNmONEHBUhx8AD7nE/sZ8F4MeNQyul9NQuIlPssAdbPk9FAQENhsgpd4Di6LDSgENqzhBBK9uUBlWixv8mAYxA7ehlrWWAqZaz/8TT7B/Ga0rGeuYET1afoyssRD5NSOr6ldcZ18ABHjuDaUadXfFrWF9Ap4Me2so29YDPuq+IXVvWwdozI60O8Dy14AvmtGC/VfCC38AAAAASUVORK5CYII=',
     alt: 'PE'
@@ -1344,7 +1344,7 @@ const PE: Option = {
   label: { mainText: 'Peru (Perú)', secondaryText: '+ 51' },
   value: '+ 51'
 }
-const PH: Option = {
+const PH: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtCAMAAAAun0N9AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAA/UExURdIYLgtHu/z8/Pj4+NcZMAxJwNsbMs4WLAlDtAg/q/T09P3URPrklvzca/nw091UZOHW4umkrDFiwKK44mSIz0FOm0AAAAHiSURBVEjHpVOLEqMwCKRijcak1mv//1sPAuRhvbm0LpUAYXk4Fl73S4Dh+ecaf8D3Nf4wvC7yaYdbP+61I3za4Zhw7yvG/LAG3uH2C5gf11V2mLslG7k/7zA3CTXB1Nz49Oj+gpfEDrhV581Mcxo+7TB/CXv/+vj313wsbLQdaiwnrCWHIdERpQxbvMNiskhq8TQmUfoBDioo54D+vcwHyawPgcyu8KL0GlLAzOzwAcp9PKg/K5QdyqwnRXIJ7q8DRGJG1HfBO/QBbOYYMMR6hy/4PDZ9xGtg22sB3qGXH2OgP9FKOj7yBF07yPw+rIIg3dMoHvfpv7D9pUBQj8x07j18/4/+2N2/2d97lCJ+mzr4nkAcX71/EsKzh058FInBh+i9uX6fRhLFmO1k5Pg0pv6MmB40d0tpY04vdnta/wfvzcrL7HyfMVV6bG5KfwNPsE+SNh0qtCWnzMe2xDb2Az66P8/o0MlPs8OJnAZJjvyNQqmbUI50qOLpbPnPTe4gKy0BGk9Ru0hnM7tdNyWKNnOssuTTldkPmV0gHv1zZPZfYP13cI5cJ1Gnyn3ku0++zE50FSdMVcUVgSqNHn3vEilxl10ADdihtsQTf68TDmUsu9Rrb1Lz3wHX6A52uEJ3fwHy/z6jO4UtGAAAAABJRU5ErkJggg==',
     alt: 'PH'
@@ -1352,7 +1352,7 @@ const PH: Option = {
   label: { mainText: 'Philippines', secondaryText: '+ 63' },
   value: '+ 63'
 }
-const PL: Option = {
+const PL: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAASUExURecmS94eQ/39/fj4+PT09PLy8ueovn8AAAEGSURBVDjL7UxBbsQgEBt+QH6wWj6wAh4QieHeQ/j/V2ob0lUPjXpYVa1UJ2B7bMbu17jZbyjknNM9p4SLg8R/KVC6WWIj5ZLwAbnIwnOUMzasMRtpNmU0SuVhiDV6IuX1hKzCFb5TaK3WeYAiLrU0L6KHuUauuLnPuwJevXndTeTypOqMnU0FOza4UM/T6NoaYQNE7370fjgI4E3ZfUDtNsY4BBD06Lg79QHq/Y2FK/xI4R+vQozB+OMLRmU0pmEItJRCBCaFjd42vMbDuCmK8aNFOQ8XzglaG65TR2n1jREA4uKNLsoFcbRp0FU2W3E+Yc4NJ+bzM1qbsOFTtvInVuFr/I3COzfarYKF1+0GAAAAAElFTkSuQmCC',
     alt: 'PL'
@@ -1360,7 +1360,7 @@ const PL: Option = {
   label: { mainText: 'Poland (Polska)', secondaryText: '+ 48' },
   value: '+ 48'
 }
-const PT: Option = {
+const PT: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtCAMAAAAun0N9AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAABIUExURf4RH/r4Sfn3O/uyOhKBEw96EQ1xD/8lMf8bKAtpDfx2M4W3KbfTNfT09OTh4P39/ePsPfn5+VqfIKa53hlKqvnfP3yhpviOlGhjpgcAAAHoSURBVEjH7ZTZdusgDEWxzCA8Js5w//9PLwhJ4Nhtk6e+9EBAJWwdiXbV2C8U3pP543+XdwI4mp/7Ox5lOpkf+HMGTfMZ75xthgaf1N9IfwgBf6aR/LXrpgBH39ZR5uso9R9lt3EYQgPy1F3iU36bOlI/tGZY2RxjOTzyduxUvXRRc+A+55En82nse0pwQMSZj5X3vGX3Kb1f+jpnGKTQzJGChLSZBJZRNntJuFvWpAVzgiB3q31TBxqv5pQi2V+sW9fbbV0xPKSAVgH3/uQrVaTuN+eut/v9dkUc6AVQ3nvXRzk2pXBtIpVvnRc+dN0DTyVpjBc2T++h69J+Xe73JfHYdYDfygjJNVwArPfz/HzOc3IBePzEe/XOmgA275c5aUn9A/Rv+LNyNAJcnH9m/h/iA2Dge7rw2vi3sqmB0bvnsiS8B4D8OyaEMxheebzyuQCY0hPkvz8geyEaGOvnlc8vkDKMQ6ZT94YBSWBwv7zikSpg9XqtTAm1Bao/el5iCbeJ6VAu12b1EYzWQgwvJU+Mvvz/UVvTIFlNRiOIDElX79E13OUoJ/SJsSFplAO+Ue31QEj2j5UjcTkNJ/66cR6KdqacJi/1hjmG+jBUvyBN6KNpheZL7dAmPr2MZ/y5zJv643+V/w98dD2jyf347QAAAABJRU5ErkJggg==',
     alt: 'PT'
@@ -1368,7 +1368,7 @@ const PT: Option = {
   label: { mainText: 'Portugal', secondaryText: '+ 351' },
   value: '+ 351'
 }
-const PR: Option = {
+const PR: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtCAMAAAAun0N9AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAABFUExURfQQERJa9fgcHAxV8/39/fX19fAFBfofH+4CAvn5+Rhe9/Hx8sza+DZy9WWT9qG99zdNz88dNp8sZmI7noeq9NsIFW5IpzeofHoAAAGpSURBVEjHpZQLloMgDEX5iJUg2qrT/S91EgKITucU5UkJAjcEpBHvR5MEPF9tPMDSyMO7kc97UOqhaqh9HvO4B3ynLhXHSkt6qGN/aGE78fBW/ypCydVBmcc9qBvaedpDGw+T7a7qwIMf23iA2X5Td3g78zAZe0V/eNyDDS5MLGytLXqLR4CkR7KJezCFrPkkmwZEwqWciA9OJmdqJWTEARw5YW9+dJUSBAUHUzeljWA91/IMo2Y7yyjqWEWdMuOsA7kL/w80rEJJv1OJvB9J+HGC9dnFUq6jPqyt4vow5vsw+yKGtTZ+vZlwG8yG7WsOmJdTcDDJg+rWDwvynZvxJT96qTp/nj0atznjgrdQNJ+/6FPdp3Yh7NAhfO/w3PHW+eCMqurvr4nYNrRkOHINc23+0GG+Z056TW50fR4SDLBkrDCHdLX5J8KSaY79Sv7RZ3H+2VPPl/xzxs+541v+OdJ4j+pzz1++Pu/k/HGM3bXwSz/0V7Xzz1d/Q5lfhxur7zzGnh0Msf3Jksp5IsVejKc55fxzO1nBsd8W8cvQwj9fQwu//rTgwy+Et0BERu4lDQAAAABJRU5ErkJggg==',
     alt: 'PR'
@@ -1376,7 +1376,7 @@ const PR: Option = {
   label: { mainText: 'Puerto Rico', secondaryText: '+ 1' },
   value: '+ 1'
 }
-const QA: Option = {
+const QA: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAhUExURZAfQJYhQ/z8/PT09JwjRqEkSaUmS9iwvKM0VLlpgO7k5wNLdDUAAAG7SURBVDjLlVCxboMwFDR/YEv5AhgiZbQHJKYgmb0DZu5CvqADYyulnVsp7Q/kR3v3MIlJHFW98Ix5d757jioXTIccntVFUP38ISi3H38LxnEYDnHNRpCK3BDGEIYhEUwD6RFtEovXUyIIM0axmYUhpBHfYY2BKU/pkO/hHv8RVN9jRrBPh+y6LvRcE6S36EPoe++hwrvrWKuI3cmT7Sjyvo+1V1VVWjyo7bEnQEQwgjOQL1Hbo78HHKigze7UsdPNRH8RWJK4ZDl5n3eoSlc5Z+0jAcer6NCcYq+9dbAOZV1ZH1vCb9oEe+WsYwDW+rjBkU17G+EwAm12J57YAEbW+Y0IS0AytcYYtKkyssXOaEXSwcBNhg5CyW7WayUJUNjmy0TWzGi503EG/hX1m1kwq1g63oKqRHAFI0jjiRE5wYzJPBJUi6Aw2hSFrEsV6uqACHaNxsoCq1cRGLJgt9CoQmnyKwdXvyoChE7WJOJTaQH74iH75BYgxELaEXolED4u+vIBb3fGr0EEievp+AFOJrgMeQs5Lap6nxWAIXuWiByahgbnxr3keRlShngkgAMMgEcRpGnSNPkhfwGLaxIJbXZLKAAAAABJRU5ErkJggg==',
     alt: 'QA'
@@ -1384,7 +1384,7 @@ const QA: Option = {
   label: { mainText: 'Qatar (‫قطر‬‎)', secondaryText: '+ 974' },
   value: '+ 974'
 }
-const RE: Option = {
+const RE: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAnUExURf39/QYmnQosqg4ytvI7SfRCUPn5+fE0Q/X19fAvPfPz8+8rOvHx8X/NEAsAAAG1SURBVDjL7Y6xboMwFEU9scNURV3AUpWxSqXMGYxYM9CdCTFmQEL5AWRl6oYsfqCyOnRF/EHER/U+27gQpe0P9MTvZbjH17AXzzPzvHqO7F+4FfYFoiKg9Zq6PD+ynYv5bs+KMsCURZDneUoICHxneeH7whIEQeqElBrmnD8FHhenIj3MAodQekQuDHl+YJy73DfgSygiqIEnPNklcJI7DUIcGFIyEjQULi7KOc4h0G2kPFk1iEUDQAFqfhEsRqj+EmC0VZllohaYuj4thG3ZyqotaQsyarJWDZJuS9rZzLqhNVSgwfWsru0TURLF5mwrQyulrJusqRtaJ+ZzNEj6SdPQUAP+TiyOfYPJW1rNDDVEsWOLy9Iyx41piOPIWFuXtvK7wQnW2TjhXV+WQogMg/OASOuLe6Izc0ZDFJIDY6MvgBr02dJ0HT4yhAGi8IEKtMYLF2TOwRMwiDDcIAQkIVHnrsO8sXAm2miPUp2yxkIIF0JHuaJZCdM0fegrBg1KWWUpPGp9vVpFeVbCdEUFMdlw6G8Fz0CMfd8Pn/cFNfZW+UkYh6HvxxHnJ4FAPPwqGP4WvgAEZNGJcKJg7QAAAABJRU5ErkJggg==',
     alt: 'RE'
@@ -1392,7 +1392,7 @@ const RE: Option = {
   label: { mainText: 'Réunion (La Réunion)', secondaryText: '+ 262' },
   value: '+ 262'
 }
-const RO: Option = {
+const RO: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAhUExURf/YT9EYL9oeNf7VRP3SO+IjOgQvgQYziQc2kAg5lQk7mj9haAMAAAGtSURBVDjL3Y8xjqMwGIUt+QLgE8SW6C3ZN4ADREi5QQQHSGRSRkoR6KaMqaZlT7nvmYQhq2Xq0Tz8O8X3+dkRf5Z8iiWHJXvxE4QRaMQ3TRvCxIxjHLeEkTDGaYof/xdinI04bQop3zW8shLquj4UB0y9IRRkafbiEQck4ue94Zm9GB5gD2S4Cjtja+uiMKAFr+iHoX+wpL9aKa2TUgpJXCCm2ImhB+8pXa21UnCzpjCmNph6J8B7cIQCC6RFw3yHMbhiyS3V03LpeMpuLeAFgNIJ+8L1u8ALnEwN5qvh3l8u95SbczzvULMWQKH02G58o+Nf/bcBpzvsqSFFvjVcLt09zWkRnFFfQkeW1lrQiFFIJu5dCoyVoFmhudCQTtNZC4hSXBReOZXelR5TloocWL8LM/doICPWOlsJZ+/n81WZ61zpXKucDaFrQ4c9nMpXPAjvgJKJtqUBpT3zfMWpwHMEFZkICI0Qzh7IeyxPSIcNXZtoCO0xcT6hQjkchcEVQE1okSPIM/mSTDRNIG5CkxoqFsyCmoW2abCQcKyqjQYqAQ0bQmie2Wz4BcJfLHiS3dqtFIsAAAAASUVORK5CYII=',
     alt: 'RO'
@@ -1400,7 +1400,7 @@ const RO: Option = {
   label: { mainText: 'Romania (România)', secondaryText: '+ 40' },
   value: '+ 40'
 }
-const RU: Option = {
+const RU: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAYUExURQlCrdcwKv39/d01L/n5+eM5M/T09PHx8UZ8zfYAAAD8SURBVDjL7YxNisMwDIV1hJpcYAg+QIzxPhihdSF0PwvjbLtyrj+SHDdtB0yh3c186Of56WEY+3zB+4E4jnaM3DJlWD20OQMiRrS3iWjr2pkh4nG0uIeixiwv/aHHDKmBRISYEmFz2CAOEBJmlpmtTCnLQd5Eor4hC4kr5QO6qT3QSHenqp8C96y5aGATSllX6apL2dbmXjVQtoPyqGqgwxX++VNc+pw/EFgugesX6vE4Q/ALK6ZN2YFdefhlAr94Jmgx+tIdvKQ40OfFwOC0vHc6GTG0JxiMM25gZDptY8yunDuB3I14bpCDEeUkVGsCU3HmWVROYPp8IPADMwTqW75SRXgAAAAASUVORK5CYII=',
     alt: 'RU'
@@ -1408,7 +1408,7 @@ const RU: Option = {
   label: { mainText: 'Russia (Россия)', secondaryText: '+ 7' },
   value: '+ 7'
 }
-const RW: Option = {
+const RW: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAtUExURSOv6frSNR+q5PrVQSRjQB2n4ChqRitySxuk3unDMUCux06wu9fBQa29aqu6Z9BPOpYAAAF0SURBVDjL1Yw/asMwFIeFx2aJ8AWMQEu7ROQCHYLmIjCYdskQrDWTs3YxCHIC0Qyl0C0tWTL0CMkRCrlAh5yh7+mP66RJ2iFD+z3z9NN7n0zI/6Wz6CxCTJAs4hJLss56vshwTghcEwblgZ37LmarxwzvGYElvmGAd9F42Vi7eYdRAoInCZLncmXt7AlesEbY483aBxe8wBlTra1iV/4PTuCcKwB7zqFyvL1urd1+KMXUDckjPAcjWrez1bObgoALeAQGV26G3t16vkQ3b/1hh+lyuox/aCiw1SGbwgTBGFObAjCBusbsuzH3xDQUtflOWzjIL4T+aXp/QkipSAEqhEtwUkrTZtolAoERdQGVfircFiXaIxSBlNI2Ih5dQvcRO7cDAj27MDnN+AxCBbiotZ5UFTRM2k1gMyalhkJ0WUHTLlRVGWZDUh4HrZNC6QUppYujUo4czVJCDckARgNEYpJ4RkZQ1yTGr7mXB/5ZEI7zs/AJYKBiL/l1q20AAAAASUVORK5CYII=',
     alt: 'RW'
@@ -1416,7 +1416,7 @@ const RW: Option = {
   label: { mainText: 'Rwanda', secondaryText: '+ 250' },
   value: '+ 250'
 }
-const BL: Option = {
+const BL: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtCAMAAAAun0N9AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAABaUExURf39/R1myRhcutwkOPT09PHx8ffhRv////n5+fb29iBqz9AcL+jVRmqOko+mg/npfvr0x0J7vnNmHG6Xz8vX6LKfL15SFvnf4qW83YGl1nNmHeiEjrq+aliJrCdD3fsAAAH9SURBVEjH1ZPretswCIZxI8XIh8RO0jbp2vu/zYGOSMZb2l/bJwchxAvYzxPo+x56oKd/Sm2udmZx7Ckf8jHF0hJu6uGDvbjZQCICVVnNbZJ2WTXt3xc+d415w3TCfQQbEnMY/QpHsyxn0pHFzrIYxJiEJRmTKTHSwtz0OjX2vEDuk3iotzDAwl0vbxeyH95e3j44tHBx0Vdf9BRe2iOKGVOldMjiwM78qGjTnUPhu7U6x+pyUoRtd+QPMH2e5q91HYZhXb/m0+cUX78ltiVYM4O11tkprwqgvRQOmlB//x3+NJ0a+xfe+SeoG7rpOBFDNvsK7TLv0sYLu66jno2NLeSi/s57ORD8TmhITkpzopmDeGafFfxOk8v9XcmFfJRXOu+qzJALDRl00FRxqQ64WtjwvwSvCdToYYzrvX/P/g5vjDOOnrIbQ+mj/xE/jtHPORUfghxPPJkxiebPfkqoekGkaxWo6BCuSjsvqMEYfbxs9Uj3qZ9T+KgbA/McyeDc1Eyd5wHm4zEUCM7DfIe314DRPyc4V/Mcb+OiCXhs+uf6+R8c8td1KvG2WvnO3Hl27k+6F9gaUcgy78UBMqWMDR/xJXy6GA3GCgYi19Tw+2319HqztYxgIIdSpOzG3q/r9W5N845WMCABa8Us9V73t9v+atofZQT/Y/3v/G/iPj129GoVrgAAAABJRU5ErkJggg==',
     alt: 'BL'
@@ -1424,7 +1424,7 @@ const BL: Option = {
   label: { mainText: 'Saint Barthélemy', secondaryText: '+ 590' },
   value: '+ 590'
 }
-const SH: Option = {
+const SH: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtCAMAAAAun0N9AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAABvUExURQAkfwYxm9gcNPr7+wMrjgElggUvmAEnhgIpigQtk5vM/vPy8//9Pf/8RoCXzHqPwqdaJVt3ueV1KZ+z1907UMTN4+63vtvm9PTc3x5Dn+7IzOJebjVZquZ6h+yapdJpJeiOmcGpopONbYJRSzg4bEKHO8EAAAJoSURBVEjHzZTbYqMgEEAR8JbZ6hK8a5pb//8bdxgFsSGJu33Zg20GnMMgwbDPqhF1HyGF4JyLwoRRr0U3LvFLmGj4SbRq66tWfPJRqB2+El1VdUZzfl+LocJZ62iHHynoKv4p6sn6JcCJ41Ppfo+fJFMLIx8BavJ1LZrKdMskSmaiJIpMx376oJ/geqkg+bhvnJaT7IJRAY3bxRvyB85pO5KdfkHUorsMs39pBGgaVHt84UHr93g7QZ4w/hxRYMLr9s43SYTJDcUv/dLl5/kaJn7IBDi+Pz+o3DdXkrXLyqIsSw3QXAZAH4ZLB3VJqPw9zPwrAM87n/0GTw/oKN8Jy+VUA56esQPyAU/vCep+t4/vz4inF2pNvjbdEdrJ3JWbZq7cj/GPabPiE74ueUl+2ZvlVB1OgHnEnB6OmXlXB9C9lIsvaTtwTM0pc/btw+dmhyWr+AVak+p8KfGNPvGGwqWQ/Nhi60uG+1YkcuvLHp8KtySXjpBP9aGe5ihTdIhoKZlULf6grLr8tWX1S0y2E5gzY7u5Uv0eP0MhIycjqLr5MLFp8xXw6SazOUtZcp2YufHDFls+Y9kW633ner36vhtnWZCHOY7IX/gPGF+3+FK3/+4P9KvQ7vLTpdneGf2rq69XP6XcNAs3N8v9eDz/Jm76cChsQsrSlSU/RPZldeRw6N0NFk5Pl0Wt3M9rfZW+8UPcz3r58jz9mR8Hxr5mv5j8dbGgHKfzFcd2JhNnU2HszewMxw1e/tpSN+7P7jDDbPG2kBjHjzdiv4KBBe4/Ddy8Kyz+GT/2PexkLN6O2f6zOEC8tP+eP+ZeUCjaytH1AAAAAElFTkSuQmCC',
     alt: 'SH'
@@ -1432,7 +1432,7 @@ const SH: Option = {
   label: { mainText: 'Saint Helena', secondaryText: '+ 290' },
   value: '+ 290'
 }
-const KN: Option = {
+const KN: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtCAMAAAAun0N9AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAB7UExURRgYGP7WSSIiIdUeNNEaMP3UQhy4WxMTEx0dHR2+Xs0XLf3ROv/YURqyV/j4+NkmOBqtVVFMOfTFQBmoUjw2I5J9Me+UO8urPHZlK+NbOeC8QLCVNsDAwIWFhYfEUuHh4Ty6WKmpqbPKUGtra1y8U+PSTc7RUjRkRs7MS293ykYAAAL7SURBVEjHlZSLdqowEEWT8LykSkEQFREftav//4V3XgmB0i57EhNIZ88Mx6L696Ku9zev1nipF/HLRHeV+St//ZzwgzF/5YPifWN+5FOa8wPQx9PTz8ospNIUwlISJ1js333LF7yg6apC3xqH59Ou0t8U+FaLbzmDuST4lV/6lrvKucuSq03600DfNI23U4WEk/E3BnkM3uAHN7xKcaJvmqdusdT5gVRlfAYaShjJkbokF60187prqNHz9lwN40iYVyP8QtdPahxVHyT+tkXd3BPQ51Cv8lgcccjRN64U8488KN5prTbvG5jvwfbx5OIw0TfRsF3wpsUqChDinK537dX6JzVnxrejy1idNPNelOgy0V0ztVoNPgHlbHoJCngs/uVp8A2kaPICGc7DMFTkmw74HU1QUNz7hhkU8Y/t2NAN+iZK1G634wQ78E0nfAy+EcRLnvM2Dnhl2sTj+xJ50vud4AQH+IasUrxKBvXAlXyjKF0fS89f8IBOwTelBHZd8C0W73WSSJf7snT89QsOE/pLfVDSrm9gugffmE0SLO74i7Cw9kZ55Wqupku8mCb+4+lg8I2ecibffitFIHJflp6/T0lbiM3OIya5mUXx6uTDpPWI+Nofi2/wntzG7XlOm36qsmc0whmphJ89Ad9IGb9nwww/+Cp6f0QsErxUcu59kzelWvcNWic2kiRc354oPINZjfya3OiWfbNB68hM4v4t+JYRraqt06D4jH2zOOsj0aWsJJXYriE0w/DMwG8cJ6gyEPhm3djPSotUfUAQRSv0C780g8kpJ/hGla3F1uM13jAajAa+PErYdNYSC4Nbj6NlEmZCwX8QtY6+MW2h9TiKYXKCcMxZeghuqTpZy+Ut+DYR06TPkpccpncw+IZxokgWybXOZ9mhtq56XcY/KlrnyTdWfYx/UbHGq9bT6FsRBE9Xhdu+8eKbFC+KmAbufMGYHwuefZPiElpIEpepmM6LBe98o9aLdcXTxaL/mW/Fawr40LfoRbz4Dym2XlA+bAZVAAAAAElFTkSuQmCC',
     alt: 'KN'
@@ -1440,7 +1440,7 @@ const KN: Option = {
   label: { mainText: 'Saint Kitts and Nevis', secondaryText: '+ 1869' },
   value: '+ 1869'
 }
-const LC: Option = {
+const LC: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtCAMAAAAun0N9AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAABFUExURYDV//3ROv3UQ/j4+HbR/3PQ/3DP/3vT/4TW/23O/yEhH/7XTrHi+5fb/svr+ldRPMCkQuPy+e/t5KOjovLelHd3d83NzfrjwqoAAAIdSURBVEjH5VLbluQgCCRRczO3zmTm/z91ERA0k8zZ3X7Yhy3TqFAFSZ2G4T3A/66H1AMj5H58vuSe8lDmIV/zCTFDrQNlyt1gU0BbL26xcqUrlc9Y3fqbzHs4595Qw4z6+e/l/Qv1r/tScSpX9SzOfTh0MCeUYqFolFIEKffo3jEd6CALLd+zqsypUqeQex8TvoC2zS9hABvZV4UEdG+bNnQwE6xPr+9xFdowdO9rmqYv9ypLlyHXmQXQvU/Uf6KD9wT4WZ/cS0AHn0nPenIvwRy8wLPe65WXZMi9BHHQS973ysMAPiutzil2bxcHRSLBmoCO5SbcBiO7t8edHaRcrhU7JIVnJR25h/fk3hZj3MjBklIyQeQ6XggDuRcTyMHB1DKbd/A18hRybyf9Tg5WVQP4eyT3WJ4aoIMPvAd9cm8TeWw3chARbvQhpXn5fET33Na2sUVxWvgBq89MeUTPScmHECik/96OOgJue3Iw5KpxkRlKeKmjeztLI8cdHQx5UNBOtd7r4eXOtsaJDoYbwF1ycUd7xeEWqXa1vtMlTwjrwZ/e4OIdP+JYSas0foC2DkGBGg349g1pMSSkG37BEKgubYjeQacyjfPZGKhHatOecxYpOWR9CX+0PPOC9vDfyawfi0xYYnOPOAtX6SPqRznl1Z3NE05TC7eD0dDRj2pFrr5fc0CNZLYR5V5KvuXpBOO1958Bxvfwr/W/AJX3P26BuoG8AAAAAElFTkSuQmCC',
     alt: 'LC'
@@ -1448,7 +1448,7 @@ const LC: Option = {
   label: { mainText: 'Saint Lucia', secondaryText: '+ 1758' },
   value: '+ 1758'
 }
-const MF: Option = {
+const MF: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAnUExURf39/QYmnQosqg4ytvI7SfRCUPn5+fE0Q/X19fAvPfPz8+8rOvHx8X/NEAsAAAG1SURBVDjL7Y6xboMwFEU9scNURV3AUpWxSqXMGYxYM9CdCTFmQEL5AWRl6oYsfqCyOnRF/EHER/U+27gQpe0P9MTvZbjH17AXzzPzvHqO7F+4FfYFoiKg9Zq6PD+ynYv5bs+KMsCURZDneUoICHxneeH7whIEQeqElBrmnD8FHhenIj3MAodQekQuDHl+YJy73DfgSygiqIEnPNklcJI7DUIcGFIyEjQULi7KOc4h0G2kPFk1iEUDQAFqfhEsRqj+EmC0VZllohaYuj4thG3ZyqotaQsyarJWDZJuS9rZzLqhNVSgwfWsru0TURLF5mwrQyulrJusqRtaJ+ZzNEj6SdPQUAP+TiyOfYPJW1rNDDVEsWOLy9Iyx41piOPIWFuXtvK7wQnW2TjhXV+WQogMg/OASOuLe6Izc0ZDFJIDY6MvgBr02dJ0HT4yhAGi8IEKtMYLF2TOwRMwiDDcIAQkIVHnrsO8sXAm2miPUp2yxkIIF0JHuaJZCdM0fegrBg1KWWUpPGp9vVpFeVbCdEUFMdlw6G8Fz0CMfd8Pn/cFNfZW+UkYh6HvxxHnJ4FAPPwqGP4WvgAEZNGJcKJg7QAAAABJRU5ErkJggg==',
     alt: 'MF'
@@ -1456,7 +1456,7 @@ const MF: Option = {
   label: { mainText: 'Saint Martin (Saint-Martin (partie française))', secondaryText: '+ 590' },
   value: '+ 590'
 }
-const PM: Option = {
+const PM: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtCAMAAAAun0N9AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAByUExURSSl2ssQFf39/dQWGxyXyvj4+BuVx/7ONh+bziKg1fX19d4sKm9zQfLy8ieiUCOaSukyMN7t83vC3u40MoWFhfi2M6e8d4W0jWe41OfJRmevpDKhyMjCWSsrKxgYGOFaJOuCKvGcL4WQe0WovCAgIC8vL/gEXo4AAAJ+SURBVEjHxZRrd6IwEIaBBkwoKCCXw0XbHu3//4s7VwwcpHU/7A44ziR53hkiMThnx+MxO5/PURSB5yz4vSnCvMQv8QIhr728wBdFwVgcx/QNA8VrfFEgGEex4i/zKAD1FX+Fj7fsX/HO41O4yMMNEy4gtwjmVAfhfifLTqc0TU+njFN/6dC2g4PEOc182UBx5kWA5njVcABrVazFbOBJnlc8Az5TAeecrHA9EoeORlxHSe9mnHjGgH9XAZ7DD5YHif6Gya3nbBB5R/0LlOf5HLvZuCI+AVgrSccwCcw1iZfswSuCPcuziJjw0Zat+J42jZ7lr3jZwU61XuC7Ne/9GsrX33UUk4/EOwsX7PdtvHk9z73A8ChL8P39vl/g8F7ulyhGDzFJW6w3bdWftAcLfBTXlxpUyEccs/jBt8HaYTFAa+z2+UNla/vDjvV7vCWb9viJ1wSpd3Lh7LJZ0h72+IHXBAzU91o8qWD38Jl2yzuuT3a9Xmcv9cHGpzvQj5YqAJ/naZ7W1xref/ZgVmx80sE06oog3zI7W7fRQt895n/iQWHVw9T5sz/z8BRDO/X4J9JP7TBas+Dftuwxb/Ay5C3dZqn9hDdCisZCTmb4elbfCPhYaa3n5i/iPz6/mga2pmm+Pj9wQBoey7LSohXGhoUgHiVGvlnsb6O8NRX8FTBVlRHHVuLK0L6Y4C1c1w+RR4P6eJjKqir1YGlcjrSAeQDwDjEKKTGiDrX0SCGZygmjntgChmaYnZkNFPD91qdY0cgr6pvOJiZJZOcSTL2Yp4lfP38YJgmvp0VspCUhK9MI8qv9n3klNPYkFOf+F/VD4vftoRSEW5b82v43/wcjV1RSN2Hb6wAAAABJRU5ErkJggg==',
     alt: 'PM'
@@ -1464,7 +1464,7 @@ const PM: Option = {
   label: { mainText: 'Saint Pierre and Miquelon (Saint-Pierre-et-Miquelon)', secondaryText: '+ 508' },
   value: '+ 508'
 }
-const VC: Option = {
+const VC: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtCAMAAAAun0N9AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAA8UExURf/MNAN5zwmD3AuG4AKsaQCkYwF2zP/QQwXAdgO2bwZ+1gV80wiB2QB0yD68Yb/HR7/MTQ+I1r/DQX7CVblPYh0AAAIDSURBVEjHzZOJjuNACESx074z3Zbz//+6UEAfcaIdb0ajLTqYWDwKOwrdTpreaz6J/iO+57jO9/1NQ5Jcr/HGiWzGRd5Rn/JPfNbtQ77/Mf5RcV7PyywHWvAx/s7R8vu8ZzzXsw7QwKH7HSwnl7bGOWY+14wtcxXsf2/UO7/zdnu297qBMeCJV38SyxmmNOWay2UR/zq/5NXSTasamK9e77/iFD6CiexJuZ7gr8ZZBHjN4i/cl+z5dtjjZaOuwNn2L5zPgb3yskC0TWPLu/96UmEWYaI9sMz6Hs8724qJmWSd6fv+soAoUlXLu1yWgCMpoKZtXbd146MwF/w7U3LLR65lluNBh3Cm7SRiT4qwZzaR1ZU/Rrh/K14FnQmWjGKI2k9kawehNb/yl04ng0+RN0FAgg7Q/Hp/WSAIyC0yRmqZGgwvI4TvnOxQqj89hJOmJLXcITJIP0i0daC6ckUngChdsoDegH8WRgQSULU5P5lbss6D7EbDB+M7GJcxnblPZu8LTO/4QhYeMn6wB3jav/J/wx9hQBzkD3CNpzgwnu2FH56DunHsxgLzl9J+CD4cFW+YHgkSvBU1C9T2Z3/muxyjZqoXaOwJ+4TqDDSeRM0CtT3VtF7+wh+NvfoPlqHCf73i5V/Q+rtsBn2NHn6h9xpOoswhRBf5VjzkI/5T/9/m/wDJikKMowwurAAAAABJRU5ErkJggg==',
     alt: 'VC'
@@ -1472,7 +1472,7 @@ const VC: Option = {
   label: { mainText: 'Saint Vincent and the Grenadines', secondaryText: '+ 1784' },
   value: '+ 1784'
 }
-const WS: Option = {
+const WS: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAtUExURdUZL9EXLtkaMs0WLAQwgt4cNAY1jAc5luEdNeMeNvj4+Fl3scrT452uzydPmskCMaIAAAH2SURBVDjLtY7BitRAEIY7eYI0/QJNIHdD3mBo+6LCMBCYB0g6gnqNruPCXgIzN4+ZV8h5GcEFT6IHr6InX2Gewb+qkh3GgbiX/ben6u/+v6qsevuPrvZn+qgeCGyOn+aBD8P3Cej77Xa36/vdbr/v+5sRuB5+j8C77ZluVDNtENNeAC0L/wO1pmkugSbgYJYamJddt153XVlKXSp+bUMI7d3m0IamLku8I0Ypu/VSBQoJCp+HAy51xznFVAGE8PrPN4LeD8TW5ZkYeDP8IoA2zAJ3m9sTkN0Dnj9RBV+5ygcf6hWrzLKM+lJVVYU571E9fFVnZYaYERSrPLKKfj886ynGsnTF89gCwFXOe+fdFzigizRFDqWIU3zCOby7V8cDOrxbcJgSRpINzj0fvqKSX9CzfCVdEeBYL4afYgQ4aQJkwwzw7Hg7D5y0iNPY4lgr/RJIY5ZA1iqrWNbGMTVUO4k4juQiPDGK/iwl0/hJPENLyKpHVzS2KEqg6S2hI8INRSGki44SHWkJkkmaAN6geUtCmHjZS7BKNCZpejyySo9eY0iuYOhEEVvM64RBAmb1IMCwM3Rywy7P0cjnAIzRxuRFnhvKYeFAkAqYRLHBSD7KiGSgME/U+FpAhE7V8BgBBWcFj8FzijoVACPBVHEuI8Cs/g/8BT5cVoTabAGtAAAAAElFTkSuQmCC',
     alt: 'WS'
@@ -1480,7 +1480,7 @@ const WS: Option = {
   label: { mainText: 'Samoa', secondaryText: '+ 685' },
   value: '+ 685'
 }
-const SM: Option = {
+const SM: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAwUExURWa65m3A6/Pz83PF7/v7+/7+/nnK9Pf390diRtifPlaEf2WjtODg2bKuiOfQquG7emAbwykAAAGzSURBVDjLzYy/SsNQFMZP3iChII4lS0Z7uRAQlw4pWTvEvRDI0CKUUsheQS7tE2QQhYL0Hdy6OXRycnVzdXPzO+embVJt1M0v9/z7zi+HLpvVp78Cvd4h0EugHnIUca53SdKliJVwJMmXLor6Fjiu7s9Ank/5RdM4ntqIOEovGhNMOIDyPOaEBbBcPFRckAOxJfiC9DE/NPGY8q2m5QVpuZd/KsD3AhDkExsBSo6GFewBf+IHNiYofhCg+tKx47cpwBQwgoozvmzLGX6bhGPJzv94l59LhC/4NZ0Vd3XjEHgqinUj8FYUrw3AZs3AZn0UMDMGzKwGZBWZ6/Oi0OamYg1qwGpxVdyOzMNxYJ69PA8bgFOzzNKVOakBYUUXZp4NzSKrWB0KUyiUnOqVSYdmqWFo6+kBpTrEpznCcHSv1WPIVoqPnQ7pnVJdF1O6CnyrCqA4lG5V10q71NpJqVZLSy7loe2Qp/B5khUaxb51hHFJNltX7Vg4ArnkNes3gOO5rufIQ/IkoUd1WYRw7NrhameMyFKJq0PkOrIi1862oBLxcvsEE8sha3CVRiTT3i/zP9AnMT1F6K42jZ4AAAAASUVORK5CYII=',
     alt: 'SM'
@@ -1488,7 +1488,7 @@ const SM: Option = {
   label: { mainText: 'San Marino', secondaryText: '+ 378' },
   value: '+ 378'
 }
-const ST: Option = {
+const ST: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtCAMAAAAun0N9AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAABFUExURSOzNyKuNijFPifBPSS4OSW9O/7QPv/OM+AbP9gZPCjIPynKQBgYGCnKQaiKLSAfG294N2FSI/HANSrLQapGPehVPNexNjOaGXEAAAGUSURBVEjHpZXbtoMgDERB0aBWFC/9/089BAk3264DjnThxOyBPoWt+zzNk1mz31H7vO/Tfq/nPUweI2oaJ7PGYjEpj6ZpxqZShpdH2zRPeHl0ba0sLw/Ruoiu7Tp8pz2u5e+BlwPvvNpsT97btN45PgkoEfEmQNTI81Lyh7xc2SXBTF2EnWq2P6vH/EAB/5ZI+HCDAsk0gBcq44sDcl6efZFufB6w9T/9nc8ClPplPT+45xagdf/DGj5wuFkXBWzLEt84s8RTyOCMtE1vpZReFm22990G3l8+BJkA6GFdXsvLrGXtc2s8lnoWk1HOaT+rq1/1gO3BIm0TgDlucJtbcgOwAS8jBWiwPba2BIxIeuw6N9sBoBHQ1J5bPJ/OJuHrCSRzWXPpbxaAzg9H4+n+q9Lmf2xafbbEZwo4bMmW28/8CSViz/Abv5bO3wwvnr8pXjyIWYqXz98I521TPn9jvGb+En3wuvnrT++EecrnL50uEK+Ynx6vE7vwa6y64cpK5u+FV0ogf+Hc/Uo1aP5EbH2E8z/aH0AbB8r2/wAAAABJRU5ErkJggg==',
     alt: 'ST'
@@ -1496,7 +1496,7 @@ const ST: Option = {
   label: { mainText: 'São Tomé and Príncipe (São Tomé e Príncipe)', secondaryText: '+ 239' },
   value: '+ 239'
 }
-const SA: Option = {
+const SA: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAnUExURQxzPBGJSQtuOQ56QBCERg9/Q/r6+vP09NLk2oK6nKbOuEKaamCpgj+RuCsAAAHRSURBVDjL3YzBahRBEIaLnoN4c2EeoJknaBhGCV52oGc14mFhppNZzTG0qzm7veNZEkRvYlDxKOSQuz6B4GNZf3XvbjYkgXjw4A9d9ddfXxeNbtY9+j8AC9W2rvOcm3R54nI7Ju6j2rLlhD1weCt8PhrHC0jrdAtsHiEWA7ldMym8GGwuXKM18Hj+xM+5Pn37O/kV0ERN/I9X3+zE7x6eWvEpH1PXNJ1rukf++MjayXz36Ew8p6ymmZJz2LuZ937u9r7P/Mvk8c91U0KDFssvx27v3Wf/Onmoc7iAE80sDO7M9YsF9+jjRwGg/fOhD849DyehSt5tAQ8+DfvBHXwNP0PyG6CF+l8f+qXrwxtU8VXlXMVA1bawJde2LfFYlaSohniUTCrWbWIkLKeEsK2kypoXz97HBJILl1Td95vhKqC8JWBQy3LHb2vgMDNywRiD4XQRXrC4enEmEkR8IssyYx6ehC3F1BBJ5Q6bISC6w/slhyajDIuMDK/4A4FhCMCQYSsfQJA8Y2Jwlw98jBEOy5lIUSJp7Q1dltksr9j+pRRprVFXD6PWMVTYK6WKQmul4uNIXZwKiBmlCwWHUccMPR0rihVXxFGBlG9U3Kx/AfwB+K8L/e66hSkAAAAASUVORK5CYII=',
     alt: 'SA'
@@ -1504,7 +1504,7 @@ const SA: Option = {
   label: { mainText: 'Saudi Arabia (‫المملكة العربية السعودية‬‎)', secondaryText: '+ 966' },
   value: '+ 966'
 }
-const SN: Option = {
+const SN: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAhUExURf/xYv7vWBGJRROTSuQjLxacT+gpNfA0QOwvO1yuT7/XV5JEPoYAAAGuSURBVDjL1Y8hTywxFIVbi+oVCNYxzRM8NdtmBA4xqeZlMgL3xKSpxG3lqraSDUHgQCD4l5x2lmZ2wwaB4sxMK853v7vLxppbVrOpuWe/GIgbX/p4AvDeb2JMPvrTQIxxE33cfg2gBQPDKSD5lFLeke5Z13XDmI9hCaCKQJKHAdUwjoCWK/ZESlumxzw9wNEuDZ+BQZd2CfADQHe6CPTQMsHEGUd/AKDVGeo0DIKdC35s0MUAohWC87cXECKFZEPJlqHSc1o07Okhn3nWORyhGEqwArM0rhk8qGxILgT3n81ltrT0PuIe716EtRYGZ90emLNmZ4/5/se5c8HhR7gjgNgFrmshCLM24LPhABDEoNhxzjFtS28BSC1Veddc0KOUO1y2BASA2mMF5+qqyZetKQatcw8Drf68vv0loiUgpWyUlEqptRAXO6LnIwManWuFFbQiQSvxhUHB0VwSxzAOoqmmAHkHIBjmcJqsMfjw3jDV7HsY8jT+JJGZx40B0OwJKS+ppjclZUXu8eJYAGYy/ZSf2TBHLQ19Jgw+ADVLQ4+U4wTQ13wHTD82/BLgA2M9UDGLCjU3AAAAAElFTkSuQmCC',
     alt: 'SN'
@@ -1512,7 +1512,7 @@ const SN: Option = {
   label: { mainText: 'Senegal (Sénégal)', secondaryText: '+ 221' },
   value: '+ 221'
 }
-const RS: Option = {
+const RS: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtCAMAAAAun0N9AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAABLUExURff39889RRNIgP7+/t5CS9Y/SMg5QfPy8hFDefv7+xVMhxVOixZPjtGjOnGMrtB4PuWqru/i5M9cYuzLzdeAhVRGbShXjJw9Uai91VbISlgAAAHTSURBVEjHxZSLloIgEIYHENA0xeyy7/+kO8OgAVJR7Tn7MTLM5UcTT9B8B/y7XnuvvbHTaxRm/dB0A5ppvAXf6BDFtdDRpEmIGws0L7KgvwO0WAdN96g8dj0gBKfJNrbmEEWFDEgiPeE0Hf0sqkj1pD0SvEeV3hhhBBr740qWJ09kOQFmrTCRPsmz1OyALN70po5cPwX5VKsfUn46RXQ/Qx0w9J6h9+HFKcZd+g2q9UN5DX3CzSxevphbXwUcYlAv5k51szC3QxWJvr/iCZ1Qf8LTut7T3u7+of4wLvhKZzXjvIxxQT6+v/RFnNHGzuGRKGuMgzHkuEFufetaegMZMwKcDT6/OQOMsoZEf0C9PVmFF3Qf6KXX4+9H/Rv3b7dxped3ytHzX32d8zJcydobtAkzvr+TxeNzc/sC3iDVyxFP7mzPOI9Zr7/ayDPZ/S90e0sPcGmryPQtfr+ox++3rdSrFLdYYnGqjlyvLKNq9fh/gR/chuoA1ZgNg43/U/I1AUHFcbRRtGNhrdYACopysgwAtQNCjtcFD6EjxH6xprkEu3Xs43oe7Uvdy9YnO7yJ3Rle6YhSbFGSJhumYHHae8sVKNRpxeUnwIe1F8CXevsX+l+iMj8P93XJ1wAAAABJRU5ErkJggg==',
     alt: 'RS'
@@ -1520,7 +1520,7 @@ const RS: Option = {
   label: { mainText: 'Serbia (Србија)', secondaryText: '+ 381' },
   value: '+ 381'
 }
-const SC: Option = {
+const SC: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtCAMAAAAun0N9AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAByUExURf/dZPj4+P7bXgOFRN0sLAdVsPz8/OkyMuYwMOIuLuw0NAZRqAF9P/T19QVMnwKAQQaNSgNGlM9PPeTTXN3r4MnGW8TcyMJwT7uYgS+eY7y9pVmzgH3DmZ/Ss8GuUH2ka7yMRDt8hx5iklyOcqnCZpy2Y+zj/gsAAAJdSURBVEjHndMPe4IgEAZwNBPIyvyDWm1ZuX3/rzjuOBCVltsLGfb4u8Mytg3kwQK57UJhIa8CXO1W+8d6HvRfAc7X++d7zvmOv/TfC14JDgHDPQtrtqJ9VY4O3m3gnG2zbOuPbb/kfBJTiU6YZ2FmWbzkO/4yLBsDFRbt45b/Fmb7bqlI9Sc+6Q9VBhbjGLkQXH/9wgzBhb9ceNfeVInvQghf2Fr2s7kftIxxQgl2d9f78T/T/ggTho4iiIf45stZEQojaoo87L5xEzfxLl3NTG8zMxWzcWgu8SoJUzok7eddnaYMqdnE8UG9MWqE0jA7zAQN3jTHfCE0v59y10sRGEZjfxNd4xmP/ZWBlstxBSeXQ5rOvM437VyXqBJpI6QH4VCOeuKfsUtVuo7zlJcoTYO+n/FQ2qlGXwDWh+otbxs0EcwIj9oXVGFsb3mih0w8HZmAhQO8WHGk4dq3GiUWu9E1EfV1gTXD9kVxHEaeeL1pdnVENHUDT/T+i0n7e0KRNPUBtG04ba/7Q/eiGBy3G4aJL6uDYYXZgJp1t1sof9XYH/Iw/DbFiX7U7IUHPaLDxNaf1zN5teCkD4Y6TetDo+1Jh3ntb3NNMRbeTZqP68nGePznKF+3DbaJLKICdfNxPvlB/5xzrSfBIvXnzDoP7avXGu11aa1/4n/G6m6u8XY3OGAufe/xrg5awrBya1hswFeO+xpud2NzerGC/j3xctRwu5tVYdC+xZ+bdEM2dwfvPeAH4KThdvM83+erwwp1x0cNnozN3yz64d5e4KtCuKfkONeE9f31vP9/fgD6mWA0qzl89AAAAABJRU5ErkJggg==',
     alt: 'SC'
@@ -1528,7 +1528,7 @@ const SC: Option = {
   label: { mainText: 'Seychelles', secondaryText: '+ 248' },
   value: '+ 248'
 }
-const SL: Option = {
+const SL: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAeUExURfX19fz8/BqE1xZ9zyy5QxJ4yC/BRzLHSjPLTTXOTv26ANoAAAEbSURBVDjL3YwxbsMwDEWpG8g3MKILGCa8ZxAyBxC8ewikNZOcsVs6du1t+0nFjtMk7hIURZ+oz0/q2/S5zge9r/P2c2A8nc7n8SHycqRxnSOlPKYEl/WKK00k54xAzCmCpDfHqYmklAaKBbznGK+hiTnwjIF2Sw43RGy2EvAyqUJ2XkSRYSDv/cHP7LQWbMmv84pAtY79EwFbWVsZFekGS5hKPJbWkjGmNGu/O30jBY5IVnCEVhwWJSWvZKSs0bxVX8w/YbNO/RsBt2lxoK1TRVuUqwnCDuvrZaninWuImZFQvdyWuZRQE9/TTgb55lFgSUOBOw4BtmMOsDrKHKS6hvoLIfRyusWR7Z46Ad/0/V0C+34//+EJLwh8ASlUNKl6yfZiAAAAAElFTkSuQmCC',
     alt: 'SL'
@@ -1536,7 +1536,7 @@ const SL: Option = {
   label: { mainText: 'Sierra Leone', secondaryText: '+ 232' },
   value: '+ 232'
 }
-const SG: Option = {
+const SG: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAhUExURfPz8/j4+P39/dETKNYYLdscMd8gNeiMlvPe4OBNXe+zumabQjEAAAHFSURBVDjLzY1Pa1QxFMVvFJm3TOYTTN7GLgsJQncDuUF0NYvkjbrqwjc4u4EO0tlVkCquioq4VCnUj+m5yQwtzB9cdNHzXm7OPfeXhGaHdUr3BMz/mi8/9gB9183mf1p7s5qvZj26rt8o5647pdzn7qodve9m745yzhJnmchCM6Eu968ftZcYvTqCF6RIEEATQn3Tajn3YpW3VYCv9qn4xDuBlNNv8yRPBwnIdJCjoKgplTqhmPIHc53GOkdGRZ4iMpaaOI6JmZVZxucDjpGnA7SMASdUnEgAkgCII9dhrEis0URukCd4hyQsTyzUR96nAlwRng6LJS+WAYbZr6eB/ZhCCC+pees9PWb83vuA3LvgxfIxeedOLujSufMztzhzzgnhHM4FgY4J1v2k5jtGm9zJYZkiAwA9+0XNzSq4LYVQAXdy/vnTN7dLa2C/7gNoD2v0IAB7R+2ta9shZC0A2Ybmzif90FhrLPyIhsaUXChTljRlKJAmUyNTuE1BVK0twCH9B6CNwq80ZBQCeFM2GSu5QeYIUFSFlEhvRKQVaVLYxZGMqDZwCEjG0iOgekIukJDWGxVqW5oeki7K19xa+IZKhO0fffcNLcvew6MAAAAASUVORK5CYII=',
     alt: 'SG'
@@ -1544,7 +1544,7 @@ const SG: Option = {
   label: { mainText: 'Singapore', secondaryText: '+ 65' },
   value: '+ 65'
 }
-const SX: Option = {
+const SX: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtCAMAAAAun0N9AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAABaUExURQExiQY9pPT09fv7+wQ5m9wiKe4qMgM1kukoL+MlLPnaO3a+7W225ffn1O6Tl/K0t5epzet1eeZJT/jkgitVpV19uczU5PjroqJyj75IWQ9FqbXa8u+JOu+KOkjDcuQAAAIlSURBVEjHpZKLdoMgDIYxygoUxc5a7Xr2/q+5hHDVnVPb/lBMIF9CqsJ9fSTR9t+f8W17+ZBvqQfFv3oqFczCriM8jz3QOceUM5mFXUcwjz1w2BPtQyLfOvWWEk896M2h3jpabWMy38JFaa384KmSX4/SKXjqgSkM0XFlBTvN+NAVjz3oAqgCYyatq7Q1jz3o15T5xSyhh43kAd4NgzFmGJzvQVbDpyhcWfoifj3q1/zieqEeUqAf0c57hcXfv1rPrFU78vFAUpTkYJlcfkYLDc8P+hylBn4PHJMCs5tScxrkoeT1QBuAPRyTgFQfAk870LqDfKhvLVa1Zxvq4w2wh2P1ibf2jFUxi68P/lM61APdH4i3iOAqB/A83aAdf5pnEhTn5Gjt4/GwdpQusD7H2Pw8GYJCQd8t664BPPxSfRjk6vGVr08Tf3PzXFS/7/Gvuq/jepcXQIcz3K7NMb43ZgJHb+vbwWRMTy3AgbtnnqDe9dFEzU1Hgxa29sOfIU81UdMUnrhzu9J5x0uXrex3nKAjHhaTtdDdM9zEWeZocibPQz8FeqLLz91xMU8plmXxnePd3+GjRtw80eSRDXaSH8aWn2sUVaVJ+z4jLjV/u3qgnPzk7eSkzbr+GDb36v71u5qfT69L1Hd/nx/RxpHmf2O/wTy+9xldkaPK6JIOULRR4e4BDkpGcPYHKS3fPR2cYtCpSpCzVKm5/iw+EN/9fY0f0eIPsVE+Oa7EugkAAAAASUVORK5CYII=',
     alt: 'SX'
@@ -1552,7 +1552,7 @@ const SX: Option = {
   label: { mainText: 'Sint Maarten', secondaryText: '+ 1721' },
   value: '+ 1721'
 }
-const SK: Option = {
+const SK: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtCAMAAAAun0N9AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAABRUExURf7+/gpDr/EqNwtFtNkyLNUvKeM5M/r6+vT09N01L/YzQQhAqgc+phNSovBRWvF8ge+YnvHBwZ602/nj5LrJ4tXd63ubzU14uWtAdT5Ii59KZTrvolwAAAInSURBVEjHxZTbgqsgDEXjFagWvNv+/48OIQRQa/WceZgNU4JmZSPiAPyxBHaBwjHMOeTYXd3FyER0o930KC4BKQLHCiBiInyoe2l0uQ6SdE0ctwevSrqPnef8B5LkEj5vMN6S3sBlcog/EMvLkzdE5dnEx8KP7I8hwGgeW5kRC4hYYl8h5YXQj720gCTlqI1//ziqB3GXF4EfYQy8uOsvoGPIPjSHnbjrLwTz2vL6Jl+wFvYf/bkaPQ9Lca7ID+if2xYO5cNO0H+4y5voL9Afq5l/4S2A0gKPQo7++Vc+KyDzYt5BlneFvH92LsiKDHuWTcjTArQ96BphG1t+yiilCLlFiIM/8hrz+cuywnqa+HP/Hd+FD1qKjvbC8032YYSGNUvvHz82g7yUc3Muy9tCxEudkyyTxnNDGVk6eir1D0xu+XzDf/P3mk75aYu0cWwbaFmDlN0H3u7H0B5FdNtGfpVyZGhaJg5HKdf2XJHHDTDEvJ7P5yvYz803vg4y9Maq1/uJer8qepum/qKEr3ub3BFMeuNh6uu7vCswJPxwideg9gWmgE8BV67XiicbXqFq5a7jgufV0euMj1PTHUWdf6LA32G54z8s6zK4D0CF8iqOddJA7WTG8L91NOpSe76sdO/xXqvygi4tX+5bqbu+7zvt4uTGJocDKI+qSOW5VIig/J2gtD7c941WE6dJEkfgVuoXjAF3foqqSq/GZB9Amvgfgup3+gE2XUlnj6A3YQAAAABJRU5ErkJggg==',
     alt: 'SK'
@@ -1560,7 +1560,7 @@ const SK: Option = {
   label: { mainText: 'Slovakia (Slovensko)', secondaryText: '+ 421' },
   value: '+ 421'
 }
-const SI: Option = {
+const SI: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAhUExURf39/Qg+p/j4+AlCrtcwKt01L+M5Mw5HtEp0w7PC4uLn7zj5yxEAAAFXSURBVDjL1U6hbsMwELX8BbX8A1bQVNQowIMFCS+wjUtcPCmgxR0aLdpoSNW/3Ls7r+2kxhoo2fP57t2750uU+g9wzmnltEaiVlMU5qQlh3aNxgFcwy16khw8rsjk0OLkhiUUhTFLN2hXnnBVTR1Xw+Vrqho+x+5wqhn2wHHOMOGMwFHoEocJvrm8bvB+9DMbOsHH5b17hJXy3nej91Nz9jdA6UbGW9lwaKaXmQ1SX5dN3bCfpnPVUPnJVmA7+wjtShXSGkqdcPiRidiFMshGthgh5QFHu1CWZINkSKKKjGpZog0MKxYa0ry1IlojBmt+ob3jPxtm8QzDro7t8wwZJ+040QVNxRBjTCnmFHcpZ9AUqcPNkbBVJMXSZ+EUmbWcNyrW8RfDEIeACEwoR5GIh7hWfQhhGDCiIre/shDWauh7BKWhD3wx58yxUWUuuKMF+EQdTzB8A6kdE6Q+QWmBAAAAAElFTkSuQmCC',
     alt: 'SI'
@@ -1568,7 +1568,7 @@ const SI: Option = {
   label: { mainText: 'Slovenia (Slovenija)', secondaryText: '+ 386' },
   value: '+ 386'
 }
-const SB: Option = {
+const SB: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtCAMAAAAun0N9AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAABRUExURQZf0/7SNidoOwJWxCVkOQNZyf/UPyJdNSRgNwRczihtPv///97DRRdo0cjc9EWG2n2q5q+rQZehd1aBmjx0PKXE7l2BOfH2/C9usYGUOmGY4MgZbBcAAAIaSURBVEjHpZWNdoMgDEYBwYoVtXVdZ9//QUcSwo/iaec+WktoLhc3z6kQp7MMbduept29bf/Bozzxsyu+3ZTb2CCPvHvOxdnK8lAe+OkxXp8P77Q4slLA28ZBK0neDt+w5sarzws7wE4lgrxGx8alTH776n2L38D3P7AbpVRC2GpTcnnf93Ti6/gcoX2Cq6Uyx+Id/BRy5AGYrJsRv75cLAOZ2zdy5il03/7vcJSdvORpg2N8L0/87OD68LxL5Vt55P0DAx/jPI2vVL6VI28sPzAWrC6VJo4DOflNeGCgEbq5xOBakssgV5nfGHxgjDUhoSS3MSSXJFe9UkCrMAQo8IEx8bihDLlHeliBRo5xJaBlmoybI8ClhRfKZbjzhME+GBGYxhThciFatlKuKlEb/1F+bkDiDiBX6fBq66+F5DhWdRCxO3KSB7eM8hrfGB58wb2aBW+6kGul/SuxUIukbTyF8biXS9pADjs570N8CuxAR1hayfpVxzCD0/CRnb/hA4AcaL/F8AVUGGkbHVdyf8gy0MEl/M91HrWdqAoPcrJ7eQ0uFsRezvZ1R1Sy4e+SU8o/40HOd651p7sOe3DSlRyvibr8GzvSyCc0C9uIurzLA92d3s8hoiZnyQcRO/ntI67kC/nlr/xpOfG5/JLbfRHrfJ7X/hc5k18+CnDAQ0Qupy+pgwSROIr4q7zOB/lZ/qYu/+HPyn1+AZIAQ3q7UmHOAAAAAElFTkSuQmCC',
     alt: 'SB'
@@ -1576,7 +1576,7 @@ const SB: Option = {
   label: { mainText: 'Solomon Islands', secondaryText: '+ 677' },
   value: '+ 677'
 }
-const SO: Option = {
+const SO: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAYUExURUiO3lCU4lud6FaZ5fb3+Mfb8pi/7Haq5gZzvxcAAAF+SURBVDjL7VDBTkIxENzGg9fWGrwSinf6NnDXFLwqPOOZyAdIwv/HmfZReE/wbuKEtruzM7OATH7HWP6MIFwbN2EsAWguI4RJA8GEVVad7hCOvpmoatBGOUCpC61oMNCZQKUQk6FregrAOJSEjFCe3ed5BBO0j3bTa8NQ0KTnPjEULNLqgiCqx8GlOk9Ldj4PUXkIvPesokZgmlLAo55NSeDru6NxlxJ/ho85B7CC2kXvvH98B1JKS77R5wznkACZY+3bVLF2tDHGimPlkOBGdb4CCQLgClfGzrvDUbCPJHMuEs7QLdlQHQt1EjBx1C2ohBsklIi3c6YvsDnh6brgIQteBgJjbHfM8TuYCmvFOswgxbH3KW3xZxtHMvuRQK+1Rvg5pA9326a9pVlygogF8gZ8dstozDxt4UBi2SF1Ga72C60cXm1hCJESTkru1pn1aza0YsQdeNiLveENC1+aOMoJmTVSoqyR4hcyUpCVtesoc+Sl3sVozQ/tP0S+ATzdlwX4VebIAAAAAElFTkSuQmCC',
     alt: 'SO'
@@ -1584,7 +1584,7 @@ const SO: Option = {
   label: { mainText: 'Somalia (Soomaaliya)', secondaryText: '+ 252' },
   value: '+ 252'
 }
-const ZA: Option = {
+const ZA: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtCAMAAAAun0N9AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAACTUExURQKOWwOSXgOVYfFKQu1GPuI8NAUln+hBOf///wcrsAYoqR0dHAQkmgCAUhYWFgUnpAajavRNRAWcZQKIVwQjl/u2Gv68Jtnr6fT19tiuJ6qtNSObaXikQUWcTZNuHTcuG5PQuvvT0bTezy2sfk6yjm6/onmLzh6PVceTHmdQHu5nYEs7GfeqpvSMh0FcviZDs7W/5cBUmdsAAAI+SURBVEjHpZYNn5owDIcjKC9WAeFAUTlPt+H5sju//6dbkhbIbegV908LbcoTaAL+hIT1KwiC34snBJpPfq6C4LpwuwV34bLI92Dc8MmPZRDszdoAtbwOcHbdsTEhnLYeOf7CJ8khCFZnWv1XrhzKCySfvFEWx4MEaxmAynBlv2/6+OvZ72baA0W5EQGoDHvXR+lLfT2Uc+0zC8gXRZWkreks+vKafhk/vGKAbWpkAqzOvq1AnfKiWPPNqeHhQFn0J3dNN2Og1O69wCSknagMV39C8kWfNB6/meMRebWjPVQiAJVh3yGPRLxSJ5kElC6DPa8uJSZhkzpsKJ1Fe14nAfeAPCpNNxjARg2vFBeSWA6RpoeBvLpQIZ1ObwN5vYejM0iS5z3k1X/w/DJunZGDbdTq77kURIaMVNQWsv/S3hDAYMQ0n3f5/QD9PMnEQNzcH3rMECM9NF7DcowoOuV5voUhioQw/3leAUalNpjfved5eQR48v4XfPY1ejJqeLB7/1r8lbeeGYOR5fvf4PTsVcYC7Nbfn9l6ic9+bOAM+Pv/CL+X5rlsWSf6/Vl+hrY8bb0SOP3+3cLQkldcNoFT4uvQlueyETafU8uAEl9Pw6mVgMvGIEbAtuHMTW0FtPU535pF+PITF2JejtvDXb48GpRiUOJv09hesJ4LUeLreIhA4pj4Ve3FaB51c+J+T4LP6P/PhzdMHX/kzHkzNo+6OXEnr164w1Pib/HskbweX8NT4uvZy2yoQCT+5Qn9AUnKcksZpMd/AAAAAElFTkSuQmCC',
     alt: 'ZA'
@@ -1592,7 +1592,7 @@ const ZA: Option = {
   label: { mainText: 'South Africa', secondaryText: '+ 27' },
   value: '+ 27'
 }
-const KR: Option = {
+const KR: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtCAMAAAAun0N9AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAABjUExURf///9oZPtMXO0pKSv39/fj4+Pv7+/b29vHx8fT09FdWVwtBiQc7gLy+wQ1GlNzd31xcXOzn6M/R046Ojqenp2xsbHh2eZskU9wrTfPFzuNWcUlvoTo9gLwcReqGmnuWush7iVDGKzgAAAK6SURBVEjH1VDbduMgDMRxMBeXAL7HSZP//8uVBNjYpT09fdsBYyRmRgLGGLuyK0z2K3zlHmM8R2DuN3sMYphyaWTbVIOSjB3yR1Fmcz3YlrZfaN9oC6SS21/wk76BgfObMzpmzQGdaMIZ4to00WL/iy7sE4ttESaMGy2db7lcC9OOzjTJHQdrUjWAHB0ci+aErSEFBdwoU2+hfoZB61EY18umBNk7I0anhzyZ6a/WaWfUqLUp6g24K1icLeubXuuJelAhvr/WpVrW1z12D85DM2ndl/Wd1tp6F8rzxq9VwurxnGNtb4HVnfUcJzlTDxzGfal2LHekZAyi4GC0UjyAe0fuENyrI+48dth5ekGgkJAFLcFanm7nl5N+8cjH2kgLWpQyUoYmYJmgB0ys1RkrpqH2FNgJ7BgqY3ih+3gDzo1Rkd1s+j3gXAjavi4BFQ1cqsuLeIIfwXgJa1ISPud5vlzWIpOBoYCyyTjsl8uOz+cN8JwX4py5LMa4R4R9Jp9vEXPiHbhM8MLY638m+e0pkk5kTCZKmI7NEx6x9d0FUda/n3OUtwm3d5F50svB4K9r2yc8uk5aXDo8MIM865USSsCk/1hrCxv+aD9amB9b+fYBHG51PZ70KCQIZS3o6x597I3UMHDCd7NYo69BD7S9JiMlbYda+66u6w5T5mMHmhgsQade18NWlPQRVBsroF6YNncwXxnBY9cLg+4WlkC2j03+sJiQSLDdRjjXV1NdT3ALuEaIuzc+4+PdhRAah86JVNZTbemQFSBlWgAcnJ2nHr7R49UcdNl7JVNKbovyfXDv8yMGP6lokbFDSsQ18cLn89sFCugJwWSoXUcNx7JSZmp6Eh0KbBoWiqfYeJW89n8Ob455tkkpQ88lUy4/i4MeNMuzjCjlrj6b5AitneoXaT9CZfo/43/X/wMWdFJurjOsMQAAAABJRU5ErkJggg==',
     alt: 'KR'
@@ -1600,7 +1600,7 @@ const KR: Option = {
   label: { mainText: 'South Korea (대한민국)', secondaryText: '+ 82' },
   value: '+ 82'
 }
-const SS: Option = {
+const SS: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtCAMAAAAun0N9AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAABsUExURRISEhZXwCWTPOEoMNgeJhoaGtwiKhJQtCIiIhRUut8mLimcQCqgQyeXPiKLOPj4+P39/fPz8ySOOiGINv3fPx9UkiQmKk11m7q4YyCCXF1BhZukchYvV4am2ZE0YLsqQuHOT6aKZNLc7ens8EkxiqIAAAHaSURBVEjHpZQNc+IgEECXlI8Qq716YqJW7bT//z/esrsQktq5YB5MWMi+BcyMEI7tL+3XF/KSAOWO7QpAKfWx0lehNTE2RefBmHFKsZmmGfbxDibSyqNNQ5tCiducZWSNfbyDqUSqJF8F8xTZ9+4IiAFcM5CZz3+sqYz/GBNNbjQp5rOUwlc+QD2qLODaVb7yeIc1Pla4vv2pAXzhUlNfbxVA1JIpta7vywHvRc2jUufuZSlAW3uqIjWwQLgv9hW7amCXiuExbnKE7qXD/jiOMxDNf2KB/tLzQfBx7hYBXg4/HIbh8OkzeIcK3/vLAelTNb6DjRk2NgIDijsrMkbi90PUi+2JM1usWnHHehEYN0eGRwVsmZ/pSj/+dFTgklUXdW3/B1BmTMbb9/EDOGqxws1abamE5uBBDM5LBfyAovJSuGtNuQQrP2P0XezODb0bCzg8O8u2KKInMZ0DSI8t6VzuppcBvHl6eH7Q2Rf6yUn3QM5aV/hz/LXm/2eqYq/8/5nvfv1+r2Hun17rmPqhVp/6YfO6qaT0T5t6oDj79gmyH3jebBvs41iuzePSPzWJ7Wycx1NAzt7sm6cgP+yfJvqn/Y7Y73gNA4rLMb1PaykP8Oy7FUD4u4p/N9tgowyLmScAAAAASUVORK5CYII=',
     alt: 'SS'
@@ -1608,7 +1608,7 @@ const SS: Option = {
   label: { mainText: 'South Sudan (‫جنوب السودان‬‎)', secondaryText: '+ 211' },
   value: '+ 211'
 }
-const ES: Option = {
+const ES: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAkUExURdUSJ8kMIM8PJNsWK//HBv/NIP/QLf/JEqcaF89rGuuiHv/ljaRQqnYAAAGCSURBVDjLrZRBboMwEEVHcIHCCYATWOICWVhC6oqNcZpVNkbqLgtb0BuYrFsJcoLeoZfrjDEkURKSBU/2ZMbzlKzyIV+GwVMhZI48JPIQGNac+QoIc5uQ2tBd9zrV0XlCEpyr6y6X+JoFGREkmSfILkkgW8YLaZbFvomvhTeIiDiK0uguXnjMC0K9zH41QVl7fCCouq5q9WltV2OrRn1aq7oEpUQlqh1+gxDKHTFVgZs94KQ+Opqwoq0IqlWFXlUCrbZ2NwynrRW3TEJrLd77gpEShZ+/XxQkTsIg1OAVsgQaW9t2Q7+1ZmR0qDGmBCmd4H6iMY2UjWwaKtLQeIAGQaG3PQrEbCCmmYSv47HzwjWz0A2PBN0UurW6t98oFDhNaFxrfQDOdfF+4uPRBdda45ZrXnBiA+PnLQUdXWyAL7OGsEqAhD488DB2EyDgA4T52HBd6OsYLE8IfGKcYyRxT4F7wZv4xJgDhOZgfnk1QDA/0vntMkLSZPr7n/MjXjtA/gEI0UkCY7aGtwAAAABJRU5ErkJggg==',
     alt: 'ES'
@@ -1616,7 +1616,7 @@ const ES: Option = {
   label: { mainText: 'Spain (España)', secondaryText: '+ 34' },
   value: '+ 34'
 }
-const LK: Option = {
+const LK: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAnUExURf+6Bf++Ff9iCwJeSKIlL50jLpIgKpYhK48fKdB0HLdPI+idEvm0Dwp3QEQAAAHZSURBVDjLvdK/T9tAFAfwdwIpBBjuVDwAGWj/hf4DRbKHlNVPFj9mu+3E0PNTBQNDZWWMJdKoFUOQCAiRAQ8ICRiSgYH/qu8Cqu1zkqpSxddSLN373NcnO6BmR8J/AOvvOe84b5Vr58qANzPAx78B1wabq8VpulIFjSIYVUHzqQhOjt1/PYPHyYee61caeM0gz+cg/9oAfXT7Zjg26CEyEAXge/7pI+LOL2TC2vPsBsTMwWam+jsdnnOkBJkDwSvKSfkTPe52cJxqw8gZMFjZW/3Zn9yQOX7GYFuptZcGWW5InbShxA36Vw0DBJQbAtx0BlIqc4Ksr7U2j5jLGwLUe2t+KsQxYnNklILCe9gA09A46wkh+L8mO9wAnLxB8EobpAlvFLdaB3wGMZc3EOmhAGlOxqYbBCTtBrrml88XR15oCkDaDVvPc965HJAuN2xICoguH8x2RnXimKZSA+ebGbVhOP8CwAYENaJ96NWmga9wS/RhaX8q+AJdinv1QwaxDWKTA7iI6XqxV4vjKLJAZBoO7sIwvD8fdKOo0hD+SRQm4/tEEOUunNowDXx+Kk5PftggOVpucZLn538aLiQWaB3VW4W0F1o2MNuLJJkASvluwNIMsAWvkd8LFTn6/z85eAAAAABJRU5ErkJggg==',
     alt: 'LK'
@@ -1624,7 +1624,7 @@ const LK: Option = {
   label: { mainText: 'Sri Lanka (ශ්‍රී ලංකාව)', secondaryText: '+ 94' },
   value: '+ 94'
 }
-const SD: Option = {
+const SD: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtCAMAAAAun0N9AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAABRUExURREREdQYOvj4+OEbQP39/dsaPfLy8hCFNRkZGQ9+MiAgIBKMOOcdQiQlJA53L+QdQeofROkeROkeQxNIJHdUO2Sue9Hk16DMrr8vP7UqOswdO5Wl7YMAAAHeSURBVEjHpZKNuoIgDIanBkYolml1zv1f6IGN8aPY0Xq3YI59bPoE03Adr+N4G2/I9Xa1nu98vowdoNvX2I2BbuwQl0tjPlvGoLWeqKwbusF6twuudXo9ieFTUG/fYWgG6w2SxunzMu8gvR2h+QzW23fwGYHe8BqyIj/16aDX6iWQBl3wKjgbk3QJ5aPejZDWl2ORX5rp9VSJo2R6rX5Etc/IM33rfhOeOKiAnzhVZYdVZf+/ZK2mffrNCkOxz4n8UICXU38XmJ+qyG8xC9y3xRlohGo/0LYspZ9jrk97AdbyDTTFY7++DeKA/RjPg/oV+A41+hvqTb3Wj9py8kZ+wjBlU28veC6LiVNiVq/QgqskMcuoSbdCf5ZQzI9z/R+glK8Ne4yxP80gaZFJjAtQsXeGLnhKiQrafIx7TIBKL0jb64ekUqz1sqiUtIHaYJahKlCIN/Q4e04tS5T1OPsuSnozS3lMbzL5vd8PWK1RuHgzfX9IT+2Nn8E2v/SX/YAh/B3mvqroL+ULKQ88NXGk9bK/Ubb5ORr5Os6M9Y77OYNU6zgDTBh+s+YdsNH8qN7KAc3lOF5brnVG8jOAjZ1zEDM+8rkEfMTm/JDsSXTO1miYcx8OvoBm/5z7V2r4A4WSTKr9rmD+AAAAAElFTkSuQmCC',
     alt: 'SD'
@@ -1632,7 +1632,7 @@ const SD: Option = {
   label: { mainText: 'Sudan (‫السودان‬‎)', secondaryText: '+ 249' },
   value: '+ 249'
 }
-const SR: Option = {
+const SR: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAqUExURcgUOLoRMzuBQ/7+/j6IR/Pz80CLSUKRTPHx8UGOSkKPS/HMQNZpOuakPtm5xcAAAAE0SURBVDjL7ZSxasMwEIZPc1M47SkEowco9AWKyQNkMXjMFPDWLZCpi0Bjp4D8AiHZOsuBdE6Hdu7L9E6SG9cpcgtdCv3Ap//++yV5EixXq81m2SH0rXsH1tq63u22Wxupa9ahWvsA1Xq9ICpaq8pa7rp6Dos0c5imuQU1zaeKVM6t6oxUDGSZyvKMK8GiJegJ9B31kfKqG/iSCdykuf4bgZ8yGgpcDAWOh4GAe+k7AlCEhT4YuYYacrhHIQT4KqQkiXjpmD3LCAdaKCOOHDiwjB4iSEJIPkNKHNO8wdjxQNBFfuI9lJKOePI7uOOrwwkn3px7/WT0A65xj6nAeC+vmmSAfuA5ecUZCEVZal34elJtLYoZ+IExpmRLk9AxzK7WMzCB0pzDkXswaX4j8P9Gfe+Negdx9mwND/w5AgAAAABJRU5ErkJggg==',
     alt: 'SR'
@@ -1640,7 +1640,7 @@ const SR: Option = {
   label: { mainText: 'Suriname', secondaryText: '+ 597' },
   value: '+ 597'
 }
-const SJ: Option = {
+const SJ: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAVUExURfA+Q/j4+O81OwYydu4wNu4yOO0vNdWmoZEAAAEnSURBVDjL7Y+xbsMwDEQFfUHSNpkJAe5cID+QQfIcGCbnDpb+/xPKI2WjTYGkQ1B06BmW7qingx3Cqv3zab8LN/QP/H0g6kOBogPx6pQIBMW4NcSvQkO0BqLeQIh2LdhcnQ16A5EjKr+p800KfNfuAcDptt4eAPzCX6SuAcBTuhZtQLoH/KzhcLdhgEtT8l0dhWGVN0wqDbZPkzW47cCgLoHAjpWCJsbD3qCJgeMSppeADOLVAKSJu0ABMO8NR/cDb9AKMEtvuJIDM5feMJfy6VTTJeQswrXWAuAllzLPIqIvq8v5HEouXIVltoZRZ5lxQydqZzTk1rShWYPUmgVZpIkeaYMuI9JiDU2c1k3qYsC4LKO9/g3wrTVdq1WcQ4NW4LildX//AIP0spXA0iTsAAAAAElFTkSuQmCC',
     alt: 'SJ'
@@ -1648,7 +1648,7 @@ const SJ: Option = {
   label: { mainText: 'Svalbard and Jan Mayen', secondaryText: '+ 47' },
   value: '+ 47'
 }
-const SZ: Option = {
+const SZ: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtCAMAAAAun0N9AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAABUUExURbYODUNkwsQSEckUE80VFP/bAUFjv0VnxUdqyb0QDz9guz9hvff39xcXF//fHv/eHf/fICcfH+/l5cs9PD5fu40UE+nJyc+nplg3N39/f4yMjNlubWfH0UcAAAGGSURBVEjH7ZbrjoMgEIVH6WpRvICtWvv+77kz3BRF242b9E+/mQoM5wxq0kS4ngMitfyaY87juh7480Ou+QsgPwck54AsSbIk0yR2vh4dyzpBc8j2KbMS83gPSkNRFpjlITENFCG34oa5ne9poG3buq0x27dYa6FumrqpPbjQUK2J7Lm1m0Mze5YsdbF+rg6Xc/ynn10Y5ns+pwVmRlqvSGEcpRz7odvueQ+wHdK71DyEEOp52ZPt+a1bykkI3WHPn8bgo/ZW+BuEYWApBl0C0K83aM7cHNBJQRdl/aLvrIX5MP4Nzl7RRXhUF9OubhwTrLWa1FSN4qFf4aoB936e+jCZotOghKomsbiH3mu0nAA7crtDJdeAzh+C871GyylgYXTc/R1U8+vT9i3AY0XfYPH6+o6/6QfwDUY8FgNz2EqBpNwH6AK56RmM3zw6tujsnteAnc/MVT3qDoM+Xj1tkc9ae2ZYX7bDDlL2qsf/X1ANNYf8Qfoxfs7xcf/3++f7/XPi++cX8w1M+KG/FuEAAAAASUVORK5CYII=',
     alt: 'SZ'
@@ -1656,7 +1656,7 @@ const SZ: Option = {
   label: { mainText: 'Swaziland', secondaryText: '+ 268' },
   value: '+ 268'
 }
-const SE: Option = {
+const SE: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAbUExURQ9vqf/QQBJ3tBN5t//NNRR7uRV8uhV8uxZ9u31PY24AAAFWSURBVDjL5Y9NboMwEIVHPkFo3Z/lyFwgwmIPEgeIhEy33UB6giTL7nLtzhsbExIly2z6Avabmc8Ph86Hw36PtxB9nI9H+Hk9nX5pmiYA0w+A97nK+qZhHINoGAB8TuM4DFNeQ9hRSPoC8BYuNcjhBQh6h3CthwkZ6Hvv61qBvq6XYS/VjnxUBF5lBx47cNsZ8F4T/LUWICXcB/waqKqyxLslNc65UoHoswCoqUQAXuYCcqWrHJODgWYgR2ibKcflhJWeAhSPtXkK0FrZdYl7fOZ9QyisLRZOh7EUmxJaQVoR1kxYmIZgok+xCsYDsukl5RSGnY1fx3k00iWzOjlyUWYxszPGMEtQ1/BazghhDBliSehs20glhXaMdmWORzxLgJUE7bD+0OWUgDuIGi3znFICbiKAbdvGLC2A+SvAU0Kcs7n9OwnghFwQvALoZnCVcF//G/gDH6Gx9vs7Oz0AAAAASUVORK5CYII=',
     alt: 'SE'
@@ -1664,7 +1664,7 @@ const SE: Option = {
   label: { mainText: 'Sweden (Sverige)', secondaryText: '+ 46' },
   value: '+ 46'
 }
-const CH: Option = {
+const CH: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAYUExURf8GBv8hIf8sLP8TE/r6+vT09P3X1/XLy9GfZVcAAAFXSURBVDjL5Y5BTgMxDEUtRYhtnSDWnYoDTBRxANSECzQj1kjcAHH//m9P6FRCrLqC30kc+z/blcPv2ss/ASI0HXjhttomj3EnUREVCeNjrfV1k+vECTpFXhPiA4C6yaPuhVEnjcr4ZMDIGXaiJquo2oRp5CQAREcs+opLrjomrNoCejMgacZP7VwBGU7mBMQE6Ufd6B0eiJR2kmEbvfXri/XAw4qUjUm191Y7zA4dbQGuWQrZnEtqsHAaqXZMuaCWy8wJ/uytNZzel7a0U7K+ghVwaZe0LAs8zgd2LJRNKIPo7LV2gCfrR53/gQRkVrMhWFFWccKqL9+xmD5/AKhnmleVWwAzVQK+EGYD5ktpLiK4wBUL4TIhrAQmsDX4BAdG7mO4Igg/6s5WeA6KEXIEjxAMWH0arIMT5/G4h/8mYR0p3idkxR8e/fY4iO+iDJT0fFUO8od1BtE8r065EGLKAAAAAElFTkSuQmCC',
     alt: 'CH'
@@ -1672,7 +1672,7 @@ const CH: Option = {
   label: { mainText: 'Switzerland (Schweiz)', secondaryText: '+ 41' },
   value: '+ 41'
 }
-const SY: Option = {
+const SY: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAtUExURdIZL90eNREREf39/fj4+BkZGfLy8iAgICQkJBCCRKDMtBuGTN/r5FelemiwiYbSv50AAAGMSURBVDjL3YwxS8NAGIa//IP4D0ogu9BMglDIcYNkKIHQtcNxQ0XpUtLRrf6FU+yiCKZ2FWwdSwfFSZeKroL+Ct+7S9IWNDo4iE/bu+d7v7dHG9W49B8KBFyH8HFcF+LqW1/WsCQzu9odu6C8CHNwItev5F7ilMeauMXh0t+iXs3mSoGVFoSfFrLStk7XC0Hd/OMFl9Xth+KpeoMYY2EYBIxF01mgHdzdmAQTaxBmbVE2Vu/ZTOe32WKYXbJAE5oXDG9KqaGxfZh6zeNlYedaHZ9ZHSk1YWVBmJtzfqGOGGeCM9ZRClWIYBwFCQR0oU4keoLzPaUeJRdIJQpS6BilaTZFovu7k9EV11u02mQzLjvP4v5cmnQ8j570u3DZJpkT4Tc3JuZ2MiwLX/CDwmE1B98X0iWDAY6+xozGupT27SKnn67TpbSaLrVaraRXYHUl6HUpSZJeUoBdeVqalFTzg4JvgceWpJhN1CQvjvUX+L7nezG+mE2AyKsRNLYLPZtFbNoaz6+RV80vFD4A7EBUcTVst2cAAAAASUVORK5CYII=',
     alt: 'SY'
@@ -1680,7 +1680,7 @@ const SY: Option = {
   label: { mainText: 'Syria (‫سوريا‬‎)', secondaryText: '+ 963' },
   value: '+ 963'
 }
-const TW: Option = {
+const TW: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAkUExURf8CAv8MDP8UFAICngYGr/8qKv8fH/f3+BkZrba24UBAusvL6nUKvQwAAAF9SURBVDjL1Y9NbsIwEEYnN0hyApJFDoAthNg6INRVN2QdRYqvEFGWsCkcoCAugjhdv88O0PATddm+2OPJzPNAJL9juujwLn9HeNvk237hND/3C6vdR7/QNBeh7gilGDA/HppmedznyKeLmhQ8iqLABJNrs2vAaqO1MTNbFGjVlouCYXX8BWHPYWZWW3TQZr+2pWittPaCJqOiNfBAg6CMUf4n1kYpM7JXauxSlFZqfuCfPOzp/hCsF3BLqQk+UxH9TACT5ScEDFOvhNP47DMKletVNrPZVVirbStkoMpcrCo7aIUbo0vPUz4IQ5bppC4+ThimoMKmkaaDpxNgIKD9akKWXhlI2s8vhOSObj+GEMdJu1M8POM4chUyELzF7Y4SNtB1uFocCmpsJFFEDSkXksjVIggtvtwaiTOY3IQHEhd7hOipEEbBvRB2oHFFQizBjSBgjyVGnzLQDQXAEn9FeMtlvM/p4gJeGMRPFVdlPxBP2DmDW4E3+gjlv/AN8O8Fk6YfvggAAAAASUVORK5CYII=',
     alt: 'TW'
@@ -1688,7 +1688,7 @@ const TW: Option = {
   label: { mainText: 'Taiwan (台灣)', secondaryText: '+ 886' },
   value: '+ 886'
 }
-const TJ: Option = {
+const TJ: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAkUExURdYNGs4JFvT09Pz8/ApoDAxvDg1zDw51EPrSUg94EQ53EPrknz5912gAAAFJSURBVDjL3Y2xbsIwEIbPb2C/AbIXJJbILJVYGJKdwd27FNZOicTIZClvwNQtgrFTH6//bycEqJqhQh36x+f77+7zReRfSInOh8WQ2eantWYohUsbZZJjNopdSgu8UQxtxGCkdaZVGmCDMoZ9HgxTyo3eyJU3N+K/EjCtPwGW0yoeDaxangngKfLcAX7p/JI3rrQBFT3H3hfinfPeW9yrFu7zwzmY1LPoFuIcUtI8OuvjwXsaWG61M4EDS3zRIsWDdTCOLYzcTCw3WVKAFjHG1vYtymfgojmAeNO5A8YNPwDf9QjgeD6eTkfEGeqSP5/omo75XZqm2e+7rrnotnqTZloXoK63292urhmDy8B2Wi8D8HqXR+B5WptHACEEmJCVXT+k20hZVWVS1bu+pEJZroV1qKp+mDJeVhgGPlnLyF89HXUNlL8DvgCJZho4eZddhwAAAABJRU5ErkJggg==',
     alt: 'TJ'
@@ -1696,7 +1696,7 @@ const TJ: Option = {
   label: { mainText: 'Tajikistan', secondaryText: '+ 992' },
   value: '+ 992'
 }
-const TZ: Option = {
+const TZ: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtCAMAAAAun0N9AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAABgUExURRcXFx+n3v7WRy/ARxyl3THISv3TPyAgHxsbGxISEiSq4DDESSGo3yes4jLLTCy7RDnMTvDNQ9jPUDo0IJqCMMKjN925PnZlKlhMJnLHRlu1uafDf6TMR367nCys2jytzMWhDFEAAAJcSURBVEjHnZKJdqMwDEXFEpsQSCGQbZK2//+X1WIJm2XKzLOPLUBXUl8KXdeduzPuboeefU4aB6+C82513YXp28P7Vf5wPuBOoemxezPd330sOAhD7Jr02/kpza+DX/CWOh1hFlNonow+57d1Vt+838WfwpZ1WPPN+JMAuDg3jsOx6tvEW26sg73b8C3m/6JN3/bx275NfFGcihPu9EYV6puMXuGinWgAJkinmKcKiW+VFYjXvQcli5ki3zBTAY35Hq55DsWqzLeK5SupUGkpOkaXb/Himxt1UKlQRVH1uHEH4z+i5jq65irrA+2rYeSUyx9AUJYF79yxbxEd1yHd5Xd9fbXwMRP65pbNE5Fvjpq3LfJFvEJz9A22aPEt7z/blvmkeU84+bYp9M3lzr2+2wVPvuE3HL3C9gDLGWAYncMUHn3Ovx0JfVM2riHxvXc0IPq24J8Xxq8DBGy6SRQPV8rIp+YR/+a5bg9LZrCSJ15+ZDr4lvLPnpuPHhSAiRY9btwBfavnfBGPbhMnkubkm9B2wuTbKii6y3yvr5oYPPRuQX3zmzCIb9i8Xgr4U/BtVZWM3n/W1HWVH7cnF9/o/w2TmxncME++wZF3uKdlvind1E3DkZw1oG9KH63K0rcmZqMY/PFoOFhzfqe+fTeTiCFWFRhTmAO3+UZQkzUZ7mYhUEobh+ej+bZkqBaJ6nGrWPLCfNPcWDoHfYOUCzLfst8EgY1lvmVluYtP/wD1Lct+pcslb77RV+xfyk3SOCulMsUz3nwrZ1qrQ0p5863cK1jzrSz/h1ffyn/RDxS7VzVmK2o+AAAAAElFTkSuQmCC',
     alt: 'TZ'
@@ -1704,7 +1704,7 @@ const TZ: Option = {
   label: { mainText: 'Tanzania', secondaryText: '+ 255' },
   value: '+ 255'
 }
-const TH: Option = {
+const TH: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAYUExURfAkMf7+/ichVPLy8u4iLywmX+whLjApaCDr3CAAAADJSURBVDjL1ZSxCsMgEIZvkMztGwTBvdAXcDicgyBZHcS5i/T162liTEG7hNB8RnP336/jD3AijElJu64IRJTI6IwiVv+MBIvoHNbaOrLIhkGCQqeUc16pKFJVHIo6Cb6Fixe9t21DxsK9z+0ahnef1xkGEwlxmTmtVIcihQnmOauBptlhqEuSMfmFDtNvg6jRCVP1X4YM1ytCjKD5Qim44Js2Ap06aYI+XQ2pJkOXIwzPPo9rGP4ko5bIaWQU9kmGLZl2GYUHZdQHeDMmqk+Tcr0AAAAASUVORK5CYII=',
     alt: 'TH'
@@ -1712,7 +1712,7 @@ const TH: Option = {
   label: { mainText: 'Thailand (ไทย)', secondaryText: '+ 66' },
   value: '+ 66'
 }
-const TL: Option = {
+const TL: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtCAMAAAAun0N9AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAABFUExURf4QHSEgIP/IQ//KSf4fLBQUFBoaGv8vO/8oNP4XJPX19T86Lf5bNW1XK/i8RP6APdCjPf+kQZycnM3NzaCANGZmZtu6baMQphYAAAI1SURBVEjHpZOJssIgDEVDoQili7b2/3/1kY1FnzOODSgp5dyQ6wjLfLsSYJbtGm/SfbvEZ4HHfIU35mkfl3izWLtd4c2y2nW+wGcTrEUbAs76hbM+vO6FypNAbiKUoUnN635ZK48usgLu60egPi/rrePRRZttCPoylKUqdGtfn1y0aEMPf46X+saTCdzEdwFeUZrGsMC6fcsj5oX2xUVu4rv6QntdFysKt+Bo8HzPcQCD3qSEC2mwi2gDlVCosJzxOxDcm4MEzpRFxEX6LZ1rUVelnHN0f73AMZ0+7RNewhsVyDbQScc6NBjl1IGXMPs04aTc+6cKDI9bpUSnbITK+3PCSPq4DHZggWEL9QKqo6vy43kgfhQ5k1Y70LDDOrs+QmlK+Nw4x14E6AYDfrLG1hVtAqT541ABI3hah4/1X3k/jqNH985930epTjTG5j4HZFDGSd2PtOGfzOavh9w5vrGReI8szjSdBOdp7oNE/v2jjJK0GyAFkTs8p2NSHBuPkUsTI2BVAyYokuToHF1/01IYtTA9SA5EqgWUL3r10JTkpJK6B9xyjeycNF6Bhmw3cIWxg0d/l8b1wIdVo+fVue312D/B1+l5cg4b/zo6ftHGf+PJuTkCDX4bJWsTJXlU7+6lcdC37xl+8ZRzrXPSOL+CTgBiO5r96tw6g4Qcx8mP9AS1dvlo/YUar0ehHIlVpd0uQuLc5pojNeme4/sL5u+PAL/GmP/sM/weY5rjBRwWd4WGP2T8P4wFvGbgAAAAAElFTkSuQmCC',
     alt: 'TL'
@@ -1720,7 +1720,7 @@ const TL: Option = {
   label: { mainText: 'Timor-Leste', secondaryText: '+ 670' },
   value: '+ 670'
 }
-const TG: Option = {
+const TG: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtCAMAAAAun0N9AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAA8UExURf/POP/SQxOWcP/SQecdQg1yVROTbgxtURCCYdcYPP/SRfj39xSYcv/TRhSac+dnf//TR+RAXvLI0PGfrnmDcZcAAAFcSURBVEjH7ZDZloMgDEChAja4gv//r5MQF1Ktg6fjmZdeKcSQC6nKvKcvQJ34bd8m+rbv38WnfgFn/qN94GhbWomjWPpB+gVIP0rfPXC4HXle+KERDbgj9QXhT830i+9O/djEyz4YA1QM1H4z/wFO+tHjGEdaiSWmlaBYsTkQE/pTikI6YfRdwnceh4xpJRRWggmxyYkh9ZDXHUH77IOZMh0/IlBOe53wmmt1xzHl8SWdrVIlTsOqD5wyoAtQbANAmPXACbq/xEeThc3n8wAqRFcax35d9hTX4jSs7RvgBuayU5b7ASJ9d5rE/UV+OiN9OOrCLKlnAas/xJDWEIfNd8/0c2skMy73YRdduv+Ar2/vv/9vqbKgWl5TML9V26jW7S0jD1FZ8qY+v3yI/Yx/92tLD00cbY+t989rvlb1wnzAKVasVK5mUVTYLWnlvs1dQtXFHPZ2wa/v8H8ANL4++C+4KaoAAAAASUVORK5CYII=',
     alt: 'TG'
@@ -1728,7 +1728,7 @@ const TG: Option = {
   label: { mainText: 'Togo', secondaryText: '+ 228' },
   value: '+ 228'
 }
-const TK: Option = {
+const TK: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAqUExURf7RNAU2wgQ0vQAtrAMxtwEvsaW250RbmYWEdf///9be9OG/SLakXW+J1aLgNdIAAAGzSURBVDjLvY+xSgNBEIYHRQwkhV6hIAi6DCpWwnFgYRGOXbSwCNwe2moR0EqCghCLNL6CkHRaCHYBsT+CL+AbOTO7ubvEJCKof2Bvdv9v/pnA8mwtwb8Ba83H2cBK9+znwO03I3YWHbDpFAR8qmBzqNX+gO8boJwYUSWtZtBSKlA5UIja6NeBqlwcEHhHTFEboCJFnjCSH9wBwFwOPF9Kudt8GgI75MMgBy4epNzqnnt/u89AqwSgihUSgChVh32IkbUByCPoPaYRseKqLX4VfQI3Se06YjwWHyroE+JYo9Y69kK3AP9LMeqgUQxiqKIjAw9wEyIBTgKhxrb3oSbBmnbgAj2mj4Y+VN2rS8h9k+UAXHOuB/THugPahQ/v8uKBl97YANJiARhz8SCfrAzUZGYdjDHavPT4Ux7AS1gSAdYa2sEYezLqw1uaMmBtalNtKaEzBlSo1TR4hLGpSe0BjOuGIhqQOpnD/hfglRobYNmm4+qLDzVy8oRTmKD7EjBNvwEkrIkbACxESQOiJImizhQgSfYgDMNkf7IP82FII6JwuqJQEoprcQ5VAFOCRhL+CPgELmHpKtRMBycAAAAASUVORK5CYII=',
     alt: 'TK'
@@ -1736,7 +1736,7 @@ const TK: Option = {
   label: { mainText: 'Tokelau', secondaryText: '+ 690' },
   value: '+ 690'
 }
-const TO: Option = {
+const TO: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAASUExURcUIEs4KFdsOGf39/fLy8vf396lDmDwAAAFJSURBVDjL5ZJBTwMhFISHRO+Aei9r+gfa7L0mcNcW/v9fcebB2qa7Bw/qxdkCjzcf0y0pjitNt9rhx4DDNL3+FjB3Cbh0bQPnKe67P98B1mztHON+bhc+7Q5gaz7EGGJIZLhZJbTWPmiGEFJ4avM6QUCimfh50W4LCEPfBGKio8HKgHKW6Tj2AhL7iROVJo9SSmX3HZ7HqzSZKcwS2Ckl15PHY7W6JtmLdig5s1tOwEMufHKWa4y+ZIdcK5tZAIOUFmREzfzpHlkJHchdPKpb1RSiAdIb8DxKs3lzRnwBN6IXzBexCejWjaC2Adnd50uGtdJY9SKbwK3+BHBr+cDByUsjwev/4JfaSnJcoAR4Z3Q/4v2SoDAPcwZiKwc0q+bKCPRj423QKTcY81WiW8AI6lmQ1JQNN3aLATs1tLDDctfyKoeVPP6NPgHLxpfog9SC9AAAAABJRU5ErkJggg==',
     alt: 'TO'
@@ -1744,7 +1744,7 @@ const TO: Option = {
   label: { mainText: 'Tonga', secondaryText: '+ 676' },
   value: '+ 676'
 }
-const TT: Option = {
+const TT: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtCAMAAAAun0N9AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAABCUExURRUVFdobM+sjOx8fH9UZMOAeNc8XLfj39xsbG+YgOO3i5Dg4OMnJye2ZpPHCx942Suhwf+RPYVFRUaenp4aGhmpqaiiwku0AAAJLSURBVEjHjZWJmoMgDITjgYK92+37v+qSTMIhtHawgG5mQP9Pl9Z1fU6NnvHyehmPRVx4agPefP3+g3+LdVsn4O+3ALpx3bn1Ty/+w+PQPz647tX6T2fe2bF/vHPAXyeAb+166A/jZf0GIYRYEnCMMjXxOfHk2oXg/VsD1F34ggWRnF6/QkjWMYSxyglYf7xtAsHH1oMQWlkK4UwhxICUIfNJINzCR5GOgODF7kWyGw8I3/xOGgLe6rKNxBgLcEEryybr8+CU4smbJtuDQXCI0EPTHCE3KgCCLxJkE14hOA1wLnXiFy83g7AXAYIzBf3JQGkeAwRC4/cKoXJiCy6QywoPg7APwDN0HVF1phAaAcKx3zGE7dluAK9S1z9I08PtIZjwPXNFLZqun0JCAYHkwAYKCFrr1B97PaQTiq/sJI2RgO2GUudspKFyxysGgbTZDkDRam0gm6eEoYAQ/TkGEAovT2hohe8Z9k1kIxEgDFVCzz8AAtnaaQ+AUJV2/ULxPJHfN3mVHrV/7jSFoKtTDlAIuZLmgUee2sgDIFB1CzxJELJ/hmlOE+kAoXj+mqAQZhPN6h1sAi2AQKXkXk4CIS1F8yclCGq0JwEIWjR89C+zQsgJKkDI+/8kfM/8/gZI3wTzL93GHb5n1MgLhEHqKNeXXswUQiN8z6SOULsUfptbwLMNEIoXrqFFNGs321zHS4ZQSV6l+yL7T+YmKXYlBGogpPULb60WApUQan9PeJVaP+GfyqF/ya/SDgIHXI/9EcL2GcIP/q8Q/gEtdToE3M+NrgAAAABJRU5ErkJggg==',
     alt: 'TT'
@@ -1752,7 +1752,7 @@ const TT: Option = {
   label: { mainText: 'Trinisoad and Tobago', secondaryText: '+ 1868' },
   value: '+ 1868'
 }
-const TN: Option = {
+const TN: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAkUExURekiMuIUJeQZKucdLvv7+/Xz8/TV1++Lk+tjbugxQPKssulKV7PZp7sAAAIySURBVDjLzY4xbxNBEIVXOSVAl9sG6Ow5KZBu2REBavZsQYXEjk2SBiU+BKLDMSikQXbSUFlCKFHSIEii0Bql4dcxM3eHjOUaGOlud9775s0a87/U+N8/IUnqi3EzljPOOUycS5KEz6Pz2LkYJ9qzIX/jypZDXHIYpNpjjnFJ6XCqchyCeDUqEJ4hokpOAEy0lYyd0NobnwxC6MtipyqvQF3PdS+0Rg4/ckxbWg1FZ/SOwu+H7w6PdclIApRgQDnuVuNjxGs9BdYR60FTX3nDK8Sl8pnt3+oUsBhG6E9DXjCQJzOAxwz3W4gP+IXv9BGlKgB73ktz2pY1eej3OOSb96KiZ0BtxnqbiGt5yPuHH3bitmg+yzJnsvLisffI+5WQb0z8bQrbIgpUrZA2Psyyu/lr1j/H+FQywWsCH3LLinWANWrtAlzGuAWQySA0DHgtgGIzy1ZizCdwi+KWSgw1OEHL+7MusEU0ef+joK/qsscJuoL7gw7AKuV0RJ0zGvpyTgEpZhdpCNmA6JJTaAFmAJD45wBLRAX7XZgD3Cw2eIfYRE/mAXBAXwCOFRjOAZpwnTpDsD+nN1gFms0m23wMqLP36eQt0RtbqlYSrJUOBLpRPoBesiWqZZUBYW1qLR9X1O8uiAuipOmysTKtDU/dPy9eXNxJFdfk5rJJpRhNQTKkKU+r17RhZIFNK6/SJUw+1jWh9OQlOlmzWg1TzdRVwTYt8bR6w3TZmtKaA/xZfwP4BcWAyrUlahC8AAAAAElFTkSuQmCC',
     alt: 'TN'
@@ -1760,7 +1760,7 @@ const TN: Option = {
   label: { mainText: 'Tunisia (‫تونس‬‎)', secondaryText: '+ 216' },
   value: '+ 216'
 }
-const TR: Option = {
+const TR: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAbUExUReQZKuceLukiM+IUJfj39/TU1/CXnuxrdepLWCaybrQAAAHYSURBVDjL3VPLbtRAEOyJg8hxeiQeR9sCxHHE/AEah1wTORuurAK5JlHYc7IS8NtUddurVWLlyIGWZ9xTVV3d9nqlfz5a+T8EKaWun67UIXoivvdd1wp251PqAQDHbhc1fRSotXN12ozD6pYu9ACL3QRMkqZ0WRlrZSWLtNMURT2guKseN8nPZhw5JEO71ySvtv3vlbKJ2tJ2dlBlgzVHfPtglr7mFknfgD9Jlvc8+9oJNL2rdej0SewE7HAy59sFQeL4c75xbk8QIkYYeI8a4PagvSmCilgS9UOtxxMfwuXF92/R8ygxIGJ8wRGgBKwfR3czQrCQ6KtaPzMD8gvjnDGHdxQRA+UQAgk8yQEe6DQ6J2gRiQY6IMcJrcf6ZSoM5sCdM/BOizj+GFtzsGpDBT/VMQEco5zHo2vaUzMVyUu8h/ksZ/I0AkZnlVDVLggEo+8K45LgPXosVs6BIerX5wTCT3LN5Og+z5gnTdNg4UHHYbjaHvy5kAYMUeNzxq3BVX76Rz3cs5IoVb43peRcPtn/YlgTIJENl0x/HnLJm/Nhde1yYuyepTCAFbEKJ6mxvNiIsG+cnAODcQE3B+fYpCmm3pOKuNejoNaF0wyP+b1mi4LybwV/AX77rEuj+DyJAAAAAElFTkSuQmCC',
     alt: 'TR'
@@ -1768,7 +1768,7 @@ const TR: Option = {
   label: { mainText: 'Turkey (Türkiye)', secondaryText: '+ 90' },
   value: '+ 90'
 }
-const TM: Option = {
+const TM: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtCAMAAAAun0N9AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAABUUExURSq0a885R/qpK+ny7S27cC6/cto/TSiwaDDCdCu3bfv7+4zYr0KdYm7QnMro2OBdWkfDgbVQT2GJXvrk5nCAXO1+OTekZZ5hU/bGqVrHjeF5g/asbfGkEGUAAAIzSURBVEjH1ZaJbtswDIZlW4cp387VtO//nqMkkpKPtUuAAduvNKJJfiQtpIBUy7Ks9hWpf4efbvXH5WN6lTemNcGa6rr+unj/WYbNGWOEQd7wM+L1bfL+EmOcE3ZW6Q9lgq3Ej63xDVCmUNd0IWx+Uy/xSZ/Y+gvxqUhpG99EYzZbTJR5O+Hp4RvYff/Id2ar9sizdpmpxDiYU33PD0ilVxiazdhGC6/pIfM6LnQP3g/Uf0aL3GnT0j884J9dVjy9dbF57MjrmD77MdXk6vRRyYmfh3P1rXbuoaPC2BrnjzGtZ99otnkPUmL3zuHwzvUpgP11oWfBk0ziWTteayhLdMiXHCvzu/nDKzTC6NGP+kyZl/M76R9OsvuJt7bCZSvxAABZM57m8we+Ipz6Q/oKK+IjuQ48UJKtqAKkzFkadngQTauTHyIAVBqUuKpl7V2/LhVQ2jAOz3l+dmPT+HEGgIzziIA8xAjAw92v1+vdPYD1HENjj6troWhfSCsgl+7X+Otfex4ONWDzcezmDaWLVfQv+DPpc7cS6zj/nyjz+fze5FnHDPU9r0Dh58grisQleXmPPpHw2UWkKrLIW/rIWq793d3765JdqQDl5FG2HAv//6N69Z7K/u/o7P3/Ju/ikoeCp4hTm/1gM0oPlU33hyqXdtyHgWS7xBRFw7nL/UF8OZZU+qkah3GT+4PbiRudKUxDIbk/cEHlJCaVckyV8fAt9wf3inL9Kt0fbPUuz/qv+F8mwUIukF2UAAAAAABJRU5ErkJggg==',
     alt: 'TM'
@@ -1776,7 +1776,7 @@ const TM: Option = {
   label: { mainText: 'Turkmenistan', secondaryText: '+ 993' },
   value: '+ 993'
 }
-const TC: Option = {
+const TC: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtCAMAAAAun0N9AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAABpUExURQIqi/r6+tgbM//JFgEmgwQskQYxmwEnhwAkgAUvl/Px8oKWydogOP/NK/3lktYZMVNusiZIoO+6weLm76u42XOJvuqQm8rR5N08UMFmH/LW2g2pJuJkdP+Wd/nrvP+tQ+ytJavAH/rSTOz8fiAAAAKzSURBVEjHxZQNk6MgDIZBUWvUigJqrdXd/f8/ckPAr9a7urM3cy9WIMmTYEbLmq7muopRGc/znGcxSXMY5vXfxHidN1zJPS8Vb/KByxO84X3X9RbLeBAEdlFptAUNb+MTfCwBOjxCW828AWjy5ane8mmlYAgGAE28bnnd2a2J0zR2w13L7C7P41y1vAmwIPG8HwI6zhpj461W3FtxzcihsV1BTXyfB9SOGXojlpFa3jeOr3EGTUZ5hucb0fk3OpGABX8Wz/4FH9Gw19H6HY8xkYvfKzrx/CCjKJ1Hpha7yhZrxIzttAaoXf9x7nlrbSaTy3ER5+N11sgpAYnhL82g78q8htLyQdCAjq0v9TFWaixWjYrcNgfyVYvvezn0QDzUuIa2mkGfg1+LqZimovi4fRRXvuRlkYF+KLsa2gzKsgRttwOoKtqJX6fp8XgUxe122/EaC9LnEjne0HG6XslzPFBxjeWM4107uh5Xex7x6ZXHbx+wFouYr482iV80ttP4/vrnt+VDy4eetz6GfctSxqgRno9YjE+Fp4rIbgfy4fSYwiLE/iHPrKydYat9FP4RoSQ5mFEArfVHFMqQL8Iw/AytlvroMC6/XUtjjGQeSaWp2FKfwdWCn3dKcIW5PtsoWizOnCQbtyL+fr8Tr3bsLss22UZ63PCjZj9VBsXCF5D9mK+oAY6/QrV3Jv5GV8KendacaDpASOX1sz9JPJjMgDPP6fCWqtHzo6qWYnPNZJ6ftdiFBJdgBLmJZS/hm7F6mU2g4Cv8wpd9DxyvDyTwyxzxdU2S88zT6UxrXg58WGq+C7+kSQi3FztezEPQT8xhgoBk3QufcSVwsCW/8LmFcFkObeLZz8SLlvgj25rB6YD/kX7NX9x8ERe8Xtfb/ZGdXX6nlRfuJtzivcQT/9v6/4f/BkJwUCd2vY6vAAAAAElFTkSuQmCC',
     alt: 'TC'
@@ -1784,7 +1784,7 @@ const TC: Option = {
   label: { mainText: 'Turks and Caicos Islands', secondaryText: '+ 1649' },
   value: '+ 1649'
 }
-const TV: Option = {
+const TV: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtCAMAAAAun0N9AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAABvUExURWSguHCtxdgcNHKvyF+bs16ZsW2qwmeju2KdtWqmv/r6+ggTmPPx8v/NL6i2f+DFTM/AW3qmpIWLzXuBw++6waHF1Ke7l907UPLW2oKvrcLN47y6aaqu2uJebigyqN/j7euapOZ6h1RctcG/beiMmEp/HI0AAAKeSURBVEjHpZSBdqowDIZLRaAluDOBA2Mg6u77P+NN0gaCXqd3+7vRNM2XhAqYc9f48VSijt5a649klqfRw+SH3VMZ39iLn69b/jr7s518+wJf+77resIWHov3HWXd7RIcWslqJLxnyitAZ89+OAlfA1ws3RWGcAzF3kr8BsvNMNkJYGR+HHzT0bIuFbe7mRcZOqzBc0HmfT9Zbqcsk8faHT4+DsKX5YjHZRvme2vDcXzLJ29V9cb8kTX4/k/gG5xhZGebZDyS9SqO5KuqvmhtvBL3r9RmLCIoNtDUeZZRfebtY/khEKKQIpAhy3NeKQn/3Hkmaf+D150v+u7+od3ygZTOI1+TRoAmnD/OvR/YWSPueMQpdk4Sn+Pf/wj4vNsGmMenB0Z+KlyMidGO6us1WfT8DoBPz9QD84BP7wUG5l2IieLO1Zoten/wie0aGI7Mj7ScYD4xn21TaE8W6o/U8YVel5r5mtvpevwkuBdk+F0F+gJFPhxH18P1JR7ffeDPz8rj5wezNtA6l1NMvv7nwSPKncFzC588xeMLicfYgBNAyJAOzfzw/n7Iuf95h2uDaoHU5jkF0GIOmJKL1/Bbkm1aDuGNlmRiaNa2iUC3A/VZVZ+0ZdbkJqZxy3IRd7vpY6mfvyKJvs/4Gh+6/ZeMGuFy5zaxvtGV0S3I3Sxa18SIl3LFXdrX4QsWh9pYXXQvRpd5ottIqf9T6Xv5gYrlolxFYWSY4mZwQW1sonDJkryFOFbxDZOfjNtNTnfn2jjpwLWxqXFfTsTdSv2tUbzCL9FLosXQfFoUaZHiH63SxU5jt7ReVaj9EGvihg4KE9XfOiO3SWjSB9pTt+lTPeTTPek5jyH7EItTJNNg61n2xSdxmhelT3zaNvvf6bf8X6T1UfJ+7EmpAAAAAElFTkSuQmCC',
     alt: 'TV'
@@ -1792,7 +1792,7 @@ const TV: Option = {
   label: { mainText: 'Tuvalu', secondaryText: '+ 688' },
   value: '+ 688'
 }
-const VI: Option = {
+const VI: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtCAMAAAAun0N9AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAByUExURfLy8ReExeS7VBkucPf39/39/ffLW/////T09Pr6+uG3SfLFUurBVrAQPO7s4uTBZ+3jybweQufIeDWTyunRlevbr9nn71el00iWS3q32sre3pPE4arP5a3MsWl+o4m7jctxTlNbe3Kvd5qVbt+1iLmtW/vLgqQAAANVSURBVEjH7ZR/d6owDIbbLmgo2PJbwE2d277/V7xvWkBk29nOuef+d4O2aZMnSVNR7ff7ZJ/gs/+VbH3VZi12Edn7ja6SZTnvzc9KnXOEzf3KkqgNtAqTPIT9SoWukk/ymd0n34pK/k4CTy79xup98Q2YOlr4xpiqdbQNwpXJc/NFheTaypgm8qCc+Bnj24JjjDR84JTvzGMBKRetN/DPjYNPqgRIG7ODhBhNgTrSVHhKWrPLmxBP9lIqGrAmz+BsGnESXuYqBJAYCFIV0R9xcwRlkLIsKsk7+Zkq7CUqTKnys2G3y3LjVWBwLvDRRfk7DNxzus4v5myxAqIzsNa8vb5JsO5M5g4LPuVNQiIRxiUsLplxT0/n8+uTyKvM7h4eJ2xoxhY+JdXOATJT0dOjoEPZjLd3aMVDihhA7qHa8JUxs7FYIwtPeCQAuodvnm/4PM+iRfDg+0X+lFoz59nwc12mpTlf5DGf9AlLjOSIHUe+LEuYMSIZxsjDOpVK6aAHIhJea91Rh3HsR1iEz3bloYST8BgPpWzlBiwfR2Bwg38qPNFRI9Sg9ZH7C5ZN6HR5OEA/TGMZbqWBftJjyC98yE/ps9Y111o/06VnbIX344EvS/yurVfUKX2kJX/kicCihppo7F+wZLwm/vqQ/+rlxULyAUeNsuJRu9ahHf1tstI7SBaemQ+H97hZ10g/nLZ8F3gJfOld9GxsGckwllaOTiPK7E4454aXDsZzudBBosLmZsWb3BaxzmEUR17xjAcdjFE5FsB4G81VsQKvlLpi5ZmUrvVY1yrgdx4B0P1aZvx8+hsSOptZ4yoV+coZm1uH7unhGI4prrU0nFTAqTt1gSd+wRVwYa11zlYOvKtEtTgArmlAmZFgIJjBy3IZmW79iHy2QIwsux6uWRYXZpRbHiZ6FrVeBNV9WOsLbgUHGsdWFd7aDxye5/w08xtppHZmL+DEZ9bDE/pbt/X+zKPU/qaQf823zM9na1/4Z56de+kvrPyqfq/kiuTwP/Eq7Fz6kdHEicdVMnfyfqpPrmrzxIFGKOHWrY044yfafZEdT5AJjemnATcv4oMX/l1W2e7MxG1jxBmX5otgO+mjmoVXzC+F1bP6L/9YOnzdSl+UTvYX5cHvDx4pS7GBNvJ5AAAAAElFTkSuQmCC',
     alt: 'VI'
@@ -1800,7 +1800,7 @@ const VI: Option = {
   label: { mainText: 'U.S. Virgin Islands', secondaryText: '+ 1340' },
   value: '+ 1340'
 }
-const UG: Option = {
+const UG: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtCAMAAAAun0N9AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAABaUExURf7fQRcXF/3cNSQkJOIPGxEREf3dOP7ePOoUINsLFyAgIPT09Pr6+vzcMxwcHBsbG/3cM/79/YuLi+vl4/3kZTs7O8HBwVRUVO1DTfjvwPW8v/vrnP753+6IjqdtjSwAAAGjSURBVEjH1ZXbuoIgEIXHQNMGLQHP9f6vuZkxUvuwE1f7l5SBtSC9WICIA05xwLmqztX5gSs20Jwfe+4TkMQBacLXTPJ4LGNekCzzKy2kccB/5xhHtD+L45XfTtdrfb1O9pX/4CndtSKDofYMcNgDyrK8lBfXyg0Xq8ipG00PZZ/nPZCH6XljLUQ3/4V+R7fj77F2+xtxEm2tlOvjzgIg6S65LchRMfrUkZsYvUrmazFIIue20JOjJr9Wnv6uyuVaDDLE7b59VTXG+29B5d1fbEdHb69OQiP1UY0yJIWCkcUG4/RY6zmiGqqUMkVICkUIpA1R6TmjGkMFBpVhv0F24LxA6hZANGF/MNVbMi8LJFS3n+e/+2ZMq7VLSZF2VOgv8r9hu+aE1Khbqpov8j8lh9KpNl1q+F2w3cv/0AEwfzF0t46Xct1mM//o7+V/h/4VBHe6b/Pf4gpjv89lOzzsg/0p1+00GDTDZCH7Kf8zTnf4Nf8zbvz7Nf+PUfmfZYf3/lX8r/K/nOuSD4Wnk+Gz/F+Nhebf5f+nRPtlHNH+Io5Y/x9NrEybUYtNpQAAAABJRU5ErkJggg==',
     alt: 'UG'
@@ -1808,7 +1808,7 @@ const UG: Option = {
   label: { mainText: 'Uganda', secondaryText: '+ 256' },
   value: '+ 256'
 }
-const UA: Option = {
+const UA: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAASUExURRJpyw5iv//ZRP/XPf/WN//VMq0AgeIAAAEBSURBVDjL7YzBbQQhDEXtDnAHI2hgZVPASjD3HKD/VmIbyBIpmeSQw2qVrxn78/8DgH/9kfCqDCHoT0gYbIU5CRHNENp1dIWAA8K1PVEEZkw03xiMRw4DEXk73vQDhRGZUcBQ9VN2z3qrrfcXxp1g58WFARMt4Fu9ChCvdTwFwClFjlEHR3fb1OQA7SWJMHNiFv9T8mGbDxCx1Dt1XgnbFXF7A62WlvN2QOkGcq1fAKWULDpESlYzvE8tcnagVHXVjcp8zjOpd6i5ViuylYaW6T014KG87eU/AUvn5u9wnrW1dprm2rwDrbeuZ13NjH+9jbT3N+hLrT90frgN+Fo/A+9sV6ro+VBpOQAAAABJRU5ErkJggg==',
     alt: 'UA'
@@ -1816,7 +1816,7 @@ const UA: Option = {
   label: { mainText: 'Ukraine (Україна)', secondaryText: '+ 380' },
   value: '+ 380'
 }
-const AE: Option = {
+const AE: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtCAMAAAAun0N9AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAzUExURRB/OPPz8w8PDx8fH/4fLP4TIPf39w53NP39/f8sOBwcHBgYGBUVFRMTEyIiIiYmJiUlJSof20YAAAFFSURBVEjH7ZBbcsMgDEWV8rBTY/D+V1uEEAQsT6JmMtOPXm5AII6EA/eTQKV//q/xywLohwHTCe/RAl/TtU6JxpN+YxH7T3eHcOkFSx2ZvxTMeyV/qne3eTTj0PETruZrU8v0b/oTyOuqEfG2PgBXPT+UUPcvLE2kZ4gfeKb7v+hJK3qVYixB+9XD2BtVrlPWe6a4TN23FNiT/Ni491p9N1eQ+df1Af528zzYOUZ5mjxlSyzy/fJD/LjveeRdcZsoN19nZjoHph0FrvV/TWAbVx+g5J2dhtPyDaxTSulIxxHZuGElNOVxTSl/v5secMRYsKq8KaJqc47e76gzxVGj1r86/4wx0cRsI2rMAVEsjI1GwJhthb41AnfSu/ym0Qf4MGoLW3a4kMDvIexhz6YVFS7OZF4jgf/SSOR3zOx1nTWev9v/ByVGQPgv+kFlAAAAAElFTkSuQmCC',
     alt: 'AE'
@@ -1825,7 +1825,7 @@ const AE: Option = {
   value: '+ 971'
 }
 
-const GB: Option = {
+const GB: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtCAMAAAAun0N9AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAABXUExURdseNQQQkOIkO9cbMQkWpP38/AgUn/X09fr6+gMOitMYLtAVLEVOsNnb6+JVZvPb3d4wRRAbk42SzBUhpuudppyg0/K/xehzgOqKle2psaWq3MSDoXV8xdcCecoAAAJXSURBVEjH1ZbrkoIwDIUjUBoEFCkoOvv+z7m5FGihqPtzAyok5+s5MAwjGGNsU+zLmGwp0iQUP9YMABPS9OX+zLuXuV7gAXC5JiN84BuLE3R3A/cOJpOI8Jb35tYYMPahEdrma75prZhTQdMaijDw8ei+4t3IBJuTJxSu30co93yZMO9dAWVJHfPssgE1QslbWWDIIzLPfTfiak7nwHJKRLeDIiC2TclVlCFPK5daZP4gc2rg6FgHKm9alAhosHfSQgx4xFLMezafLMnER/x1AcolEebRnl/NqUbnA3l+jtANPO2LgIfZfzGfLzLiKd1rjsAC4kE22pkXcxmu5jHPAXHIJKDt2d/jzKs5LpeX5DUCq7i8P4g/4kPNXy4iAA8LYF4B34hSTasjtpb9r/zqzxX424TouDK9gk+Vfd0MZtlGMp9nCTZb78TnNP+zctp0z5fj5SQPD3OIvujDxad+GosXSEe7qV8qD3+9KhRt+/IrxvawvIA+xxq74zHgvUce99/zW//8g/8prNvIvWc3pfnpcrXjLSIint5R1so7zP5s+J75O72ibdsc8LO5aoQ/y8Z8uHYYAVLmPQmIJ1Zw4U8niTDQKzqMAJH5sAb0+XmNs/Jbh5DfjCrmz75yz1eVj5B1zyUCcPvWh+YV4wGv/tw7VbsIsGuqcMfLslV120SAxVzui3izbstLT2axG0SnlS8Sb3nuaemtpv8QHAF8HDFXUoXE1+daSvmgZs/HlZ//+aGIJMTXnq7rlT9tI0BonuTrkI8j3C/09zFl/plfI6TMv+B9hF+1DkKtqh2ivgAAAABJRU5ErkJggg==',
     alt: 'GB'
@@ -1834,7 +1834,7 @@ const GB: Option = {
   value: '+ 44'
 }
 
-const US: Option = {
+const US: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAnUExURfT09L4pPLUmOPv7+8stQj4+cUREe+rq7Z2dtaCguqSkvqamwKOjvTQr3qUAAAEoSURBVDjLvY9BbsIwEEUtWSpKu4mjHKDhBJF6gVrKAVqVcckOqbWllg0bpHIAxJYNZdtVz9EV5+qMEzBYI1gQ5eeP/e28OGPhjvVexXoUHQDTu+C3h1ilcJMymAU+b4NZwLmfX/eH3vE9GOfkTWsWsNatv916h6O17AkfiTuY68FMBDyRDY4vDGDrxIwTUy+gXhgOMADbJaw2sN0Y4HoAa2dzaAyj3O/qKqciIwCwWra2oyr3qipfSCAw/grmeoDXQTALXDzhWM8qVhoBOldaK0UjldYpd0J+coIsS4nVjFLiX2k6ZCH8CyFkC4aEkTISGJrlaaJIszqvtAOgB13soWiUqSJKmRfeIstoURT7b4Y+73d6ucXwvO47AK7XQMyoIrcTPj3c4h9AjuvkAwAS6wAAAABJRU5ErkJggg==',
     alt: 'US'
@@ -1842,7 +1842,7 @@ const US: Option = {
   label: { mainText: 'United States', secondaryText: '+ 1' },
   value: '+ 1'
 }
-const UY: Option = {
+const UY: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAhUExURf7+/vj4+AlDsvLy8gc+qQxJv/vRP/vqrvzgfPvz19exLAdv8j0AAAGnSURBVDjL1U8xbuMwEFyW1y3BwnEnEFJvgkVSGoIfYAjwF2g7nRHA0pVBAMvXxY0TfyDFvfJmSSnJ2YJTpMqQXA1nx7Mm0c8DX0qKGNvQM0e2OMO8c7zSHyVswCD6+PlYr38dSCl1aWDFPF41dbs7MA8aoKrVqT7tQFgPjNB61G52YTVqNsMjmE24CyE8BafgPgMjQfHL8T68rX+DMWsIn0AEYdRukbBsNuDMnYm1LMWElGa5fQv3y20L/h7dURhA+hGpoyVAKFLEAOxvwt/wuNd66E+i3IQHPPM2PIJXVVEsFn21NosJuh3XhyYyW4mcalUtink0mFCf6uCEFgD0QixSU8Loabtf3m1SgpUA9AuphRgM1tGvtRMa09G0sW/tnIzRzplb/YA2qD0DEoxO2zkn5OKZ3hjvnNcOFnA53vfMmAnF4IQ4TPuYJyr6Lib0iC6fVq9NSCZ8mLxMkGEgcgwSrmNC9joyym2JHU9CLrDdN88o9m06aQuPtxIJU8r7X3xKwG0W5XKWUZlILt8yFfnYzpvR7Azl/9fp18/8EYbZdUy/b/gH7UDwJTR80qYAAAAASUVORK5CYII=',
     alt: 'UY'
@@ -1850,7 +1850,7 @@ const UY: Option = {
   label: { mainText: 'Uruguay', secondaryText: '+ 598' },
   value: '+ 598'
 }
-const UZ: Option = {
+const UZ: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAkUExURf39/R65Ovf3+AKiwASoxQCduSC/PPLy8iHEPiLHP4DO3MLl7CAzPEAAAAFsSURBVDjLvY0xa8MwEIUP/YJ48SxEwZAsoZIWdwlVu3QKCFFol3gRGYsXg7NkMh27dis00CFbf2FPkhWXhCoJhD5OT+/uPstwl9YMLgNsJxv0h7GrA0BxcQMbLoS4JeqaCMEVV2iKo5SYAU4+Jr4vW16OudtzXyjBp4Dc9xXvpfh+8kC9Aw4VX9CSa0zB/S2DzcFI+bXSumxl2aJrLaUxzt2Rcg7amOfm0zw2fUncGifpfQoG2+3q/qk1oZy0kdoj0uAv0roE8P+iBxPGGGWE9E6dExImThRwxIgv5tzfNGSg+AX0Y/yG+kD8Q/EF6oGUTgDqqKKo66Zwd0hFwTBTwIDjpigC4rsecvkFGlw2UTWeocNcI7DbDNQvJgJ/6gTgPa2348BrWuuzgeVeWsOy66xdosdj7dB33QKwDcMunm7orV2DTWtxHMirKsty9Kpynu/6PHc+Ar+KbVxYm1XWofkIspSq7AiQXQL4AcnYirvhzpqxAAAAAElFTkSuQmCC',
     alt: 'UZ'
@@ -1858,7 +1858,7 @@ const UZ: Option = {
   label: { mainText: 'Uzbekistan (Oʻzbekiston)', secondaryText: '+ 998' },
   value: '+ 998'
 }
-const VU: Option = {
+const VU: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtCAMAAAAun0N9AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAABXUExURSShTdcdPSGWSOMhQxsbGyaoUd0fQP7QPxUWFSKbStAbOuYjROkkRuslRyQkIEI2Iem/OtGrNrSWPZ2CL2RVJZ1vd2iHchtfMnpnKZ6enqQgNnAgLpuciT3PbjEAAAIHSURBVEjHpVQJcoMwDDQgsMHUHElImvz/n5XkM0BbTNYZrMMr78JMxO359QnEzbx03/dfvc0x2IB6e3UC8s3Q9b3uNaPX732qr2u+ThCzQTz1WQh5oQGvqtK60hVDr2IC5WndQ0g5DYY8VKeAfCmv7MGXmtVu42a3XomZBlgPDYK6+AjweVpPY3EbRhk8pLx0yn69Yr4xJGG0HppcEN88nAcwr6LJW+IGYMB5oKgrEE1h4fdt4oF8vDZ6APP84/RqXEN8A7ycBwB4sYSu+B8d349sGuA9AHnoqPn/Kjri8wTwHih/dkfB/t0ESD1EFL9QC8ePSD0clCC+iTjM4zgTLfFwDMQ3g2Q8oocsPoyWL/klRA9H+Xj9OJjJCbAejoL4VylnFn4BxRPmPD7ePym48P0KVPb9gNKvZHtQSI/+MWGQqnXsd/GN8WBf4ERl9/6VCufVNo415GMZvz/9DSrlvr87G+9UiQCOwD3F4gZNdL3Tjqkp60MI/HE0ifZ7XWfy8R/Ua1dwmB75J7S/8RPtguq1yOFD0I50Ag04hCVqN6ydqbUb8deyjyVoj5fnYNlqz+NH7VBi3tKvdU1OREhcL/YxmKN2rIcmRW0876sh5jadiNo5bRO8JTvgcUF7ewrCaS/bcwPEbOklDUhXDH32tvuYvj+UTN9Fu+2keYv8e/kBxPIRvfwBwYZLuu6mcVQAAAAASUVORK5CYII=',
     alt: 'VU'
@@ -1866,7 +1866,7 @@ const VU: Option = {
   label: { mainText: 'Vanuatu', secondaryText: '+ 678' },
   value: '+ 678'
 }
-const VA: Option = {
+const VA: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtCAMAAAAun0N9AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAABRUExURf7+/v3hRv7gPP/gNv7gQ//fM/Hx8fr6+vX19f7gP//gOf7gOdemLdXU1OSzOPYeJOHg4Oa+XvPs4u7dsujPkfGJjPndVOxNMe26u/JTWPLnyzm/xbgAAAJxSURBVEjHzZTZduIwEEQ1ttWSvK+D4f8/dHqTLIMDPM1JydGWvlVtwon581bmo34R//d/57vvePddfnXJO3WgdW3bdo0nJ1NVVUTiFNd877DK8UQPLOsyEyUXPDJAlnRgPstXK+OOfFy4Pik5qCRbSDdPfdtPs8tlzvXV2Sv27y54fYsqVPRgebiw0fTUfUTT0UhdYA92CHIIef8Sv05930/r6QUMlwYMZy6EKg2aEo0r0aTpic9HdT6GvPQ6X3JCeqgHFm/cJ5m8Wuaj+1O+B908/FP+iT755fw8isHST9HAH/kXIgsq4cePKMDNQp+B3Ob9n1XETUofRzFY5E8AnI7DvJCF4ryTIkkncTr/DbUFw+WFYkW+p9UzzQaAPytno8mDf4GPKVjhWEI6oVysA/DeI95i6355yGdC/cfKkOhcVKJCjPAOxFGuDv5a+voOlmVe8L/P1HUdADWjvp94yaF/XKRpHjvRrA0cfIPjBx7xXnDvo4G2YIqGwSZbSWrGGaDp7eI9gPKd9t8cuvDhmkfkV3/kUwNP/IW4ZnnL13VTv4K13HPNjOhtuHH/xG/Ddplfv3rJS05tOwxD2xMC3Y77rhv1/eszEz1iPuDwMGH+cHtIN/dhuHcjXTNflk0p9aQSzyS6w8mzAfhlwtD7jFvCh11o/CKZsqmx7qyGB9lpHY5tIIeN6GHzIG8P3hyAUHiwhx99VXWwAWvjW/4ag0mlln6Y1am2xHuI1fuN6duuhixTvhVEMbBv27bDSRlvbWm5i5zXKOnC60tnw9jYvcXmhbeljUbwScZKLTFWJmuPu9j8Wz5XeT5+lf9Gv57/B4qPRpSZPV0wAAAAAElFTkSuQmCC',
     alt: 'VA'
@@ -1874,7 +1874,7 @@ const VA: Option = {
   label: { mainText: 'Vatican City (Città del Vaticano)', secondaryText: '+ 39' },
   value: '+ 39'
 }
-const VE: Option = {
+const VE: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAtUExURf/QQN8fOQMpgP/OOdccNQUvjv/MMtEaMgQsh+nr8XyQvUdkpyZJmIebx4aZxeXcNm0AAAFhSURBVDjL1YyxasMwEIYP/AIJ6AGKJzWTQeA5BoHXLAGNBYPnDgKvQSAw3QtN3qcQsnfIG/Qx+p8kO6F1DIVQ6Cfff//d/ZjoP6CyrACsQw0zsVKhVKaY7KoKNWzxB5UW0xSk5imoaVSpIKzBlUEbHrFEoCwxlW3bJNe0fGbflm3zRLi0XJxJjA4ZDvykudjpQPurwHaezf0D54/vAeO9AZ45Hc3+dXt6NxG+bMj3pvd4+Mz+rT9/9lAfnsFlR7jzMTScgvo+4XsErjgdL5pAwKG5OEkW567uckdSujx3Usr85SDZOLc6yOBYHygeEZKP+3w0vIV3EoGIzPPVIfnRgDFwi3sElvMs/iIgltVSMOjxxRY2QiwIUvEUlEtroatxuybNC500VKWFGLcLCq3CmwDLNel51mS1rrW12qIFG+ewg0WgqzHWXd0NrrPc6try7pm6SB1ewF6a7cbALe4Q+AKvD3ZJxlrXnQAAAABJRU5ErkJggg==',
     alt: 'VE'
@@ -1882,7 +1882,7 @@ const VE: Option = {
   label: { mainText: 'Venezuela', secondaryText: '+ 58' },
   value: '+ 58'
 }
-const VN: Option = {
+const VN: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAYUExURdsrKuU4N+AyMeg+PP/+Q/a+P+yBOfvoPszxsTgAAAF6SURBVDjL5U/RTgJBDKyb+H67G3y+LRFfXY7IB1jgGcEPgFziO2L8fafdO0Au4QN0CNt2ZjoFam7jmf6JIeYmNzEDMTbZagYR7c25ImU8RIXP+QWKNfbGWJENOftYiLl1PTwSwHoPEo927U67HhkJvlM8vtnn7doSvOWBLYYzorz+Jq4ND7K8bRjJYmgIPqUUAor3M5GcUpmNqKhUfBOa0IrsfNkBB5MaAN0ZvQNHkS+tAbJupJqsmGkrJ2xSWUqakLgbJid9mZRUBQnoOCnBft7pq2ngInPACcjMbI7uyFoHLo6KmE0GApcjS+4AF9fEl7CIt0vmbFA7H9Vw6CN5kHB1Ymi4xz8QWQwMNbsyPYnsW1ldMDDUtU7OMJNPHh9lCqbuQa44lON2gfooe2c7+lGDgcz9vdf242ADK+tIFbBGjdfaurTR11pLoE53dEe2hHso2CQlNYIU5YoKZNEabEJN1uuOTaqf4Pq+iBZI3e+2TboJd1X/NH4AcoGfgwDKe2EAAAAASUVORK5CYII=',
     alt: 'VN'
@@ -1890,7 +1890,7 @@ const VN: Option = {
   label: { mainText: 'Vietnam (Việt Nam)', secondaryText: '+ 84' },
   value: '+ 84'
 }
-const WF: Option = {
+const WF: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAnUExURf39/QYmnQosqg4ytvI7SfRCUPn5+fE0Q/X19fAvPfPz8+8rOvHx8X/NEAsAAAG1SURBVDjL7Y6xboMwFEU9scNURV3AUpWxSqXMGYxYM9CdCTFmQEL5AWRl6oYsfqCyOnRF/EHER/U+27gQpe0P9MTvZbjH17AXzzPzvHqO7F+4FfYFoiKg9Zq6PD+ynYv5bs+KMsCURZDneUoICHxneeH7whIEQeqElBrmnD8FHhenIj3MAodQekQuDHl+YJy73DfgSygiqIEnPNklcJI7DUIcGFIyEjQULi7KOc4h0G2kPFk1iEUDQAFqfhEsRqj+EmC0VZllohaYuj4thG3ZyqotaQsyarJWDZJuS9rZzLqhNVSgwfWsru0TURLF5mwrQyulrJusqRtaJ+ZzNEj6SdPQUAP+TiyOfYPJW1rNDDVEsWOLy9Iyx41piOPIWFuXtvK7wQnW2TjhXV+WQogMg/OASOuLe6Izc0ZDFJIDY6MvgBr02dJ0HT4yhAGi8IEKtMYLF2TOwRMwiDDcIAQkIVHnrsO8sXAm2miPUp2yxkIIF0JHuaJZCdM0fegrBg1KWWUpPGp9vVpFeVbCdEUFMdlw6G8Fz0CMfd8Pn/cFNfZW+UkYh6HvxxHnJ4FAPPwqGP4WvgAEZNGJcKJg7QAAAABJRU5ErkJggg==',
     alt: 'WF'
@@ -1898,7 +1898,7 @@ const WF: Option = {
   label: { mainText: 'Wallis and Futuna (Wallis-et-Futuna)', secondaryText: '+ 681' },
   value: '+ 681'
 }
-const YE: Option = {
+const YE: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAbUExURdIYL94eNf39/REREff39xkZGfPz8yAgICQkJCKmdpgAAAENSURBVDjL1Yw9isMwEIXHN1BuEBYdICDcmzCoDgjhNoVQ7cY45XbZY+88/cTOLigpXOx+lubNvHkWHdoo+hcB1doeOgkoEjr5VLe5yVNpiZhSdVcFJjqVsimdBaewdj/n9MSf4qPNcZ+Azn2S868AM5+11lJFpLAMGpVZhAeCxbhApx4n9ZIaCA4M/JezImmXXh2I27wRiFbgwMHaGG0MoqWGwNZeKcQHodSwma5Uu2La+ERAoMkega82n68DS5uJlttyv6/GdkI/vXhhnGgcRz9XcjuuzBN572dfkUSZq3ch3+aNQJ+R3mU8pod3IeMcjtD3pjdODj648E4k4vLCQJDMO3HllxOZNjsEvgFdRjikRIevYAAAAABJRU5ErkJggg==',
     alt: 'YE'
@@ -1906,7 +1906,7 @@ const YE: Option = {
   label: { mainText: 'Yemen (‫اليمن‬‎)', secondaryText: '+ 967' },
   value: '+ 967'
 }
-const ZM: Option = {
+const ZM: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtCAMAAAAun0N9AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAzUExURTShG+UtJRkZGeoxKfCGLBEREd8oITGaGS6TFyuLFe1rJSAgIOM1JSQkJLGOJnWYIiYmJhH5wQMAAAGDSURBVEjH7ZLrkoMgDIXVXiB2RN//aZdcCaCr7r/O7ElAg3w5aDsM/7qkdV3lJjUL1/BnVkprvknYI2F5x/9pIha13noBw6zP3U/g4TWhe8AMF9BAkZw3oeXRWfBEX01wWedrwEF5XOMcQso/wGrP9aHbelLju/OqnCtU7cNZnZ5JFodysVs71U5degxlobj8TV/BP1Tbti3bktP+SEPEDZHSRlsbv4i2wucNgkQFXQvOjnf+DMSoaNTaVaf+sUxWu8r4j8q9f9yD69rxC4f/friDhihoR6sfo8SBP2/Wc5dJa8XHIz5WdrVCxU893wK9RtUHG2B0/ic8248Z5bzLiyZt4Hmo9kLDQs2LHA+4p0RVyMKvPG9RkvygrLH/W2KHh84Q/CFoyiThB3wHF5IuwO45p5dE429JBdQdIiBMLaYXwrW/wjTASKvzDcNZZI6qzw8AxReaOk9v0ig8RiZnygG8E/QV6q16qarz92ysG+3xZD+3/L6u+1/mZ4mv9eefb/4BNfk7R9Og7cYAAAAASUVORK5CYII=',
     alt: 'ZM'
@@ -1914,7 +1914,7 @@ const ZM: Option = {
   label: { mainText: 'Zambia', secondaryText: '+ 260' },
   value: '+ 260'
 }
-const ZW: Option = {
+const ZW: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtCAMAAAAun0N9AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAABLUExURTKUCTadC/v7+/X19RQUFCAhIDSaCzOXCv/TBP/UCugoGOtHOfXY1SlBFj8+PG1tbStwDtPT0/GXj6Ojo6ysrG9eEtq1CuhWSaqODkGHc48AAAGISURBVEjHpZaJloIwDEVDF8VSXIqK//+lk6VgGT0zbXg608Lhpi81OQXGQ7dH4Ec47BB47684Hg9HFk42ovvLvd9zEvFo4agV3M4U4ApaGXshC+oAxpg7BXicVCLecA7np5o3hnN46fmcQ9+shZccxqeaz7/DS83nHBr7oeQlB9/UDxt+qaWW+l/QGHmYGvth5VPa5NBQ/+TbmGHgQXJw9f1AFHIxhChTyzk4XyewTNkUQrI5FuVQz9s0oAKKxoSxLOVQGYDyT2FVIppCTN45V+ffmjgIPUTeAP53R5pCfHyz8gX6J4l/y97tun7xeMHJJwv46SjrR74gXcpn/pKsjzswzzl7/LudXa2AkZnQFGZZfPKubvFl/Ygb9x4udP/adTXt1wmfs6YJe//aw923a7Bb8b4XR+K//bvFxXvL+VXS4r3tKPr0DkqevbeeIbDxPjafYVB6f/QnHR/Fe684vwrvvZKfHHvvdXzM9a57jwPpVfU7HDipd/X7W2O9f9Q/4rBH4y4afgC37jqnnASlkQAAAABJRU5ErkJggg==',
     alt: 'ZW'
@@ -1922,7 +1922,7 @@ const ZW: Option = {
   label: { mainText: 'Zimbabwe', secondaryText: '+ 263' },
   value: '+ 263'
 }
-const AX: Option = {
+const AX: SelectOption = {
   image: {
     src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtBAMAAADrb658AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAhUExURQ9vqRJ3tBN5t//OOf/RQhR7ud8vM+IxNRV8u+o1Ouc0OI+vEcMAAAFUSURBVDjL7Y+/asMwEIdPbyDlCWKB94BNu6aVQppOwWDQ2MlZM0VrF0NeoX2BQp+yd6c/kZO0gUK3fkTW704fpwiOCbt5s0/Hc15hIqxG5yiPcSfBjWOPOBcmUOVcEChvoY+wsOrPOQm93bzfEJ4/vxN0p3Vdk/DY1fXpsMNqCzoQBdy7LnY0pXkStA7COb8Xqmo2ozUHDgphIeYECRwqhISHVBBqpiolQVHgCWvPQh7BbQl5nF1/hAkTJoL/I8FmULhkeVswxtjW0Pfe2xaxFhu0mCX4w2G38/xNaRhS9n4PvmxNZVp7GAJUlntKL9Bk7oYcTU4LaEzLP2NQMJzapo3JmMX1CU0xIUPCQsAFklEiClOkAhCsoMgCSKoFdSmEEbiEiFdILpMRlBDjFXjO89J/ESnKOKFoSxwrU02T4xXhXJbvEMUzT0eXDy6uuM6/8KPwBd1/8zE806dpAAAAAElFTkSuQmCC',
     alt: 'AX'
@@ -1931,7 +1931,7 @@ const AX: Option = {
   value: '+ 358'
 }
 
-const countries: Option[] = [
+const countries: SelectOption[] = [
   AF,
   AL,
   DZ,

@@ -3,8 +3,8 @@ import { useRef, useState, useEffect, useCallback } from 'react'
 import {
   type SelectProps,
   type ErrorMessagesType,
-  type Option,
-  type Settings,
+  type SelectOption,
+  type SelectSettings,
   type ComponentStyles
 } from '../../types/index'
 import ChevronIconAnimation from '../../animations/chevron-animation'
@@ -41,7 +41,7 @@ function validateField(
   return null
 }
 
-function findOptionByValue(settings: Settings, value: string): Option | undefined {
+function findOptionByValue(settings: SelectSettings, value: string): SelectOption | undefined {
   const topOptionLabel = settings.topOptions?.find(option => option.label.mainText.trim() === value.trim())
   if (topOptionLabel !== undefined && topOptionLabel !== null) {
     return topOptionLabel
@@ -271,7 +271,7 @@ function Select({
   )
 
   const handleSelection = useCallback(
-    (option: Option) => {
+    (option: SelectOption) => {
       setSrc(option.image?.src)
       setAlt(option.image?.alt)
       setValue(option.label.mainText ?? option.value)

@@ -136,18 +136,27 @@ interface OptionLabel {
   secondaryTextColorClass?: string
 }
 
-export interface Option {
+export interface SelectOption {
   image?: OptionImage
   label: OptionLabel
   value: string
 }
 
+/** @deprecated Use SelectSetting instead. */
 export interface Settings {
   listStyle?: string
   name: string
   nameStyle?: string
-  topOptions?: Option[]
-  options: Option[]
+  topOptions?: SelectOption[]
+  options: SelectOption[]
+}
+
+export interface SelectSettings {
+  listStyle?: string
+  name: string
+  nameStyle?: string
+  topOptions?: SelectOption[]
+  options: SelectOption[]
 }
 
 export interface SelectProps extends ButtonHTMLAttributes<HTMLButtonElement> {
@@ -170,7 +179,7 @@ export interface SelectProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   imageWidth?: number
   imageClass?: string
   dropdownClass?: string
-  settings: Settings
+  settings: SelectSettings
   updateErrorMessage?: (name: string, message: string | null) => void
   updateParentError?: (name: string, message: string | null) => void
   currentErrorMessage?: FormErrors
