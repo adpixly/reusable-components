@@ -1,6 +1,6 @@
 {
   "name": "@adpixly/reusable-components",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "type": "module",
   "files": [
     "dist"
@@ -40,8 +40,7 @@
       "types": "./dist/inputs.d.ts"
     },
     "./types": {
-      "import": "./dist/types.js",
-      "types": "./dist/types.d.ts"
+      "default": "./dist/types.d.ts"
     },
     "./styles": {
       "default": "./dist/styles.css"
