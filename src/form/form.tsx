@@ -4,7 +4,6 @@ import {
   type FormErrors,
   type FormData,
   type InputProps,
-  type ErrorResult,
   type UpdateErrorMessage,
   type SelectProps,
   type SubmitProps,
@@ -68,9 +67,9 @@ export default function Form({ children, requestConfig, onSubmit, className, sty
         fetchConfig,
         url,
         timeout = 10000,
-        timeoutResponse,
-        errorResponse,
-        internalServerErrorResponse
+        timeoutResponse = 'Connection time-out. Please check your internet connection and try again.',
+        errorResponse = 'We experienced an internal server error; please try again later.',
+        successResponse = 'Info sent succesfully'
       } = requestConfig
 
       abortController.current.abort()
@@ -101,55 +100,63 @@ export default function Form({ children, requestConfig, onSubmit, className, sty
         const data = await response.json()
 
         if (data.error !== null && data.error !== undefined) {
-          const errorResult: ErrorResult = {
-            error: data.error,
-            missingFields: data.missingFields,
-            fields: data.fields
+          if (data.missingFields && data.fields !== null) {
+            setSent(false)
+            setErrorMessages(data.fields)
+            return
           }
 
-          if (errorResult.missingFields && errorResult.fields !== null) {
-            setErrorMessages(errorResult.fields)
-          }
-
-          if (!errorResult.missingFields) {
-            throw new Error(internalServerErrorResponse ?? `${errorResult.error}`)
-          }
-
-          console.error(errorResult.error)
-          onSubmit(formData.current, { error: true, message: errorResult.error })
-
-          setSent(false)
-          return
+          onSubmit(formData.current, {
+            error: true,
+            errorMessage: data.error,
+            message: errorResponse,
+            serverMessage: data.message
+          })
+          throw new Error(data.error)
         }
 
         if (!response.ok) {
-          throw new Error(internalServerErrorResponse ?? `${response.status}`)
+          onSubmit(formData.current, {
+            error: true,
+            message: errorResponse
+          })
+          throw new Error('Response is not ok')
         }
 
         if (data === null || data === undefined || typeof data !== 'object') {
-          throw new Error(internalServerErrorResponse ?? `${response.status}`)
+          onSubmit(formData.current, {
+            error: true,
+            message: errorResponse
+          })
+          throw new Error('respose.json() is not an object')
         }
 
         if (typeof data.message === 'string') {
-          const message: string = data.message
-          onSubmit(formData.current, { error: false, message })
+          onSubmit(formData.current, {
+            error: false,
+            message: successResponse,
+            serverMessage: data.message
+          })
           formData.current = {}
           setErrorMessages({})
           setSent(false)
         } else {
+          onSubmit(formData.current, {
+            error: true,
+            message: errorResponse
+          })
           throw new Error("Invalid response format from server: 'message' field is missing or not a string.")
         }
       } catch (error: unknown) {
         clearTimeout(timeoutId.current)
         console.error(error)
 
-        onSubmit(formData.current, {
-          error: true,
-          message:
-            error instanceof Error && error.name === 'AbortError'
-              ? timeoutResponse ?? 'Connection time-out. Please check your internet connection and try again.'
-              : errorResponse ?? 'We experienced an internal server error; please try again later.'
-        })
+        if (error instanceof Error && error.name === 'AbortError') {
+          onSubmit(formData.current, {
+            error: true,
+            message: timeoutResponse
+          })
+        }
 
         setSent(false)
       }

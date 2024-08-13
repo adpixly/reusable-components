@@ -1,4 +1,4 @@
-import { type Dispatch, type SetStateAction, type ButtonHTMLAttributes, type MutableRefObject } from 'react'
+import { type ButtonHTMLAttributes, type MutableRefObject } from 'react'
 
 export type FormData = Record<string, string>
 export type FormErrors = Record<string, string | null>
@@ -47,7 +47,9 @@ export interface FormProps extends Omit<React.HTMLProps<HTMLFormElement>, 'onSub
 
 export interface SubmissionStatus {
   error: boolean
-  message: string | null
+  errorMessage?: string
+  message: string
+  serverMessage?: string
 }
 
 export interface RequestConfig {
@@ -56,13 +58,9 @@ export interface RequestConfig {
   timeout?: number
   timeoutResponse?: string
   errorResponse?: string
+  successResponse?: string
+  /** @deprecated This variable is no longer usable; you can give a response directly from the server. */
   internalServerErrorResponse?: string
-}
-
-export interface ErrorResult {
-  error: string
-  fields: FormData | null
-  missingFields: boolean
 }
 
 export interface InputProps extends Omit<React.InputHTMLAttributes<HTMLInputElement>, 'prefix'> {
