@@ -1,6 +1,6 @@
 {
   "name": "@adpixly/reusable-components",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "type": "module",
   "files": [
     "dist"
@@ -58,9 +58,9 @@
     "@headlessui/react": "^2.0.4"
   },
   "peerDependencies": {
-    "next": "^14.2.4",
-    "react": "18.3.1",
-    "react-dom": "18.3.1"
+    "next": ">=14.0.0",
+    "react": ">=18.0.0",
+    "react-dom": ">=18.0.0"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^26.0.1",
@@ -91,7 +91,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/adpixly/reusable-components.git"
+    "url": "git+https://github.com/adpixly/reusable-components.git"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
