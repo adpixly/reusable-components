@@ -16,18 +16,18 @@ const createConfig = (input, output) => ({
     resolve(),
     commonjs(),
     typescript({
-      tsconfig: './tsconfig.json',
+      tsconfig: './tsconfig.build.json',
       exclude: 'node_modules/**'
     }),
     terser(),
     postcss({
-      include: 'src/styles.css',
+      include: 'reusable-components/styles.css',
       extract: 'styles.css',
       minimize: true,
       plugins: [postcssImport(), autoprefixer()]
     }),
     postcss({
-      include: 'src/base.css',
+      include: 'reusable-components/base.css',
       extract: 'base.css',
       minimize: true,
       plugins: [postcssImport(), autoprefixer()]
@@ -36,63 +36,63 @@ const createConfig = (input, output) => ({
 })
 
 export default [
-  createConfig('src/animations.ts', [
+  createConfig('reusable-components/animations.ts', [
     {
       file: 'dist/animations.js',
       format: 'esm',
       sourcemap: true
     }
   ]),
-  createConfig('src/buttons.ts', [
+  createConfig('reusable-components/buttons.ts', [
     {
       file: 'dist/buttons.js',
       format: 'esm',
       sourcemap: true
     }
   ]),
-  createConfig('src/colors.ts', [
+  createConfig('reusable-components/colors.ts', [
     {
       file: 'dist/colors.js',
       format: 'esm',
       sourcemap: true
     }
   ]),
-  createConfig('src/constants.ts', [
+  createConfig('reusable-components/constants.ts', [
     {
       file: 'dist/constants.js',
       format: 'esm',
       sourcemap: true
     }
   ]),
-  createConfig('src/form.ts', [
+  createConfig('reusable-components/form.ts', [
     {
       file: 'dist/form.js',
       format: 'esm',
       sourcemap: true
     }
   ]),
-  createConfig('src/icons.ts', [
+  createConfig('reusable-components/icons.ts', [
     {
       file: 'dist/icons.js',
       format: 'esm',
       sourcemap: true
     }
   ]),
-  createConfig('src/index.ts', [
+  createConfig('reusable-components/index.ts', [
     {
       file: 'dist/index.js',
       format: 'esm',
       sourcemap: true
     }
   ]),
-  createConfig('src/inputs.ts', [
+  createConfig('reusable-components/inputs.ts', [
     {
       file: 'dist/inputs.js',
       format: 'esm',
       sourcemap: true
     }
   ]),
-  createConfig('src/types.ts', [
+  createConfig('reusable-components/types.ts', [
     {
       file: 'dist/types.js',
       format: 'esm',
@@ -100,57 +100,93 @@ export default [
     }
   ]),
   {
-    input: 'dist/types/src/animations.d.ts',
+    input: 'dist/reusable-components/animations.d.ts',
     output: [{ file: 'dist/animations.d.ts', format: 'esm' }],
-    plugins: [dts.default()],
+    plugins: [
+      dts.default({
+        tsconfig: './tsconfig.build.json'
+      })
+    ],
     external: [/\.css$/]
   },
   {
-    input: 'dist/types/src/buttons.d.ts',
+    input: 'dist/reusable-components/buttons.d.ts',
     output: [{ file: 'dist/buttons.d.ts', format: 'esm' }],
-    plugins: [dts.default()],
+    plugins: [
+      dts.default({
+        tsconfig: './tsconfig.build.json'
+      })
+    ],
     external: [/\.css$/]
   },
   {
-    input: 'dist/types/src/colors.d.ts',
+    input: 'dist/reusable-components/colors.d.ts',
     output: [{ file: 'dist/colors.d.ts', format: 'esm' }],
-    plugins: [dts.default()],
+    plugins: [
+      dts.default({
+        tsconfig: './tsconfig.build.json'
+      })
+    ],
     external: [/\.css$/]
   },
   {
-    input: 'dist/types/src/constants.d.ts',
+    input: 'dist/reusable-components/constants.d.ts',
     output: [{ file: 'dist/constants.d.ts', format: 'esm' }],
-    plugins: [dts.default()],
+    plugins: [
+      dts.default({
+        tsconfig: './tsconfig.build.json'
+      })
+    ],
     external: [/\.css$/]
   },
   {
-    input: 'dist/types/src/form.d.ts',
+    input: 'dist/reusable-components/form.d.ts',
     output: [{ file: 'dist/form.d.ts', format: 'esm' }],
-    plugins: [dts.default()],
+    plugins: [
+      dts.default({
+        tsconfig: './tsconfig.build.json'
+      })
+    ],
     external: [/\.css$/]
   },
   {
-    input: 'dist/types/src/icons.d.ts',
+    input: 'dist/reusable-components/icons.d.ts',
     output: [{ file: 'dist/icons.d.ts', format: 'esm' }],
-    plugins: [dts.default()],
+    plugins: [
+      dts.default({
+        tsconfig: './tsconfig.build.json'
+      })
+    ],
     external: [/\.css$/]
   },
   {
-    input: 'dist/types/src/index.d.ts',
+    input: 'dist/reusable-components/index.d.ts',
     output: [{ file: 'dist/index.d.ts', format: 'esm' }],
-    plugins: [dts.default()],
+    plugins: [
+      dts.default({
+        tsconfig: './tsconfig.build.json'
+      })
+    ],
     external: [/\.css$/]
   },
   {
-    input: 'dist/types/src/inputs.d.ts',
+    input: 'dist/reusable-components/inputs.d.ts',
     output: [{ file: 'dist/inputs.d.ts', format: 'esm' }],
-    plugins: [dts.default()],
+    plugins: [
+      dts.default({
+        tsconfig: './tsconfig.build.json'
+      })
+    ],
     external: [/\.css$/]
   },
   {
-    input: 'dist/types/src/types.d.ts',
+    input: 'dist/reusable-components/types.d.ts',
     output: [{ file: 'dist/types.d.ts', format: 'esm' }],
-    plugins: [dts.default()],
+    plugins: [
+      dts.default({
+        tsconfig: './tsconfig.build.json'
+      })
+    ],
     external: [/\.css$/]
   }
 ]

@@ -1,0 +1,10 @@
+/* Additional styles */
+@import "../../../reusable-components/styles.css";
+
+@import "./additional-styles/utility-patterns.css";
+@import "./additional-styles/theme.css";
+
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
