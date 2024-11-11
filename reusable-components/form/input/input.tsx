@@ -12,8 +12,9 @@ import {
 import Link from 'next/link'
 
 const defaultPatterns: Record<string, RegExp> = {
-  name: /^[a-zA-Z\u00C0-\u024F\u0400-\u04FF]{2,15}$/,
-  surname: /^[a-zA-Z\u00C0-\u024F\u0400-\u04FF]{2,15}$/,
+  name: /^[a-zA-Z\u00C0-\u024F\u0400-\u04FF]+(?:[-'][a-zA-Z\u00C0-\u024F\u0400-\u04FF]+)*$/,
+  surname: /^[a-zA-Z\u00C0-\u024F\u0400-\u04FF]+(?:[-'\s][a-zA-Z\u00C0-\u024F\u0400-\u04FF]+)*$/,
+  fullName: /^[a-zA-Z\u00C0-\u024F\u0400-\u04FF]+(?:[-'\s][a-zA-Z\u00C0-\u024F\u0400-\u04FF]+)*$/,
   email: /^[a-zA-Z0-9._+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{1,15}$/,
   tel: /^(?:\d{3}-\d{4}|\d{4}-\d{4}|\d \d{3}-\d{5}|\(\d{3}\) \d{3}-\d{4}|\d \(\d{3}\) \d{3}-\d{4}|\d{2} \(\d{3}\) \d{3}-\d{4}|\d{3} \(\d{3}\) \d{3}-\d{4}|\d \d{3} \(\d{3}\) \d{3}-\d{4}|\d{2} \d{3} \(\d{3}\) \d{3}-\d{4}|\d{7,15})$/,
   countryCode: /^\+\s[0-9]{1,4}$/,
@@ -26,6 +27,7 @@ const defaultPatterns: Record<string, RegExp> = {
 const defaultErrorMessagesRequired: ErrorMessagesType = {
   name: 'What is your first name?',
   surname: 'What is your last name?',
+  fullName: 'What is your full name?',
   email: 'Please enter your email',
   tel: 'In case we need to contact you',
   countryCode: 'What is your country',
@@ -38,6 +40,7 @@ const defaultErrorMessagesRequired: ErrorMessagesType = {
 const defaultErrorMessagesWrong: ErrorMessagesType = {
   name: 'Enter a valid first name',
   surname: 'Enter a valid last name',
+  fullName: 'Enter a valid full name',
   email: 'Enter a valid email',
   tel: 'Enter a valid phone number',
   countryCode: 'Enter a valid country code',
