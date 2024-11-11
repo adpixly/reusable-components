@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback, MutableRefObject } from 'react'
+import React, { useState, useRef, useEffect, useCallback, MutableRefObject } from 'react'
 import {
   type FormData,
   type ErrorMessagesType,
@@ -151,6 +151,9 @@ function Input({
   const [borders, setBorders] = useState<'' | 'prefix' | 'sufix'>('')
   const [inputBorder, setInputBorder] = useState<boolean>(false)
 
+  const isThereError = useRef(false)
+  const errorBlur = useRef<string | null>(null)
+
   function getDeveloperStack(): string | null {
     const stack = new Error().stack
     if (!stack) return null
@@ -163,8 +166,6 @@ function Input({
   }
 
   useEffect(() => {
-    console.log(formData?.current)
-
     if (process.env.NODE_ENV === 'development') {
       const formValues = formData?.current ?? {}
 
@@ -315,6 +316,13 @@ function Input({
         errorMessageWrong,
         errorMessageRequired
       )
+
+      errorBlur.current = error
+
+      if (error !== null) {
+        isThereError.current = true
+      }
+
       setErrorMessage(error)
       updateErrorMessage?.(name, error)
       setInputBorder(false)
@@ -326,6 +334,23 @@ function Input({
     (event: React.ChangeEvent<HTMLInputElement>) => {
       if (type === 'tel' && formatPhone) {
         event.target.value = formatPhoneValue(event.target.value)
+      }
+
+      if (isThereError.current) {
+        const error = validateField(
+          required,
+          name,
+          event.target.value,
+          formData,
+          validationPattern,
+          errorMessageWrong,
+          errorMessageRequired
+        )
+
+        if (error !== errorBlur.current) {
+          setErrorMessage(error)
+          updateErrorMessage?.(name, error)
+        }
       }
 
       const value = event.target.value

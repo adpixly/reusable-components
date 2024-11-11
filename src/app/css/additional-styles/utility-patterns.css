@@ -63,14 +63,6 @@ input[type='search']::-webkit-search-results-decoration {
 .form-input,
 .form-textarea,
 .form-multiselect,
-.form-select,
-.form-checkbox {
-  @apply rounded;
-}
-
-.form-input,
-.form-textarea,
-.form-multiselect,
 .form-select {
   @apply text-sm px-4 py-2;
 }

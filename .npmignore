@@ -1,6 +1,10 @@
-src/
+.rollup.cache
 dist/reusable-components/
+dist/tsconfig.tsbuildinfo
+dist/types.js
+dist/types.js.map
 node_modules/
+src/
 .eslintrc.json
 .gitignore
 .npmignore
@@ -14,5 +18,3 @@ tailwind.config.ts
 tsconfig.build.json
 tsconfig.json
 *.log
-dist/tsconfig.tsbuildinfo
-.rollup.cache

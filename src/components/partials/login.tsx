@@ -2,10 +2,18 @@
 
 import { Button } from '%/buttons'
 import { Form } from '%/form'
-import { Input } from '%/inputs'
-import { RequestConfig, Styles, SubmissionStatus, FormData } from '%/types'
+import { Input, Select } from '%/inputs'
 import Link from 'next/link'
 import { useState } from 'react'
+import {
+  type SubmissionStatus,
+  type SelectSettings,
+  type Styles,
+  type FormData,
+  type RequestConfig,
+  type SelectOption
+} from '%/types'
+import { countries } from '%/constants'
 
 export default function LogInPage() {
   const [modalOpen, setModalOpen] = useState(false)
@@ -22,7 +30,36 @@ export default function LogInPage() {
       generalStyles: 'form-input text-sm w-full',
       nonErrorStyles: 'bg-white dark:bg-slate-800 border-gray-200 text-gray-600 dark:text-gray-300',
       errorStyles: 'bg-rose-200 dark:placeholder-gray-600 dark:bg-rose-300 border-red-400 text-gray-800'
+    },
+    selectStyles: {
+      generalStyles: 'form-input text-sm',
+      nonErrorStyles: 'bg-white dark:bg-slate-800 border-gray-200 text-gray-600 dark:text-gray-300',
+      errorStyles: 'bg-rose-200 dark:placeholder-gray-600 dark:bg-rose-300 border-red-400 text-gray-800'
     }
+  }
+
+  const findGB = (countries: SelectOption[]) => {
+    const indexArray = countries.findIndex(obj => obj.image?.alt === 'GB')
+
+    let topCountries: SelectOption[] = []
+    let updatedCountries: SelectOption[] = [...countries]
+
+    if (indexArray !== -1) {
+      topCountries = updatedCountries.splice(indexArray, 1)
+    }
+
+    return {
+      updatedCountries,
+      topCountries
+    }
+  }
+
+  const { updatedCountries, topCountries } = findGB(countries)
+
+  const selectCountrySettings: SelectSettings = {
+    name: 'Countries',
+    topOptions: topCountries,
+    options: updatedCountries
   }
 
   const onSubmit = (data: FormData, status: SubmissionStatus) => {
@@ -66,7 +103,6 @@ export default function LogInPage() {
                   placeholder='jhon@metacorp.com'
                   required
                   symbolRequired=''
-                  defaultValue='jhon@metacorp.com'
                 />
                 <Input
                   label='Phone Number'
@@ -77,6 +113,23 @@ export default function LogInPage() {
                   placeholder='xxx-xxx-xxxx'
                   required
                   symbolRequired=''
+                />
+                <Input
+                  required
+                  id='phone'
+                  name='phone'
+                  label='Phone Number'
+                  placeholder='(xxx) xxx-xxxx'
+                  prefix={
+                    <Select
+                      asPrefix
+                      required
+                      id='countryCode'
+                      name='countryCode'
+                      placeholder='Country'
+                      settings={selectCountrySettings}
+                    />
+                  }
                 />
                 <Input
                   label='Password'
