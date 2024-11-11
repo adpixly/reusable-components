@@ -5,10 +5,9 @@ const defaultPatterns: Record<string, RegExp> = {
   name: /^[a-zA-Z\u00C0-\u024F\u0400-\u04FF]{2,15}$/,
   surname: /^[a-zA-Z\u00C0-\u024F\u0400-\u04FF]{2,15}$/,
   email: /^[a-zA-Z0-9._+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{1,15}$/,
-  phone:
-    /^(?:\d{3}-\d{4}|\d{4}-\d{4}|\d \d{3}-\d{5}|\(\d{3}\) \d{3}-\d{4}|\d \(\d{3}\) \d{3}-\d{4}|\d{2} \(\d{3}\) \d{3}-\d{4}|\d{3} \(\d{3}\) \d{3}-\d{4}|\d \d{3} \(\d{3}\) \d{3}-\d{4}|\d{2} \d{3} \(\d{3}\) \d{3}-\d{4}|\d{7,15})$/,
+  tel: /^(?:\d{3}-\d{4}|\d{4}-\d{4}|\d \d{3}-\d{5}|\(\d{3}\) \d{3}-\d{4}|\d \(\d{3}\) \d{3}-\d{4}|\d{2} \(\d{3}\) \d{3}-\d{4}|\d{3} \(\d{3}\) \d{3}-\d{4}|\d \d{3} \(\d{3}\) \d{3}-\d{4}|\d{2} \d{3} \(\d{3}\) \d{3}-\d{4}|\d{7,15})$/,
   countryCode: /^\+\s[0-9]{1,4}$/,
-  website: /^((http|https):\/\/)?[a-zA-Z0-9]+([-.]{1}[a-zA-Z0-9]+)*\.[a-z]{1,10}$/,
+  url: /^((http|https):\/\/)?[a-zA-Z0-9]+([-.]{1}[a-zA-Z0-9]+)*\.[a-z]{1,10}$/,
   genericPattern: /.*/
 }
 
@@ -16,9 +15,9 @@ const defaultErrorMessagesRequired: ErrorMessagesType = {
   name: 'What is your first name?',
   surname: 'What is your last name?',
   email: 'Please enter your email',
-  phone: 'In case we need to contact you',
+  tel: 'In case we need to contact you',
   countryCode: 'What is your country',
-  website: "What is your website's url",
+  url: "What is your website's url",
   message: 'Enter your message here'
 }
 
@@ -26,9 +25,9 @@ const defaultErrorMessagesWrong: ErrorMessagesType = {
   name: 'Enter a valid first name',
   surname: 'Enter a valid last name',
   email: 'Enter a valid email',
-  phone: 'Enter a valid phone number',
+  tel: 'Enter a valid phone number',
   countryCode: 'Enter a valid country code',
-  website: 'Enter a valid url'
+  url: 'Enter a valid url'
 }
 
 function validateField(

@@ -44,10 +44,10 @@
 }
 
 /* Forms */
-input[type="search"]::-webkit-search-decoration,
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-results-button,
-input[type="search"]::-webkit-search-results-decoration {
+input[type='search']::-webkit-search-decoration,
+input[type='search']::-webkit-search-cancel-button,
+input[type='search']::-webkit-search-results-button,
+input[type='search']::-webkit-search-results-decoration {
   -webkit-appearance: none;
 }
 
@@ -72,12 +72,12 @@ input[type="search"]::-webkit-search-results-decoration {
 .form-textarea,
 .form-multiselect,
 .form-select {
-  @apply text-gray-600 text-sm px-4 py-2;
+  @apply text-sm px-4 py-2;
 }
 
 .form-input,
 .form-textarea {
-  @apply placeholder-gray-400;
+  @apply placeholder-gray-500 dark:placeholder-gray-400;
 }
 
 .form-select {

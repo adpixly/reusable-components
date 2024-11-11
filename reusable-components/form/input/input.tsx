@@ -1,5 +1,6 @@
-import React, { useState, useEffect, useCallback } from 'react'
+import React, { useState, useEffect, useCallback, MutableRefObject } from 'react'
 import {
+  type FormData,
   type ErrorMessagesType,
   type InputProps,
   type SelectProps,
@@ -8,15 +9,17 @@ import {
   type ComponentStyles,
   type UpdateInputBorders
 } from '../../types/index'
+import Link from 'next/link'
 
 const defaultPatterns: Record<string, RegExp> = {
   name: /^[a-zA-Z\u00C0-\u024F\u0400-\u04FF]{2,15}$/,
   surname: /^[a-zA-Z\u00C0-\u024F\u0400-\u04FF]{2,15}$/,
   email: /^[a-zA-Z0-9._+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{1,15}$/,
-  phone:
-    /^(?:\d{3}-\d{4}|\d{4}-\d{4}|\d \d{3}-\d{5}|\(\d{3}\) \d{3}-\d{4}|\d \(\d{3}\) \d{3}-\d{4}|\d{2} \(\d{3}\) \d{3}-\d{4}|\d{3} \(\d{3}\) \d{3}-\d{4}|\d \d{3} \(\d{3}\) \d{3}-\d{4}|\d{2} \d{3} \(\d{3}\) \d{3}-\d{4}|\d{7,15})$/,
+  tel: /^(?:\d{3}-\d{4}|\d{4}-\d{4}|\d \d{3}-\d{5}|\(\d{3}\) \d{3}-\d{4}|\d \(\d{3}\) \d{3}-\d{4}|\d{2} \(\d{3}\) \d{3}-\d{4}|\d{3} \(\d{3}\) \d{3}-\d{4}|\d \d{3} \(\d{3}\) \d{3}-\d{4}|\d{2} \d{3} \(\d{3}\) \d{3}-\d{4}|\d{7,15})$/,
   countryCode: /^\+\s[0-9]{1,4}$/,
-  website: /^((http|https):\/\/)?[a-zA-Z0-9]+([-.]{1}[a-zA-Z0-9]+)*\.[a-z]{1,10}$/,
+  url: /^((http|https):\/\/)?[a-zA-Z0-9]+([-.]{1}[a-zA-Z0-9]+)*\.[a-z]{1,10}$/,
+  password:
+    /^(?=.*[!\"#$%&'()*+,\-./:;<=>?@[\\\]^_`{|}~].*[!\"#$%&'()*+,\-./:;<=>?@[\\\]^_`{|}~])(?=.*[A-Z].*[A-Z])(?=.*[a-z].*[a-z])(?=.*\d.*\d)[A-Za-z\d!\"#$%&'()*+,\-./:;<=>?@[\\\]^_`{|}~]{12,64}$/,
   genericPattern: /.*/
 }
 
@@ -24,25 +27,30 @@ const defaultErrorMessagesRequired: ErrorMessagesType = {
   name: 'What is your first name?',
   surname: 'What is your last name?',
   email: 'Please enter your email',
-  phone: 'In case we need to contact you',
+  tel: 'In case we need to contact you',
   countryCode: 'What is your country',
-  website: "What is your website's url",
-  message: 'Enter your message here'
+  url: "What is your website's url",
+  message: 'Enter your message here',
+  password: 'Create your password',
+  confirmPassword: 'Repeat your password'
 }
 
 const defaultErrorMessagesWrong: ErrorMessagesType = {
   name: 'Enter a valid first name',
   surname: 'Enter a valid last name',
   email: 'Enter a valid email',
-  phone: 'Enter a valid phone number',
+  tel: 'Enter a valid phone number',
   countryCode: 'Enter a valid country code',
-  website: 'Enter a valid url'
+  url: 'Enter a valid url',
+  password: 'Create a valid password',
+  confirmPassword: "The passwords doesn't match"
 }
 
 function validateField(
   required: boolean,
   name: string,
   value: string,
+  formData?: MutableRefObject<FormData>,
   customPattern?: RegExp,
   errorMessageWrong?: string,
   errorMessageRequired?: string
@@ -50,6 +58,14 @@ function validateField(
   if (required && (value === '' || value === null || value === undefined)) {
     return errorMessageRequired ?? defaultErrorMessagesRequired[name] ?? 'This field is required'
   }
+
+  if (name === 'confirmPassword') {
+    const passwordValue = formData?.current.password
+    if (passwordValue !== value) {
+      return errorMessageWrong ?? defaultErrorMessagesWrong[name]
+    }
+  }
+
   const pattern = customPattern ?? defaultPatterns[name] ?? defaultPatterns.genericPattern
   if (value !== '' && pattern !== undefined && !pattern.test(value ?? '')) {
     return errorMessageWrong ?? defaultErrorMessagesWrong[name] ?? 'Enter something valid'
@@ -120,12 +136,52 @@ function Input({
   clue = '',
   clueClass = '',
   styles,
+  type,
+  recover,
+  recoverClass,
+  recoverLink = '',
+  labelRecoverContainerClass = '',
   ...inputProps
 }: InputProps): JSX.Element {
   const [errorMessage, setErrorMessage] = useState<string | null | undefined>(currentErrorMessage?.[name])
   const [childrenError, setChildrenError] = useState<PrefixSufixErrors>({ prefix: null, sufix: null })
   const [borders, setBorders] = useState<'' | 'prefix' | 'sufix'>('')
   const [inputBorder, setInputBorder] = useState<boolean>(false)
+
+  function getDeveloperStack(): string | null {
+    const stack = new Error().stack
+    if (!stack) return null
+
+    const stackFrames = stack.split('\n').filter(line => {
+      return !line.includes('node_modules') && !line.includes('Input') && !line.includes('getDeveloperStack')
+    })
+
+    return stackFrames[0]?.trim() ?? null
+  }
+
+  useEffect(() => {
+    console.log(formData?.current)
+
+    if (process.env.NODE_ENV === 'development') {
+      const formValues = formData?.current ?? {}
+
+      if (name === 'confirmPassword' && !('password' in formValues)) {
+        const developerStack = getDeveloperStack()
+
+        throw new Error(`
+          Input Error: The 'confirmPassword' input requires a corresponding 'password' input.
+
+          Make sure to include an input with:
+          - name: 'password'
+          - type: 'password'
+
+          Make sure that the input with name='password' renders before the input with name='confirmPassword'.
+
+          Source: ${developerStack || 'Could not determine the source of the issue.'}
+        `)
+      }
+    }
+  }, [name, formData])
 
   const pStyles: ComponentStyles = {
     generalStyles: inputClass ?? styles?.inputStyles?.generalStyles ?? '',
@@ -145,7 +201,9 @@ function Input({
     prefix: '',
     sufix: '',
     inputBorder: '',
-    prefixAndSufixContainer: prefixAndSufixContainerClass
+    prefixAndSufixContainer: prefixAndSufixContainerClass,
+    recover: recoverClass,
+    labelContainer: labelRecoverContainerClass
   }
 
   if (preserveStyles) {
@@ -158,6 +216,8 @@ function Input({
     baseClasses.error = `error_class__p5T8r2B ${baseClasses.error}`
     baseClasses.errorContainer = `error_container_class__q3V7k9R ${baseClasses.errorContainer}`
     baseClasses.prefixAndSufixContainer = `prefix_and_sufix_container_class__h3I4j5K ${baseClasses.prefixAndSufixContainer}`
+    baseClasses.recover = `recover_password_class__n4D6e7Q ${baseClasses.recover}`
+    baseClasses.labelContainer = `label_container_class__w4G2t5B ${baseClasses.labelContainer}`
   }
 
   if (prefix != null || sufix != null) {
@@ -200,7 +260,9 @@ function Input({
     errorContainer: pErrorContainerClass,
     prefix: pPrefixClass,
     sufix: pSufixClass,
-    prefixAndSufixContainer: pPrefixAndSufixContainerClass
+    prefixAndSufixContainer: pPrefixAndSufixContainerClass,
+    recover: pRecoverClass,
+    labelContainer: pLabelContainerClass
   } = baseClasses
 
   const updateParentError: UpdateErrorMessage = useCallback((name, message) => {
@@ -224,6 +286,7 @@ function Input({
       required,
       name,
       defaultValue,
+      formData,
       validationPattern,
       errorMessageWrong,
       errorMessageRequired
@@ -244,6 +307,7 @@ function Input({
         required,
         name,
         event.target.value,
+        formData,
         validationPattern,
         errorMessageWrong,
         errorMessageRequired
@@ -257,7 +321,7 @@ function Input({
 
   const handleChange = useCallback(
     (event: React.ChangeEvent<HTMLInputElement>) => {
-      if (name === 'phone' && formatPhone) {
+      if (type === 'tel' && formatPhone) {
         event.target.value = formatPhoneValue(event.target.value)
       }
 
@@ -323,8 +387,8 @@ function Input({
       aria-required={required}
       id={id}
       name={name}
+      type={type}
       className={`${pInputClass} ${errorMessage !== null && errorMessage !== undefined ? pErrorInputClass : pNonErrorInputClass}`}
-      type='text'
       {...inputProps}
       onBlur={handleBlur}
       onChange={handleChange}
@@ -356,14 +420,26 @@ function Input({
 
   return (
     <div className={className}>
-      {label !== undefined && (
-        <label className={pLabelClass} htmlFor={id}>
-          {label}
-          {required && <span className={pSymbolRequiredClass}>{symbolRequired}</span>}
-          {clue !== undefined && clue !== null && <span className={pClueClass}>{clue}</span>}
-        </label>
-      )}
-      {prefix !== undefined || sufix !== undefined ? (
+      {label &&
+        (recover ? (
+          <div className={pLabelContainerClass}>
+            <label className={pLabelClass} htmlFor={id}>
+              {label}
+              {required && <span className={pSymbolRequiredClass}>{symbolRequired}</span>}
+              {clue && <span className={pClueClass}>{clue}</span>}
+            </label>
+            <Link href={recoverLink} className={pRecoverClass}>
+              {recover}
+            </Link>
+          </div>
+        ) : (
+          <label className={pLabelClass} htmlFor={id}>
+            {label}
+            {required && <span className={pSymbolRequiredClass}>{symbolRequired}</span>}
+            {clue && <span className={pClueClass}>{clue}</span>}
+          </label>
+        ))}
+      {prefix || sufix ? (
         <div className={pPrefixAndSufixContainerClass}>
           {cloneInputChildren(render(prefix, pPrefixClass))}
           {input}

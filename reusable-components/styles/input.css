@@ -37,9 +37,13 @@
 .label_class__a4D9y1K {
   display: block;
   font-size: 0.875rem;
-  color: #e2e8f0;
   font-weight: 500;
+  color: #1f2937;
   margin-bottom: 0.25rem;
+}
+
+.label_class__a4D9y1K:is(.dark *) {
+  color: #d1d5db;
 }
 
 .symbol_class__m6H2v7X {
@@ -101,4 +105,26 @@
 
 .input_sufix_border_class__i3Q8e2L {
   border-right: none;
+}
+
+.label_container_class__w4G2t5B {
+  display: flex;
+  justify-content: space-between;
+}
+
+.recover_password_class__n4D6e7Q {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #4b5563;
+  text-decoration: underline;
+  margin-left: 0.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.recover_password_class__n4D6e7Q:is(.dark *) {
+  color: #9ca3af;
+}
+
+.recover_password_class__n4D6e7Q:hover {
+  text-decoration: none;
 }

@@ -20,8 +20,8 @@ export default function LogInPage() {
   const styles: Styles = {
     inputStyles: {
       generalStyles: 'form-input text-sm w-full',
-      nonErrorStyles: 'bg-white border-gray-200',
-      errorStyles: 'bg-rose-200 border-red-400'
+      nonErrorStyles: 'bg-white dark:bg-slate-800 border-gray-200 text-gray-600 dark:text-gray-300',
+      errorStyles: 'bg-rose-200 dark:placeholder-gray-600 dark:bg-rose-300 border-red-400 text-gray-800'
     }
   }
 
@@ -68,7 +68,38 @@ export default function LogInPage() {
                   symbolRequired=''
                   defaultValue='jhon@metacorp.com'
                 />
-
+                <Input
+                  label='Phone Number'
+                  labelClass='block text-sm text-gray-800 dark:text-gray-300 font-medium mb-2'
+                  name='tel'
+                  id='tel'
+                  type='tel'
+                  placeholder='xxx-xxx-xxxx'
+                  required
+                  symbolRequired=''
+                />
+                <Input
+                  label='Password'
+                  labelClass='block text-sm text-gray-800 dark:text-gray-300 font-medium mb-2'
+                  name='password'
+                  id='password'
+                  type='password'
+                  recover='Forgot?'
+                  recoverLink='/reset-password'
+                  placeholder='************'
+                  required
+                  symbolRequired=''
+                />
+                <Input
+                  label='Repeat Password'
+                  labelClass='block text-sm text-gray-800 dark:text-gray-300 font-medium mb-2'
+                  name='confirmPassword'
+                  id='confirmPassword'
+                  type='password'
+                  placeholder='************'
+                  required
+                  symbolRequired=''
+                />
                 <div>
                   <div className='flex justify-between'>
                     <label

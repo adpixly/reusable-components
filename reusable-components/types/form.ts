@@ -93,6 +93,10 @@ export interface InputProps extends Omit<React.InputHTMLAttributes<HTMLInputElem
   clueClass?: string
   styles?: Styles
   nonErrorInputClass?: string
+  recover?: string
+  recoverClass?: string
+  recoverLink?: string
+  labelRecoverContainerClass?: string
 }
 
 export interface TextAreaProps extends React.TextareaHTMLAttributes<HTMLTextAreaElement> {
