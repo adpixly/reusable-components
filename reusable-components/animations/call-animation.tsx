@@ -1,7 +1,7 @@
 import Tooltip from '../components/text-tooltip'
 import { useCopy } from './utils'
 import { CheckIcon, PhoneIcon } from '../icons'
-import { type CopyAnimation } from '../types/index'
+import type { CopyAnimation } from '../types/index'
 
 export default function CallIconAnimation({
   children,
@@ -14,7 +14,7 @@ export default function CallIconAnimation({
   tooltipText,
   tooltipTextCopied,
   tooltipClass
-}: CopyAnimation): JSX.Element {
+}: CopyAnimation): React.JSX.Element {
   const { isCopied, startCall } = useCopy()
 
   const content = (

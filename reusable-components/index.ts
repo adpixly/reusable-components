@@ -6,6 +6,6 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-export { default as TextTooltip } from './components/text-tooltip'
 import './styles.css'
 import './base.css'
+export { default as TextTooltip } from './components/text-tooltip'

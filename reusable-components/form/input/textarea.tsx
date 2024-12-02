@@ -1,5 +1,6 @@
-import React, { useState, useEffect, useCallback } from 'react'
-import { type ErrorMessagesType, type TextAreaProps, type ComponentStyles } from '../../types/index'
+import type React from 'react'
+import { useState, useEffect, useCallback } from 'react'
+import type { ErrorMessagesType, TextAreaProps, ComponentStyles } from '../../types/index'
 
 const defaultPatterns: Record<string, RegExp> = {
   name: /^[a-zA-Z\u00C0-\u024F\u0400-\u04FF]{2,15}$/,
@@ -77,7 +78,7 @@ function Textarea({
   styles,
   rows = 4,
   ...inputProps
-}: TextAreaProps): JSX.Element {
+}: TextAreaProps): React.JSX.Element {
   const [errorMessage, setErrorMessage] = useState<string | null | undefined>(currentErrorMessage?.[name])
 
   const pStyles: ComponentStyles = {
@@ -167,7 +168,7 @@ function Textarea({
 
   const handleChange = useCallback(
     (event: React.ChangeEvent<HTMLTextAreaElement>) => {
-      const value = event.target.value
+      const { value } = event.target
 
       if (formData !== undefined) {
         formData.current[name] = value

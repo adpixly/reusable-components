@@ -1,13 +1,13 @@
-import React, { useState, useRef, useEffect, useCallback, MutableRefObject } from 'react'
-import {
-  type FormData,
-  type ErrorMessagesType,
-  type InputProps,
-  type SelectProps,
-  type UpdateErrorMessage,
-  type PrefixSufixErrors,
-  type ComponentStyles,
-  type UpdateInputBorders
+import React, { useState, useRef, useEffect, useCallback, type MutableRefObject } from 'react'
+import type {
+  FormData,
+  ErrorMessagesType,
+  InputProps,
+  SelectProps,
+  UpdateErrorMessage,
+  PrefixSufixErrors,
+  ComponentStyles,
+  UpdateInputBorders
 } from '../../types/index'
 import Link from 'next/link'
 
@@ -100,12 +100,9 @@ function formatPhoneValue(value: string): string {
   return format !== undefined ? numericValue.replace(format.pattern, format.replacement) : numericValue
 }
 
-const isReactComponent = (value: any): value is React.ElementType => {
-  return (
-    typeof value === 'function' ||
-    (typeof value === 'object' && value !== null && 'type' in value && typeof value.type === 'function')
-  )
-}
+const isReactComponent = (value: any): value is React.ElementType =>
+  typeof value === 'function' ||
+  (typeof value === 'object' && value !== null && 'type' in value && typeof value.type === 'function')
 
 function Input({
   id,
@@ -145,7 +142,7 @@ function Input({
   recoverLink = '',
   labelRecoverContainerClass = '',
   ...inputProps
-}: InputProps): JSX.Element {
+}: InputProps): React.JSX.Element {
   const [errorMessage, setErrorMessage] = useState<string | null | undefined>(currentErrorMessage?.[name])
   const [childrenError, setChildrenError] = useState<PrefixSufixErrors>({ prefix: null, sufix: null })
   const [borders, setBorders] = useState<'' | 'prefix' | 'sufix'>('')
@@ -155,12 +152,12 @@ function Input({
   const errorBlur = useRef<string | null>(null)
 
   function getDeveloperStack(): string | null {
-    const stack = new Error().stack
+    const { stack } = new Error()
     if (!stack) return null
 
-    const stackFrames = stack.split('\n').filter(line => {
-      return !line.includes('node_modules') && !line.includes('Input') && !line.includes('getDeveloperStack')
-    })
+    const stackFrames = stack
+      .split('\n')
+      .filter(line => !line.includes('node_modules') && !line.includes('Input') && !line.includes('getDeveloperStack'))
 
     return stackFrames[0]?.trim() ?? null
   }
@@ -353,7 +350,7 @@ function Input({
         }
       }
 
-      const value = event.target.value
+      const { value } = event.target
 
       if (formData !== undefined) {
         formData.current[name] = value
@@ -363,9 +360,9 @@ function Input({
   )
 
   const cloneInputChildren = useCallback(
-    (children: React.ReactNode): React.ReactNode => {
+    (children: React.ReactNode): React.ReactNode =>
       // eslint-disable-next-line @typescript-eslint/promise-function-async
-      return React.Children.map(children, child => {
+      React.Children.map(children, child => {
         if (!React.isValidElement<SelectProps>(child)) {
           return child
         }
@@ -386,26 +383,27 @@ function Input({
           }
         }
 
-        if (child.props?.children !== undefined) {
+        if (child.props.children !== undefined) {
           return React.cloneElement(child, {
             children: cloneInputChildren(child.props.children as React.ReactNode)
           })
         }
         return child
-      })
-    },
+      }),
     [currentErrorMessage, inputBorder, errorMessage]
   )
 
-  const alreadyHasStyles = useCallback((children: React.ReactNode, componentNames: string[]): boolean => {
-    return React.Children.toArray(children).some(child => {
-      if (React.isValidElement(child) && isCustomComponent(child)) {
-        const displayName = (child.type as any).displayName as string | undefined
-        return displayName !== undefined && componentNames.includes(displayName)
-      }
-      return false
-    })
-  }, [])
+  const alreadyHasStyles = useCallback(
+    (children: React.ReactNode, componentNames: string[]): boolean =>
+      React.Children.toArray(children).some(child => {
+        if (React.isValidElement(child) && isCustomComponent(child)) {
+          const displayName = (child.type as any).displayName as string | undefined
+          return displayName !== undefined && componentNames.includes(displayName)
+        }
+        return false
+      }),
+    []
+  )
 
   const input = (
     <input

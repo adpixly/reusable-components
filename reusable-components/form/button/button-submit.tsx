@@ -1,4 +1,4 @@
-import { type ButtonStyles, type SubmitProps } from '../../types/index'
+import type { ButtonStyles, SubmitProps } from '../../types/index'
 import { LoaderCircleAnimation } from '../../animations'
 
 function ButtonSubmit({
@@ -15,7 +15,7 @@ function ButtonSubmit({
   loaderWidth,
   loaderHeight,
   ...buttonProps
-}: SubmitProps): JSX.Element {
+}: SubmitProps): React.JSX.Element {
   const pStyles: ButtonStyles = {
     generalStyles: className ?? styles?.selectStyles?.generalStyles ?? '',
     nonSentStyles: nonSentClass ?? styles?.selectStyles?.nonErrorStyles ?? '',
@@ -44,12 +44,12 @@ function ButtonSubmit({
     <button
       {...buttonProps}
       type='button'
-      className={`${pButtonClass} ${sent ? pSentClass : pNonSentClass}`}
+      className={`${pButtonClass} ${(sent ?? false) ? pSentClass : pNonSentClass}`}
       onClick={e => {
         e.preventDefault()
         void handleSubmit?.()
       }}>
-      {sent ? (
+      {(sent ?? false) ? (
         <>
           <span className='invisible_text_class__i2K9p3R'>{placeholder}</span>
           <Icon className='loader_class__l8P5n6T' width={loaderWidth} height={loaderHeight} color={pLoaderColor} />

@@ -1,4 +1,4 @@
-import { type ButtonHTMLAttributes, type MutableRefObject } from 'react'
+import type { ButtonHTMLAttributes, MutableRefObject } from 'react'
 
 export type FormData = Record<string, string>
 export type FormErrors = Record<string, string | null>

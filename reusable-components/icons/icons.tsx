@@ -1,6 +1,6 @@
-import { type IconProps } from '../types/index'
+import type { IconProps } from '../types/index'
 
-export function AccessibilityIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function AccessibilityIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -21,7 +21,7 @@ export function AccessibilityIcon({ className, width = '16px', height = '16px' }
   )
 }
 
-export function AccessibilityUnreadIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function AccessibilityUnreadIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -42,7 +42,7 @@ export function AccessibilityUnreadIcon({ className, width = '16px', height = '1
   )
 }
 
-export function AcronymApiIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function AcronymApiIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -62,7 +62,7 @@ export function AcronymApiIcon({ className, width = '16px', height = '16px' }: I
   )
 }
 
-export function AcronymCsvIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function AcronymCsvIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -82,7 +82,7 @@ export function AcronymCsvIcon({ className, width = '16px', height = '16px' }: I
   )
 }
 
-export function AcronymGifIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function AcronymGifIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -102,7 +102,7 @@ export function AcronymGifIcon({ className, width = '16px', height = '16px' }: I
   )
 }
 
-export function AcronymHttpIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function AcronymHttpIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -122,7 +122,7 @@ export function AcronymHttpIcon({ className, width = '16px', height = '16px' }: 
   )
 }
 
-export function AcronymIsrIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function AcronymIsrIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -142,7 +142,7 @@ export function AcronymIsrIcon({ className, width = '16px', height = '16px' }: I
   )
 }
 
-export function AcronymJpgIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function AcronymJpgIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -162,7 +162,7 @@ export function AcronymJpgIcon({ className, width = '16px', height = '16px' }: I
   )
 }
 
-export function AcronymJsIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function AcronymJsIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -182,7 +182,7 @@ export function AcronymJsIcon({ className, width = '16px', height = '16px' }: Ic
   )
 }
 
-export function AcronymJsonIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function AcronymJsonIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -202,7 +202,7 @@ export function AcronymJsonIcon({ className, width = '16px', height = '16px' }: 
   )
 }
 
-export function AcronymMarkdownIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function AcronymMarkdownIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -222,7 +222,7 @@ export function AcronymMarkdownIcon({ className, width = '16px', height = '16px'
   )
 }
 
-export function AcronymPageIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function AcronymPageIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -242,7 +242,7 @@ export function AcronymPageIcon({ className, width = '16px', height = '16px' }: 
   )
 }
 
-export function AcronymPprIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function AcronymPprIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -263,7 +263,7 @@ export function AcronymPprIcon({ className, width = '16px', height = '16px' }: I
   )
 }
 
-export function AcronymSvgIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function AcronymSvgIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -283,7 +283,7 @@ export function AcronymSvgIcon({ className, width = '16px', height = '16px' }: I
   )
 }
 
-export function AcronymTsIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function AcronymTsIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -303,7 +303,7 @@ export function AcronymTsIcon({ className, width = '16px', height = '16px' }: Ic
   )
 }
 
-export function AlignmentCenterIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function AlignmentCenterIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -323,7 +323,7 @@ export function AlignmentCenterIcon({ className, width = '16px', height = '16px'
   )
 }
 
-export function AlignmentLeftIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function AlignmentLeftIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -343,7 +343,7 @@ export function AlignmentLeftIcon({ className, width = '16px', height = '16px' }
   )
 }
 
-export function AlignmentRightIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function AlignmentRightIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -363,7 +363,7 @@ export function AlignmentRightIcon({ className, width = '16px', height = '16px' 
   )
 }
 
-export function AlphaIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function AlphaIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -393,7 +393,7 @@ export function AlphaIcon({ className, width = '16px', height = '16px' }: IconPr
   )
 }
 
-export function AnalyticsIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function AnalyticsIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -413,7 +413,7 @@ export function AnalyticsIcon({ className, width = '16px', height = '16px' }: Ic
   )
 }
 
-export function AnchorIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function AnchorIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -433,7 +433,7 @@ export function AnchorIcon({ className, width = '16px', height = '16px' }: IconP
   )
 }
 
-export function ApiIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function ApiIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -453,7 +453,7 @@ export function ApiIcon({ className, width = '16px', height = '16px' }: IconProp
   )
 }
 
-export function ArchiveIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function ArchiveIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -473,7 +473,7 @@ export function ArchiveIcon({ className, width = '16px', height = '16px' }: Icon
   )
 }
 
-export function ArrowCircleDownIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function ArrowCircleDownIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -493,7 +493,7 @@ export function ArrowCircleDownIcon({ className, width = '16px', height = '16px'
   )
 }
 
-export function ArrowCircleLeftIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function ArrowCircleLeftIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -513,7 +513,7 @@ export function ArrowCircleLeftIcon({ className, width = '16px', height = '16px'
   )
 }
 
-export function ArrowCircleRightIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function ArrowCircleRightIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -533,7 +533,7 @@ export function ArrowCircleRightIcon({ className, width = '16px', height = '16px
   )
 }
 
-export function ArrowCircleUpIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function ArrowCircleUpIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -553,7 +553,7 @@ export function ArrowCircleUpIcon({ className, width = '16px', height = '16px' }
   )
 }
 
-export function ArrowCrossedIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function ArrowCrossedIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -578,7 +578,7 @@ export function ArrowCrossedIcon({ className, width = '16px', height = '16px' }:
   )
 }
 
-export function ArrowDownIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function ArrowDownIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -598,7 +598,7 @@ export function ArrowDownIcon({ className, width = '16px', height = '16px' }: Ic
   )
 }
 
-export function ArrowDownLeftIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function ArrowDownLeftIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -618,7 +618,7 @@ export function ArrowDownLeftIcon({ className, width = '16px', height = '16px' }
   )
 }
 
-export function ArrowDownRightIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function ArrowDownRightIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -638,7 +638,7 @@ export function ArrowDownRightIcon({ className, width = '16px', height = '16px' 
   )
 }
 
-export function ArrowGlobeIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function ArrowGlobeIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -658,7 +658,7 @@ export function ArrowGlobeIcon({ className, width = '16px', height = '16px' }: I
   )
 }
 
-export function ArrowLeftIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function ArrowLeftIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -678,7 +678,7 @@ export function ArrowLeftIcon({ className, width = '16px', height = '16px' }: Ic
   )
 }
 
-export function ArrowLeftRightIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function ArrowLeftRightIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -698,7 +698,7 @@ export function ArrowLeftRightIcon({ className, width = '16px', height = '16px' 
   )
 }
 
-export function ArrowMoveIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function ArrowMoveIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -716,7 +716,8 @@ export function ArrowMoveIcon({ className, width = '16px', height = '16px' }: Ic
   )
 }
 
-export function ArrowMoveUnreadIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function ArrowMoveUnreadIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
+  const opacity = 1
   return (
     <span className={className}>
       <svg
@@ -736,7 +737,7 @@ export function ArrowMoveUnreadIcon({ className, width = '16px', height = '16px'
         </g>
         <defs>
           <clipPath id='clip0_4759_1928'>
-            <rect width='16' height='16' fill='white' style={{ fill: 'white', fillOpacity: 1 }}></rect>
+            <rect width='16' height='16' fill='white' style={{ fill: 'white', fillOpacity: opacity }}></rect>
           </clipPath>
         </defs>
       </svg>
@@ -744,7 +745,7 @@ export function ArrowMoveUnreadIcon({ className, width = '16px', height = '16px'
   )
 }
 
-export function ArrowRightIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function ArrowRightIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -764,7 +765,7 @@ export function ArrowRightIcon({ className, width = '16px', height = '16px' }: I
   )
 }
 
-export function ArrowUpIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function ArrowUpIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -784,7 +785,7 @@ export function ArrowUpIcon({ className, width = '16px', height = '16px' }: Icon
   )
 }
 
-export function ArrowUpDiagonalScaleIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function ArrowUpDiagonalScaleIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -804,7 +805,7 @@ export function ArrowUpDiagonalScaleIcon({ className, width = '16px', height = '
   )
 }
 
-export function ArrowUpDownIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function ArrowUpDownIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -824,7 +825,7 @@ export function ArrowUpDownIcon({ className, width = '16px', height = '16px' }: 
   )
 }
 
-export function ArrowUpLeftIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function ArrowUpLeftIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -844,7 +845,7 @@ export function ArrowUpLeftIcon({ className, width = '16px', height = '16px' }: 
   )
 }
 
-export function ArrowUpRightIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function ArrowUpRightIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -864,7 +865,7 @@ export function ArrowUpRightIcon({ className, width = '16px', height = '16px' }:
   )
 }
 
-export function ArrowUpRightSmallIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function ArrowUpRightSmallIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -884,7 +885,7 @@ export function ArrowUpRightSmallIcon({ className, width = '16px', height = '16p
   )
 }
 
-export function BackspaceIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function BackspaceIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -904,7 +905,7 @@ export function BackspaceIcon({ className, width = '16px', height = '16px' }: Ic
   )
 }
 
-export function BarChartIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function BarChartIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -924,7 +925,7 @@ export function BarChartIcon({ className, width = '16px', height = '16px' }: Ico
   )
 }
 
-export function BellIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function BellIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -944,7 +945,7 @@ export function BellIcon({ className, width = '16px', height = '16px' }: IconPro
   )
 }
 
-export function BellOffIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function BellOffIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -964,7 +965,7 @@ export function BellOffIcon({ className, width = '16px', height = '16px' }: Icon
   )
 }
 
-export function BlendModeIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function BlendModeIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -984,7 +985,7 @@ export function BlendModeIcon({ className, width = '16px', height = '16px' }: Ic
   )
 }
 
-export function BlobIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function BlobIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -1004,7 +1005,7 @@ export function BlobIcon({ className, width = '16px', height = '16px' }: IconPro
   )
 }
 
-export function BookClosedIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function BookClosedIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -1024,7 +1025,7 @@ export function BookClosedIcon({ className, width = '16px', height = '16px' }: I
   )
 }
 
-export function BookOpenIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function BookOpenIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -1044,7 +1045,7 @@ export function BookOpenIcon({ className, width = '16px', height = '16px' }: Ico
   )
 }
 
-export function BookmarkIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function BookmarkIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -1064,7 +1065,7 @@ export function BookmarkIcon({ className, width = '16px', height = '16px' }: Ico
   )
 }
 
-export function BoxIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function BoxIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -1084,7 +1085,7 @@ export function BoxIcon({ className, width = '16px', height = '16px' }: IconProp
   )
 }
 
-export function BranchMinusIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function BranchMinusIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -1104,7 +1105,7 @@ export function BranchMinusIcon({ className, width = '16px', height = '16px' }: 
   )
 }
 
-export function BranchPlusIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function BranchPlusIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -1124,7 +1125,7 @@ export function BranchPlusIcon({ className, width = '16px', height = '16px' }: I
   )
 }
 
-export function BriefcaseIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function BriefcaseIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -1144,7 +1145,7 @@ export function BriefcaseIcon({ className, width = '16px', height = '16px' }: Ic
   )
 }
 
-export function BrowserArcIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function BrowserArcIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -1164,7 +1165,7 @@ export function BrowserArcIcon({ className, width = '16px', height = '16px' }: I
   )
 }
 
-export function BrowserBraveIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function BrowserBraveIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -1184,7 +1185,7 @@ export function BrowserBraveIcon({ className, width = '16px', height = '16px' }:
   )
 }
 
-export function BrowserChromeIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function BrowserChromeIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -1204,7 +1205,7 @@ export function BrowserChromeIcon({ className, width = '16px', height = '16px' }
   )
 }
 
-export function BrowserEdgeIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function BrowserEdgeIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -1224,7 +1225,7 @@ export function BrowserEdgeIcon({ className, width = '16px', height = '16px' }: 
   )
 }
 
-export function BrowserFirefoxIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function BrowserFirefoxIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -1244,7 +1245,7 @@ export function BrowserFirefoxIcon({ className, width = '16px', height = '16px' 
   )
 }
 
-export function BrowserOperaIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function BrowserOperaIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -1264,7 +1265,7 @@ export function BrowserOperaIcon({ className, width = '16px', height = '16px' }:
   )
 }
 
-export function BrowserSafariIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function BrowserSafariIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -1284,7 +1285,7 @@ export function BrowserSafariIcon({ className, width = '16px', height = '16px' }
   )
 }
 
-export function BugIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function BugIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -1304,7 +1305,7 @@ export function BugIcon({ className, width = '16px', height = '16px' }: IconProp
   )
 }
 
-export function BuildingsIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function BuildingsIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -1324,7 +1325,7 @@ export function BuildingsIcon({ className, width = '16px', height = '16px' }: Ic
   )
 }
 
-export function CalculatorIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function CalculatorIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -1344,7 +1345,7 @@ export function CalculatorIcon({ className, width = '16px', height = '16px' }: I
   )
 }
 
-export function CalendarIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function CalendarIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -1364,7 +1365,7 @@ export function CalendarIcon({ className, width = '16px', height = '16px' }: Ico
   )
 }
 
-export function CameraIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function CameraIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -1384,7 +1385,7 @@ export function CameraIcon({ className, width = '16px', height = '16px' }: IconP
   )
 }
 
-export function CartIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function CartIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -1404,7 +1405,7 @@ export function CartIcon({ className, width = '16px', height = '16px' }: IconPro
   )
 }
 
-export function ChartActivityIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function ChartActivityIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -1424,7 +1425,7 @@ export function ChartActivityIcon({ className, width = '16px', height = '16px' }
   )
 }
 
-export function ChartBarMiddleIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function ChartBarMiddleIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -1444,7 +1445,7 @@ export function ChartBarMiddleIcon({ className, width = '16px', height = '16px' 
   )
 }
 
-export function ChartBarPeakIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function ChartBarPeakIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -1464,7 +1465,7 @@ export function ChartBarPeakIcon({ className, width = '16px', height = '16px' }:
   )
 }
 
-export function ChartBarRandomIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function ChartBarRandomIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -1484,7 +1485,7 @@ export function ChartBarRandomIcon({ className, width = '16px', height = '16px' 
   )
 }
 
-export function ChartPieIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function ChartPieIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -1504,7 +1505,7 @@ export function ChartPieIcon({ className, width = '16px', height = '16px' }: Ico
   )
 }
 
-export function ChartTrendingDownIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function ChartTrendingDownIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -1524,7 +1525,7 @@ export function ChartTrendingDownIcon({ className, width = '16px', height = '16p
   )
 }
 
-export function ChartTrendingUpIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function ChartTrendingUpIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -1544,7 +1545,7 @@ export function ChartTrendingUpIcon({ className, width = '16px', height = '16px'
   )
 }
 
-export function CheckIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function CheckIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -1565,7 +1566,7 @@ export function CheckIcon({ className, width = '16px', height = '16px' }: IconPr
   )
 }
 
-export function CheckCircleIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function CheckCircleIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -1585,7 +1586,7 @@ export function CheckCircleIcon({ className, width = '16px', height = '16px' }: 
   )
 }
 
-export function CheckCircleFillIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function CheckCircleFillIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -1605,7 +1606,7 @@ export function CheckCircleFillIcon({ className, width = '16px', height = '16px'
   )
 }
 
-export function CheckSquareIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function CheckSquareIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -1625,7 +1626,7 @@ export function CheckSquareIcon({ className, width = '16px', height = '16px' }: 
   )
 }
 
-export function ChevronCircleDownIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function ChevronCircleDownIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -1645,7 +1646,11 @@ export function ChevronCircleDownIcon({ className, width = '16px', height = '16p
   )
 }
 
-export function ChevronCircleDownFillIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function ChevronCircleDownFillIcon({
+  className,
+  width = '16px',
+  height = '16px'
+}: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -1665,7 +1670,7 @@ export function ChevronCircleDownFillIcon({ className, width = '16px', height = 
   )
 }
 
-export function ChevronCircleLeftIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function ChevronCircleLeftIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -1685,7 +1690,11 @@ export function ChevronCircleLeftIcon({ className, width = '16px', height = '16p
   )
 }
 
-export function ChevronCircleLeftFillIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function ChevronCircleLeftFillIcon({
+  className,
+  width = '16px',
+  height = '16px'
+}: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -1705,7 +1714,7 @@ export function ChevronCircleLeftFillIcon({ className, width = '16px', height = 
   )
 }
 
-export function ChevronCircleRightIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function ChevronCircleRightIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -1725,7 +1734,11 @@ export function ChevronCircleRightIcon({ className, width = '16px', height = '16
   )
 }
 
-export function ChevronCircleRightFillIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function ChevronCircleRightFillIcon({
+  className,
+  width = '16px',
+  height = '16px'
+}: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -1745,7 +1758,7 @@ export function ChevronCircleRightFillIcon({ className, width = '16px', height =
   )
 }
 
-export function ChevronCircleUpIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function ChevronCircleUpIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -1765,7 +1778,7 @@ export function ChevronCircleUpIcon({ className, width = '16px', height = '16px'
   )
 }
 
-export function ChevronCircleUpFillIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function ChevronCircleUpFillIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -1785,7 +1798,7 @@ export function ChevronCircleUpFillIcon({ className, width = '16px', height = '1
   )
 }
 
-export function ChevronDoubleDownIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function ChevronDoubleDownIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -1805,7 +1818,7 @@ export function ChevronDoubleDownIcon({ className, width = '16px', height = '16p
   )
 }
 
-export function ChevronDoubleLeftIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function ChevronDoubleLeftIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -1825,7 +1838,7 @@ export function ChevronDoubleLeftIcon({ className, width = '16px', height = '16p
   )
 }
 
-export function ChevronDoubleRightIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function ChevronDoubleRightIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -1845,7 +1858,7 @@ export function ChevronDoubleRightIcon({ className, width = '16px', height = '16
   )
 }
 
-export function ChevronDoubleUpIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function ChevronDoubleUpIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -1865,7 +1878,7 @@ export function ChevronDoubleUpIcon({ className, width = '16px', height = '16px'
   )
 }
 
-export function ChevronDownIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function ChevronDownIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -1885,7 +1898,7 @@ export function ChevronDownIcon({ className, width = '16px', height = '16px' }: 
   )
 }
 
-export function ChevronDownSmallIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function ChevronDownSmallIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -1905,7 +1918,7 @@ export function ChevronDownSmallIcon({ className, width = '16px', height = '16px
   )
 }
 
-export function ChevronLeftIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function ChevronLeftIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -1925,7 +1938,7 @@ export function ChevronLeftIcon({ className, width = '16px', height = '16px' }: 
   )
 }
 
-export function ChevronLeftSmallIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function ChevronLeftSmallIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -1945,7 +1958,7 @@ export function ChevronLeftSmallIcon({ className, width = '16px', height = '16px
   )
 }
 
-export function ChevronRightIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function ChevronRightIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -1965,7 +1978,7 @@ export function ChevronRightIcon({ className, width = '16px', height = '16px' }:
   )
 }
 
-export function ChevronRightSmallIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function ChevronRightSmallIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -1985,7 +1998,7 @@ export function ChevronRightSmallIcon({ className, width = '16px', height = '16p
   )
 }
 
-export function ChevronUpIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function ChevronUpIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -2005,7 +2018,7 @@ export function ChevronUpIcon({ className, width = '16px', height = '16px' }: Ic
   )
 }
 
-export function ChevronUpSmallIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function ChevronUpSmallIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -2025,7 +2038,7 @@ export function ChevronUpSmallIcon({ className, width = '16px', height = '16px' 
   )
 }
 
-export function ClipboardIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function ClipboardIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -2045,7 +2058,7 @@ export function ClipboardIcon({ className, width = '16px', height = '16px' }: Ic
   )
 }
 
-export function ClockIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function ClockIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -2065,7 +2078,7 @@ export function ClockIcon({ className, width = '16px', height = '16px' }: IconPr
   )
 }
 
-export function ClockDashedIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function ClockDashedIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -2085,7 +2098,7 @@ export function ClockDashedIcon({ className, width = '16px', height = '16px' }: 
   )
 }
 
-export function ClockRewindIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function ClockRewindIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -2105,7 +2118,7 @@ export function ClockRewindIcon({ className, width = '16px', height = '16px' }: 
   )
 }
 
-export function ClockSmallIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function ClockSmallIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -2125,7 +2138,7 @@ export function ClockSmallIcon({ className, width = '16px', height = '16px' }: I
   )
 }
 
-export function ClosedCaptionsIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function ClosedCaptionsIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -2145,7 +2158,7 @@ export function ClosedCaptionsIcon({ className, width = '16px', height = '16px' 
   )
 }
 
-export function CloudIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function CloudIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -2163,7 +2176,7 @@ export function CloudIcon({ className, width = '16px', height = '16px' }: IconPr
   )
 }
 
-export function CloudDownloadIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function CloudDownloadIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -2183,7 +2196,7 @@ export function CloudDownloadIcon({ className, width = '16px', height = '16px' }
   )
 }
 
-export function CloudUploadIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function CloudUploadIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -2203,7 +2216,7 @@ export function CloudUploadIcon({ className, width = '16px', height = '16px' }: 
   )
 }
 
-export function CodeIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function CodeIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -2223,7 +2236,7 @@ export function CodeIcon({ className, width = '16px', height = '16px' }: IconPro
   )
 }
 
-export function CodeBlockIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function CodeBlockIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -2243,7 +2256,7 @@ export function CodeBlockIcon({ className, width = '16px', height = '16px' }: Ic
   )
 }
 
-export function CodeBracketIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function CodeBracketIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -2263,7 +2276,7 @@ export function CodeBracketIcon({ className, width = '16px', height = '16px' }: 
   )
 }
 
-export function CodeWrapIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function CodeWrapIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -2283,7 +2296,7 @@ export function CodeWrapIcon({ className, width = '16px', height = '16px' }: Ico
   )
 }
 
-export function CodepenIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function CodepenIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -2303,7 +2316,7 @@ export function CodepenIcon({ className, width = '16px', height = '16px' }: Icon
   )
 }
 
-export function CommandIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function CommandIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -2323,7 +2336,7 @@ export function CommandIcon({ className, width = '16px', height = '16px' }: Icon
   )
 }
 
-export function CompassIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function CompassIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -2343,7 +2356,7 @@ export function CompassIcon({ className, width = '16px', height = '16px' }: Icon
   )
 }
 
-export function ConnectionIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function ConnectionIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -2363,7 +2376,7 @@ export function ConnectionIcon({ className, width = '16px', height = '16px' }: I
   )
 }
 
-export function CopyIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function CopyIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -2385,7 +2398,7 @@ export function CopyIcon({ className, width = '16px', height = '16px' }: IconPro
   )
 }
 
-export function CornerDownLeftIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function CornerDownLeftIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -2405,7 +2418,7 @@ export function CornerDownLeftIcon({ className, width = '16px', height = '16px' 
   )
 }
 
-export function CornerDownRightIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function CornerDownRightIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -2425,7 +2438,7 @@ export function CornerDownRightIcon({ className, width = '16px', height = '16px'
   )
 }
 
-export function CornerLeftDownIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function CornerLeftDownIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -2445,7 +2458,7 @@ export function CornerLeftDownIcon({ className, width = '16px', height = '16px' 
   )
 }
 
-export function CornerLeftUpIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function CornerLeftUpIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -2465,7 +2478,7 @@ export function CornerLeftUpIcon({ className, width = '16px', height = '16px' }:
   )
 }
 
-export function CornerRightDownIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function CornerRightDownIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -2485,7 +2498,7 @@ export function CornerRightDownIcon({ className, width = '16px', height = '16px'
   )
 }
 
-export function CornerRightUpIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function CornerRightUpIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -2505,7 +2518,7 @@ export function CornerRightUpIcon({ className, width = '16px', height = '16px' }
   )
 }
 
-export function CornerUpLeftIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function CornerUpLeftIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -2525,7 +2538,7 @@ export function CornerUpLeftIcon({ className, width = '16px', height = '16px' }:
   )
 }
 
-export function CornerUpRightIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function CornerUpRightIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -2545,7 +2558,7 @@ export function CornerUpRightIcon({ className, width = '16px', height = '16px' }
   )
 }
 
-export function CpuIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function CpuIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -2565,7 +2578,7 @@ export function CpuIcon({ className, width = '16px', height = '16px' }: IconProp
   )
 }
 
-export function CreditCardIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function CreditCardIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -2585,7 +2598,7 @@ export function CreditCardIcon({ className, width = '16px', height = '16px' }: I
   )
 }
 
-export function CropIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function CropIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -2605,7 +2618,7 @@ export function CropIcon({ className, width = '16px', height = '16px' }: IconPro
   )
 }
 
-export function CrossIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function CrossIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -2625,7 +2638,7 @@ export function CrossIcon({ className, width = '16px', height = '16px' }: IconPr
   )
 }
 
-export function CrossCircleIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function CrossCircleIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -2645,7 +2658,7 @@ export function CrossCircleIcon({ className, width = '16px', height = '16px' }: 
   )
 }
 
-export function CrossCircleFillIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function CrossCircleFillIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -2665,7 +2678,7 @@ export function CrossCircleFillIcon({ className, width = '16px', height = '16px'
   )
 }
 
-export function CrossSmallIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function CrossSmallIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -2685,7 +2698,7 @@ export function CrossSmallIcon({ className, width = '16px', height = '16px' }: I
   )
 }
 
-export function CrosshairIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function CrosshairIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -2705,7 +2718,7 @@ export function CrosshairIcon({ className, width = '16px', height = '16px' }: Ic
   )
 }
 
-export function CursorIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function CursorIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -2725,7 +2738,7 @@ export function CursorIcon({ className, width = '16px', height = '16px' }: IconP
   )
 }
 
-export function CursorClickIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function CursorClickIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -2745,7 +2758,7 @@ export function CursorClickIcon({ className, width = '16px', height = '16px' }: 
   )
 }
 
-export function DataPointIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function DataPointIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -2765,7 +2778,7 @@ export function DataPointIcon({ className, width = '16px', height = '16px' }: Ic
   )
 }
 
-export function DataPointLowIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function DataPointLowIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -2789,7 +2802,7 @@ export function DataPointLowIcon({ className, width = '16px', height = '16px' }:
   )
 }
 
-export function DataPointMediumIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function DataPointMediumIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -2810,7 +2823,7 @@ export function DataPointMediumIcon({ className, width = '16px', height = '16px'
   )
 }
 
-export function DatabaseIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function DatabaseIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -2830,7 +2843,7 @@ export function DatabaseIcon({ className, width = '16px', height = '16px' }: Ico
   )
 }
 
-export function DeltaIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function DeltaIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -2850,7 +2863,7 @@ export function DeltaIcon({ className, width = '16px', height = '16px' }: IconPr
   )
 }
 
-export function DesktopDeviceIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function DesktopDeviceIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -2870,7 +2883,7 @@ export function DesktopDeviceIcon({ className, width = '16px', height = '16px' }
   )
 }
 
-export function DeviceAlternateIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function DeviceAlternateIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -2890,7 +2903,7 @@ export function DeviceAlternateIcon({ className, width = '16px', height = '16px'
   )
 }
 
-export function DisplayIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function DisplayIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -2910,7 +2923,7 @@ export function DisplayIcon({ className, width = '16px', height = '16px' }: Icon
   )
 }
 
-export function DollarIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function DollarIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -2930,7 +2943,7 @@ export function DollarIcon({ className, width = '16px', height = '16px' }: IconP
   )
 }
 
-export function DollarFillIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function DollarFillIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -2950,7 +2963,7 @@ export function DollarFillIcon({ className, width = '16px', height = '16px' }: I
   )
 }
 
-export function DownloadIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function DownloadIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -2970,7 +2983,7 @@ export function DownloadIcon({ className, width = '16px', height = '16px' }: Ico
   )
 }
 
-export function DropletIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function DropletIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -2990,7 +3003,7 @@ export function DropletIcon({ className, width = '16px', height = '16px' }: Icon
   )
 }
 
-export function EdgeIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function EdgeIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -3010,7 +3023,7 @@ export function EdgeIcon({ className, width = '16px', height = '16px' }: IconPro
   )
 }
 
-export function EdgeConfigIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function EdgeConfigIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -3042,7 +3055,7 @@ export function EdgeConfigIcon({ className, width = '16px', height = '16px' }: I
   )
 }
 
-export function EmailIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function EmailIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -3062,7 +3075,7 @@ export function EmailIcon({ className, width = '16px', height = '16px' }: IconPr
   )
 }
 
-export function EnvelopeIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function EnvelopeIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -3082,7 +3095,7 @@ export function EnvelopeIcon({ className, width = '16px', height = '16px' }: Ico
   )
 }
 
-export function ExternalIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function ExternalIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -3102,7 +3115,7 @@ export function ExternalIcon({ className, width = '16px', height = '16px' }: Ico
   )
 }
 
-export function ExternalLinkIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function ExternalLinkIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -3125,7 +3138,7 @@ export function ExternalLinkIcon({ className, width = '16px', height = '16px' }:
   )
 }
 
-export function ExternalSmallIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function ExternalSmallIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -3145,7 +3158,7 @@ export function ExternalSmallIcon({ className, width = '16px', height = '16px' }
   )
 }
 
-export function EyeIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function EyeIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -3165,7 +3178,7 @@ export function EyeIcon({ className, width = '16px', height = '16px' }: IconProp
   )
 }
 
-export function EyeDashedIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function EyeDashedIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -3185,7 +3198,7 @@ export function EyeDashedIcon({ className, width = '16px', height = '16px' }: Ic
   )
 }
 
-export function EyeOffIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function EyeOffIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -3205,7 +3218,7 @@ export function EyeOffIcon({ className, width = '16px', height = '16px' }: IconP
   )
 }
 
-export function FaceHappyIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function FaceHappyIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -3225,7 +3238,7 @@ export function FaceHappyIcon({ className, width = '16px', height = '16px' }: Ic
   )
 }
 
-export function FacePlusIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function FacePlusIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -3245,7 +3258,7 @@ export function FacePlusIcon({ className, width = '16px', height = '16px' }: Ico
   )
 }
 
-export function FaceSadIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function FaceSadIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -3270,7 +3283,7 @@ export function FaceSadIcon({ className, width = '16px', height = '16px' }: Icon
   )
 }
 
-export function FaceSmileIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function FaceSmileIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -3295,7 +3308,7 @@ export function FaceSmileIcon({ className, width = '16px', height = '16px' }: Ic
   )
 }
 
-export function FaceUnhappyIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function FaceUnhappyIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -3315,7 +3328,7 @@ export function FaceUnhappyIcon({ className, width = '16px', height = '16px' }: 
   )
 }
 
-export function FileIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function FileIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -3335,7 +3348,7 @@ export function FileIcon({ className, width = '16px', height = '16px' }: IconPro
   )
 }
 
-export function FileTextIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function FileTextIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -3355,7 +3368,7 @@ export function FileTextIcon({ className, width = '16px', height = '16px' }: Ico
   )
 }
 
-export function FileZipIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function FileZipIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -3375,7 +3388,7 @@ export function FileZipIcon({ className, width = '16px', height = '16px' }: Icon
   )
 }
 
-export function FilterIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function FilterIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -3395,7 +3408,7 @@ export function FilterIcon({ className, width = '16px', height = '16px' }: IconP
   )
 }
 
-export function FingerprintIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function FingerprintIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -3422,7 +3435,7 @@ export function FingerprintIcon({ className, width = '16px', height = '16px' }: 
   )
 }
 
-export function FirewallCheckIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function FirewallCheckIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -3459,7 +3472,7 @@ export function FirewallCheckIcon({ className, width = '16px', height = '16px' }
   )
 }
 
-export function FirewallGlobeIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function FirewallGlobeIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -3496,7 +3509,7 @@ export function FirewallGlobeIcon({ className, width = '16px', height = '16px' }
   )
 }
 
-export function FlagIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function FlagIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -3516,7 +3529,7 @@ export function FlagIcon({ className, width = '16px', height = '16px' }: IconPro
   )
 }
 
-export function FlagPriorityIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function FlagPriorityIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -3536,7 +3549,7 @@ export function FlagPriorityIcon({ className, width = '16px', height = '16px' }:
   )
 }
 
-export function FloppyDiskIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function FloppyDiskIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -3556,7 +3569,7 @@ export function FloppyDiskIcon({ className, width = '16px', height = '16px' }: I
   )
 }
 
-export function FolderClosedIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function FolderClosedIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -3576,7 +3589,7 @@ export function FolderClosedIcon({ className, width = '16px', height = '16px' }:
   )
 }
 
-export function FolderMinusIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function FolderMinusIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -3596,7 +3609,7 @@ export function FolderMinusIcon({ className, width = '16px', height = '16px' }: 
   )
 }
 
-export function FolderOpenIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function FolderOpenIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -3616,7 +3629,7 @@ export function FolderOpenIcon({ className, width = '16px', height = '16px' }: I
   )
 }
 
-export function FolderPlusIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function FolderPlusIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -3636,7 +3649,7 @@ export function FolderPlusIcon({ className, width = '16px', height = '16px' }: I
   )
 }
 
-export function FooterIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function FooterIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -3656,7 +3669,7 @@ export function FooterIcon({ className, width = '16px', height = '16px' }: IconP
   )
 }
 
-export function Forward10SecondsIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function Forward10SecondsIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -3676,7 +3689,7 @@ export function Forward10SecondsIcon({ className, width = '16px', height = '16px
   )
 }
 
-export function FulcrumIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function FulcrumIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -3696,7 +3709,7 @@ export function FulcrumIcon({ className, width = '16px', height = '16px' }: Icon
   )
 }
 
-export function FullscreenIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function FullscreenIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -3716,7 +3729,7 @@ export function FullscreenIcon({ className, width = '16px', height = '16px' }: I
   )
 }
 
-export function FullscreenCloseIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function FullscreenCloseIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -3736,7 +3749,7 @@ export function FullscreenCloseIcon({ className, width = '16px', height = '16px'
   )
 }
 
-export function FunctionIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function FunctionIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -3756,7 +3769,7 @@ export function FunctionIcon({ className, width = '16px', height = '16px' }: Ico
   )
 }
 
-export function FunctionEdgeIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function FunctionEdgeIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -3782,7 +3795,7 @@ export function FunctionEdgeIcon({ className, width = '16px', height = '16px' }:
   )
 }
 
-export function FunctionEdgeColorIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function FunctionEdgeColorIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -3809,7 +3822,7 @@ export function FunctionEdgeColorIcon({ className, width = '16px', height = '16p
   )
 }
 
-export function FunctionGoIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function FunctionGoIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -3847,7 +3860,7 @@ export function FunctionGoIcon({ className, width = '16px', height = '16px' }: I
   )
 }
 
-export function FunctionMiddlewareIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function FunctionMiddlewareIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -3874,7 +3887,7 @@ export function FunctionMiddlewareIcon({ className, width = '16px', height = '16
   )
 }
 
-export function FunctionNodeIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function FunctionNodeIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -3913,7 +3926,7 @@ export function FunctionNodeIcon({ className, width = '16px', height = '16px' }:
   )
 }
 
-export function FunctionPythonIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function FunctionPythonIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -3955,7 +3968,7 @@ export function FunctionPythonIcon({ className, width = '16px', height = '16px' 
   )
 }
 
-export function FunctionRectangleIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function FunctionRectangleIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -3975,7 +3988,11 @@ export function FunctionRectangleIcon({ className, width = '16px', height = '16p
   )
 }
 
-export function FunctionRectangleFillIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function FunctionRectangleFillIcon({
+  className,
+  width = '16px',
+  height = '16px'
+}: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -3995,7 +4012,7 @@ export function FunctionRectangleFillIcon({ className, width = '16px', height = 
   )
 }
 
-export function FunctionRubyIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function FunctionRubyIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -4037,7 +4054,7 @@ export function FunctionRubyIcon({ className, width = '16px', height = '16px' }:
   )
 }
 
-export function FunctionSquareIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function FunctionSquareIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -4057,7 +4074,7 @@ export function FunctionSquareIcon({ className, width = '16px', height = '16px' 
   )
 }
 
-export function GaugeIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function GaugeIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -4077,7 +4094,7 @@ export function GaugeIcon({ className, width = '16px', height = '16px' }: IconPr
   )
 }
 
-export function GitBranchIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function GitBranchIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -4097,7 +4114,7 @@ export function GitBranchIcon({ className, width = '16px', height = '16px' }: Ic
   )
 }
 
-export function GitCommitIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function GitCommitIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -4117,7 +4134,7 @@ export function GitCommitIcon({ className, width = '16px', height = '16px' }: Ic
   )
 }
 
-export function GitMergeIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function GitMergeIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -4143,7 +4160,7 @@ export function GitMergeIcon({ className, width = '16px', height = '16px' }: Ico
   )
 }
 
-export function GitPullRequestIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function GitPullRequestIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -4163,7 +4180,7 @@ export function GitPullRequestIcon({ className, width = '16px', height = '16px' 
   )
 }
 
-export function GlobeIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function GlobeIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -4183,7 +4200,7 @@ export function GlobeIcon({ className, width = '16px', height = '16px' }: IconPr
   )
 }
 
-export function GlobeBoxIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function GlobeBoxIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -4203,7 +4220,7 @@ export function GlobeBoxIcon({ className, width = '16px', height = '16px' }: Ico
   )
 }
 
-export function GpsIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function GpsIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -4225,7 +4242,7 @@ export function GpsIcon({ className, width = '16px', height = '16px' }: IconProp
   )
 }
 
-export function GridMasonryIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function GridMasonryIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -4245,7 +4262,7 @@ export function GridMasonryIcon({ className, width = '16px', height = '16px' }: 
   )
 }
 
-export function GridSquareIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function GridSquareIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -4265,7 +4282,7 @@ export function GridSquareIcon({ className, width = '16px', height = '16px' }: I
   )
 }
 
-export function HashIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function HashIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -4285,7 +4302,7 @@ export function HashIcon({ className, width = '16px', height = '16px' }: IconPro
   )
 }
 
-export function HeaderIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function HeaderIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -4305,7 +4322,7 @@ export function HeaderIcon({ className, width = '16px', height = '16px' }: IconP
   )
 }
 
-export function HeadsetIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function HeadsetIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -4325,7 +4342,7 @@ export function HeadsetIcon({ className, width = '16px', height = '16px' }: Icon
   )
 }
 
-export function HeartIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function HeartIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -4345,7 +4362,7 @@ export function HeartIcon({ className, width = '16px', height = '16px' }: IconPr
   )
 }
 
-export function HeartFillIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function HeartFillIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -4363,7 +4380,7 @@ export function HeartFillIcon({ className, width = '16px', height = '16px' }: Ic
   )
 }
 
-export function HomeIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function HomeIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -4383,7 +4400,7 @@ export function HomeIcon({ className, width = '16px', height = '16px' }: IconPro
   )
 }
 
-export function HookIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function HookIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -4403,7 +4420,7 @@ export function HookIcon({ className, width = '16px', height = '16px' }: IconPro
   )
 }
 
-export function ImageIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function ImageIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -4423,7 +4440,7 @@ export function ImageIcon({ className, width = '16px', height = '16px' }: IconPr
   )
 }
 
-export function InboxIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function InboxIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -4443,7 +4460,7 @@ export function InboxIcon({ className, width = '16px', height = '16px' }: IconPr
   )
 }
 
-export function InboxUnreadIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function InboxUnreadIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -4464,7 +4481,7 @@ export function InboxUnreadIcon({ className, width = '16px', height = '16px' }: 
   )
 }
 
-export function InformationIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function InformationIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -4484,7 +4501,7 @@ export function InformationIcon({ className, width = '16px', height = '16px' }: 
   )
 }
 
-export function InformationFillIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function InformationFillIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -4504,7 +4521,7 @@ export function InformationFillIcon({ className, width = '16px', height = '16px'
   )
 }
 
-export function InformationFillSmallIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function InformationFillSmallIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -4528,7 +4545,7 @@ export function InformationFillSmallIcon({ className, width = '16px', height = '
   )
 }
 
-export function InspectIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function InspectIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -4548,7 +4565,7 @@ export function InspectIcon({ className, width = '16px', height = '16px' }: Icon
   )
 }
 
-export function InvoiceIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function InvoiceIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -4568,7 +4585,7 @@ export function InvoiceIcon({ className, width = '16px', height = '16px' }: Icon
   )
 }
 
-export function IsrIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function IsrIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -4588,7 +4605,7 @@ export function IsrIcon({ className, width = '16px', height = '16px' }: IconProp
   )
 }
 
-export function KeyIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function KeyIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -4608,7 +4625,7 @@ export function KeyIcon({ className, width = '16px', height = '16px' }: IconProp
   )
 }
 
-export function KeyOldIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function KeyOldIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -4628,7 +4645,7 @@ export function KeyOldIcon({ className, width = '16px', height = '16px' }: IconP
   )
 }
 
-export function KvIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function KvIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -4648,7 +4665,7 @@ export function KvIcon({ className, width = '16px', height = '16px' }: IconProps
   )
 }
 
-export function LambdaIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function LambdaIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -4668,7 +4685,7 @@ export function LambdaIcon({ className, width = '16px', height = '16px' }: IconP
   )
 }
 
-export function LambdaRectangleIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function LambdaRectangleIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -4688,7 +4705,7 @@ export function LambdaRectangleIcon({ className, width = '16px', height = '16px'
   )
 }
 
-export function LambdaRectangleFillIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function LambdaRectangleFillIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -4708,7 +4725,7 @@ export function LambdaRectangleFillIcon({ className, width = '16px', height = '1
   )
 }
 
-export function LayersIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function LayersIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -4728,7 +4745,7 @@ export function LayersIcon({ className, width = '16px', height = '16px' }: IconP
   )
 }
 
-export function LayoutIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function LayoutIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -4748,7 +4765,7 @@ export function LayoutIcon({ className, width = '16px', height = '16px' }: IconP
   )
 }
 
-export function LayoutDashedIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function LayoutDashedIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -4768,7 +4785,7 @@ export function LayoutDashedIcon({ className, width = '16px', height = '16px' }:
   )
 }
 
-export function LayoutShiftIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function LayoutShiftIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -4800,7 +4817,7 @@ export function LayoutShiftIcon({ className, width = '16px', height = '16px' }: 
   )
 }
 
-export function LayoutShiftUnreadIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function LayoutShiftUnreadIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -4833,7 +4850,7 @@ export function LayoutShiftUnreadIcon({ className, width = '16px', height = '16p
   )
 }
 
-export function LensIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function LensIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -4853,7 +4870,7 @@ export function LensIcon({ className, width = '16px', height = '16px' }: IconPro
   )
 }
 
-export function LifebuoyIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function LifebuoyIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -4873,7 +4890,7 @@ export function LifebuoyIcon({ className, width = '16px', height = '16px' }: Ico
   )
 }
 
-export function LightningIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function LightningIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -4893,7 +4910,7 @@ export function LightningIcon({ className, width = '16px', height = '16px' }: Ic
   )
 }
 
-export function LineChartIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function LineChartIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -4913,7 +4930,7 @@ export function LineChartIcon({ className, width = '16px', height = '16px' }: Ic
   )
 }
 
-export function LinkIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function LinkIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -4933,7 +4950,7 @@ export function LinkIcon({ className, width = '16px', height = '16px' }: IconPro
   )
 }
 
-export function LinkedIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function LinkedIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -4953,7 +4970,7 @@ export function LinkedIcon({ className, width = '16px', height = '16px' }: IconP
   )
 }
 
-export function LinkedinIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function LinkedinIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -4974,7 +4991,7 @@ export function LinkedinIcon({ className, width = '16px', height = '16px' }: Ico
   )
 }
 
-export function ListOrderedIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function ListOrderedIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -4994,7 +5011,7 @@ export function ListOrderedIcon({ className, width = '16px', height = '16px' }: 
   )
 }
 
-export function ListUnorderedIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function ListUnorderedIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -5014,7 +5031,7 @@ export function ListUnorderedIcon({ className, width = '16px', height = '16px' }
   )
 }
 
-export function LoaderCircleIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function LoaderCircleIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -5046,7 +5063,7 @@ export function LoaderCircleIcon({ className, width = '16px', height = '16px' }:
   )
 }
 
-export function LocationIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function LocationIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -5066,7 +5083,7 @@ export function LocationIcon({ className, width = '16px', height = '16px' }: Ico
   )
 }
 
-export function LockClosedIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function LockClosedIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -5086,7 +5103,7 @@ export function LockClosedIcon({ className, width = '16px', height = '16px' }: I
   )
 }
 
-export function LockClosedSmallIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function LockClosedSmallIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -5106,7 +5123,7 @@ export function LockClosedSmallIcon({ className, width = '16px', height = '16px'
   )
 }
 
-export function LockOpenIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function LockOpenIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -5126,7 +5143,7 @@ export function LockOpenIcon({ className, width = '16px', height = '16px' }: Ico
   )
 }
 
-export function LogoAngularColorIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function LogoAngularColorIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -5146,7 +5163,7 @@ export function LogoAngularColorIcon({ className, width = '16px', height = '16px
   )
 }
 
-export function LogoAstroIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function LogoAstroIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -5191,7 +5208,7 @@ export function LogoAstroIcon({ className, width = '16px', height = '16px' }: Ic
   )
 }
 
-export function LogoAzureIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function LogoAzureIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -5209,7 +5226,7 @@ export function LogoAzureIcon({ className, width = '16px', height = '16px' }: Ic
   )
 }
 
-export function LogoAzureDevopsIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function LogoAzureDevopsIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -5227,7 +5244,7 @@ export function LogoAzureDevopsIcon({ className, width = '16px', height = '16px'
   )
 }
 
-export function LogoBitbucketColorIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function LogoBitbucketColorIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -5260,7 +5277,7 @@ export function LogoBitbucketColorIcon({ className, width = '16px', height = '16
   )
 }
 
-export function LogoChecklyIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function LogoChecklyIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -5294,7 +5311,7 @@ export function LogoChecklyIcon({ className, width = '16px', height = '16px' }: 
   )
 }
 
-export function LogoContentfulIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function LogoContentfulIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -5318,7 +5335,7 @@ export function LogoContentfulIcon({ className, width = '16px', height = '16px' 
   )
 }
 
-export function LogoDataDogIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function LogoDataDogIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -5339,7 +5356,7 @@ export function LogoDataDogIcon({ className, width = '16px', height = '16px' }: 
   )
 }
 
-export function LogoDiscordIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function LogoDiscordIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -5357,7 +5374,7 @@ export function LogoDiscordIcon({ className, width = '16px', height = '16px' }: 
   )
 }
 
-export function LogoEmberIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function LogoEmberIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -5380,7 +5397,7 @@ export function LogoEmberIcon({ className, width = '16px', height = '16px' }: Ic
   )
 }
 
-export function LogoFacebookIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function LogoFacebookIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -5400,7 +5417,11 @@ export function LogoFacebookIcon({ className, width = '16px', height = '16px' }:
   )
 }
 
-export function LogoFacebookMessengerIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function LogoFacebookMessengerIcon({
+  className,
+  width = '16px',
+  height = '16px'
+}: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -5458,7 +5479,7 @@ export function LogoFacebookMessengerIcon({ className, width = '16px', height = 
   )
 }
 
-export function LogoFigmaIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function LogoFigmaIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -5488,7 +5509,7 @@ export function LogoFigmaIcon({ className, width = '16px', height = '16px' }: Ic
   )
 }
 
-export function LogoGatsbyIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function LogoGatsbyIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -5513,7 +5534,7 @@ export function LogoGatsbyIcon({ className, width = '16px', height = '16px' }: I
   )
 }
 
-export function LogoGeistIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function LogoGeistIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -5533,7 +5554,7 @@ export function LogoGeistIcon({ className, width = '16px', height = '16px' }: Ic
   )
 }
 
-export function LogoGithubIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function LogoGithubIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -5560,7 +5581,7 @@ export function LogoGithubIcon({ className, width = '16px', height = '16px' }: I
   )
 }
 
-export function LogoGitlabIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function LogoGitlabIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -5594,7 +5615,7 @@ export function LogoGitlabIcon({ className, width = '16px', height = '16px' }: I
   )
 }
 
-export function LogoGoogleIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function LogoGoogleIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -5621,7 +5642,11 @@ export function LogoGoogleIcon({ className, width = '16px', height = '16px' }: I
   )
 }
 
-export function LogoGoogleCloudPlatformIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function LogoGoogleCloudPlatformIcon({
+  className,
+  width = '16px',
+  height = '16px'
+}: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -5649,7 +5674,7 @@ export function LogoGoogleCloudPlatformIcon({ className, width = '16px', height 
   )
 }
 
-export function LogoHugoIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function LogoHugoIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -5677,7 +5702,7 @@ export function LogoHugoIcon({ className, width = '16px', height = '16px' }: Ico
   )
 }
 
-export function LogoHyperIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function LogoHyperIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -5723,7 +5748,7 @@ export function LogoHyperIcon({ className, width = '16px', height = '16px' }: Ic
   )
 }
 
-export function LogoLinearIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function LogoLinearIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -5741,7 +5766,7 @@ export function LogoLinearIcon({ className, width = '16px', height = '16px' }: I
   )
 }
 
-export function LogoMetaIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function LogoMetaIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -5789,7 +5814,7 @@ export function LogoMetaIcon({ className, width = '16px', height = '16px' }: Ico
   )
 }
 
-export function LogoNewRelicIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function LogoNewRelicIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -5816,7 +5841,7 @@ export function LogoNewRelicIcon({ className, width = '16px', height = '16px' }:
   )
 }
 
-export function LogoNextIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function LogoNextIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -5879,7 +5904,7 @@ export function LogoNextIcon({ className, width = '16px', height = '16px' }: Ico
   )
 }
 
-export function LogoNodeIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function LogoNodeIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -5980,7 +6005,7 @@ export function LogoNodeIcon({ className, width = '16px', height = '16px' }: Ico
   )
 }
 
-export function LogoNuxtIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function LogoNuxtIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -5998,7 +6023,7 @@ export function LogoNuxtIcon({ className, width = '16px', height = '16px' }: Ico
   )
 }
 
-export function LogoOpenAiIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function LogoOpenAiIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -6016,7 +6041,7 @@ export function LogoOpenAiIcon({ className, width = '16px', height = '16px' }: I
   )
 }
 
-export function LogoPythonIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function LogoPythonIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -6059,7 +6084,7 @@ export function LogoPythonIcon({ className, width = '16px', height = '16px' }: I
   )
 }
 
-export function LogoReactIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function LogoReactIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -6086,7 +6111,7 @@ export function LogoReactIcon({ className, width = '16px', height = '16px' }: Ic
   )
 }
 
-export function LogoRedditIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function LogoRedditIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -6107,7 +6132,7 @@ export function LogoRedditIcon({ className, width = '16px', height = '16px' }: I
   )
 }
 
-export function LogoRemixIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function LogoRemixIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -6125,7 +6150,7 @@ export function LogoRemixIcon({ className, width = '16px', height = '16px' }: Ic
   )
 }
 
-export function LogoRustIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function LogoRustIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -6373,7 +6398,7 @@ export function LogoRustIcon({ className, width = '16px', height = '16px' }: Ico
   )
 }
 
-export function LogoSanityIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function LogoSanityIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -6394,7 +6419,7 @@ export function LogoSanityIcon({ className, width = '16px', height = '16px' }: I
   )
 }
 
-export function LogoSlackIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function LogoSlackIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -6428,7 +6453,7 @@ export function LogoSlackIcon({ className, width = '16px', height = '16px' }: Ic
   )
 }
 
-export function LogoSlackColorIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function LogoSlackColorIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -6462,7 +6487,7 @@ export function LogoSlackColorIcon({ className, width = '16px', height = '16px' 
   )
 }
 
-export function LogoSolidIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function LogoSolidIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -6548,7 +6573,7 @@ export function LogoSolidIcon({ className, width = '16px', height = '16px' }: Ic
   )
 }
 
-export function LogoSplitbeeIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function LogoSplitbeeIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -6611,7 +6636,7 @@ export function LogoSplitbeeIcon({ className, width = '16px', height = '16px' }:
   )
 }
 
-export function LogoSvelteIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function LogoSvelteIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -6639,7 +6664,7 @@ export function LogoSvelteIcon({ className, width = '16px', height = '16px' }: I
   )
 }
 
-export function LogoTurbopackIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function LogoTurbopackIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -6689,7 +6714,7 @@ export function LogoTurbopackIcon({ className, width = '16px', height = '16px' }
   )
 }
 
-export function LogoTurborepoIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function LogoTurborepoIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -6735,7 +6760,7 @@ export function LogoTurborepoIcon({ className, width = '16px', height = '16px' }
   )
 }
 
-export function LogoTwitterXIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function LogoTwitterXIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -6755,7 +6780,7 @@ export function LogoTwitterXIcon({ className, width = '16px', height = '16px' }:
   )
 }
 
-export function LogoV0Icon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function LogoV0Icon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -6775,7 +6800,7 @@ export function LogoV0Icon({ className, width = '16px', height = '16px' }: IconP
   )
 }
 
-export function LogoVercelIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function LogoVercelIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -6791,7 +6816,7 @@ export function LogoVercelIcon({ className, width = '16px', height = '16px' }: I
   )
 }
 
-export function LogoVercelApiIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function LogoVercelApiIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -6821,7 +6846,7 @@ export function LogoVercelApiIcon({ className, width = '16px', height = '16px' }
   )
 }
 
-export function LogoVercelCircleIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function LogoVercelCircleIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -6857,7 +6882,7 @@ export function LogoVercelCircleIcon({ className, width = '16px', height = '16px
   )
 }
 
-export function LogoVercelFillIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function LogoVercelFillIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -6877,7 +6902,7 @@ export function LogoVercelFillIcon({ className, width = '16px', height = '16px' 
   )
 }
 
-export function LogoViteIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function LogoViteIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -6926,7 +6951,7 @@ export function LogoViteIcon({ className, width = '16px', height = '16px' }: Ico
   )
 }
 
-export function LogoVueIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function LogoVueIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -6954,7 +6979,7 @@ export function LogoVueIcon({ className, width = '16px', height = '16px' }: Icon
   )
 }
 
-export function LogoWhatsAppIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function LogoWhatsAppIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -6974,7 +6999,7 @@ export function LogoWhatsAppIcon({ className, width = '16px', height = '16px' }:
   )
 }
 
-export function LogoYCombinatorIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function LogoYCombinatorIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -6993,7 +7018,7 @@ export function LogoYCombinatorIcon({ className, width = '16px', height = '16px'
   )
 }
 
-export function LogoutIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function LogoutIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -7013,7 +7038,7 @@ export function LogoutIcon({ className, width = '16px', height = '16px' }: IconP
   )
 }
 
-export function LogsIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function LogsIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -7033,7 +7058,7 @@ export function LogsIcon({ className, width = '16px', height = '16px' }: IconPro
   )
 }
 
-export function MagnifyingGlassIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function MagnifyingGlassIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -7053,7 +7078,7 @@ export function MagnifyingGlassIcon({ className, width = '16px', height = '16px'
   )
 }
 
-export function MagnifyingGlassMinusIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function MagnifyingGlassMinusIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -7073,7 +7098,7 @@ export function MagnifyingGlassMinusIcon({ className, width = '16px', height = '
   )
 }
 
-export function MagnifyingGlassPlusIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function MagnifyingGlassPlusIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -7093,7 +7118,7 @@ export function MagnifyingGlassPlusIcon({ className, width = '16px', height = '1
   )
 }
 
-export function MagnifyingGlassSmallIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function MagnifyingGlassSmallIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -7113,7 +7138,7 @@ export function MagnifyingGlassSmallIcon({ className, width = '16px', height = '
   )
 }
 
-export function MenuIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function MenuIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -7133,7 +7158,7 @@ export function MenuIcon({ className, width = '16px', height = '16px' }: IconPro
   )
 }
 
-export function MenuAltIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function MenuAltIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -7153,7 +7178,7 @@ export function MenuAltIcon({ className, width = '16px', height = '16px' }: Icon
   )
 }
 
-export function MenuAltUnreadIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function MenuAltUnreadIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -7174,7 +7199,7 @@ export function MenuAltUnreadIcon({ className, width = '16px', height = '16px' }
   )
 }
 
-export function MessageIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function MessageIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -7194,7 +7219,7 @@ export function MessageIcon({ className, width = '16px', height = '16px' }: Icon
   )
 }
 
-export function MicrophoneIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function MicrophoneIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -7214,7 +7239,7 @@ export function MicrophoneIcon({ className, width = '16px', height = '16px' }: I
   )
 }
 
-export function MicrophoneOffIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function MicrophoneOffIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -7234,7 +7259,7 @@ export function MicrophoneOffIcon({ className, width = '16px', height = '16px' }
   )
 }
 
-export function MiddlewareIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function MiddlewareIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -7254,7 +7279,7 @@ export function MiddlewareIcon({ className, width = '16px', height = '16px' }: I
   )
 }
 
-export function MinusIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function MinusIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -7274,7 +7299,7 @@ export function MinusIcon({ className, width = '16px', height = '16px' }: IconPr
   )
 }
 
-export function MinusCircleIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function MinusCircleIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -7294,7 +7319,7 @@ export function MinusCircleIcon({ className, width = '16px', height = '16px' }: 
   )
 }
 
-export function MinusSquareSmallIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function MinusSquareSmallIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -7314,7 +7339,7 @@ export function MinusSquareSmallIcon({ className, width = '16px', height = '16px
   )
 }
 
-export function MonitoringIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function MonitoringIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -7334,7 +7359,7 @@ export function MonitoringIcon({ className, width = '16px', height = '16px' }: I
   )
 }
 
-export function MonorepoIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function MonorepoIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -7354,7 +7379,7 @@ export function MonorepoIcon({ className, width = '16px', height = '16px' }: Ico
   )
 }
 
-export function MoonIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function MoonIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -7374,7 +7399,7 @@ export function MoonIcon({ className, width = '16px', height = '16px' }: IconPro
   )
 }
 
-export function MoonAlternateIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function MoonAlternateIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -7401,7 +7426,7 @@ export function MoonAlternateIcon({ className, width = '16px', height = '16px' }
   )
 }
 
-export function MoreHorizontalIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function MoreHorizontalIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -7421,7 +7446,7 @@ export function MoreHorizontalIcon({ className, width = '16px', height = '16px' 
   )
 }
 
-export function MoreVerticalIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function MoreVerticalIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -7441,7 +7466,7 @@ export function MoreVerticalIcon({ className, width = '16px', height = '16px' }:
   )
 }
 
-export function MusicIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function MusicIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -7461,7 +7486,7 @@ export function MusicIcon({ className, width = '16px', height = '16px' }: IconPr
   )
 }
 
-export function MusicalNotesIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function MusicalNotesIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -7481,7 +7506,7 @@ export function MusicalNotesIcon({ className, width = '16px', height = '16px' }:
   )
 }
 
-export function NetworkDeviceIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function NetworkDeviceIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -7501,7 +7526,7 @@ export function NetworkDeviceIcon({ className, width = '16px', height = '16px' }
   )
 }
 
-export function NotebookIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function NotebookIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -7521,7 +7546,7 @@ export function NotebookIcon({ className, width = '16px', height = '16px' }: Ico
   )
 }
 
-export function NotesIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function NotesIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -7541,7 +7566,7 @@ export function NotesIcon({ className, width = '16px', height = '16px' }: IconPr
   )
 }
 
-export function NotificationIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function NotificationIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -7561,7 +7586,7 @@ export function NotificationIcon({ className, width = '16px', height = '16px' }:
   )
 }
 
-export function OptionIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function OptionIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -7581,7 +7606,7 @@ export function OptionIcon({ className, width = '16px', height = '16px' }: IconP
   )
 }
 
-export function PaperAirplaneIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function PaperAirplaneIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -7601,7 +7626,7 @@ export function PaperAirplaneIcon({ className, width = '16px', height = '16px' }
   )
 }
 
-export function PaperclipIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function PaperclipIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -7621,7 +7646,7 @@ export function PaperclipIcon({ className, width = '16px', height = '16px' }: Ic
   )
 }
 
-export function PauseIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function PauseIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -7641,7 +7666,7 @@ export function PauseIcon({ className, width = '16px', height = '16px' }: IconPr
   )
 }
 
-export function PenIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function PenIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -7661,7 +7686,7 @@ export function PenIcon({ className, width = '16px', height = '16px' }: IconProp
   )
 }
 
-export function PencilIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function PencilIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -7681,7 +7706,7 @@ export function PencilIcon({ className, width = '16px', height = '16px' }: IconP
   )
 }
 
-export function PencilEditIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function PencilEditIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -7702,7 +7727,7 @@ export function PencilEditIcon({ className, width = '16px', height = '16px' }: I
   )
 }
 
-export function PercentageIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function PercentageIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -7722,7 +7747,7 @@ export function PercentageIcon({ className, width = '16px', height = '16px' }: I
   )
 }
 
-export function PhoneIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function PhoneIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -7747,7 +7772,7 @@ export function PhoneIcon({ className, width = '16px', height = '16px' }: IconPr
   )
 }
 
-export function PhoneDeviceIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function PhoneDeviceIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -7767,7 +7792,7 @@ export function PhoneDeviceIcon({ className, width = '16px', height = '16px' }: 
   )
 }
 
-export function PictureInPictureIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function PictureInPictureIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -7787,7 +7812,7 @@ export function PictureInPictureIcon({ className, width = '16px', height = '16px
   )
 }
 
-export function PinIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function PinIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -7807,7 +7832,7 @@ export function PinIcon({ className, width = '16px', height = '16px' }: IconProp
   )
 }
 
-export function PlayIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function PlayIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -7827,7 +7852,7 @@ export function PlayIcon({ className, width = '16px', height = '16px' }: IconPro
   )
 }
 
-export function PlayFillIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function PlayFillIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -7847,7 +7872,7 @@ export function PlayFillIcon({ className, width = '16px', height = '16px' }: Ico
   )
 }
 
-export function PlusIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function PlusIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -7867,7 +7892,7 @@ export function PlusIcon({ className, width = '16px', height = '16px' }: IconPro
   )
 }
 
-export function PlusCircleIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function PlusCircleIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -7888,7 +7913,7 @@ export function PlusCircleIcon({ className, width = '16px', height = '16px' }: I
   )
 }
 
-export function PlusSquareSmallIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function PlusSquareSmallIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -7908,7 +7933,7 @@ export function PlusSquareSmallIcon({ className, width = '16px', height = '16px'
   )
 }
 
-export function PostgresIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function PostgresIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -7928,7 +7953,7 @@ export function PostgresIcon({ className, width = '16px', height = '16px' }: Ico
   )
 }
 
-export function PowerIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function PowerIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -7948,7 +7973,7 @@ export function PowerIcon({ className, width = '16px', height = '16px' }: IconPr
   )
 }
 
-export function PreviewDocumentIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function PreviewDocumentIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -7968,7 +7993,7 @@ export function PreviewDocumentIcon({ className, width = '16px', height = '16px'
   )
 }
 
-export function PreviewEyeIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function PreviewEyeIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -7988,7 +8013,7 @@ export function PreviewEyeIcon({ className, width = '16px', height = '16px' }: I
   )
 }
 
-export function PrismIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function PrismIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -8008,7 +8033,7 @@ export function PrismIcon({ className, width = '16px', height = '16px' }: IconPr
   )
 }
 
-export function PrismColorIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function PrismColorIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -8031,7 +8056,7 @@ export function PrismColorIcon({ className, width = '16px', height = '16px' }: I
   )
 }
 
-export function PuzzleIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function PuzzleIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -8051,7 +8076,7 @@ export function PuzzleIcon({ className, width = '16px', height = '16px' }: IconP
   )
 }
 
-export function QuestionIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function QuestionIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -8071,7 +8096,7 @@ export function QuestionIcon({ className, width = '16px', height = '16px' }: Ico
   )
 }
 
-export function QuestionFillIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function QuestionFillIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -8091,7 +8116,7 @@ export function QuestionFillIcon({ className, width = '16px', height = '16px' }:
   )
 }
 
-export function RefreshClockwiseIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function RefreshClockwiseIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -8111,7 +8136,11 @@ export function RefreshClockwiseIcon({ className, width = '16px', height = '16px
   )
 }
 
-export function RefreshCounterClockwiseIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function RefreshCounterClockwiseIcon({
+  className,
+  width = '16px',
+  height = '16px'
+}: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -8131,7 +8160,7 @@ export function RefreshCounterClockwiseIcon({ className, width = '16px', height 
   )
 }
 
-export function RepositoriesIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function RepositoriesIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -8151,7 +8180,7 @@ export function RepositoriesIcon({ className, width = '16px', height = '16px' }:
   )
 }
 
-export function Rewind10SecondsIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function Rewind10SecondsIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -8171,7 +8200,7 @@ export function Rewind10SecondsIcon({ className, width = '16px', height = '16px'
   )
 }
 
-export function RobotIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function RobotIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -8191,7 +8220,7 @@ export function RobotIcon({ className, width = '16px', height = '16px' }: IconPr
   )
 }
 
-export function RotateClockwiseIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function RotateClockwiseIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -8211,7 +8240,11 @@ export function RotateClockwiseIcon({ className, width = '16px', height = '16px'
   )
 }
 
-export function RotateCounterClockwiseIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function RotateCounterClockwiseIcon({
+  className,
+  width = '16px',
+  height = '16px'
+}: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -8231,7 +8264,7 @@ export function RotateCounterClockwiseIcon({ className, width = '16px', height =
   )
 }
 
-export function RouteIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function RouteIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -8251,7 +8284,7 @@ export function RouteIcon({ className, width = '16px', height = '16px' }: IconPr
   )
 }
 
-export function RouterIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function RouterIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -8271,7 +8304,7 @@ export function RouterIcon({ className, width = '16px', height = '16px' }: IconP
   )
 }
 
-export function RssIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function RssIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -8291,7 +8324,7 @@ export function RssIcon({ className, width = '16px', height = '16px' }: IconProp
   )
 }
 
-export function SecureConnectionIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function SecureConnectionIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -8311,7 +8344,7 @@ export function SecureConnectionIcon({ className, width = '16px', height = '16px
   )
 }
 
-export function ServerlessIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function ServerlessIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -8331,7 +8364,7 @@ export function ServerlessIcon({ className, width = '16px', height = '16px' }: I
   )
 }
 
-export function ServersIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function ServersIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -8351,7 +8384,7 @@ export function ServersIcon({ className, width = '16px', height = '16px' }: Icon
   )
 }
 
-export function SettingsGearIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function SettingsGearIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -8371,7 +8404,7 @@ export function SettingsGearIcon({ className, width = '16px', height = '16px' }:
   )
 }
 
-export function SettingsGearFillIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function SettingsGearFillIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -8391,7 +8424,7 @@ export function SettingsGearFillIcon({ className, width = '16px', height = '16px
   )
 }
 
-export function SettingsSliderIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function SettingsSliderIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -8411,7 +8444,7 @@ export function SettingsSliderIcon({ className, width = '16px', height = '16px' 
   )
 }
 
-export function SettingsSlidersIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function SettingsSlidersIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -8431,7 +8464,7 @@ export function SettingsSlidersIcon({ className, width = '16px', height = '16px'
   )
 }
 
-export function ShareIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function ShareIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -8451,7 +8484,7 @@ export function ShareIcon({ className, width = '16px', height = '16px' }: IconPr
   )
 }
 
-export function ShareplayIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function ShareplayIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -8471,7 +8504,7 @@ export function ShareplayIcon({ className, width = '16px', height = '16px' }: Ic
   )
 }
 
-export function ShieldIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function ShieldIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -8491,7 +8524,7 @@ export function ShieldIcon({ className, width = '16px', height = '16px' }: IconP
   )
 }
 
-export function ShieldCheckIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function ShieldCheckIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -8511,7 +8544,7 @@ export function ShieldCheckIcon({ className, width = '16px', height = '16px' }: 
   )
 }
 
-export function ShieldGlobeIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function ShieldGlobeIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -8550,7 +8583,7 @@ export function ShieldGlobeIcon({ className, width = '16px', height = '16px' }: 
   )
 }
 
-export function ShieldOffIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function ShieldOffIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -8570,7 +8603,7 @@ export function ShieldOffIcon({ className, width = '16px', height = '16px' }: Ic
   )
 }
 
-export function ShieldSmallIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function ShieldSmallIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -8590,7 +8623,7 @@ export function ShieldSmallIcon({ className, width = '16px', height = '16px' }: 
   )
 }
 
-export function ShiftIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function ShiftIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -8610,7 +8643,7 @@ export function ShiftIcon({ className, width = '16px', height = '16px' }: IconPr
   )
 }
 
-export function SidebarLeftIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function SidebarLeftIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -8630,7 +8663,7 @@ export function SidebarLeftIcon({ className, width = '16px', height = '16px' }: 
   )
 }
 
-export function SidebarRightIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function SidebarRightIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -8650,7 +8683,7 @@ export function SidebarRightIcon({ className, width = '16px', height = '16px' }:
   )
 }
 
-export function SignInIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function SignInIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -8670,7 +8703,7 @@ export function SignInIcon({ className, width = '16px', height = '16px' }: IconP
   )
 }
 
-export function SkipBackIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function SkipBackIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -8690,7 +8723,7 @@ export function SkipBackIcon({ className, width = '16px', height = '16px' }: Ico
   )
 }
 
-export function SkipBackFillIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function SkipBackFillIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -8710,7 +8743,7 @@ export function SkipBackFillIcon({ className, width = '16px', height = '16px' }:
   )
 }
 
-export function SkipForwardIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function SkipForwardIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -8730,7 +8763,7 @@ export function SkipForwardIcon({ className, width = '16px', height = '16px' }: 
   )
 }
 
-export function SkipForwardFillIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function SkipForwardFillIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -8750,7 +8783,7 @@ export function SkipForwardFillIcon({ className, width = '16px', height = '16px'
   )
 }
 
-export function SlashIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function SlashIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -8770,7 +8803,7 @@ export function SlashIcon({ className, width = '16px', height = '16px' }: IconPr
   )
 }
 
-export function SlashBackIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function SlashBackIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -8790,7 +8823,7 @@ export function SlashBackIcon({ className, width = '16px', height = '16px' }: Ic
   )
 }
 
-export function SlashForwardIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function SlashForwardIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -8810,7 +8843,7 @@ export function SlashForwardIcon({ className, width = '16px', height = '16px' }:
   )
 }
 
-export function SortAscendingIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function SortAscendingIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -8830,7 +8863,7 @@ export function SortAscendingIcon({ className, width = '16px', height = '16px' }
   )
 }
 
-export function SortDescendingIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function SortDescendingIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -8850,7 +8883,7 @@ export function SortDescendingIcon({ className, width = '16px', height = '16px' 
   )
 }
 
-export function SpacesIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function SpacesIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -8886,7 +8919,7 @@ export function SpacesIcon({ className, width = '16px', height = '16px' }: IconP
   )
 }
 
-export function SparklesIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function SparklesIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -8910,7 +8943,7 @@ export function SparklesIcon({ className, width = '16px', height = '16px' }: Ico
   )
 }
 
-export function SpeakerIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function SpeakerIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -8930,7 +8963,7 @@ export function SpeakerIcon({ className, width = '16px', height = '16px' }: Icon
   )
 }
 
-export function SpeakerFillIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function SpeakerFillIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -8948,7 +8981,7 @@ export function SpeakerFillIcon({ className, width = '16px', height = '16px' }: 
   )
 }
 
-export function SpeakerOffIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function SpeakerOffIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -8968,7 +9001,7 @@ export function SpeakerOffIcon({ className, width = '16px', height = '16px' }: I
   )
 }
 
-export function SpeakerOffFillIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function SpeakerOffFillIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -8991,7 +9024,7 @@ export function SpeakerOffFillIcon({ className, width = '16px', height = '16px' 
   )
 }
 
-export function SpeakerVolumeLoudIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function SpeakerVolumeLoudIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -9011,7 +9044,11 @@ export function SpeakerVolumeLoudIcon({ className, width = '16px', height = '16p
   )
 }
 
-export function SpeakerVolumeLoudFillIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function SpeakerVolumeLoudFillIcon({
+  className,
+  width = '16px',
+  height = '16px'
+}: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -9031,7 +9068,7 @@ export function SpeakerVolumeLoudFillIcon({ className, width = '16px', height = 
   )
 }
 
-export function SpeakerVolumeQuietIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function SpeakerVolumeQuietIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -9051,7 +9088,11 @@ export function SpeakerVolumeQuietIcon({ className, width = '16px', height = '16
   )
 }
 
-export function SpeakerVolumeQuietFillIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function SpeakerVolumeQuietFillIcon({
+  className,
+  width = '16px',
+  height = '16px'
+}: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -9071,7 +9112,7 @@ export function SpeakerVolumeQuietFillIcon({ className, width = '16px', height =
   )
 }
 
-export function StarIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function StarIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -9091,7 +9132,7 @@ export function StarIcon({ className, width = '16px', height = '16px' }: IconPro
   )
 }
 
-export function StarFillIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function StarFillIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -9109,7 +9150,7 @@ export function StarFillIcon({ className, width = '16px', height = '16px' }: Ico
   )
 }
 
-export function StatusIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function StatusIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -9127,7 +9168,7 @@ export function StatusIcon({ className, width = '16px', height = '16px' }: IconP
   )
 }
 
-export function StatusSmallIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function StatusSmallIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -9145,7 +9186,7 @@ export function StatusSmallIcon({ className, width = '16px', height = '16px' }: 
   )
 }
 
-export function StopIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function StopIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -9165,7 +9206,7 @@ export function StopIcon({ className, width = '16px', height = '16px' }: IconPro
   )
 }
 
-export function StopCircleIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function StopCircleIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -9185,7 +9226,7 @@ export function StopCircleIcon({ className, width = '16px', height = '16px' }: I
   )
 }
 
-export function StopFillIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function StopFillIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -9205,7 +9246,7 @@ export function StopFillIcon({ className, width = '16px', height = '16px' }: Ico
   )
 }
 
-export function StopwatchIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function StopwatchIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -9225,7 +9266,7 @@ export function StopwatchIcon({ className, width = '16px', height = '16px' }: Ic
   )
 }
 
-export function StopwatchFastIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function StopwatchFastIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -9245,7 +9286,7 @@ export function StopwatchFastIcon({ className, width = '16px', height = '16px' }
   )
 }
 
-export function StopwatchUnreadIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function StopwatchUnreadIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -9273,7 +9314,7 @@ export function StopwatchUnreadIcon({ className, width = '16px', height = '16px'
   )
 }
 
-export function StoreIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function StoreIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -9293,7 +9334,7 @@ export function StoreIcon({ className, width = '16px', height = '16px' }: IconPr
   )
 }
 
-export function SunIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function SunIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -9313,7 +9354,7 @@ export function SunIcon({ className, width = '16px', height = '16px' }: IconProp
   )
 }
 
-export function SunAlternateIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function SunAlternateIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -9340,7 +9381,7 @@ export function SunAlternateIcon({ className, width = '16px', height = '16px' }:
   )
 }
 
-export function TabIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function TabIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -9360,7 +9401,7 @@ export function TabIcon({ className, width = '16px', height = '16px' }: IconProp
   )
 }
 
-export function TabletDeviceIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function TabletDeviceIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -9380,7 +9421,7 @@ export function TabletDeviceIcon({ className, width = '16px', height = '16px' }:
   )
 }
 
-export function TabsIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function TabsIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -9400,7 +9441,7 @@ export function TabsIcon({ className, width = '16px', height = '16px' }: IconPro
   )
 }
 
-export function TagIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function TagIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -9420,7 +9461,7 @@ export function TagIcon({ className, width = '16px', height = '16px' }: IconProp
   )
 }
 
-export function TargetIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function TargetIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -9440,7 +9481,7 @@ export function TargetIcon({ className, width = '16px', height = '16px' }: IconP
   )
 }
 
-export function TerminalIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function TerminalIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -9460,7 +9501,7 @@ export function TerminalIcon({ className, width = '16px', height = '16px' }: Ico
   )
 }
 
-export function TerminalWindowIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function TerminalWindowIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -9480,7 +9521,7 @@ export function TerminalWindowIcon({ className, width = '16px', height = '16px' 
   )
 }
 
-export function TextBoldIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function TextBoldIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -9500,7 +9541,7 @@ export function TextBoldIcon({ className, width = '16px', height = '16px' }: Ico
   )
 }
 
-export function TextFormatIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function TextFormatIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -9520,7 +9561,7 @@ export function TextFormatIcon({ className, width = '16px', height = '16px' }: I
   )
 }
 
-export function TextHeadingIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function TextHeadingIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -9540,7 +9581,7 @@ export function TextHeadingIcon({ className, width = '16px', height = '16px' }: 
   )
 }
 
-export function TextItalicIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function TextItalicIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -9560,7 +9601,7 @@ export function TextItalicIcon({ className, width = '16px', height = '16px' }: I
   )
 }
 
-export function TextStrikethroughIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function TextStrikethroughIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -9580,7 +9621,7 @@ export function TextStrikethroughIcon({ className, width = '16px', height = '16p
   )
 }
 
-export function TextTitleIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function TextTitleIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -9600,7 +9641,7 @@ export function TextTitleIcon({ className, width = '16px', height = '16px' }: Ic
   )
 }
 
-export function TextUppercaseIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function TextUppercaseIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -9620,7 +9661,7 @@ export function TextUppercaseIcon({ className, width = '16px', height = '16px' }
   )
 }
 
-export function ThumbDownIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function ThumbDownIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -9640,7 +9681,7 @@ export function ThumbDownIcon({ className, width = '16px', height = '16px' }: Ic
   )
 }
 
-export function ThumbUpIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function ThumbUpIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -9660,7 +9701,7 @@ export function ThumbUpIcon({ className, width = '16px', height = '16px' }: Icon
   )
 }
 
-export function ToggleOffIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function ToggleOffIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -9680,7 +9721,7 @@ export function ToggleOffIcon({ className, width = '16px', height = '16px' }: Ic
   )
 }
 
-export function ToggleOffAltIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function ToggleOffAltIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -9700,7 +9741,7 @@ export function ToggleOffAltIcon({ className, width = '16px', height = '16px' }:
   )
 }
 
-export function ToggleOffAltUnreadIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function ToggleOffAltUnreadIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -9721,7 +9762,7 @@ export function ToggleOffAltUnreadIcon({ className, width = '16px', height = '16
   )
 }
 
-export function ToggleOnIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function ToggleOnIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -9741,7 +9782,7 @@ export function ToggleOnIcon({ className, width = '16px', height = '16px' }: Ico
   )
 }
 
-export function ToggleOnAltIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function ToggleOnAltIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -9761,7 +9802,7 @@ export function ToggleOnAltIcon({ className, width = '16px', height = '16px' }: 
   )
 }
 
-export function ToggleOnAltUnreadIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function ToggleOnAltUnreadIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -9782,7 +9823,7 @@ export function ToggleOnAltUnreadIcon({ className, width = '16px', height = '16p
   )
 }
 
-export function ToolbarIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function ToolbarIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -9802,7 +9843,7 @@ export function ToolbarIcon({ className, width = '16px', height = '16px' }: Icon
   )
 }
 
-export function TrashIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function TrashIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -9822,7 +9863,7 @@ export function TrashIcon({ className, width = '16px', height = '16px' }: IconPr
   )
 }
 
-export function UserIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function UserIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -9842,7 +9883,7 @@ export function UserIcon({ className, width = '16px', height = '16px' }: IconPro
   )
 }
 
-export function UserCheckIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function UserCheckIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -9862,7 +9903,7 @@ export function UserCheckIcon({ className, width = '16px', height = '16px' }: Ic
   )
 }
 
-export function UserCrossIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function UserCrossIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -9882,7 +9923,7 @@ export function UserCrossIcon({ className, width = '16px', height = '16px' }: Ic
   )
 }
 
-export function UserMinusIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function UserMinusIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -9902,7 +9943,7 @@ export function UserMinusIcon({ className, width = '16px', height = '16px' }: Ic
   )
 }
 
-export function UserPlusIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function UserPlusIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -9922,7 +9963,7 @@ export function UserPlusIcon({ className, width = '16px', height = '16px' }: Ico
   )
 }
 
-export function UserScreenIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function UserScreenIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -9942,7 +9983,7 @@ export function UserScreenIcon({ className, width = '16px', height = '16px' }: I
   )
 }
 
-export function UserSettingsIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function UserSettingsIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -9962,7 +10003,7 @@ export function UserSettingsIcon({ className, width = '16px', height = '16px' }:
   )
 }
 
-export function UsersIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function UsersIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -9982,7 +10023,7 @@ export function UsersIcon({ className, width = '16px', height = '16px' }: IconPr
   )
 }
 
-export function VariableIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function VariableIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -10002,7 +10043,7 @@ export function VariableIcon({ className, width = '16px', height = '16px' }: Ico
   )
 }
 
-export function VideoIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function VideoIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -10022,7 +10063,7 @@ export function VideoIcon({ className, width = '16px', height = '16px' }: IconPr
   )
 }
 
-export function WarningIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function WarningIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -10042,7 +10083,7 @@ export function WarningIcon({ className, width = '16px', height = '16px' }: Icon
   )
 }
 
-export function WarningFillIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function WarningFillIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -10062,7 +10103,7 @@ export function WarningFillIcon({ className, width = '16px', height = '16px' }: 
   )
 }
 
-export function WebcamIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function WebcamIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -10082,7 +10123,7 @@ export function WebcamIcon({ className, width = '16px', height = '16px' }: IconP
   )
 }
 
-export function WebcamOffIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function WebcamOffIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -10102,7 +10143,7 @@ export function WebcamOffIcon({ className, width = '16px', height = '16px' }: Ic
   )
 }
 
-export function WebhookIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function WebhookIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -10122,7 +10163,7 @@ export function WebhookIcon({ className, width = '16px', height = '16px' }: Icon
   )
 }
 
-export function WindowIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function WindowIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -10142,7 +10183,7 @@ export function WindowIcon({ className, width = '16px', height = '16px' }: IconP
   )
 }
 
-export function WindowGlobeIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function WindowGlobeIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -10162,7 +10203,7 @@ export function WindowGlobeIcon({ className, width = '16px', height = '16px' }: 
   )
 }
 
-export function WindowVariableIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function WindowVariableIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -10182,7 +10223,7 @@ export function WindowVariableIcon({ className, width = '16px', height = '16px' 
   )
 }
 
-export function WrenchIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function WrenchIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg
@@ -10200,7 +10241,7 @@ export function WrenchIcon({ className, width = '16px', height = '16px' }: IconP
   )
 }
 
-export function ZeroConfigIcon({ className, width = '16px', height = '16px' }: IconProps): JSX.Element {
+export function ZeroConfigIcon({ className, width = '16px', height = '16px' }: IconProps): React.JSX.Element {
   return (
     <span className={className}>
       <svg

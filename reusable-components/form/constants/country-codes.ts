@@ -1,4 +1,4 @@
-import { type SelectOption } from '../../types/index'
+import type { SelectOption } from '../../types/index'
 
 const AF: SelectOption = {
   image: {

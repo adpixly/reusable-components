@@ -4,22 +4,10 @@ import { Button } from '%/buttons'
 import { Form } from '%/form'
 import { Input, Select } from '%/inputs'
 import Link from 'next/link'
-import { useState } from 'react'
-import {
-  type SubmissionStatus,
-  type SelectSettings,
-  type Styles,
-  type FormData,
-  type RequestConfig,
-  type SelectOption
-} from '%/types'
+import type { SelectSettings, Styles, FormData, RequestConfig, SelectOption } from '%/types'
 import { countries } from '%/constants'
 
-export default function LogInPage() {
-  const [modalOpen, setModalOpen] = useState(false)
-  const [response, setResponse] = useState<string | null>(null)
-  const [error, setError] = useState(false)
-
+export default function LogInPage(): React.JSX.Element {
   const requestConfig: RequestConfig = {
     fetchConfig: { method: 'POST' },
     url: '/api/agency/messages'
@@ -38,14 +26,22 @@ export default function LogInPage() {
     }
   }
 
-  const findGB = (countries: SelectOption[]) => {
+  const findGB = (
+    countries: SelectOption[]
+  ): {
+    updatedCountries: SelectOption[]
+    topCountries: SelectOption[]
+  } => {
+    const elementToRemove = 1
+    const elementToKeep = -1
+
     const indexArray = countries.findIndex(obj => obj.image?.alt === 'GB')
 
     let topCountries: SelectOption[] = []
-    let updatedCountries: SelectOption[] = [...countries]
+    const updatedCountries: SelectOption[] = [...countries]
 
-    if (indexArray !== -1) {
-      topCountries = updatedCountries.splice(indexArray, 1)
+    if (indexArray !== elementToKeep) {
+      topCountries = updatedCountries.splice(indexArray, elementToRemove)
     }
 
     return {
@@ -62,11 +58,7 @@ export default function LogInPage() {
     options: updatedCountries
   }
 
-  const onSubmit = (data: FormData, status: SubmissionStatus) => {
-    setResponse(status.message)
-    setError(status.error)
-    setModalOpen(true)
-
+  const onSubmit = (data: FormData): void => {
     console.log(data)
   }
 
@@ -79,7 +71,7 @@ export default function LogInPage() {
         </h1>
         <p className='text-lg text-gray-700 dark:text-gray-400'>
           You can log in using the default values in the form. Just{' '}
-          <strong className='font-bold underline'>click the log in button</strong> and you're ready to go.
+          <strong className='font-bold underline'>click the log in button</strong> and you&#39;re ready to go.
         </p>
       </div>
 

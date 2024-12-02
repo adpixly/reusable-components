@@ -1,3 +1,3 @@
-export * from './form'
-export * from './icons'
-export * from './animations'
+export type * from './form'
+export type * from './icons'
+export type * from './animations'

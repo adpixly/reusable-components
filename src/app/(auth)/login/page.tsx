@@ -1,5 +1,5 @@
 import LogInPage from '@/components/partials/login'
 
-export default function Login() {
+export default function Login(): React.JSX.Element {
   return <LogInPage />
 }

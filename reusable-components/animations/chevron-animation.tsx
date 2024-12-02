@@ -1,11 +1,11 @@
-import { type RotationAnimation } from '../types/index'
+import type { RotationAnimation } from '../types/index'
 
 export default function ChevronIconAnimation({
   className,
   direction,
   width = '16px',
   height = '16px'
-}: RotationAnimation): JSX.Element {
+}: RotationAnimation): React.JSX.Element {
   return (
     <span
       className={`icon_base_class__x5Y6z7A ${className} ${direction === 'up' ? 'icon_rotate_up_class__b8C9d0E' : ''} ${direction === 'left' ? 'icon_rotate_left_class__f1G2h3I' : ''} ${direction === 'right' ? 'icon_rotate_right_class__j4K5l6M' : ''} ${direction === 'down' ? 'icon_rotate_down_class__r3L0f1G' : ''}`}>

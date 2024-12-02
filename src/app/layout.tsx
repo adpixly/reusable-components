@@ -9,7 +9,7 @@ const inter = Inter({
   display: 'swap'
 })
 
-const inter_tight = Inter_Tight({
+const interTight = Inter_Tight({
   weight: ['500', '600', '700'],
   style: ['normal', 'italic'],
   subsets: ['latin'],
@@ -22,11 +22,11 @@ export const metadata = {
   description: 'Testing page for the library'
 }
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({ children }: { children: React.ReactNode }): React.JSX.Element {
   return (
     <html lang='en' suppressHydrationWarning>
       <body
-        className={`${inter.variable} ${inter_tight.variable} font-inter antialiased bg-[#fff6c5] text-gray-800 dark:bg-[#040424] dark:text-gray-200 tracking-tight`}>
+        className={`${inter.variable} ${interTight.variable} font-inter antialiased bg-[#fff6c5] text-gray-800 dark:bg-[#040424] dark:text-gray-200 tracking-tight`}>
         <Theme>
           <div className='relative flex flex-col min-h-screen overflow-hidden supports-[overflow:clip]:overflow-clip'>
             {children}

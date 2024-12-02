@@ -1,4 +1,4 @@
-export default function ResetPassword() {
+export default function ResetPassword(): React.JSX.Element {
   return (
     <>
       {/* Page header */}

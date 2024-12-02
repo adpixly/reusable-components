@@ -1,12 +1,6 @@
 import Image from 'next/image'
 import { useRef, useState, useEffect, useCallback } from 'react'
-import {
-  type SelectProps,
-  type ErrorMessagesType,
-  type SelectOption,
-  type SelectSettings,
-  type ComponentStyles
-} from '../../types/index'
+import type { SelectProps, ErrorMessagesType, SelectOption, SelectSettings, ComponentStyles } from '../../types/index'
 import ChevronIconAnimation from '../../animations/chevron-animation'
 import { Transition } from '@headlessui/react'
 
@@ -101,7 +95,7 @@ function Select({
   parentErrorMessage,
   updateParentBorders,
   ...props
-}: SelectProps): JSX.Element {
+}: SelectProps): React.JSX.Element {
   const [errorMessage, setErrorMessage] = useState<string | null | undefined>(currentErrorMessage?.[name])
   const [dropdownOpen, setDropdownOpen] = useState(false)
   const [srcImg, setSrc] = useState<string | undefined>(undefined)
@@ -276,7 +270,7 @@ function Select({
       setAlt(option.image?.alt)
       setValue(option.label.mainText ?? option.value)
 
-      const value = option.value
+      const { value } = option
 
       if (formData !== undefined) {
         formData.current[name] = value
@@ -324,7 +318,7 @@ function Select({
             <Image src={srcImg} alt={altImg} height={imageHeight} width={imageWidth} className={pImageClass} />
           </>
         ) : (
-          value ?? placeholder
+          (value ?? placeholder)
         )}
 
         <ChevronIconAnimation
@@ -347,84 +341,80 @@ function Select({
         <ul className={`options_wrapper_class__h4I5j6K ${listStyle}`}>
           {topOptions
             ?.sort((a, b) => a.label.mainText.localeCompare(b.label.mainText))
-            .map((option, index) => {
-              return (
-                <li
-                  key={index}
-                  tabIndex={0}
-                  className='single_option_class__t3U4v5W'
-                  onClick={() => {
-                    handleSelection(option)
-                  }}>
-                  <div className='option_flex_wrapper_class__x6Y7z8A'>
-                    {option.image !== undefined && (
-                      <div className='image_wrapper_class__b9C0d1E'>
-                        <Image
-                          src={option.image.src}
-                          alt={option.image.alt}
-                          height={1}
-                          width={1}
-                          className='image_selector_class__f2G3h4I'
-                        />
-                      </div>
-                    )}
-                    <div className='text_wrapper_class__j5K6l7M'>
-                      <p
-                        className={`main_content_class__n8O9p0Q ${option.label.mainTextColorClass ?? 'main_content_default_color_class__r1S2t3U'}`}>
-                        {option.label.mainText}
-                      </p>
-                      {option.label.secondaryText !== undefined && (
-                        <p
-                          className={`secondary_content_class__v4W5x6Y ${option.label.secondaryTextColorClass ?? 'secondary_content_default_color_class__z7A8b9C'}`}>
-                          {option.label.secondaryText}
-                        </p>
-                      )}
+            .map((option, index) => (
+              <li
+                key={index}
+                tabIndex={0}
+                className='single_option_class__t3U4v5W'
+                onClick={() => {
+                  handleSelection(option)
+                }}>
+                <div className='option_flex_wrapper_class__x6Y7z8A'>
+                  {option.image !== undefined && (
+                    <div className='image_wrapper_class__b9C0d1E'>
+                      <Image
+                        src={option.image.src}
+                        alt={option.image.alt}
+                        height={1}
+                        width={1}
+                        className='image_selector_class__f2G3h4I'
+                      />
                     </div>
+                  )}
+                  <div className='text_wrapper_class__j5K6l7M'>
+                    <p
+                      className={`main_content_class__n8O9p0Q ${option.label.mainTextColorClass ?? 'main_content_default_color_class__r1S2t3U'}`}>
+                      {option.label.mainText}
+                    </p>
+                    {option.label.secondaryText !== undefined && (
+                      <p
+                        className={`secondary_content_class__v4W5x6Y ${option.label.secondaryTextColorClass ?? 'secondary_content_default_color_class__z7A8b9C'}`}>
+                        {option.label.secondaryText}
+                      </p>
+                    )}
                   </div>
-                </li>
-              )
-            })}
+                </div>
+              </li>
+            ))}
           {topOptions !== undefined && <hr className={pSeparatorClass} />}
 
           {options
             .sort((a, b) => a.label.mainText.localeCompare(b.label.mainText))
-            .map((option, index) => {
-              return (
-                <li
-                  tabIndex={0}
-                  key={index}
-                  className='single_option_class__t3U4v5W'
-                  onClick={() => {
-                    handleSelection(option)
-                  }}>
-                  <div className='option_flex_wrapper_class__x6Y7z8A'>
-                    {option.image !== undefined && (
-                      <div className='image_wrapper_class__b9C0d1E'>
-                        <Image
-                          src={option.image.src}
-                          alt={option.image.alt}
-                          height={1}
-                          width={1}
-                          className='image_selector_class__f2G3h4I'
-                        />
-                      </div>
-                    )}
-                    <div className='text_wrapper_class__j5K6l7M'>
-                      <p
-                        className={`main_content_class__n8O9p0Q ${option.label.mainTextColorClass ?? 'main_content_default_color_class__r1S2t3U'}`}>
-                        {option.label.mainText}
-                      </p>
-                      {option.label.secondaryText !== undefined && (
-                        <p
-                          className={`secondary_content_class__v4W5x6Y ${option.label.secondaryTextColorClass ?? 'secondary_content_default_color_class__z7A8b9C'}`}>
-                          {option.label.secondaryText}
-                        </p>
-                      )}
+            .map((option, index) => (
+              <li
+                tabIndex={0}
+                key={index}
+                className='single_option_class__t3U4v5W'
+                onClick={() => {
+                  handleSelection(option)
+                }}>
+                <div className='option_flex_wrapper_class__x6Y7z8A'>
+                  {option.image !== undefined && (
+                    <div className='image_wrapper_class__b9C0d1E'>
+                      <Image
+                        src={option.image.src}
+                        alt={option.image.alt}
+                        height={1}
+                        width={1}
+                        className='image_selector_class__f2G3h4I'
+                      />
                     </div>
+                  )}
+                  <div className='text_wrapper_class__j5K6l7M'>
+                    <p
+                      className={`main_content_class__n8O9p0Q ${option.label.mainTextColorClass ?? 'main_content_default_color_class__r1S2t3U'}`}>
+                      {option.label.mainText}
+                    </p>
+                    {option.label.secondaryText !== undefined && (
+                      <p
+                        className={`secondary_content_class__v4W5x6Y ${option.label.secondaryTextColorClass ?? 'secondary_content_default_color_class__z7A8b9C'}`}>
+                        {option.label.secondaryText}
+                      </p>
+                    )}
                   </div>
-                </li>
-              )
-            })}
+                </div>
+              </li>
+            ))}
         </ul>
       </Transition>
     </>

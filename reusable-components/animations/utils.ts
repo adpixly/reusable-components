@@ -1,10 +1,12 @@
 import { useState } from 'react'
-import { type UseCopyProps } from '../types/index'
+import type { UseCopyProps } from '../types/index'
 
 export const useCopy = (): UseCopyProps => {
   const [isCopied, setIsCopied] = useState(false)
 
-  const handleCopyClick = (text: string, duration: number = 1000): void => {
+  const defaultDuration = 1000
+
+  const handleCopyClick = (text: string, duration = defaultDuration): void => {
     void navigator.clipboard.writeText(text).then(() => {
       setIsCopied(true)
       setTimeout(() => {
@@ -13,7 +15,7 @@ export const useCopy = (): UseCopyProps => {
     })
   }
 
-  const startCall = (text: string, duration: number = 1000): void => {
+  const startCall = (text: string, duration = defaultDuration): void => {
     handleCopyClick(text, duration)
     window.location.href = `tel:${text}`
   }

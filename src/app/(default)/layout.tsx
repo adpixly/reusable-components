@@ -4,7 +4,7 @@ import VerticalLines from '@/components/vertical-lines'
 import Header from '@/components/ui/header'
 import Footer from '@/components/ui/footer'
 
-export default function DefaultLayout({ children }: { children: React.ReactNode }) {
+export default function DefaultLayout({ children }: { children: React.ReactNode }): React.JSX.Element {
   return (
     <>
       <VerticalLines />

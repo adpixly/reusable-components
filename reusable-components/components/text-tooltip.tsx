@@ -19,7 +19,7 @@ export default function TextTooltip({
   bg = null,
   size = 'none',
   position = 'top'
-}: TooltipProps): JSX.Element {
+}: TooltipProps): React.JSX.Element {
   const [tooltipOpen, setTooltipOpen] = useState<boolean>(false)
 
   type PositionOuter =
@@ -60,10 +60,7 @@ export default function TextTooltip({
     }
   }
 
-  type Color =
-    | 'background_light_class__t1U2v3W'
-    | 'background_light_class__t1U2v3W'
-    | 'background_default_class__b7C8d9E'
+  type Color = 'background_light_class__t1U2v3W' | 'background_default_class__b7C8d9E'
 
   const colorClasses = (bg: TooltipProps['bg']): Color => {
     switch (bg) {

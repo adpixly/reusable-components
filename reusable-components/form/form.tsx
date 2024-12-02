@@ -1,13 +1,13 @@
 import React, { useEffect, useState, useRef, useCallback } from 'react'
-import {
-  type FormProps,
-  type FormErrors,
-  type FormData,
-  type InputProps,
-  type UpdateErrorMessage,
-  type SelectProps,
-  type SubmitProps,
-  type TextAreaProps
+import type {
+  FormProps,
+  FormErrors,
+  FormData,
+  InputProps,
+  UpdateErrorMessage,
+  SelectProps,
+  SubmitProps,
+  TextAreaProps
 } from '../types/index'
 
 function useMountedRef(): React.MutableRefObject<boolean> {
@@ -29,7 +29,7 @@ function isCustomComponent<T>(
   return typeof element.type === 'function'
 }
 
-export default function Form({ children, requestConfig, onSubmit, className, styles }: FormProps): JSX.Element {
+export default function Form({ children, requestConfig, onSubmit, className, styles }: FormProps): React.JSX.Element {
   const formData = useRef<FormData>({})
   const timeoutId = useRef<NodeJS.Timeout>()
   const requiredMessages = useRef<FormErrors>({})
@@ -164,9 +164,9 @@ export default function Form({ children, requestConfig, onSubmit, className, sty
   }, [errorMessages, requestConfig, onSubmit])
 
   const cloneInputChildren = useCallback(
-    (children: React.ReactNode): React.ReactNode => {
+    (children: React.ReactNode): React.ReactNode =>
       // eslint-disable-next-line @typescript-eslint/promise-function-async
-      return React.Children.map(children, child => {
+      React.Children.map(children, child => {
         if (
           !React.isValidElement<InputProps>(child) ||
           !React.isValidElement<SelectProps>(child) ||
@@ -199,14 +199,13 @@ export default function Form({ children, requestConfig, onSubmit, className, sty
           }
         }
 
-        if (child.props?.children !== undefined) {
+        if (child.props.children !== undefined) {
           return React.cloneElement(child, {
             children: cloneInputChildren(child.props.children as React.ReactNode)
           })
         }
         return child
-      })
-    },
+      }),
     [errorMessages, sent]
   )
 

@@ -1,7 +1,7 @@
 import PageHeader from '@/components/page-header'
 import SubscribeForm from '@/components/subscribe-form'
 
-export default function Home() {
+export default function Home(): React.JSX.Element {
   return (
     <section>
       <div className='pt-32 pb-12 md:pt-44 md:pb-20'>

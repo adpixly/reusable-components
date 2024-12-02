@@ -1,4 +1,4 @@
-import { type IconProps } from './icons'
+import type { IconProps } from './icons'
 
 export interface CopyAnimation extends IconProps {
   children: string
